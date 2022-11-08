@@ -1,0 +1,15 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/examples/wasm clean all
+rm -rf /home/maribu/Repos/software/RIOT/examples/wasm/bin/samr21-xpro/pkg-build/wamr
+make -C wasm_sample hello.wasm
+clang\
+	-c \
+	-Wall --target=wasm32-unknown-unknown-wasm -emit-llvm -Os -flto -fvisibility=hidden -ffunction-sections -fdata-sections  \
+	-o hello.o \
+	hello.c
+wasm-ld -o hello.wasm -z stack-size=4096 --export main --export=__heap_base --export=__data_end --allow-undefined --no-entry --strip-all --export-dynamic -error-limit=0 --lto-O3 -O3 --gc-sections --initial-memory=65536  hello.o
+wasm-ld: error: entry symbol not defined (pass --no-entry to suppress): rror-limit=0
+make[1]: *** [Makefile:86: hello.wasm] Error 1
+rm hello.o
+make: *** [Makefile:29: hello.wasm] Error 2
+
+Return value: 2

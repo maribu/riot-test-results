@@ -1,0 +1,58 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/pkg_flatbuffers clean all
+rm -rf /home/maribu/Repos/software/RIOT/tests/pkg_flatbuffers/bin/samr21-xpro/pkg-build/flatbuffers
+Building application "tests_pkg_flatbuffers" for "samr21-xpro" with MCU "samd21".
+
+[INFO] flatc binary not found - building it from source now
+make -C /home/maribu/Repos/software/RIOT/dist/tools/flatc
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 12.2.1
+-- The CXX compiler identification is GNU 12.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for strtof_l
+-- Looking for strtof_l - found
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/maribu/Repos/software/RIOT/dist/tools/flatc/bin/build
+"make" -C "/home/maribu/Repos/software/RIOT/dist/tools/flatc/bin/build"
+[  4%] Building CXX object CMakeFiles/flatc.dir/src/code_generators.cpp.o
+In file included from /home/maribu/Repos/software/RIOT/dist/tools/flatc/bin/include/flatbuffers/flexbuffers.h:24,
+                 from /home/maribu/Repos/software/RIOT/dist/tools/flatc/bin/include/flatbuffers/idl.h:26,
+                 from /home/maribu/Repos/software/RIOT/dist/tools/flatc/bin/include/flatbuffers/code_generators.h:22,
+                 from /home/maribu/Repos/software/RIOT/dist/tools/flatc/bin/src/code_generators.cpp:17:
+/home/maribu/Repos/software/RIOT/dist/tools/flatc/bin/include/flatbuffers/util.h: In function 'void flatbuffers::strtoval_impl(int64_t*, const char*, char**, int)':
+/home/maribu/Repos/software/RIOT/dist/tools/flatc/bin/include/flatbuffers/util.h:228:38: error: 'strtoll_l' was not declared in this scope; did you mean 'strtold_l'?
+  228 |     #define __strtoll_impl(s, pe, b) strtoll_l(s, pe, b, ClassicLocale::Get())
+      |                                      ^~~~~~~~~
+/home/maribu/Repos/software/RIOT/dist/tools/flatc/bin/include/flatbuffers/util.h:246:12: note: in expansion of macro '__strtoll_impl'
+  246 |     *val = __strtoll_impl(str, endptr, base);
+      |            ^~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/dist/tools/flatc/bin/include/flatbuffers/util.h: In function 'void flatbuffers::strtoval_impl(uint64_t*, const char*, char**, int)':
+/home/maribu/Repos/software/RIOT/dist/tools/flatc/bin/include/flatbuffers/util.h:227:39: error: 'strtoull_l' was not declared in this scope; did you mean 'strtoull'?
+  227 |     #define __strtoull_impl(s, pe, b) strtoull_l(s, pe, b, ClassicLocale::Get())
+      |                                       ^~~~~~~~~~
+/home/maribu/Repos/software/RIOT/dist/tools/flatc/bin/include/flatbuffers/util.h:251:10: note: in expansion of macro '__strtoull_impl'
+  251 |   *val = __strtoull_impl(str, endptr, base);
+      |          ^~~~~~~~~~~~~~~
+make[4]: *** [CMakeFiles/flatc.dir/build.make:76: CMakeFiles/flatc.dir/src/code_generators.cpp.o] Error 1
+make[3]: *** [CMakeFiles/Makefile2:83: CMakeFiles/flatc.dir/all] Error 2
+make[2]: *** [Makefile:156: all] Error 2
+make[1]: *** [Makefile:27: all] Error 2
+make: *** [/home/maribu/Repos/software/RIOT/makefiles/tools/targets.inc.mk:45: /home/maribu/Repos/software/RIOT/dist/tools/flatc/flatc] Error 2
+
+Return value: 2

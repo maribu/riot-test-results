@@ -1,0 +1,106 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/examples/ccn-lite-relay clean all
+rm -rf /home/maribu/Repos/software/RIOT/examples/ccn-lite-relay/bin/samr21-xpro/pkg-build/ccn-lite
+Building application "ccn-lite-relay" for "samr21-xpro" with MCU "samd21".
+
+/home/maribu/Repos/software/RIOT/dist/tools/cmake/generate-xcompile-toolchain.sh > /home/maribu/Repos/software/RIOT/build/pkg/ccn-lite/xcompile-toolchain.cmake
+cmake -B/home/maribu/Repos/software/RIOT/examples/ccn-lite-relay/bin/samr21-xpro/pkg-build/ccn-lite -H/home/maribu/Repos/software/RIOT/build/pkg/ccn-lite/src \
+      -DCMAKE_TOOLCHAIN_FILE=/home/maribu/Repos/software/RIOT/build/pkg/ccn-lite/xcompile-toolchain.cmake \
+      -DCCNL_RIOT=1 -DRIOT_CFLAGS="-isystem /usr/arm-none-eabi/include/nano -I/home/maribu/Repos/software/RIOT/core/lib/include -I/home/maribu/Repos/software/RIOT/core/include -I/home/maribu/Repos/software/RIOT/drivers/include -I/home/maribu/Repos/software/RIOT/sys/include -I/home/maribu/Repos/software/RIOT/boards/samr21-xpro/include -I/home/maribu/Repos/software/RIOT/cpu/samd21/include -I/home/maribu/Repos/software/RIOT/cpu/sam0_common/include -I/home/maribu/Repos/software/RIOT/cpu/cortexm_common/include -I/home/maribu/Repos/software/RIOT/cpu/cortexm_common/include/vendor -I/home/maribu/Repos/software/RIOT/sys/libc/include -I/home/maribu/Repos/software/RIOT/build/pkg/ccn-lite/src/ccnl-riot/include -I/home/maribu/Repos/software/RIOT/build/pkg/ccn-lite/src/ccnl-core/include -I/home/maribu/Repos/software/RIOT/build/pkg/ccn-lite/src/ccnl-pkt/include -I/home/maribu/Repos/software/RIOT/build/pkg/ccn-lite/src/ccnl-fwd/include -I/home/maribu/Repos/software/RIOT/sys/net/gnrc/pktbuf/include -I/home/maribu/Repos/software/RIOT/sys/net/gnrc/pktbuf_static/include -I/home/maribu/Repos/software/RIOT/sys/posix/include -I/home/maribu/Repos/software/RIOT/sys/net/link_layer/eui_provider/include -I/home/maribu/Repos/software/RIOT/drivers/at86rf2xx/include" -DBUILD_TESTING=OFF
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at ccnl-core/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/arm-none-eabi-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/arm-none-eabi-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Deprecation Warning at ccnl-pkt/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at ccnl-fwd/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at ccnl-riot/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- Found Doxygen: /usr/bin/doxygen (found version "1.9.5") found components: doxygen dot 
+Doxygen build started
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/maribu/Repos/software/RIOT/examples/ccn-lite-relay/bin/samr21-xpro/pkg-build/ccn-lite
+make -C /home/maribu/Repos/software/RIOT/examples/ccn-lite-relay/bin/samr21-xpro/pkg-build/ccn-lite
+[  1%] Building C object ccnl-core/CMakeFiles/ccnl-core.dir/src/ccnl-array.c.obj
+[  2%] Building C object ccnl-core/CMakeFiles/ccnl-core.dir/src/ccnl-buf.c.obj
+[  4%] Building C object ccnl-core/CMakeFiles/ccnl-core.dir/src/ccnl-callbacks.c.obj
+[  5%] Building C object ccnl-core/CMakeFiles/ccnl-core.dir/src/ccnl-content.c.obj
+[  7%] Building C object ccnl-core/CMakeFiles/ccnl-core.dir/src/ccnl-crypto.c.obj
+[  8%] Building C object ccnl-core/CMakeFiles/ccnl-core.dir/src/ccnl-dump.c.obj
+[ 10%] Building C object ccnl-core/CMakeFiles/ccnl-core.dir/src/ccnl-face.c.obj
+[ 11%] Building C object ccnl-core/CMakeFiles/ccnl-core.dir/src/ccnl-forward.c.obj
+[ 13%] Building C object ccnl-core/CMakeFiles/ccnl-core.dir/src/ccnl-frag.c.obj
+[ 14%] Building C object ccnl-core/CMakeFiles/ccnl-core.dir/src/ccnl-http-status.c.obj
+[ 16%] Building C object ccnl-core/CMakeFiles/ccnl-core.dir/src/ccnl-if.c.obj
+[ 17%] Building C object ccnl-core/CMakeFiles/ccnl-core.dir/src/ccnl-interest.c.obj
+[ 19%] Building C object ccnl-core/CMakeFiles/ccnl-core.dir/src/ccnl-logging.c.obj
+[ 20%] Building C object ccnl-core/CMakeFiles/ccnl-core.dir/src/ccnl-malloc.c.obj
+[ 22%] Building C object ccnl-core/CMakeFiles/ccnl-core.dir/src/ccnl-mgmt.c.obj
+[ 23%] Building C object ccnl-core/CMakeFiles/ccnl-core.dir/src/ccnl-os-time.c.obj
+[ 25%] Building C object ccnl-core/CMakeFiles/ccnl-core.dir/src/ccnl-pkt-util.c.obj
+[ 26%] Building C object ccnl-core/CMakeFiles/ccnl-core.dir/src/ccnl-pkt.c.obj
+[ 27%] Building C object ccnl-core/CMakeFiles/ccnl-core.dir/src/ccnl-prefix.c.obj
+[ 29%] Building C object ccnl-core/CMakeFiles/ccnl-core.dir/src/ccnl-producer.c.obj
+[ 30%] Building C object ccnl-core/CMakeFiles/ccnl-core.dir/src/ccnl-relay.c.obj
+/home/maribu/Repos/software/RIOT/build/pkg/ccn-lite/src/ccnl-core/src/ccnl-relay.c: In function 'ccnl_fib_rem_entry':
+/home/maribu/Repos/software/RIOT/build/pkg/ccn-lite/src/ccnl-core/src/ccnl-relay.c:916:16: error: pointer 'fwd' used after 'free' [-Werror=use-after-free]
+  916 |         if (fwd->face) {
+      |             ~~~^~~~~~
+In file included from /home/maribu/Repos/software/RIOT/build/pkg/ccn-lite/src/ccnl-core/src/ccnl-relay.c:33:
+/home/maribu/Repos/software/RIOT/build/pkg/ccn-lite/src/ccnl-core/../ccnl-riot/include/ccn-lite-riot.h:52:41: note: call to 'free' here
+   52 | #define ccnl_free(p)                    free(p)
+      |                                         ^~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/ccn-lite/src/ccnl-core/src/ccnl-relay.c:910:13: note: in expansion of macro 'ccnl_free'
+  910 |             ccnl_free(fwd);
+      |             ^~~~~~~~~
+cc1: all warnings being treated as errors
+make[4]: *** [ccnl-core/CMakeFiles/ccnl-core.dir/build.make:356: ccnl-core/CMakeFiles/ccnl-core.dir/src/ccnl-relay.c.obj] Error 1
+make[3]: *** [CMakeFiles/Makefile2:179: ccnl-core/CMakeFiles/ccnl-core.dir/all] Error 2
+make[2]: *** [Makefile:91: all] Error 2
+make[1]: *** [Makefile:28: /home/maribu/Repos/software/RIOT/examples/ccn-lite-relay/bin/samr21-xpro/pkg-build/ccn-lite/lib/libccnl-riot.a] Error 2
+make: *** [/home/maribu/Repos/software/RIOT/examples/ccn-lite-relay/../../Makefile.include:803: pkg-build] Error 2
+
+Return value: 2

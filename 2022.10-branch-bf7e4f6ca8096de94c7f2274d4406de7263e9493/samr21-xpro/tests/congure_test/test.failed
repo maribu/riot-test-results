@@ -1,0 +1,8 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/congure_test test
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_test/tests/01-run.py", line 14, in <module>
+    from riotctrl.ctrl import RIOTCtrl
+ModuleNotFoundError: No module named 'riotctrl'
+make: *** [/home/maribu/Repos/software/RIOT/makefiles/tests/tests.inc.mk:22: test] Error 1
+
+Return value: 2

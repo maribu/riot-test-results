@@ -1,0 +1,30 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM1
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Runtime of Selected Core API functions
+
+                 nop loop:    104268us  ---   0.104us per call  ---    9590670 calls per sec
+
+             mutex_init():         9us  ---   0.000us per call  ---  3736928711 calls per sec
+        mutex lock/unlock:   1709546us  ---   1.709us per call  ---     584950 calls per sec
+
+       thread_flags_set():    959019us  ---   0.959us per call  ---    1042732 calls per sec
+     thread_flags_clear():   1084111us  ---   1.084us per call  ---     922414 calls per sec
+thread flags set/wait any:   3043836us  ---   3.043us per call  ---     328532 calls per sec
+thread flags set/wait all:   2585173us  ---   2.585us per call  ---     386821 calls per sec
+thread flags set/wait one:   2960433us  ---   2.960us per call  ---     337788 calls per sec
+
+        msg_try_receive():   1459378us  ---   1.459us per call  ---     685223 calls per sec
+              msg_avail():    375265us  ---   0.375us per call  ---    2664783 calls per sec
+
+[SUCCESS]
+

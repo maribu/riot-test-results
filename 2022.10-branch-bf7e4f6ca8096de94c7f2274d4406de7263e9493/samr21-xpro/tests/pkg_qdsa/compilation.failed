@@ -1,0 +1,12 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/pkg_qdsa clean all
+rm -rf /home/maribu/Repos/software/RIOT/tests/pkg_qdsa/bin/samr21-xpro/pkg-build/qdsa
+Building application "tests_pkg_qdsa" for "samr21-xpro" with MCU "samd21".
+
+Assembler messages:
+Fatal error: unknown option `-ggdb'
+make[3]: *** [/home/maribu/Repos/software/RIOT/Makefile.base:176: /home/maribu/Repos/software/RIOT/tests/pkg_qdsa/bin/samr21-xpro/qdsa_asm/bigint_red.o] Error 1
+make[2]: *** [/home/maribu/Repos/software/RIOT/Makefile.base:31: ALL--/home/maribu/Repos/software/RIOT/build/pkg/qdsa/arm/asm] Error 2
+make[1]: *** [Makefile:11: all] Error 2
+make: *** [/home/maribu/Repos/software/RIOT/tests/pkg_qdsa/../../Makefile.include:803: pkg-build] Error 2
+
+Return value: 2

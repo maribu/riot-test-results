@@ -1,0 +1,32 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/suit_manifest clean all
+# Reset package to checkout state.
+rm -rf /home/maribu/Repos/software/RIOT/build/pkg/c25519
+rm -rf /home/maribu/Repos/software/RIOT/tests/suit_manifest/bin/samr21-xpro/pkg-build/libcose
+rm -rf /home/maribu/Repos/software/RIOT/tests/suit_manifest/bin/samr21-xpro/pkg-build/nanocbor
+Building application "tests_suit_manifest" for "samr21-xpro" with MCU "samd21".
+
+suit: generating key in /home/maribu/Repos/software/RIOT/tests/suit_manifest/bin/samr21-xpro
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/dist/tools/suit/suit-manifest-generator/bin/suit-tool", line 25, in <module>
+    from suit_tool import clidriver
+  File "/home/maribu/Repos/software/RIOT/dist/tools/suit/suit-manifest-generator/bin/../suit_tool/clidriver.py", line 23, in <module>
+    from suit_tool import create, sign, parse, get_pubkey, keygen, sever #, verify, cert, init
+  File "/home/maribu/Repos/software/RIOT/dist/tools/suit/suit-manifest-generator/bin/../suit_tool/create.py", line 19, in <module>
+    from suit_tool.compile import compile_manifest
+  File "/home/maribu/Repos/software/RIOT/dist/tools/suit/suit-manifest-generator/bin/../suit_tool/compile.py", line 23, in <module>
+    import cbor2 as cbor
+ModuleNotFoundError: No module named 'cbor2'
+sh create_test_data.sh
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/dist/tools/suit/suit-manifest-generator/bin/suit-tool", line 25, in <module>
+    from suit_tool import clidriver
+  File "/home/maribu/Repos/software/RIOT/dist/tools/suit/suit-manifest-generator/bin/../suit_tool/clidriver.py", line 23, in <module>
+    from suit_tool import create, sign, parse, get_pubkey, keygen, sever #, verify, cert, init
+  File "/home/maribu/Repos/software/RIOT/dist/tools/suit/suit-manifest-generator/bin/../suit_tool/create.py", line 19, in <module>
+    from suit_tool.compile import compile_manifest
+  File "/home/maribu/Repos/software/RIOT/dist/tools/suit/suit-manifest-generator/bin/../suit_tool/compile.py", line 23, in <module>
+    import cbor2 as cbor
+ModuleNotFoundError: No module named 'cbor2'
+make: *** [Makefile:44: bin/samr21-xpro/manifests/created] Error 1
+
+Return value: 2
