@@ -1,0 +1,10 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/examples/rust-gcoap clean all
+Building application "rust_gcoap" for "nrf52840dk" with MCU "nrf52".
+
+/bin/sh: rustup: not found
+/bin/sh: rustup: not found
+/bin/sh: rustup: not found
+Error: `c2rust` command missing to build Rust modules. Please install as described on <https://doc.riot-os.org/using-rust.html>.
+make: *** [/home/maribu/Repos/software/RIOT/makefiles/cargo-targets.inc.mk:38: /home/maribu/Repos/software/RIOT/examples/rust-gcoap/bin/nrf52840dk/target/thumbv7em-none-eabihf/release/librust_gcoap.a] Error 1
+
+Return value: 2

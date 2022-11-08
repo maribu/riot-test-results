@@ -1,0 +1,11 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/pkg_emlearn clean all
+rm -rf /home/maribu/Repos/software/RIOT/tests/pkg_emlearn/bin/nrf52840dk/pkg-build/emlearn
+Building application "tests_pkg_emlearn" for "nrf52840dk" with MCU "nrf52".
+
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/pkg_emlearn/generate_model.py", line 3, in <module>
+    import emlearn
+ModuleNotFoundError: No module named 'emlearn'
+make: *** [Makefile:12: model.h] Error 1
+
+Return value: 2

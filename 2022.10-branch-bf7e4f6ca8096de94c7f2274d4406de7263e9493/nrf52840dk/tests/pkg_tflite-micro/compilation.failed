@@ -1,0 +1,19 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/pkg_tflite-micro clean all
+rm -rf /home/maribu/Repos/software/RIOT/tests/pkg_tflite-micro/bin/nrf52840dk/pkg-build/flatbuffers
+rm -rf /home/maribu/Repos/software/RIOT/tests/pkg_tflite-micro/bin/nrf52840dk/pkg-build/gemmlowp
+rm -rf /home/maribu/Repos/software/RIOT/tests/pkg_tflite-micro/bin/nrf52840dk/pkg-build/ruy
+rm -rf /home/maribu/Repos/software/RIOT/tests/pkg_tflite-micro/bin/nrf52840dk/pkg-build/tflite-micro
+Building application "tests_pkg_tflite-micro" for "nrf52840dk" with MCU "nrf52".
+
+/home/maribu/Repos/software/RIOT/build/pkg/tflite-micro/tensorflow/lite/micro/micro_allocation_info.cc: In member function 'TfLiteStatus tflite::AllocationInfoBuilder::GetOfflinePlannedOffsets(const int32_t**)':
+/home/maribu/Repos/software/RIOT/build/pkg/tflite-micro/tensorflow/lite/micro/micro_allocation_info.cc:294:18: error: 'int strncmp(const char*, const char*, size_t)' specified bound 23 exceeds source size 0 [-Werror=stringop-overread]
+  294 |       if (strncmp(metadata->name()->c_str(), kOfflineMemAllocMetadata,
+      |           ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  295 |                   strlen(kOfflineMemAllocMetadata)) == 0) {
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1plus: all warnings being treated as errors
+make[2]: *** [/home/maribu/Repos/software/RIOT/Makefile.base:166: /home/maribu/Repos/software/RIOT/tests/pkg_tflite-micro/bin/nrf52840dk/tflite-micro/micro_allocation_info.o] Error 1
+make[1]: *** [Makefile:44: tflite-micro] Error 2
+make: *** [/home/maribu/Repos/software/RIOT/tests/pkg_tflite-micro/../../Makefile.include:803: pkg-build] Error 2
+
+Return value: 2

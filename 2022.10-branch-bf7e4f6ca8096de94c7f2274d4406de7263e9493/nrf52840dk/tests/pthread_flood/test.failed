@@ -1,0 +1,54 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/pthread_flood test
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Spawning pthreads
+.......
+created 7 pthreads
+created 7 threads
+wait for created pthreads to exit...
+{ "threads": [{ "name": "pthread, "stack_size": 256, "stack_used": 120}]}
+
+Context before hardfault:
+   r0: 0x200002f0
+   r1: 0x200002f4
+   r2: 0x200002f8
+   r3: 0x200002fc
+  r12: 0x20000300
+   lr: 0x20000304
+   pc: 0x00002404
+  psr: 0x01000000
+
+FSR/FAR:
+ CFSR: 0x00000092
+ HFSR: 0x40000000
+ DFSR: 0x00000000
+ AFSR: 0x00000000
+MMFAR: 0x200002f8
+Misc
+EXC_RET: 0xfffffffd
+Active thread: 2 "pthread"
+Attempting to reconstruct state for debugging...
+In GDB:
+  set $pc=0x2404
+  frame 0
+  bt
+
+ISR stack overflowed by at least 16 bytes.
+*** RIOT kernel panic:
+HARD FAULT HANDLER
+
+Timeout in expect script at "child.expect_exact("SUCCESS")" (tests/pthread_flood/tests/01-run.py:14)
+
+make: *** [/home/maribu/Repos/software/RIOT/makefiles/tests/tests.inc.mk:22: test] Error 1
+
+Return value: 2
