@@ -1,14 +1,16 @@
 make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/shell test
 
 
-socat - open:/dev/ttyACM1,b115200,echo=0,raw,cs8,parenb=0,cstopb=0 
+socat - open:/dev/ttyACM0,b115200,echo=0,raw,cs8,parenb=0,cstopb=0 
 
-> 
-> bufsize
-bufsize
+>bufsize
+ 
+> bufsize
 128
-> ________________________________________________________________________________________________________________________________verylong
-________________________________________________________________M�������,B V���՘�̟����f���fII'Bɫ�nɓA�����v�{*16I�IS꒸Timeout in expect script at "child.expect('shell: maximum line length exceeded')" (tests/shell/tests/01-run.py:173)
+________________________________________________________________________________________________________________________________verylong
+> ________________________________________________________________
+shell: command not found: ________________________________________________________________
+> �������,� V���՘�̟����f����fiIgB��nɓQ��\�WV�{*�4I�IS꒸Timeout in expect script at "child.expect('shell: maximum line length exceeded')" (tests/shell/tests/01-run.py:173)
 
 make: *** [/home/maribu/Repos/software/RIOT/makefiles/tests/tests.inc.mk:22: test] Error 1
 

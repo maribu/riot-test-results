@@ -1,7 +1,7 @@
 shell_lock is an experimental feature and only shows as a proof of concept how the shell could be protected with a password. Do not expect relevant security from it for production, since Man-in-the-Middle attacks are possible depending on the used connection method!
 r
 shell_lock is an experimental feature and only shows as a proof of concept how the shell could be protected with a password. Do not expect relevant security from it for production, since Man-in-the-Middle attacks are possible depending on the used connection method!
-socat - open:/dev/ttyACM1,b115200,echo=0,raw,cs8,parenb=0,cstopb=0 
+socat - open:/dev/ttyACM0,b115200,echo=0,raw,cs8,parenb=0,cstopb=0 
 Help: Press s to start test, r to print it is ready
 Help: Press s to start test, r to print it is ready
 Help: Press s to start test, r to print it is ready
@@ -10,8 +10,8 @@ Help: Press s to start test, r to print it is ready
 Help: Press s to start test, r to print it is ready
 Help: Press s to start test, r to print it is ready
 Help: Press s to start test, r to print it is ready
-READY
-s
+READYs
+
 START
 password
 test_shell_lock
@@ -30,8 +30,8 @@ pm                   interact with layered PM subsystem
 reboot               Reboot the node
 version              Prints current RIOT_VERSION
 lock
-> help
-lock
+> lock
+help
 > help
 The shell is locked. Enter a valid password to unlock.
 
@@ -52,8 +52,8 @@ password_
 Wrong password
 Password: _password
 _password
-Wrong password
-password
+Wrong passwordpassword
+
 Password: password
 Shell was unlocked.
 
@@ -68,5 +68,4 @@ version              Prints current RIOT_VERSIONhelp
 
 > help
 The shell is locked. Enter a valid password to unlock.
-
 

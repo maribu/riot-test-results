@@ -1,7 +1,7 @@
 r
-/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-Connect to serial port /dev/ttyACM1
+Connect to serial port /dev/ttyACM0
 /home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
   receiver_thread.setDaemon(1)
 Welcome to pyterm!
@@ -29,13 +29,13 @@ val = 1
 { "threads": [{ "name": "pthread", "stack_size": 1024, "stack_used": 416 }]}
 My arg: 2
 val = 2
-{ "threads": [{ "name": "pthread", "stack_size": 1024, "stack_used": 448 }]}
+{ "threads": [{ "name": "pthread", "stack_size": 1024, "stack_used": 416 }]}
 My arg: 3
 val = 6
 { "threads": [{ "name": "pthread", "stack_size": 1024, "stack_used": 416 }]}
 My arg: 4
 val = 24
-{ "threads": [{ "name": "pthread", "stack_size": 1024, "stack_used": 416 }]}
+{ "threads": [{ "name": "pthread", "stack_size": 1024, "stack_used": 448 }]}
 My arg: 5
 val = 120
 { "threads": [{ "name": "pthread", "stack_size": 1024, "stack_used": 416 }]}

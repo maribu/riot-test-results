@@ -1,8 +1,8 @@
 
 
-/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-Connect to serial port /dev/ttyACM1
+Connect to serial port /dev/ttyACM0
 /home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
   receiver_thread.setDaemon(1)
 Welcome to pyterm!
@@ -15,14 +15,14 @@ Current slot=0
 > curslothdr
 curslothdr
 Image magic_number: 0x544f4952
-Image Version: 0x63699f7e
+Image Version: 0x636af618
 compiling /home/maribu/Repos/software/RIOT/dist/tools/riotboot_gen_hdr/bin/genhdr...
 make: Nothing to be done for 'all'.
-creating /home/maribu/Repos/software/RIOT/tests/riotboot/bin/samr21-xpro/riotboot_files/slot1.1667866495.bin...
+creating /home/maribu/Repos/software/RIOT/tests/riotboot/bin/samr21-xpro/riotboot_files/slot1.1667954201.bin...
 [INFO] edbg binary not found - building it from source now
 CC= CFLAGS= make -C /home/maribu/Repos/software/RIOT/dist/tools/edbg
 [INFO] edbg binary successfully built!
-/home/maribu/Repos/software/RIOT/dist/tools/edbg/edbg.sh flash /home/maribu/Repos/software/RIOT/tests/riotboot/bin/samr21-xpro/riotboot_files/slot1.1667866495.bin
+/home/maribu/Repos/software/RIOT/dist/tools/edbg/edbg.sh flash /home/maribu/Repos/software/RIOT/tests/riotboot/bin/samr21-xpro/riotboot_files/slot1.1667954201.bin
 ### Flashing Target ###
 Debugger: ATMEL EDBG CMSIS-DAP ATML2127031800009225 01.1A.00FB (S)
 Clock frequency: 16.0 MHz
@@ -39,9 +39,9 @@ Done flashing
 
 
 
-/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-Connect to serial port /dev/ttyACM1
+Connect to serial port /dev/ttyACM0
 /home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
   receiver_thread.setDaemon(1)
 Welcome to pyterm!
@@ -54,9 +54,9 @@ Current slot=1
 > curslothdr
 curslothdr
 Image magic_number: 0x544f4952
-Image Version: 0x63699f7f
+Image Version: 0x636af619
 Image start address: 0x00020900
-Header chksum: 0x17b7a98c
+Header chksum: 0x72230028
 
 > getslotaddr 0
 getslotaddr 0
@@ -67,17 +67,17 @@ slot 0: metadata: 0x1000 image: 0x00001100
 slot 1: metadata: 0x20800 image: 0x00020900
 > compiling /home/maribu/Repos/software/RIOT/dist/tools/riotboot_gen_hdr/bin/genhdr...
 make: Nothing to be done for 'all'.
-creating /home/maribu/Repos/software/RIOT/tests/riotboot/bin/samr21-xpro/riotboot_files/slot0.1667866496.bin...
+creating /home/maribu/Repos/software/RIOT/tests/riotboot/bin/samr21-xpro/riotboot_files/slot0.1667954202.bin...
 [INFO] edbg binary not found - building it from source now
 CC= CFLAGS= make -C /home/maribu/Repos/software/RIOT/dist/tools/edbg
 [INFO] edbg binary successfully built!
-/home/maribu/Repos/software/RIOT/dist/tools/edbg/edbg.sh flash /home/maribu/Repos/software/RIOT/tests/riotboot/bin/samr21-xpro/riotboot_files/slot0.1667866496.bin
+/home/maribu/Repos/software/RIOT/dist/tools/edbg/edbg.sh flash /home/maribu/Repos/software/RIOT/tests/riotboot/bin/samr21-xpro/riotboot_files/slot0.1667954202.bin
 ### Flashing Target ###
 Debugger: ATMEL EDBG CMSIS-DAP ATML2127031800009225 01.1A.00FB (S)
 Clock frequency: 16.0 MHz
 Target: SAM R21G18 (Rev C)
 Verification...
-at address 0x1004 expected 0x80, read 0x7e
+at address 0x1004 expected 0x1a, read 0x18
 Error: verification failed
 Debugger: ATMEL EDBG CMSIS-DAP ATML2127031800009225 01.1A.00FB (S)
 Clock frequency: 16.0 MHz
@@ -88,9 +88,9 @@ Done flashing
 
 
 
-/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-Connect to serial port /dev/ttyACM1
+Connect to serial port /dev/ttyACM0
 /home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
   receiver_thread.setDaemon(1)
 Welcome to pyterm!
@@ -103,9 +103,9 @@ Current slot=0
 > curslothdr
 curslothdr
 Image magic_number: 0x544f4952
-Image Version: 0x63699f80
+Image Version: 0x636af61a
 Image start address: 0x00001100
-Header chksum: 0x27b9b18b
+Header chksum: 0x82250827
 
 > getslotaddr 0
 getslotaddr 0

@@ -1,7 +1,7 @@
 r
-/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-Connect to serial port /dev/ttyACM1
+Connect to serial port /dev/ttyACM0
 /home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
   receiver_thread.setDaemon(1)
 Welcome to pyterm!
@@ -11,16 +11,16 @@ s
 START
 main(): This is RIOT! (Version: buildtest)
 Testing clock: ZTIMER_MSEC
-i: 0 time: 4087 offset: 0
-i: 1 time: 4187 offset: 0
-i: 2 time: 4287 offset: 0
-i: 3 time: 4387 offset: 0
-i: 4 time: 4487 offset: 0
+i: 0 time: 3857 offset: 0
+i: 1 time: 3957 offset: 0
+i: 2 time: 4057 offset: 0
+i: 3 time: 4157 offset: 0
+i: 4 time: 4257 offset: 0
 Testing clock: ZTIMER_USEC
-i: 0 time: 4512045 offset: 48
-i: 1 time: 4522045 offset: 0
-i: 2 time: 4532045 offset: 0
-i: 3 time: 4542045 offset: 0
-i: 4 time: 4552045 offset: 0
+i: 0 time: 4282359 offset: 48
+i: 1 time: 4292359 offset: 0
+i: 2 time: 4302359 offset: 0
+i: 3 time: 4312359 offset: 0
+i: 4 time: 4322359 offset: 0
 Test successful.
 

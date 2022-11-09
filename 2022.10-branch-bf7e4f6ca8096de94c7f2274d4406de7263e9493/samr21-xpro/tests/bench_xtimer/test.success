@@ -1,7 +1,7 @@
 r
-/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-Connect to serial port /dev/ttyACM1
+Connect to serial port /dev/ttyACM0
 /home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
   receiver_thread.setDaemon(1)
 Welcome to pyterm!
@@ -15,13 +15,13 @@ xtimer benchmark application.
                      set() one    27008 / 1000 = 27
                   remove() one     1719 / 1000 = 1
           set() + remove() one    50010 / 1000 = 50
-  set() many increasing target   138239 / 1000 = 138
-               re-set()  first    20316 / 1000 = 20
-               re-set() middle   259222 / 1000 = 259
-               re-set()   last   493533 / 1000 = 493
+  set() many increasing target   138240 / 1000 = 138
+               re-set()  first    20315 / 1000 = 20
+               re-set() middle   259214 / 1000 = 259
+               re-set()   last   493532 / 1000 = 493
        remove() + set()  first    42363 / 1000 = 42
-       remove() + set() middle   283360 / 1000 = 283
-       remove() + set()   last   516386 / 1000 = 516
+       remove() + set() middle   283358 / 1000 = 283
+       remove() + set()   last   516385 / 1000 = 516
       remove() many decreasing   139350 / 1000 = 139
                   xtimer_now()     9009 / 1000 = 9
               sizeof(xtimer_t)    16000 / 1000 = 16

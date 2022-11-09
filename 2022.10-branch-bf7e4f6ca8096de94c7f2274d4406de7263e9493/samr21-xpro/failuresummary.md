@@ -17,11 +17,8 @@ Failures during compilation:
 
 Failures during test:
 - [examples/micropython](examples/micropython/test.failed)
-- [tests/congure_reno](tests/congure_reno/test.failed)
-- [tests/congure_test](tests/congure_test/test.failed)
 - [tests/gcoap_dns](tests/gcoap_dns/test.failed)
 - [tests/pbkdf2](tests/pbkdf2/test.failed)
 - [tests/periph_timer_short_relative_set](tests/periph_timer_short_relative_set/test.failed)
 - [tests/pthread_flood](tests/pthread_flood/test.failed)
 - [tests/shell](tests/shell/test.failed)
-- [tests/turo](tests/turo/test.failed)

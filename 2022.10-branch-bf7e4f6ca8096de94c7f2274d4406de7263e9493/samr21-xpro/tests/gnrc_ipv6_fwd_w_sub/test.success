@@ -1,8 +1,8 @@
 
 
-/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-Connect to serial port /dev/ttyACM1
+Connect to serial port /dev/ttyACM0
 /home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
   receiver_thread.setDaemon(1)
 Welcome to pyterm!
@@ -28,9 +28,9 @@ I got a subscription!
 00000010  02  CA  4B  EF  F4  C2  DE  01  20  01  0D  B8  00  00  AB  CD
 00000020  55  44  33  FF  FE  22  11  00  54  B8  59  AF  3A  B4  5C  85
 00000030  1E  CE  E2  EB  05  4E  A3  85
-> pktbuf
 pktbuf
+> pktbuf
 packet buffer: first byte: 0x20002388, last byte: 0x20002588 (size: 512)
   position of last byte used: 256
 ~ unused: 0x20002388 (next: (nil), size:  512) ~
-> 
+

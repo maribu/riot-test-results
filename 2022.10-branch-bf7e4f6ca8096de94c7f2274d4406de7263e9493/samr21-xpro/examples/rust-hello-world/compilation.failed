@@ -4,7 +4,7 @@ Building application "hello-world" for "samr21-xpro" with MCU "samd21".
 /bin/sh: rustup: not found
 /bin/sh: rustup: not found
 /bin/sh: rustup: not found
-Error: `cargo` command missing to build Rust modules. Please install as described on <https://doc.riot-os.org/using-rust.html>.
-make: *** [/home/maribu/Repos/software/RIOT/makefiles/cargo-targets.inc.mk:37: /home/maribu/Repos/software/RIOT/examples/rust-hello-world/bin/samr21-xpro/target/thumbv6m-none-eabi/release/librust_hello_world.a] Error 1
+Error: `c2rust` command missing to build Rust modules. Please install as described on <https://doc.riot-os.org/using-rust.html>.
+make: *** [/home/maribu/Repos/software/RIOT/makefiles/cargo-targets.inc.mk:38: /home/maribu/Repos/software/RIOT/examples/rust-hello-world/bin/samr21-xpro/target/thumbv6m-none-eabi/release/librust_hello_world.a] Error 1
 
 Return value: 2

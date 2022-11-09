@@ -1,7 +1,7 @@
 r
-/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-Connect to serial port /dev/ttyACM1
+Connect to serial port /dev/ttyACM0
 /home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
   receiver_thread.setDaemon(1)
 Welcome to pyterm!
@@ -14,13 +14,13 @@ ztimer benchmark application.
 
                      set() one    46008 / 1000 = 46
                   remove() one     1802 / 1000 = 1
-          set() + remove() one    89010 / 1000 = 89
-  set() many increasing target   141874 / 1000 = 141
+          set() + remove() one    89011 / 1000 = 89
+  set() many increasing target   141627 / 1000 = 141
                re-set()  first    46010 / 1000 = 46
-               re-set() middle    46135 / 1000 = 46
+               re-set() middle    46136 / 1000 = 46
                re-set()   last    46260 / 1000 = 46
-       remove() + set()  first    89010 / 1000 = 89
-       remove() + set() middle    89011 / 1000 = 89
+       remove() + set()  first    89011 / 1000 = 89
+       remove() + set() middle    89010 / 1000 = 89
        remove() + set()   last    89011 / 1000 = 89
       remove() many decreasing   169136 / 1000 = 169
                   ztimer_now()    12009 / 1000 = 12

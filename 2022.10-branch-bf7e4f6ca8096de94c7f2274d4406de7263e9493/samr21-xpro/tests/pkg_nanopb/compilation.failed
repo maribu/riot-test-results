@@ -3,6 +3,7 @@ rm -rf /home/maribu/Repos/software/RIOT/tests/pkg_nanopb/bin/samr21-xpro/pkg-bui
 Building application "tests_pkg_nanopb" for "samr21-xpro" with MCU "samd21".
 
 ../protoc --python_out=. nanopb.proto
+Failed to build nanopb_pb2.py: protoc --python_out=/home/maribu/Repos/software/RIOT/build/pkg/nanopb/generator/proto /home/maribu/Repos/software/RIOT/build/pkg/nanopb/generator/proto/nanopb.proto -I=/home/maribu/Repos/software/RIOT/build/pkg/nanopb/generator/proto -I/home/maribu/Repos/software/RIOT/build/pkg/nanopb/generator/proto
 
          *************************************************************
          *** Could not import the Google protobuf Python libraries ***

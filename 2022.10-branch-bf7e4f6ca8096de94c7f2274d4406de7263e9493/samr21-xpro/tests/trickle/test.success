@@ -1,7 +1,7 @@
 r
-/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-Connect to serial port /dev/ttyACM1
+Connect to serial port /dev/ttyACM0
 /home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
   receiver_thread.setDaemon(1)
 Welcome to pyterm!
@@ -11,18 +11,18 @@ s
 START
 main(): This is RIOT! (Version: buildtest)
 [START]
-now = 4019, t = 29
-now = 4067, t = 43
-now = 4180, t = 90
-now = 4403, t = 183
-now = 4761, t = 283
+now = 3788, t = 29
+now = 3836, t = 43
+now = 3949, t = 90
+now = 4172, t = 183
+now = 4530, t = 283
 [TRICKLE_RESET]
-now = 4772, t = 9
-now = 4812, t = 31
-now = 4863, t = 48
-now = 4994, t = 114
-now = 5180, t = 170
-now = 5761, t = 493
-now = 6294, t = 512
+now = 4541, t = 9
+now = 4581, t = 31
+now = 4632, t = 48
+now = 4764, t = 114
+now = 4950, t = 170
+now = 5531, t = 493
+now = 6064, t = 512
 [SUCCESS]
 

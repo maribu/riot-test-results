@@ -16,8 +16,8 @@ make[6]: Nothing to be done for 'compile-commands'.
 make[6]: Nothing to be done for 'compile-commands'.
 make[6]: Nothing to be done for 'compile-commands'.
 make[6]: Nothing to be done for 'compile-commands'.
-/bin/sh: Error: `cargo` command missing to build Rust modules. Please install as described on <https://doc.riot-os.org/using-rust.html>.: not found
-make[3]: *** [/home/maribu/Repos/software/RIOT/makefiles/cargo-targets.inc.mk:37: /home/maribu/Repos/software/RIOT/tests/rust_libs/bin/samr21-xpro/target/thumbv6m-none-eabi/release/librust_riotmodules_standalone.a] Error 1
+/bin/sh: Error: `c2rust` command missing to build Rust modules. Please install as described on <https://doc.riot-os.org/using-rust.html>.: not found
+make[3]: *** [/home/maribu/Repos/software/RIOT/makefiles/cargo-targets.inc.mk:38: /home/maribu/Repos/software/RIOT/tests/rust_libs/bin/samr21-xpro/target/thumbv6m-none-eabi/release/librust_riotmodules_standalone.a] Error 1
 make[2]: *** [/home/maribu/Repos/software/RIOT/Makefile.base:31: ALL--/home/maribu/Repos/software/RIOT/sys/rust_riotmodules_standalone] Error 2
 make[1]: *** [/home/maribu/Repos/software/RIOT/Makefile.base:31: ALL--/home/maribu/Repos/software/RIOT/sys] Error 2
 make: *** [/home/maribu/Repos/software/RIOT/tests/rust_libs/../../Makefile.include:738: application_tests_rust_libs.module] Error 2

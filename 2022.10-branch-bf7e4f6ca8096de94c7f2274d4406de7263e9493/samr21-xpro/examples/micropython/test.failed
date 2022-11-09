@@ -1,9 +1,9 @@
 make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/examples/micropython test
-Terminal program miniterm.py is required but not found in PATH.  Aborting.
-make[1]: *** [/home/maribu/Repos/software/RIOT/Makefile.include:868: cleanterm] Error 1
-Unexpected end of file in expect script at "child.expect_exact('boot.py: MicroPython says hello!')" (examples/micropython/tests/01-run.py:15)
+miniterm.py --eol LF "/dev/ttyACM0" "115200"  
+--- Miniterm on /dev/ttyACM0  115200,8,N,1 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+Timeout in expect script at "child.expect_exact('boot.py: MicroPython says hello!')" (examples/micropython/tests/01-run.py:15)
 
-Process already stopped
 make: *** [/home/maribu/Repos/software/RIOT/makefiles/tests/tests.inc.mk:22: test] Error 1
 
 Return value: 2

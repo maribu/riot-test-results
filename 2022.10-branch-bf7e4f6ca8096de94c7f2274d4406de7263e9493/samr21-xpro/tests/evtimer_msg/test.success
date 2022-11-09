@@ -1,7 +1,7 @@
 r
-/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-Connect to serial port /dev/ttyACM1
+Connect to serial port /dev/ttyACM0
 /home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
   receiver_thread.setDaemon(1)
 Welcome to pyterm!
@@ -20,10 +20,10 @@ ev #2 offset=341
 ev #3 offset=500
 ev #4 offset=2454
 Are the reception times of all 4 msgs close to the supposed values?
-At   4655 ms received msg 0: "#2 supposed to be 4655"
-.At   4997 ms received msg 1: "#0 supposed to be 4996"
-.At   5497 ms received msg 2: "#1 supposed to be 5496"
-.At   7951 ms received msg 3: "#3 supposed to be 7950"
+At   4402 ms received msg 0: "#2 supposed to be 4402"
+.At   4743 ms received msg 1: "#0 supposed to be 4743"
+.At   5243 ms received msg 2: "#1 supposed to be 5243"
+.At   7698 ms received msg 3: "#3 supposed to be 7697"
 .
 All tests successful
 

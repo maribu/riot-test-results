@@ -1,5 +1,5 @@
 r
-socat - open:/dev/ttyACM1,b115200,echo=0,raw,cs8,parenb=0,cstopb=0 
+socat - open:/dev/ttyACM0,b115200,echo=0,raw,cs8,parenb=0,cstopb=0 
 READY
 s
 START
