@@ -38,9 +38,9 @@ Installed development tools
                   doxygen: 1.9.5
                       git: git version 2.38.1
                      make: GNU Make 4.3
-                  openocd: Open On-Chip Debugger 0.11.0+dev-00855-gceba6fe97e-dirty (2022-06-07-18:03)
+                  openocd: Open On-Chip Debugger 0.12.0-rc2
                    python: Python 3.10.8
                   python2: missing
                   python3: Python 3.10.8
                    flake8: 5.0.4 (mccabe: 0.7.0, pycodestyle: 2.9.0, pyflakes: 2.5.0) CPython 3.10.8 on
-               coccinelle: missing
+               coccinelle: spatch version 1.1.1 compiled with OCaml version 4.14.0

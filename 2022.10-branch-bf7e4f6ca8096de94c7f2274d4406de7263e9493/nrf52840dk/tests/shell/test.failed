@@ -1,13 +1,12 @@
 make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/shell test
 
 
-socat - open:/dev/ttyACM0,b115200,echo=0,raw,cs8,parenb=0,cstopb=0 
-}]}
+socat - open:/dev/ttyACM2,b115200,echo=0,raw,cs8,parenb=0,cstopb=0 
+tack_used": 464}]}
 main(): This is RIOT! (Version: buildtest)
 test_shell.
 > main(): This is RIOT! (Version: buildtest)
-test_shell.
-> bufsize
+test_shelbufsize
 
 > 
 > bufsize

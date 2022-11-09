@@ -1,5 +1,6 @@
 r
-socat - open:/dev/ttyACM0,b115200,echo=0,raw,cs8,parenb=0,cstopb=0 
+socat - open:/dev/ttyACM2,b115200,echo=0,raw,cs8,parenb=0,cstopb=0 
+Hello
 Hello
 Hello
 Help: Press s to start test, r to print it is ready
@@ -1035,4 +1036,4 @@ Sample 1022
 Sample 1023
 
 RTT_MIN_OFFSET for nrf52840dk over 1024 samples: 3
-{ "
+{ "thr

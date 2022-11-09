@@ -17,7 +17,6 @@ Traceback (most recent call last):
   File "/home/maribu/Repos/software/RIOT/dist/tools/suit/suit-manifest-generator/bin/../suit_tool/compile.py", line 23, in <module>
     import cbor2 as cbor
 ModuleNotFoundError: No module named 'cbor2'
-2022-11-07 22:58:37 URL:https://www.dlbeer.co.nz/downloads/c25519-2017-10-05.zip [68419/68419] -> "/home/maribu/Repos/software/RIOT/build/pkg/c25519-2017-10-05.zip" [1]
 /home/maribu/Repos/software/RIOT/sys/suit/handlers_envelope.c: In function '_auth_handler':
 /home/maribu/Repos/software/RIOT/sys/suit/handlers_envelope.c:54:34: error: 'public_key' undeclared (first use in this function)
    54 |                       (uint8_t *)public_key, NULL, NULL);

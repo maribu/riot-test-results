@@ -1,7 +1,7 @@
 r
-/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM2" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-Connect to serial port /dev/ttyACM0
+Connect to serial port /dev/ttyACM2
 /home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
   receiver_thread.setDaemon(1)
 Welcome to pyterm!
@@ -29,11 +29,11 @@ version              Prints current RIOT_VERSION
 > ps
 	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     | runtime  | switches  | runtime_usec 
 	  - | isr_stack            | -        - |   - |    512 (  200) (  312) | 0x20000000 | 0x200001c8
-	  1 | main                 | running  Q |   7 |   1536 (  852) (  684) | 0x20001900 | 0x20001bac  |  1.111% |        47  |      45265 
-	  2 | thread               | bl rx    _ |   6 |   1024 (  428) (  596) | 0x20000424 | 0x20000754  |  0.198% |        49  |       8062 
-	  3 | thread               | bl mutex _ |   6 |   1024 (  428) (  596) | 0x20000824 | 0x20000b3c  |  0.277% |        52  |      11284 
-	  4 | thread               | bl rx    _ |   6 |   1024 (  428) (  596) | 0x20000c24 | 0x20000f54  |  0.356% |        55  |      14506 
-	  5 | thread               | bl rx    _ |   6 |   1024 (  428) (  596) | 0x20001024 | 0x20001354  |  0.454% |        59  |      18494 
-	  6 | thread               | bl rx    _ |   6 |   1024 (  428) (  596) | 0x20001424 | 0x20001754  |  0.154% |        61  |       6298 
+	  1 | main                 | running  Q |   7 |   1536 (  852) (  684) | 0x20001900 | 0x20001bac  |  1.103% |        46  |      44820 
+	  2 | thread               | bl rx    _ |   6 |   1024 (  428) (  596) | 0x20000424 | 0x20000754  |  0.198% |        49  |       8064 
+	  3 | thread               | bl mutex _ |   6 |   1024 (  428) (  596) | 0x20000824 | 0x20000b3c  |  0.277% |        52  |      11286 
+	  4 | thread               | bl rx    _ |   6 |   1024 (  428) (  596) | 0x20000c24 | 0x20000f54  |  0.357% |        55  |      14512 
+	  5 | thread               | bl mutex _ |   6 |   1024 (  428) (  596) | 0x20001024 | 0x2000133c  |  0.455% |        58  |      18493 
+	  6 | thread               | bl rx    _ |   6 |   1024 (  428) (  596) | 0x20001424 | 0x20001754  |  0.155% |        61  |       6297 
 	    | SUM                  |            |     |   7168 ( 3192) ( 3976)
 > 

@@ -1,7 +1,7 @@
 make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/pbkdf2 test
 r
-socat - open:/dev/ttyACM0,b115200,echo=0,raw,cs8,parenb=0,cstopb=0 
-ed": 280}]}
+socat - open:/dev/ttyACM2,b115200,echo=0,raw,cs8,parenb=0,cstopb=0 
+ "stack_used": 280}]}
 Help: Press s to start test, r to print it is ready
 Help: Press s to start test, r to print it is ready
 READY
@@ -15,10 +15,9 @@ c2FsdA==
 {ready}
 1
 VawEblbjCJ/sFpHCJUS2BflBhSFt3gRl5oudV8INrLw=
-{ready}
-
+{re
 r
-socat - open:/dev/ttyACM0,b115200,echo=0,raw,cs8,parenb=0,cstopb=0 
+socat - open:/dev/ttyACM2,b115200,echo=0,raw,cs8,parenb=0,cstopb=0 
 Help: Press s to start test, r to print it is ready
 READY
 s

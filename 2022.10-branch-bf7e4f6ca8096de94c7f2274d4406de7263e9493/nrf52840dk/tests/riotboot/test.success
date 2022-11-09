@@ -1,8 +1,8 @@
 
 
-/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM2" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-Connect to serial port /dev/ttyACM0
+Connect to serial port /dev/ttyACM2
 /home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
   receiver_thread.setDaemon(1)
 Welcome to pyterm!
@@ -15,15 +15,15 @@ Current slot=0
 > curslothdr
 curslothdr
 Image magic_number: 0x544f4952
-Image Version: 0x6369a013
+Image Version: 0x636af271
 compiling /home/maribu/Repos/software/RIOT/dist/tools/riotboot_gen_hdr/bin/genhdr...
 make: Nothing to be done for 'all'.
-creating /home/maribu/Repos/software/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot1.1667866644.bin...
-/home/maribu/Repos/software/RIOT/dist/tools/openocd/openocd.sh flash /home/maribu/Repos/software/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot1.1667866644.bin
+creating /home/maribu/Repos/software/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot1.1667953266.bin...
+/home/maribu/Repos/software/RIOT/dist/tools/openocd/openocd.sh flash /home/maribu/Repos/software/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot1.1667953266.bin
 ### Flashing Target ###
 Binfile detected, adding ROM base address: 0x00000000
 Flashing with IMAGE_OFFSET: 0x00081000
-Open On-Chip Debugger 0.12.0-rc1+dev-snapshot (2022-10-17-12:58)
+Open On-Chip Debugger 0.12.0-rc2
 Licensed under GNU GPL v2
 For bug reports, read
 	http://openocd.org/doc/doxygen/bugs.html
@@ -38,7 +38,7 @@ Info : SWD DPIDR 0x2ba01477
 Info : [nrf52.cpu] Cortex-M4 r0p1 processor detected
 Info : [nrf52.cpu] target has 6 breakpoints, 4 watchpoints
 Info : starting gdb server for nrf52.cpu on 0
-Info : Listening on port 36573 for gdb connections
+Info : Listening on port 36545 for gdb connections
     TargetName         Type       Endian TapName            State       
 --  ------------------ ---------- ------ ------------------ ------------
  0* nrf52.cpu          cortex_m   little nrf52.cpu          halted
@@ -48,18 +48,18 @@ xPSR: 0x01000000 pc: 0x0000033c msp: 0x20000200
 Info : nRF52840-xxAA(build code: C0) 1024kB Flash, 256kB RAM
 Warn : Adding extra erase range, 0x000847f8 .. 0x00084fff
 auto erase enabled
-wrote 14328 bytes from file /home/maribu/Repos/software/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot1.1667866644.bin in 0.970952s (14.411 KiB/s)
+wrote 14328 bytes from file /home/maribu/Repos/software/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot1.1667953266.bin in 0.938884s (14.903 KiB/s)
 
-verified 14328 bytes in 0.079892s (175.139 KiB/s)
+verified 14328 bytes in 0.073795s (189.609 KiB/s)
 
 shutdown command invoked
 Done flashing
 
 
 
-/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM2" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-Connect to serial port /dev/ttyACM0
+Connect to serial port /dev/ttyACM2
 /home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
   receiver_thread.setDaemon(1)
 Welcome to pyterm!
@@ -72,9 +72,9 @@ Current slot=1
 > curslothdr
 curslothdr
 Image magic_number: 0x544f4952
-Image Version: 0x6369a014
+Image Version: 0x636af272
 Image start address: 0x00081400
-Header chksum: 0x3011b527
+Header chksum: 0x798d0787
 
 > getslotaddr 0
 getslotaddr 0
@@ -85,12 +85,12 @@ slot 0: metadata: 0x2000 image: 0x00002400
 slot 1: metadata: 0x81000 image: 0x00081400
 > compiling /home/maribu/Repos/software/RIOT/dist/tools/riotboot_gen_hdr/bin/genhdr...
 make: Nothing to be done for 'all'.
-creating /home/maribu/Repos/software/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot0.1667866645.bin...
-/home/maribu/Repos/software/RIOT/dist/tools/openocd/openocd.sh flash /home/maribu/Repos/software/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot0.1667866645.bin
+creating /home/maribu/Repos/software/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot0.1667953267.bin...
+/home/maribu/Repos/software/RIOT/dist/tools/openocd/openocd.sh flash /home/maribu/Repos/software/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot0.1667953267.bin
 ### Flashing Target ###
 Binfile detected, adding ROM base address: 0x00000000
 Flashing with IMAGE_OFFSET: 0x00002000
-Open On-Chip Debugger 0.12.0-rc1+dev-snapshot (2022-10-17-12:58)
+Open On-Chip Debugger 0.12.0-rc2
 Licensed under GNU GPL v2
 For bug reports, read
 	http://openocd.org/doc/doxygen/bugs.html
@@ -105,7 +105,7 @@ Info : SWD DPIDR 0x2ba01477
 Info : [nrf52.cpu] Cortex-M4 r0p1 processor detected
 Info : [nrf52.cpu] target has 6 breakpoints, 4 watchpoints
 Info : starting gdb server for nrf52.cpu on 0
-Info : Listening on port 46243 for gdb connections
+Info : Listening on port 39951 for gdb connections
     TargetName         Type       Endian TapName            State       
 --  ------------------ ---------- ------ ------------------ ------------
  0* nrf52.cpu          cortex_m   little nrf52.cpu          halted
@@ -115,18 +115,18 @@ xPSR: 0x01000000 pc: 0x0000033c msp: 0x20000200
 Info : nRF52840-xxAA(build code: C0) 1024kB Flash, 256kB RAM
 Warn : Adding extra erase range, 0x000057f8 .. 0x00005fff
 auto erase enabled
-wrote 14328 bytes from file /home/maribu/Repos/software/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot0.1667866645.bin in 0.969203s (14.437 KiB/s)
+wrote 14328 bytes from file /home/maribu/Repos/software/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot0.1667953267.bin in 0.939209s (14.898 KiB/s)
 
-verified 14328 bytes in 0.079287s (176.475 KiB/s)
+verified 14328 bytes in 0.074403s (188.059 KiB/s)
 
 shutdown command invoked
 Done flashing
 
 
 
-/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM2" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-Connect to serial port /dev/ttyACM0
+Connect to serial port /dev/ttyACM2
 /home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
   receiver_thread.setDaemon(1)
 Welcome to pyterm!
@@ -139,9 +139,9 @@ Current slot=0
 > curslothdr
 curslothdr
 Image magic_number: 0x544f4952
-Image Version: 0x6369a015
+Image Version: 0x636af273
 Image start address: 0x00002400
-Header chksum: 0x500dc520
+Header chksum: 0x99891780
 
 > getslotaddr 0
 getslotaddr 0

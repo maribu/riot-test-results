@@ -1,16 +1,16 @@
 
 
-/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM2" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-Connect to serial port /dev/ttyACM0
+Connect to serial port /dev/ttyACM2
 /home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
   receiver_thread.setDaemon(1)
 Welcome to pyterm!
 Type '/exit' to exit.
 
 > 
-heap
 > heap
+heap
 heap: 259576 (used 2500, free 257076) [bytes]
 > malloc 100
 malloc 100
@@ -24,4 +24,4 @@ freeing 0x200013d0
 > heap
 heap
 heap: 259576 (used 2500, free 257076) [bytes]
-
+> 

@@ -18,14 +18,11 @@ Failures during compilation:
 - [tests/suit_manifest](tests/suit_manifest/compilation.failed)
 
 Failures during test:
-- [examples/micropython](examples/micropython/test.failed)
-- [tests/congure_reno](tests/congure_reno/test.failed)
-- [tests/congure_test](tests/congure_test/test.failed)
 - [tests/gcoap_dns](tests/gcoap_dns/test.failed)
+- [tests/gnrc_ipv6_nib_6ln](tests/gnrc_ipv6_nib_6ln/test.failed)
 - [tests/pbkdf2](tests/pbkdf2/test.failed)
 - [tests/periph_timer_short_relative_set](tests/periph_timer_short_relative_set/test.failed)
 - [tests/pkg_edhoc_c](tests/pkg_edhoc_c/test.failed)
 - [tests/pthread_flood](tests/pthread_flood/test.failed)
 - [tests/shell](tests/shell/test.failed)
-- [tests/turo](tests/turo/test.failed)
 - [tests/unittests](tests/unittests/test.failed)
