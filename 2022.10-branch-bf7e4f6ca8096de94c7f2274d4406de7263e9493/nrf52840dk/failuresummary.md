@@ -18,7 +18,6 @@ Failures during compilation:
 - [tests/suit_manifest](tests/suit_manifest/compilation.failed)
 
 Failures during test:
-- [tests/gcoap_dns](tests/gcoap_dns/test.failed)
 - [tests/gnrc_ipv6_nib_6ln](tests/gnrc_ipv6_nib_6ln/test.failed)
 - [tests/pbkdf2](tests/pbkdf2/test.failed)
 - [tests/periph_timer_short_relative_set](tests/periph_timer_short_relative_set/test.failed)

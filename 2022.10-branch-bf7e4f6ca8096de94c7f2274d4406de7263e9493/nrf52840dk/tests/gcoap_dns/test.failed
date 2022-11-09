@@ -1,8 +1,0 @@
-make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/gcoap_dns test
-Traceback (most recent call last):
-  File "/home/maribu/Repos/software/RIOT/tests/gcoap_dns/tests/01-run.py", line 12, in <module>
-    from scapy.all import DNS, DNSQR
-ModuleNotFoundError: No module named 'scapy'
-make: *** [/home/maribu/Repos/software/RIOT/makefiles/tests/tests.inc.mk:22: test] Error 1
-
-Return value: 2

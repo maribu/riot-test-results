@@ -1,0 +1,211 @@
+/usr/lib/python3.10/site-packages/scapy/layers/ipsec.py:471: CryptographyDeprecationWarning: Blowfish has been deprecated
+  cipher=algorithms.Blowfish,
+/usr/lib/python3.10/site-packages/scapy/layers/ipsec.py:485: CryptographyDeprecationWarning: CAST5 has been deprecated
+  cipher=algorithms.CAST5,
+
+
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM1
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> test_creds_cmd (__main__.TestGCoAPDNS) ... creds
+
+> creds
+usage: creds -d <cred_tag>
+       creds <cred_tag> <psk_id> <psk>
+creds -d
+> creds -d
+usage: creds -d <cred_tag>
+creds -d 48970
+       creds <cred_tag> <psk_id> <psk>
+> creds -d 48970
+Successfully removed credentials with tag 48970
+> creds 0 ni8Oozoh eiyit3iF
+creds 0 ni8Oozoh eiyit3iF
+usage: creds -d <cred_tag>
+       creds <cred_tag> <psk_id> <psk>
+> creds 35528 Jizaef3aiX4wah0ein3yaeth9Roobieyu ohk7iZae
+creds 35528 Jizaef3aiX4wah0ein3yaeth9Roobieyu ohk7iZae
+PSK ID too long (max. 32 bytes allowed)
+creds 13998 Eiquahd8 aegheT8aeng7Oht0aecha3lohWail4iej
+> creds 13998 Eiquahd8 aegheT8aeng7Oht0aecha3lohWail4iej
+PSK too long (max. 32 bytes allowed)
+> creds 52411 eWiu5Doh pahzu5Ie
+creds 52411 eWiu5Doh pahzu5Ie
+Successfully added creds: 52411, eWiu5Doh, pahzu5Ie
+creds 52412 eWiu5Doh pahzu5Ie
+> creds 52412 eWiu5Doh pahzu5Ie
+Successfully added creds: 52412, eWiu5Doh, pahzu5Ie
+> creds 52413 eWiu5Doh pahzu5Ie
+creds 52413 eWiu5Doh pahzu5Ie
+Successfully added creds: 52413, eWiu5Doh, pahzu5Ie
+creds 52414 eWiu5Doh pahzu5Ie
+> creds 52414 eWiu5Doh pahzu5Ie
+Successfully added creds: 52414, eWiu5Doh, pahzu5Ie
+> creds 8132 AhXah6gu ohDahpi9
+creds 8132 AhXah6gu ohDahpi9
+Unable to add credential: Not enough space
+creds -d 52411
+> creds -d 52411
+Successfully removed credentials with tag 52411
+> creds -d 52412
+creds -d 52412
+Successfully removed credentials with tag 52412
+> creds -d 52413
+creds -d 52413
+Successfully removed credentials with tag 52413
+> creds -d 52414
+creds -d 52414
+Successfully removed credentials with tag 52414
+> ok
+test_doc_success (__main__.TestGCoAPDNS) ... resp 65 000081000001000100000000076578616d706c65036f726700
+resp 65 000081000001000100000000076578616d706c65036f726700
+Successfully set response with code 2.01
+00000000  00  00  81  00  00  01  00  01  00  00  00  00  07  65  78  61
+00000010  6D  70  6C  65  03  6F  72  67  00
+resp -c 001c000100001c00010000012c001020010db8000000000000
+> resp -c 001c000100001c00010000012c001020010db8000000000000
+Successfully continued response
+00000000  00  1C  00  01  00  00  1C  00  01  00  00  01  2C  00  10  20
+00000010  01  0D  B8  00  00  00  00  00  00
+> resp -c 000000000001
+resp -c 000000000001
+Successfully continued response
+00000000  00  00  00  00  00  01
+> resp
+resp
+00000000  00  00  81  00  00  01  00  01  00  00  00  00  07  65  78  61
+00000010  6D  70  6C  65  03  6F  72  67  00  00  1C  00  01  00  00  1C
+00000020  00  01  00  00  01  2C  00  10  20  01  0D  B8  00  00  00  00
+00000030  00  00  00  00  00  00  00  01
+uri coap://[::1]
+> uri coap://[::1]
+Successfully added URI coap://[::1]
+> query example.org
+query example.org
+Hostname example.org resolves to 2001:db8::1 (IPv6)
+> query example.org inet6
+query example.org inet6
+Hostname example.org resolves to 2001:db8::1 (IPv6)
+> query example.org inet
+query example.org inet
+Unable to resolve query: Bad message
+> resp 65 000081000001000100000000076578616d706c65036f726700
+resp 65 000081000001000100000000076578616d706c65036f726700
+Successfully set response with code 2.01
+00000000  00  00  81  00  00  01  00  01  00  00  00  00  07  65  78  61
+00000010  6D  70  6C  65  03  6F  72  67  00
+> resp -c 0001000100000100010000012c0004c0000001
+resp -c 0001000100000100010000012c0004c0000001
+Successfully continued response
+00000000  00  01  00  01  00  00  01  00  01  00  00  01  2C  00  04  C0
+00000010  00  00  01
+> resp
+resp
+00000000  00  00  81  00  00  01  00  01  00  00  00  00  07  65  78  61
+00000010  6D  70  6C  65  03  6F  72  67  00  00  01  00  01  00  00  01
+00000020  00  01  00  00  01  2C  00  04  C0  00  00  01
+> query example.org inet
+query example.org inet
+Hostname example.org resolves to 192.0.0.1 (IPv4)
+> has_dns_cache
+has_dns_cache
+DNS cache does not exist
+> query example.org inet6
+query example.org inet6
+Unable to resolve query: Bad message
+> ok
+test_embedded_unittests (__main__.TestGCoAPDNS) ... unittests
+unittests
+..........
+OK (10 tests)
+ok
+test_proxy_cmd (__main__.TestGCoAPDNS) ... proxy
+Be aware that URI and credentials are now reset.
+> proxy
+usage: proxy [<proxy URI>|-]
+> proxy coap://[2001:db8::1]/
+proxy coap://[2001:db8::1]/
+Unable to set proxy URI: Not supported
+> proxy -
+proxy -
+Successfully reset proxy URI
+ok
+test_resp_cmd (__main__.TestGCoAPDNS) ... resp 66 abcdef0123456789abcdef0123456789abcdef
+
+> resp 66 abcdef0123456789abcdef0123456789abcdef
+Successfully set response with code 2.02
+00000000  AB  CD  EF  01  23  45  67  89  AB  CD  EF  01  23  45  67  89
+00000010  AB  CD  EF
+resp
+> resp
+00000000  AB  CD  EF  01  23  45  67  89  AB  CD  EF  01  23  45  67  89
+00000010  AB  CD  EF
+resp 130
+> resp 130
+Successfully set response code 4.02
+resp 0
+> resp 0
+Successfully set response code 0.00
+resp 65 000001000000000000000000
+> resp 65 000001000000000000000000
+Successfully set response with code 2.01
+00000000  00  00  01  00  00  00  00  00  00  00  00  00
+resp
+> resp
+00000000  00  00  01  00  00  00  00  00  00  00  00  00
+resp 65 000081000001000100000000076578616d706c65036f726700
+> resp 65 000081000001000100000000076578616d706c65036f726700
+Successfully set response with code 2.01
+00000000  00  00  81  00  00  01  00  01  00  00  00  00  07  65  78  61
+00000010  6D  70  6C  65  03  6F  72  67  00
+> resp -c 001c000100001c00010000012c001020010db8000000000000
+resp -c 001c000100001c00010000012c001020010db8000000000000
+Successfully continued response
+00000000  00  1C  00  01  00  00  1C  00  01  00  00  01  2C  00  10  20
+00000010  01  0D  B8  00  00  00  00  00  00
+resp -c 000000000001
+> resp -c 000000000001
+Successfully continued response
+00000000  00  00  00  00  00  01
+> resp
+resp
+00000000  00  00  81  00  00  01  00  01  00  00  00  00  07  65  78  61
+00000010  6D  70  6C  65  03  6F  72  67  00  00  1C  00  01  00  00  1C
+00000020  00  01  00  00  01  2C  00  10  20  01  0D  B8  00  00  00  00
+00000030  00  00  00  00  00  00  00  01
+> resp 0
+resp 0
+Successfully set response code 0.00
+ok
+test_uri_cmd (__main__.TestGCoAPDNS) ... uri
+> uri
+usage: uri -d
+       uri <uri>
+uri https://example.org
+> uri https://example.org
+Unable to set URI: Invalid argument
+> uri coap://example.org
+uri coap://example.org
+Successfully added URI coap://example.org
+> uri
+uri
+coap://example.org
+uri -d
+> uri -d
+Successfully reset URI
+uri
+
+> uri
+usage: uri -d
+       uri <uri>
+ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 7.829s
+
+OK
