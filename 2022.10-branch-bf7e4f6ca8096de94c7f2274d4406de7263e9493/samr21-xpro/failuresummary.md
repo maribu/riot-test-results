@@ -17,7 +17,6 @@ Failures during compilation:
 
 Failures during test:
 - [examples/micropython](examples/micropython/test.failed)
-- [tests/gcoap_dns](tests/gcoap_dns/test.failed)
 - [tests/pbkdf2](tests/pbkdf2/test.failed)
 - [tests/periph_timer_short_relative_set](tests/periph_timer_short_relative_set/test.failed)
 - [tests/pthread_flood](tests/pthread_flood/test.failed)
