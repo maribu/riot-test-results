@@ -13,7 +13,6 @@ Failures during compilation:
 - [tests/suit_manifest](tests/suit_manifest/compilation.failed)
 
 Failures during test:
-- [tests/gcoap_dns](tests/gcoap_dns/test.failed)
 - [tests/periph_timer_short_relative_set](tests/periph_timer_short_relative_set/test.failed)
 - [tests/pkg_edhoc_c](tests/pkg_edhoc_c/test.failed)
 - [tests/pkg_tinyvcdiff](tests/pkg_tinyvcdiff/test.failed)
