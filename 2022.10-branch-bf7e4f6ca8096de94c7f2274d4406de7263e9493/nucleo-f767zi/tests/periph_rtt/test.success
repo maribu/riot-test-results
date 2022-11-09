@@ -1,0 +1,42 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM1
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+
+RIOT RTT low-level driver test
+RTT configuration:
+RTT_MAX_VALUE: 0x0000ffff
+RTT_FREQUENCY: 1024
+
+Testing the tick conversion
+Trying to convert 1 to seconds and back
+Trying to convert 256 to seconds and back
+Trying to convert 65536 to seconds and back
+Trying to convert 16777216 to seconds and back
+Trying to convert 2147483648 to seconds and back
+All ok
+
+Initializing the RTT driver
+RTC mem OK
+This test will now display 'Hello' every 5 seconds
+
+RTT now: 3
+Setting initial alarm to now + 5 s (5123)
+rtt_get_alarm() PASSED
+RTC mem OK
+Done setting up the RTT, wait for many Hellos
+{ "threads": [{ "name": "main", "stack_size": 1536, "stack_used": 408 }]}
+Hello
+Hello
+Hello
+Hello
+Hello
+

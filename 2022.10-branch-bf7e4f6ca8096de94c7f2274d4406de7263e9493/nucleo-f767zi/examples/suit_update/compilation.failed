@@ -1,0 +1,29 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/examples/suit_update clean all
+# Reset package to checkout state.
+rm -rf /home/maribu/Repos/software/RIOT/build/pkg/c25519
+rm -rf /home/maribu/Repos/software/RIOT/examples/suit_update/bin/nucleo-f767zi/pkg-build/libcose
+rm -rf /home/maribu/Repos/software/RIOT/examples/suit_update/bin/nucleo-f767zi/pkg-build/nanocbor
+Building application "suit_update" for "nucleo-f767zi" with MCU "stm32".
+
+suit: generating key in /home/maribu/Repos/software/RIOT/examples/suit_update/bin/nucleo-f767zi
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/dist/tools/suit/suit-manifest-generator/bin/suit-tool", line 25, in <module>
+    from suit_tool import clidriver
+  File "/home/maribu/Repos/software/RIOT/dist/tools/suit/suit-manifest-generator/bin/../suit_tool/clidriver.py", line 23, in <module>
+    from suit_tool import create, sign, parse, get_pubkey, keygen, sever #, verify, cert, init
+  File "/home/maribu/Repos/software/RIOT/dist/tools/suit/suit-manifest-generator/bin/../suit_tool/create.py", line 19, in <module>
+    from suit_tool.compile import compile_manifest
+  File "/home/maribu/Repos/software/RIOT/dist/tools/suit/suit-manifest-generator/bin/../suit_tool/compile.py", line 23, in <module>
+    import cbor2 as cbor
+ModuleNotFoundError: No module named 'cbor2'
+/home/maribu/Repos/software/RIOT/sys/suit/handlers_envelope.c: In function '_auth_handler':
+/home/maribu/Repos/software/RIOT/sys/suit/handlers_envelope.c:54:34: error: 'public_key' undeclared (first use in this function)
+   54 |                       (uint8_t *)public_key, NULL, NULL);
+      |                                  ^~~~~~~~~~
+/home/maribu/Repos/software/RIOT/sys/suit/handlers_envelope.c:54:34: note: each undeclared identifier is reported only once for each function it appears in
+make[3]: *** [/home/maribu/Repos/software/RIOT/Makefile.base:146: /home/maribu/Repos/software/RIOT/examples/suit_update/bin/nucleo-f767zi/suit/handlers_envelope.o] Error 1
+make[2]: *** [/home/maribu/Repos/software/RIOT/Makefile.base:31: ALL--/home/maribu/Repos/software/RIOT/sys/suit] Error 2
+make[1]: *** [/home/maribu/Repos/software/RIOT/Makefile.base:31: ALL--/home/maribu/Repos/software/RIOT/sys] Error 2
+make: *** [/home/maribu/Repos/software/RIOT/examples/suit_update/../../Makefile.include:738: application_suit_update.module] Error 2
+
+Return value: 2

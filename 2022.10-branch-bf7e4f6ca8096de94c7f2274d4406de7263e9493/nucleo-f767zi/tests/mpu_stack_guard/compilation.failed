@@ -1,0 +1,15 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/mpu_stack_guard clean all
+Building application "tests_mpu_stack_guard" for "nucleo-f767zi" with MCU "stm32".
+
+/home/maribu/Repos/software/RIOT/tests/mpu_stack_guard/main.c: In function 'recurse':
+/home/maribu/Repos/software/RIOT/tests/mpu_stack_guard/main.c:41:12: error: infinite recursion detected [-Werror=infinite-recursion]
+   41 | static int recurse(int counter)
+      |            ^~~~~~~
+/home/maribu/Repos/software/RIOT/tests/mpu_stack_guard/main.c:56:12: note: recursive call
+   56 |     return recurse(counter) + recurse(counter);
+      |            ^~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+make[1]: *** [/home/maribu/Repos/software/RIOT/Makefile.base:146: /home/maribu/Repos/software/RIOT/tests/mpu_stack_guard/bin/nucleo-f767zi/application_tests_mpu_stack_guard/main.o] Error 1
+make: *** [/home/maribu/Repos/software/RIOT/tests/mpu_stack_guard/../../Makefile.include:738: application_tests_mpu_stack_guard.module] Error 2
+
+Return value: 2

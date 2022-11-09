@@ -1,0 +1,41 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/riotboot flash-only
+/home/maribu/Repos/software/RIOT/dist/tools/openocd/openocd.sh flash /home/maribu/Repos/software/RIOT/tests/riotboot/bin/nucleo-f767zi/riotboot_files/slot0-extended.bin
+### Flashing Target ###
+Binfile detected, adding ROM base address: 0x00000000
+Flashing with IMAGE_OFFSET: 0x00000000
+Open On-Chip Debugger 0.12.0-rc2
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+
+Info : clock speed 2000 kHz
+Info : STLINK V2J29M18 (API v2) VID:PID 0483:374B
+Info : Target voltage: 3.237795
+Info : [stm32f7x.cpu] Cortex-M7 r1p0 processor detected
+Info : [stm32f7x.cpu] target has 8 breakpoints, 4 watchpoints
+Info : starting gdb server for stm32f7x.cpu on 0
+Info : Listening on port 34775 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32f7x.cpu       hla_target little stm32f7x.cpu       reset
+
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+[stm32f7x.cpu] halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08000cd8 msp: 0x20000200
+Info : device id = 0x10016451
+Info : flash size = 2048 KiB
+Info : Single Bank 2048 kiB STM32F76x/77x found
+Info : flash size = 1024 bytes
+Warn : no flash bank found for address 0x00000000
+auto erase enabled
+wrote 0 bytes from file /home/maribu/Repos/software/RIOT/tests/riotboot/bin/nucleo-f767zi/riotboot_files/slot0-extended.bin in 0.001282s (0.000 KiB/s)
+
+Error: error executing cortex_m crc algorithm
+
+make: *** [/home/maribu/Repos/software/RIOT/tests/riotboot/../../Makefile.include:841: flash-only] Error 1
+
+Return value: 2

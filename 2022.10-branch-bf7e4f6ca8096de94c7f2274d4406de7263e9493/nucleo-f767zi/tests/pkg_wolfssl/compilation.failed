@@ -1,0 +1,17 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/pkg_wolfssl clean all
+rm -rf /home/maribu/Repos/software/RIOT/tests/pkg_wolfssl/bin/nucleo-f767zi/pkg-build/wolfssl
+Building application "tests_pkg_wolfssl" for "nucleo-f767zi" with MCU "stm32".
+
+/home/maribu/Repos/software/RIOT/build/pkg/wolfssl/wolfcrypt/src/ge_low_mem.c:179:30: error: argument 1 of type 'unsigned char[64]' with mismatched bound [-Werror=array-parameter=]
+  179 | void sc_reduce(unsigned char x[64])
+      |                ~~~~~~~~~~~~~~^~~~~
+In file included from /home/maribu/Repos/software/RIOT/build/pkg/wolfssl/wolfcrypt/src/ge_low_mem.c:34:
+/home/maribu/Repos/software/RIOT/build/pkg/wolfssl/wolfssl/wolfcrypt/ge_operations.h:81:36: note: previously declared as 'byte *' {aka 'unsigned char *'}
+   81 | WOLFSSL_LOCAL void sc_reduce(byte* s);
+      |                              ~~~~~~^
+cc1: all warnings being treated as errors
+make[2]: *** [/home/maribu/Repos/software/RIOT/Makefile.base:146: /home/maribu/Repos/software/RIOT/tests/pkg_wolfssl/bin/nucleo-f767zi/wolfcrypt/ge_low_mem.o] Error 1
+make[1]: *** [Makefile:27: wolfcrypt] Error 2
+make: *** [/home/maribu/Repos/software/RIOT/tests/pkg_wolfssl/../../Makefile.include:803: pkg-build] Error 2
+
+Return value: 2

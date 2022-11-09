@@ -1,0 +1,28 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM1
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+[START]
+now = 3233, t = 11
+now = 3260, t = 20
+now = 3330, t = 56
+now = 3434, t = 94
+now = 3599, t = 129
+[TRICKLE_RESET]
+now = 3611, t = 10
+now = 3648, t = 29
+now = 3700, t = 47
+now = 3830, t = 111
+now = 4087, t = 238
+now = 4390, t = 284
+now = 5439, t = 819
+[SUCCESS]
+
