@@ -1,7 +1,3 @@
-Failures during compilation:
-- [tests/rust_libs](tests/rust_libs/compilation.failed)
-- [tests/rust_minimal](tests/rust_minimal/compilation.failed)
-
 Failures during test:
 - [tests/gnrc_ipv6_nib_6ln](tests/gnrc_ipv6_nib_6ln/test.failed)
 - [tests/pbkdf2](tests/pbkdf2/test.failed)
