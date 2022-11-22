@@ -1,0 +1,67 @@
+r
+socat - open:/dev/ttyACM2,b115200,echo=0,raw,cs8,parenb=0,cstopb=0 
+
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+{ready}
+passwd
+{ready}
+c2FsdA==
+{ready}
+1
+VawEblbjCJ/sFpHCJUS2BflBhSFt3gRl5oudV8INrLw=
+
+r
+socat - open:/dev/ttyACM2,b115200,echo=0,raw,cs8,parenb=0,cstopb=0 
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+{ready}
+
+{ready}
+vdZA+wZnGtEcgDF/o7F5nQ==
+{ready}
+10
+mkkhkWNNxh8SRegffJ3jT+/INJDwceUQ/JGGAXZJ1mg=
+{ready}
+:5e`t(H"
+{ready}
+
+{ready}
+10
+HJ8E5DsSemPdwcEcdiWsXNHUNK7FpfL6NPqE2Zl0Qho=
+{ready}
+4P"2]S4Wl
+{ready}
+YULqfRe+MREaKnPtVisPecN0We71C+pjNx7NeyfNgTBHIpOJVxqodmwwdRGyuUN6KN9uxM5KK73CQTMLAannHw==
+{ready}
+1
+7/kTA8PIj0TXUHE4i5VCbre7T5b0sDI8JizsR8cH3Wg=
+{ready}
+)pYleR|CTnZqVb$5;'6):\BC39x]Y0e/D~\Tapi5#=94ys=^EvK97U8WuE4~P($*[
+{ready}
+d9L/Ac+ZmIwkyWGxzSJigBxFEENaEJiuQzRsEqzorjQEVMrFtow=
+{ready}
+20
+LVbkmVr4rwFkBWxVg76nwLSh6dYmdOCuw2KTgYRkZfE=
+{ready}
+R|q!d`S9\*IKzs9O0vr<\Y.hSiR >!xs
+{ready}
+PUy/Trk+/86Iyy3U6Ag5
+{ready}
+12
+Y2T4na5rpTpEsIViaVnINwG0R9CwhPl0ta6myAaBtIs=
+{ready}
+%sy(N&hh,MT9rH4Se3=~]IQ+5@W54&[5vq&6_4,xVLjl2)HH
+{ready}
+pWwJQfvyQFCnSNvPrGGeYw3eKaa6pLca3SRnrHeO7bM=
+{ready}
+15
+txemIhZNx1TYOd+Z1UIpCrtPy469VTitUNNO+QX8YFU=
+{read

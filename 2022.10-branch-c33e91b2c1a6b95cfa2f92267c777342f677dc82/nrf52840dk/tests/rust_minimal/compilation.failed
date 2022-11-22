@@ -1,0 +1,7 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/rust_minimal clean all
+Building application "tests_rust_minimal" for "nrf52840dk" with MCU "nrf52".
+
+Error: No Rust libraries are installed for the board's CPU. Run\n    $ rustup target add thumbv7em-none-eabihf --toolchain stable\nor set `CARGO_OPTIONS=-Zbuild-std=core`.
+make: *** [/home/maribu/Repos/software/RIOT/makefiles/cargo-targets.inc.mk:43: /home/maribu/Repos/software/RIOT/tests/rust_minimal/bin/nrf52840dk/target/thumbv7em-none-eabihf/release/librust_minimal.a] Error 1
+
+Return value: 2

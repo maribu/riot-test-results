@@ -1,0 +1,9 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/examples/micropython test
+miniterm.py --eol LF "/dev/ttyACM3" "115200"  
+--- Miniterm on /dev/ttyACM3  115200,8,N,1 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+Timeout in expect script at "child.expect_exact('boot.py: MicroPython says hello!')" (examples/micropython/tests/01-run.py:15)
+
+make: *** [/home/maribu/Repos/software/RIOT/makefiles/tests/tests.inc.mk:22: test] Error 1
+
+Return value: 2

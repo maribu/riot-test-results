@@ -1,0 +1,46 @@
+
+Operating System Environment
+----------------------------
+         Operating System: "Alpine Linux" 
+                   Kernel: Linux 5.15.79-0-lts x86_64 unknown
+             System shell: /bin/busybox (probably dash)
+             make's shell: /bin/busybox (probably dash)
+
+Installed compiler toolchains
+-----------------------------
+               native gcc: gcc (Alpine 12.2.1_git20220924-r4) 12.2.1 20220924
+        arm-none-eabi-gcc: arm-none-eabi-gcc (Alpine Linux) 12.2.0
+                  avr-gcc: avr-gcc (Alpine Linux) 12.2.0
+           msp430-elf-gcc: msp430-elf-gcc (Alpine Linux) 12.2.0
+       riscv-none-elf-gcc: riscv-none-elf-gcc (Alpine Linux) 12.2.0
+  riscv64-unknown-elf-gcc: missing
+     riscv-none-embed-gcc: missing
+     xtensa-esp32-elf-gcc: xtensa-esp32-elf-gcc (Alpine Linux) 12.2.0
+   xtensa-esp8266-elf-gcc: xtensa-esp8266-elf-gcc (Alpine Linux) 12.2.0
+                    clang: Alpine clang version 15.0.5
+
+Installed compiler libs
+-----------------------
+     arm-none-eabi-newlib: "4.2.0"
+        msp430-elf-newlib: "4.2.0"
+    riscv-none-elf-newlib: "4.2.0"
+riscv64-unknown-elf-newlib: missing
+  riscv-none-embed-newlib: missing
+  xtensa-esp32-elf-newlib: "4.2.0"
+xtensa-esp8266-elf-newlib: "4.2.0"
+                 avr-libc: "2.1.0" ("20220128")
+
+Installed development tools
+---------------------------
+                   ccache: missing
+                    cmake: cmake version 3.24.3
+                 cppcheck: Cppcheck 2.9
+                  doxygen: 1.9.5
+                      git: git version 2.38.1
+                     make: GNU Make 4.3
+                  openocd: Open On-Chip Debugger 0.12.0-rc2
+                   python: Python 3.10.8
+                  python2: missing
+                  python3: Python 3.10.8
+                   flake8: 5.0.4 (mccabe: 0.7.0, pycodestyle: 2.9.0, pyflakes: 2.5.0) CPython 3.10.8 on
+               coccinelle: spatch version 1.1.1 compiled with OCaml version 4.14.0

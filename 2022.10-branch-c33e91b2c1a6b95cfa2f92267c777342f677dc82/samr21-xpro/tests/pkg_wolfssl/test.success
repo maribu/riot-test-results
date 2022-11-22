@@ -1,0 +1,67 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM3" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM3
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+wolfSSL Crypto Test!
+------------------------------------------------------------------------------
+ wolfSSL version 4.5.0
+------------------------------------------------------------------------------
+error    test passed!
+MEMORY   test passed!
+base64   test passed!
+asn      test passed!
+RANDOM   test passed!
+SHA-256  test passed!
+SHA-384  test passed!
+SHA-512  test passed!
+Hash     test passed!
+HC-128   test passed!
+Chacha   test passed!
+POLY1305 test passed!
+ChaCha20-Poly1305 AEAD test passed!
+AES      test passed!
+AES192   test passed!
+AES256   test passed!
+ECC      test passed!
+ECC buffer test passed!
+CURVE25519 test passed!
+ED25519  test passed!
+logging  test passed!
+mutex    test passed!
+Test complete
+wolfSSL Benchmark!
+------------------------------------------------------------------------------
+ wolfSSL version 4.5.0
+------------------------------------------------------------------------------
+wolfCrypt Benchmark (block bytes 1024, min 1.0 sec each)
+RNG                150 KB took 1.105 seconds,  135.741 KB/s
+AES-128-CBC-enc    225 KB took 1.020 seconds,  220.532 KB/s
+AES-128-CBC-dec    225 KB took 1.043 seconds,  215.759 KB/s
+AES-192-CBC-enc    200 KB took 1.036 seconds,  193.087 KB/s
+AES-192-CBC-dec    200 KB took 1.055 seconds,  189.564 KB/s
+AES-256-CBC-enc    175 KB took 1.019 seconds,  171.720 KB/s
+AES-256-CBC-dec    175 KB took 1.035 seconds,  169.041 KB/s
+CHACHA             575 KB took 1.043 seconds,  551.120 KB/s
+CHA-POLY           225 KB took 1.061 seconds,  212.016 KB/s
+POLY1305           375 KB took 1.001 seconds,  374.442 KB/s
+SHA-256            350 KB took 1.074 seconds,  325.939 KB/s
+SHA-384            150 KB took 1.031 seconds,  145.438 KB/s
+SHA-512            150 KB took 1.031 seconds,  145.438 KB/s
+ECC      256 key gen         1 ops took 2.997 sec, avg 2996.796 ms, 0.334 ops/sec
+ECDHE    256 agree           2 ops took 5.993 sec, avg 2996.311 ms, 0.334 ops/sec
+ECDSA    256 sign            2 ops took 6.355 sec, avg 3177.616 ms, 0.315 ops/sec
+ECDSA    256 verify          2 ops took 11.714 sec, avg 5857.161 ms, 0.171 ops/sec
+CURVE  25519 key gen         1 ops took 1.900 sec, avg 1900.296 ms, 0.526 ops/sec
+CURVE  25519 agree           2 ops took 3.789 sec, avg 1894.416 ms, 0.528 ops/sec
+ED     25519 key gen         1 ops took 1.921 sec, avg 1920.932 ms, 0.521 ops/sec
+ED     25519 sign            2 ops took 3.900 sec, avg 1950.218 ms, 0.513 ops/sec
+ED     25519 verify          2 ops took 8.034 sec, avg 4017.104 ms, 0.249 ops/sec
+Benchmark complete
+

@@ -1,0 +1,23 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM1
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+ZTIMER_USEC auto_adjust params:
+    ZTIMER_USEC->adjust_set = 6
+    ZTIMER_USEC->adjust_sleep = 10
+ZTIMER_USEC auto_adjust params cleared
+zitmer_overhead_set...
+min=7 max=7 avg_diff=7
+zitmer_overhead_sleep...
+min=8 max=9 avg_diff=8
+ZTIMER_USEC adjust params for nrf52840dk:
+    CONFIG_ZTIMER_USEC_ADJUST_SET    7
+    CONFIG_ZTIMER_USEC_ADJUST_SLEEP  8
+

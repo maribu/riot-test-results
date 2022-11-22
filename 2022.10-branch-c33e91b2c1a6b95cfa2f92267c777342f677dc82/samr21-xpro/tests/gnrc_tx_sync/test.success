@@ -1,0 +1,26 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM3" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM3
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Test application for gnrc_tx_sync
+=================================
+
+This application sends a single UDP datagram over a virtual Ethernet
+or 802.15.4 device. (Set TEST_6LO to 1 for 802.15.4 and to 0 for
+Ethernet.) The simulated network devices blocks for 100ms - more than
+enough time for sock_upd_send() to return if no synchronization is done.
+If an 802.15.4 device is simulated, the test datagram will be transmitted
+in two fragments. In that case sock_udp_send() must only return after both
+fragments are out. In the Ethernet case, only a single frame is send.
+
+IEEE 802.15.4 mode (TEST_6LO=1, TEST_FRAG_SFR=1), sending 2 6LoWPAN fragmentstransmissions expected = 2, transmissions completed = 2
+sent 94 out of 94 bytes
+TEST PASSED
+

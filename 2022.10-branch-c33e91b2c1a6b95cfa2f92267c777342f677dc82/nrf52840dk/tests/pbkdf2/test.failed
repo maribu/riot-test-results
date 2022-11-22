@@ -1,0 +1,48 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/pbkdf2 test
+r
+socat - open:/dev/ttyACM1,b115200,echo=0,raw,cs8,parenb=0,cstopb=0 
+80}]}
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+{ready}
+passwd
+{ready}
+c2FsdA==
+{ready}
+1
+VawEblbjCJ/sFpHCJUS2BflBhSFt3gRl5oudV8INrLw=
+{re
+r
+socat - open:/dev/ttyACM1,b115200,echo=0,raw,cs8,parenb=0,cstopb=0 
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+{ready}
+
+{ready}
+vdZA+wZnGtEcgDF/o7F5nQ==
+{ready}
+10
+mkkhkWNNxh8SRegffJ3jT+/INJDwceUQ/JGGAXZJ1mg=
+{ready}
+:5e`t(H"
+{ready}
+
+{ready}
+10
+HJ8E5DsSemPdwcEcdiWsXNHUNK7FpfL6NPqE2Zl0Qho=
+{ready}
+4P"2]S4Wl
+{ready}
+YULqfRe+MREaKnPtVisPecN0We71C+pjNx7NeyfNgTBHIpOJVxqodmwwdRGyuUN6KN9uxM5KK73CQTMLAannHw==
+Timeout in expect script at "idx = child.expect_exact([s+'\r\n', '{error}\r\n'])" (tests/pbkdf2/tests/test_base.py:25)
+
+make: *** [/home/maribu/Repos/software/RIOT/makefiles/tests/tests.inc.mk:22: test] Error 1
+
+Return value: 2

@@ -1,0 +1,28 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM2" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM2
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+xtimer benchmark application.
+
+                     set() one     3466 / 1000 = 3
+                  remove() one      686 / 1000 = 0
+          set() + remove() one     5930 / 1000 = 5
+  set() many increasing target    15449 / 1000 = 15
+               re-set()  first     3374 / 1000 = 3
+               re-set() middle    81558 / 1000 = 81
+               re-set()   last   159737 / 1000 = 159
+       remove() + set()  first     6360 / 1000 = 6
+       remove() + set() middle    84690 / 1000 = 84
+       remove() + set()   last   162408 / 1000 = 162
+      remove() many decreasing    67980 / 1000 = 67
+                  xtimer_now()      575 / 1000 = 0
+              sizeof(xtimer_t)    16000 / 1000 = 16
+done.
+

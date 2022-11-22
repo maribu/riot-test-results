@@ -1,0 +1,29 @@
+
+
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM3" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM3
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+> start_test
+start_test
+[TEST_START]
+> help
+help
+Command              Description
+---------------------------------------
+bufsize              Get the shell's buffer size
+start_test           starts a test
+end_test             ends a test
+echo                 prints the input command
+empty                print nothing on command
+hello_world          Print a greeting
+xfa_test1            xfa test command 1
+xfa_test2            xfa test command 2
+> end_test
+end_test
+[TEST_END]
+
