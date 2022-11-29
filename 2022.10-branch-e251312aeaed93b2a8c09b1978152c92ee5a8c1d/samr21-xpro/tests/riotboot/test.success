@@ -1,0 +1,115 @@
+
+
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM3" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM3
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+> curslotnr
+curslotnr
+Current slot=0
+> curslothdr
+curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x63862585
+compiling /home/maribu/Repos/software/RIOT/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /home/maribu/Repos/software/RIOT/tests/riotboot/bin/samr21-xpro/riotboot_files/slot1.1669735814.bin...
+[INFO] edbg binary not found - building it from source now
+CC= CFLAGS= make -C /home/maribu/Repos/software/RIOT/dist/tools/edbg
+[INFO] edbg binary successfully built!
+/home/maribu/Repos/software/RIOT/dist/tools/edbg/edbg.sh flash /home/maribu/Repos/software/RIOT/tests/riotboot/bin/samr21-xpro/riotboot_files/slot1.1669735814.bin
+### Flashing Target ###
+Debugger: ATMEL EDBG CMSIS-DAP ATML2127031800009225 01.1A.00FB (S)
+Clock frequency: 16.0 MHz
+Target: SAM R21G18 (Rev C)
+Verification...
+at address 0x20800 expected 0x52, read 0x00
+Error: verification failed
+Debugger: ATMEL EDBG CMSIS-DAP ATML2127031800009225 01.1A.00FB (S)
+Clock frequency: 16.0 MHz
+Target: SAM R21G18 (Rev C)
+Programming..... done.
+Verification..... done.
+Done flashing
+
+
+
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM3" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM3
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+> curslotnr
+curslotnr
+Current slot=1
+> curslothdr
+curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x63862586
+Image start address: 0x00020900
+Header chksum: 0x30282fb0
+
+> getslotaddr 0
+getslotaddr 0
+Slot 0 address=0x00001100
+> dumpaddrs
+dumpaddrs
+slot 0: metadata: 0x1000 image: 0x00001100
+slot 1: metadata: 0x20800 image: 0x00020900
+> compiling /home/maribu/Repos/software/RIOT/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /home/maribu/Repos/software/RIOT/tests/riotboot/bin/samr21-xpro/riotboot_files/slot0.1669735815.bin...
+[INFO] edbg binary not found - building it from source now
+CC= CFLAGS= make -C /home/maribu/Repos/software/RIOT/dist/tools/edbg
+[INFO] edbg binary successfully built!
+/home/maribu/Repos/software/RIOT/dist/tools/edbg/edbg.sh flash /home/maribu/Repos/software/RIOT/tests/riotboot/bin/samr21-xpro/riotboot_files/slot0.1669735815.bin
+### Flashing Target ###
+Debugger: ATMEL EDBG CMSIS-DAP ATML2127031800009225 01.1A.00FB (S)
+Clock frequency: 16.0 MHz
+Target: SAM R21G18 (Rev C)
+Verification...
+at address 0x1004 expected 0x87, read 0x85
+Error: verification failed
+Debugger: ATMEL EDBG CMSIS-DAP ATML2127031800009225 01.1A.00FB (S)
+Clock frequency: 16.0 MHz
+Target: SAM R21G18 (Rev C)
+Programming..... done.
+Verification..... done.
+Done flashing
+
+
+
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM3" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM3
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+> curslotnr
+curslotnr
+Current slot=0
+> curslothdr
+curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x63862587
+Image start address: 0x00001100
+Header chksum: 0x402a37af
+
+> getslotaddr 0
+getslotaddr 0
+Slot 0 address=0x00001100
+> dumpaddrs
+dumpaddrs
+slot 0: metadata: 0x1000 image: 0x00001100
+slot 1: metadata: 0x20800 image: 0x00020900
+> 
+TEST PASSED

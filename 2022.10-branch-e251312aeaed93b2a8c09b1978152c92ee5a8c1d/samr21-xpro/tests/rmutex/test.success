@@ -1,0 +1,75 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM3" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM3
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Recursive Mutex test
+Please refer to the README.md for more information
+
+T2 (prio 6, depth 0): trying to lock rmutex now
+T3 (prio 4, depth 0): trying to lock rmutex now
+T4 (prio 5, depth 0): trying to lock rmutex now
+T5 (prio 2, depth 0): trying to lock rmutex now
+T6 (prio 4, depth 0): trying to lock rmutex now
+main: unlocking recursive mutex
+T5 (prio 2, depth 0): locked rmutex now
+T5 (prio 2, depth 1): trying to lock rmutex now
+T5 (prio 2, depth 1): locked rmutex now
+T5 (prio 2, depth 2): trying to lock rmutex now
+T5 (prio 2, depth 2): locked rmutex now
+T5 (prio 2, depth 3): trying to lock rmutex now
+T5 (prio 2, depth 3): locked rmutex now
+T5 (prio 2, depth 3): unlocked rmutex
+T5 (prio 2, depth 2): unlocked rmutex
+T5 (prio 2, depth 1): unlocked rmutex
+T5 (prio 2, depth 0): unlocked rmutex
+{ "threads": [{ "name": "t", "stack_size": 1536, "stack_used": 1532 }]}
+T3 (prio 4, depth 0): locked rmutex now
+T3 (prio 4, depth 1): trying to lock rmutex now
+T3 (prio 4, depth 1): locked rmutex now
+T3 (prio 4, depth 2): trying to lock rmutex now
+T3 (prio 4, depth 2): locked rmutex now
+T3 (prio 4, depth 2): unlocked rmutex
+T3 (prio 4, depth 1): unlocked rmutex
+T3 (prio 4, depth 0): unlocked rmutex
+{ "threads": [{ "name": "t", "stack_size": 1536, "stack_used": 1532 }]}
+T6 (prio 4, depth 0): locked rmutex now
+T6 (prio 4, depth 1): trying to lock rmutex now
+T6 (prio 4, depth 1): locked rmutex now
+T6 (prio 4, depth 2): trying to lock rmutex now
+T6 (prio 4, depth 2): locked rmutex now
+T6 (prio 4, depth 3): trying to lock rmutex now
+T6 (prio 4, depth 3): locked rmutex now
+T6 (prio 4, depth 4): trying to lock rmutex now
+T6 (prio 4, depth 4): locked rmutex now
+T6 (prio 4, depth 4): unlocked rmutex
+T6 (prio 4, depth 3): unlocked rmutex
+T6 (prio 4, depth 2): unlocked rmutex
+T6 (prio 4, depth 1): unlocked rmutex
+T6 (prio 4, depth 0): unlocked rmutex
+{ "threads": [{ "name": "t", "stack_size": 1536, "stack_used": 1532 }]}
+T4 (prio 5, depth 0): locked rmutex now
+T4 (prio 5, depth 1): trying to lock rmutex now
+T4 (prio 5, depth 1): locked rmutex now
+T4 (prio 5, depth 2): trying to lock rmutex now
+T4 (prio 5, depth 2): locked rmutex now
+T4 (prio 5, depth 2): unlocked rmutex
+T4 (prio 5, depth 1): unlocked rmutex
+T4 (prio 5, depth 0): unlocked rmutex
+{ "threads": [{ "name": "t", "stack_size": 1536, "stack_used": 1532 }]}
+T2 (prio 6, depth 0): locked rmutex now
+T2 (prio 6, depth 1): trying to lock rmutex now
+T2 (prio 6, depth 1): locked rmutex now
+T2 (prio 6, depth 2): trying to lock rmutex now
+T2 (prio 6, depth 2): locked rmutex now
+T2 (prio 6, depth 3): trying to lock rmutex now
+T2 (prio 6, depth 3): locked rmutex now
+T2 (prio 6, depth 4): trying to lock rmutex now
+T2 (prio 6, depth 4): locked rmutex now
+
