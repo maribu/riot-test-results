@@ -1,0 +1,35 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM2" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM2
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Condition variable order test
+Please refer to the README.md for more information
+
+T2 (prio 6): waiting on condition variable now
+T3 (prio 4): waiting on condition variable now
+T4 (prio 0): waiting on condition variable now
+T5 (prio 2): waiting on condition variable now
+T6 (prio 1): waiting on condition variable now
+First batch was signaled
+T4 (prio 0): condition variable was signaled now
+{ "threads": [{ "name": "t", "stack_size": 1536, "stack_used": 1532 }]}
+T6 (prio 1): condition variable was signaled now
+{ "threads": [{ "name": "t", "stack_size": 1536, "stack_used": 1532 }]}
+T5 (prio 2): condition variable was signaled now
+{ "threads": [{ "name": "t", "stack_size": 1536, "stack_used": 1532 }]}
+First batch has woken up
+Second batch was signaled
+T3 (prio 4): condition variable was signaled now
+{ "threads": [{ "name": "t", "stack_size": 1536, "stack_used": 1532 }]}
+T2 (prio 6): condition variable was signaled now
+{ "threads": [{ "name": "t", "stack_size": 1536, "stack_used": 1532 }]}
+Second batch has woken up
+
+

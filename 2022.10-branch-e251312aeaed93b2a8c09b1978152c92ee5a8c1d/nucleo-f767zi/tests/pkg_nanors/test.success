@@ -1,0 +1,27 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM2" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM2
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+START
+total: 30 shards (1920 bytes)
+clear shard 3 (64 byte)
+clear shard 19 (64 byte)
+clear shard 15 (64 byte)
+clear shard 16 (64 byte)
+clear shard 26 (64 byte)
+clear shard 11 (64 byte)
+clear shard 23 (64 byte)
+clear shard 14 (64 byte)
+clear shard 23 (64 byte)
+clear shard 15 (64 byte)
+reconstruct…
+done.
+SUCCESS
+

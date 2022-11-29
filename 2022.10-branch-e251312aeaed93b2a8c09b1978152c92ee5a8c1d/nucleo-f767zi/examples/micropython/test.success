@@ -1,0 +1,79 @@
+miniterm.py --eol LF "/dev/ttyACM2" "115200"  
+--- Miniterm on /dev/ttyACM2  115200,8,N,1 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+YISg^K^Fiaf!1main(): This is RIOT! (Version: buildtest)
+-- Executing boot.py
+boot.py: MicroPython says hello!
+-- boot.py exited. Starting REPL..
+MicroPython bb8e51f on 2022-11-29; riot-nucleo-f767zi with stm32
+Type "help()" for more information.
+>>> print("echo this! " * 4)
+print("echo this! " * 4)
+echo this! echo this! echo this! echo this! 
+>>> import riot
+print(riot.thread_getpid())
+import riot
+>>> print(riot.thread_getpid())
+1
+>>> import utime
+import utime
+>>> utime.time()
+utime.time()
+374
+>>>utime.sleep_ms(0)
+ utime.sleep_ms(0)
+>>> utime.time()
+utime.time()
+483
+>>> test_sleep(0, 1000): slept 109ms
+utime.time()
+utime.time()
+538
+>>>utime.sleep_ms(50)
+ utime.sleep_ms(50)
+>>> utime.time()
+utime.time()
+697
+>>> test_sleep(50, 119): slept 159ms
+utime.time()
+utime.time()
+751
+>>> utime.sleep_ms(250)
+utime.sleep_ms(250)
+>>> utime.time()
+utime.time()
+1111
+>>> test_sleep(250, 119): slept 360ms
+utime.time()
+utime.time()
+1166
+>>> utime.sleep_ms(500)
+utime.sleep_ms(500)
+>>> utime.time()
+utime.time()
+1776
+>>> test_sleep(500, 119): slept 610ms
+import xtimer
+import xtimer
+>>> a = 0
+a = 0
+>>> def inc_a(): global a; a+=1
+def inc_a(): global a; a+=1
+... 
+
+>>> t = xtimer.xtimer(inc_a)
+t = xtimer.xtimer(inc_a)
+>>> utime.time()
+utime.time()
+2102
+>>> t.set(500000)
+t.set(500000)
+>>> while a==0: pass
+while a==0: pass
+... 
+
+>>> utime.time()
+utime.time()
+2711
+>>> [TEST PASSED]
+
