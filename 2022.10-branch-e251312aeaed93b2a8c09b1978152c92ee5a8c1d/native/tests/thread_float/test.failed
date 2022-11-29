@@ -1,0 +1,26 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /software/RIOT/tests/thread_float test
+r
+/software/RIOT/tests/thread_float/bin/native/tests_thread_float.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+THREADS CREATED
+
+{ "threads": [{ "name": "idle", "stack_size": 8192, "stack_used": 436 }]}
+{ "threads": [{ "name": "main", "stack_size": 12288, "stack_used": 2452 }]}
+THREAD t1 start
+THREAD t2 start
+THREAD t3 start
+make[1]: *** [/software/RIOT/Makefile.include:869: cleanterm] Floating point exception
+Unexpected end of file in expect script at "child.expect(r"t(\d): (\d{3}\.\d+|[+-]*nan|[+-]inf)\r\n")" (tests/thread_float/tests/01-run.py:30)
+
+Process already stopped
+make: *** [/software/RIOT/makefiles/tests/tests.inc.mk:22: test] Error 1
+
+Return value: 2

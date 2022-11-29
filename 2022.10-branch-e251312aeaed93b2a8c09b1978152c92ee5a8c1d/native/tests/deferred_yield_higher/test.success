@@ -1,0 +1,19 @@
+r
+/software/RIOT/tests/deferred_yield_higher/bin/native/tests_deferred_yield_higher.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+1. post yield
+2. second thread scheduled
+{ "threads": [{ "name": "nr2", "stack_size": 8192, "stack_used": 736 }]}
+3. post irq enable
+if above messages are in order, this test succeeded.
+{ "threads": [{ "name": "idle", "stack_size": 8192, "stack_used": 436 }]}
+{ "threads": [{ "name": "main", "stack_size": 12288, "stack_used": 2452 }]}
+

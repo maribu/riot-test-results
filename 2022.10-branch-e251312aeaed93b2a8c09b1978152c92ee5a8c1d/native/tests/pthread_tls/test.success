@@ -1,0 +1,102 @@
+r
+/software/RIOT/tests/pthread_tls/bin/native/tests_pthread_tls.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+START
+
+-= TEST 1 - create 20 tls with sequential values 0...19 =-
+now rise sequential by one values 1...20
+pick deliberate storage (key[3]:153895600) and change the value
+show tls values:
+key[0]: 153895504, val: 1
+key[1]: 153895536, val: 2
+key[2]: 153895568, val: 3
+key[3]: 153895600, val: 42
+key[4]: 153895632, val: 5
+key[5]: 153895664, val: 6
+key[6]: 153895696, val: 7
+key[7]: 153895728, val: 8
+key[8]: 153895760, val: 9
+key[9]: 153895792, val: 10
+key[10]: 153895824, val: 11
+key[11]: 153895856, val: 12
+key[12]: 153895888, val: 13
+key[13]: 153895920, val: 14
+key[14]: 153895952, val: 15
+key[15]: 153895984, val: 16
+key[16]: 153896016, val: 17
+key[17]: 153896048, val: 18
+key[18]: 153896080, val: 19
+key[19]: 153896112, val: 20
+
+ -= TEST 2 - delete deliberate key (key[5]:153895664) =-
+show tls values:
+key[0]: 153895504, val: 1
+key[1]: 153895536, val: 2
+key[2]: 153895568, val: 3
+key[3]: 153895600, val: 42
+key[4]: 153895632, val: 5
+key[6]: 153895696, val: 7
+key[7]: 153895728, val: 8
+key[8]: 153895760, val: 9
+key[9]: 153895792, val: 10
+key[10]: 153895824, val: 11
+key[11]: 153895856, val: 12
+key[12]: 153895888, val: 13
+key[13]: 153895920, val: 14
+key[14]: 153895952, val: 15
+key[15]: 153895984, val: 16
+key[16]: 153896016, val: 17
+key[17]: 153896048, val: 18
+key[18]: 153896080, val: 19
+key[19]: 153896112, val: 20
+
+-= TEST 3 - create new tls =-
+added new tls, key: 153896144, val: 99
+show tls values:
+key[0]: 153895504, val: 1
+key[1]: 153895536, val: 2
+key[2]: 153895568, val: 3
+key[3]: 153895600, val: 42
+key[4]: 153895632, val: 5
+key[6]: 153895696, val: 7
+key[7]: 153895728, val: 8
+key[8]: 153895760, val: 9
+key[9]: 153895792, val: 10
+key[10]: 153895824, val: 11
+key[11]: 153895856, val: 12
+key[12]: 153895888, val: 13
+key[13]: 153895920, val: 14
+key[14]: 153895952, val: 15
+key[15]: 153895984, val: 16
+key[16]: 153896016, val: 17
+key[17]: 153896048, val: 18
+key[18]: 153896080, val: 19
+key[19]: 153896112, val: 20
+
+-= TEST 4 - delete all keys =-
+show tls values:
+
+-= TEST 5 - try delete non-existing key =-
+try to delete returns: 0
+
+-= TEST 6 - add key and delete without a tls =-
+created key: 153896176
+try to delete returns: 0
+
+-= TEST 7 - add key without tls =-
+created key: 153896192
+test_7_val: (nil)
+{ "threads": [{ "name": "pthread", "stack_size": 8192, "stack_used": 2644 }]}
+tls tests finished.
+SUCCESS
+{ "threads": [{ "name": "idle", "stack_size": 8192, "stack_used": 436 }]}
+{ "threads": [{ "name": "main", "stack_size": 12288, "stack_used": 2452 }]}
+

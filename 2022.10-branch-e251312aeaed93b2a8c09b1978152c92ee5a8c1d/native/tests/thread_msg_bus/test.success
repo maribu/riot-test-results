@@ -1,0 +1,28 @@
+r
+/software/RIOT/tests/thread_msg_bus/bin/native/tests_thread_msg_bus.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+THREAD 1 start
+THREAD 2 start
+THREAD 3 start
+THREADS CREATED
+Posted event 22 to 0 threads
+T1 recv: Hello Threads! (type=23)
+{ "threads": [{ "name": "nr1", "stack_size": 12288, "stack_used": 2396 }]}
+T3 recv: Hello Threads! (type=23)
+{ "threads": [{ "name": "nr3", "stack_size": 12288, "stack_used": 2396 }]}
+Posted event 23 to 2 threads
+T2 recv: Hello Threads! (type=24)
+{ "threads": [{ "name": "nr2", "stack_size": 12288, "stack_used": 2396 }]}
+Posted event 24 to 1 threads
+SUCCESS
+{ "threads": [{ "name": "idle", "stack_size": 8192, "stack_used": 436 }]}
+{ "threads": [{ "name": "main", "stack_size": 12288, "stack_used": 2492 }]}
+

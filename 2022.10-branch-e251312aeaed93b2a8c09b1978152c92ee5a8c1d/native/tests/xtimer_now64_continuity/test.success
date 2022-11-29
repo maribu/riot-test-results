@@ -1,0 +1,17 @@
+r
+/software/RIOT/tests/xtimer_now64_continuity/bin/native/tests_xtimer_now64_continuity.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+[START]
+[RESULTS] min=0, avg=1, max=638
+[SUCCESS]
+{ "threads": [{ "name": "idle, "stack_size": 8192, "stack_used": 436}]}
+{ "threads": [{ "name": "main, "stack_size": 12288, "stack_used": 2620}]}
+

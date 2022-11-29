@@ -1,0 +1,24 @@
+r
+/software/RIOT/tests/irq/bin/native/tests_irq.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+START
+busy_thread created
+xtimer_wait()
+busy_thread starting
+main: return
+{ "threads": [{ "name": "idle", "stack_size": 8192, "stack_used": 436 }]}
+{ "threads": [{ "name": "main", "stack_size": 12288, "stack_used": 2452 }]}
+i: 86444581
+j: 86444581
+k: 86444581
+SUCCESS
+{ "threads": [{ "name": "busy_thread", "stack_size": 12288, "stack_used": 12284 }]}
+

@@ -1,0 +1,31 @@
+r
+/software/RIOT/tests/bench_runtime_coreapis/bin/native/tests_bench_runtime_coreapis.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Runtime of Selected Core API functions
+
+                 nop loop:       655us  ---   0.000us per call  ---  1526717557 calls per sec
+
+             mutex_init():       293us  ---   0.000us per call  ---  3412969283 calls per sec
+        mutex lock/unlock:   1135499us  ---   1.135us per call  ---     880670 calls per sec
+
+       thread_flags_set():    561843us  ---   0.561us per call  ---    1779856 calls per sec
+     thread_flags_clear():    559997us  ---   0.559us per call  ---    1785723 calls per sec
+thread flags set/wait any:   1701915us  ---   1.701us per call  ---     587573 calls per sec
+thread flags set/wait all:   1694868us  ---   1.694us per call  ---     590016 calls per sec
+thread flags set/wait one:   1681044us  ---   1.681us per call  ---     594868 calls per sec
+
+        msg_try_receive():    564461us  ---   0.564us per call  ---    1771601 calls per sec
+              msg_avail():      5839us  ---   0.005us per call  ---  171262202 calls per sec
+
+[SUCCESS]
+{ "threads": [{ "name": "idle", "stack_size": 8192, "stack_used": 436 }]}
+{ "threads": [{ "name": "main", "stack_size": 12288, "stack_used": 2668 }]}
+

@@ -1,0 +1,69 @@
+r
+/software/RIOT/tests/pkg_wolfssl/bin/native/tests_pkg_wolfssl.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+wolfSSL Crypto Test!
+------------------------------------------------------------------------------
+ wolfSSL version 4.5.0
+------------------------------------------------------------------------------
+error    test passed!
+MEMORY   test passed!
+base64   test passed!
+asn      test passed!
+RANDOM   test passed!
+SHA-256  test passed!
+SHA-384  test passed!
+SHA-512  test passed!
+Hash     test passed!
+HC-128   test passed!
+Chacha   test passed!
+POLY1305 test passed!
+ChaCha20-Poly1305 AEAD test passed!
+AES      test passed!
+AES192   test passed!
+AES256   test passed!
+ECC      test passed!
+ECC buffer test passed!
+CURVE25519 test passed!
+ED25519  test passed!
+logging  test passed!
+mutex    test passed!
+Test complete
+wolfSSL Benchmark!
+------------------------------------------------------------------------------
+ wolfSSL version 4.5.0
+------------------------------------------------------------------------------
+wolfCrypt Benchmark (block bytes 1048576, min 1.0 sec each)
+RNG                 80 MB took 1.018 seconds,   78.598 MB/s
+AES-128-CBC-enc    180 MB took 1.006 seconds,  178.903 MB/s
+AES-128-CBC-dec    170 MB took 1.019 seconds,  166.844 MB/s
+AES-192-CBC-enc    160 MB took 1.028 seconds,  155.668 MB/s
+AES-192-CBC-dec    150 MB took 1.018 seconds,  147.281 MB/s
+AES-256-CBC-enc    145 MB took 1.022 seconds,  141.898 MB/s
+AES-256-CBC-dec    135 MB took 1.002 seconds,  134.730 MB/s
+CHACHA             220 MB took 1.018 seconds,  216.080 MB/s
+CHA-POLY           155 MB took 1.026 seconds,  151.093 MB/s
+POLY1305           520 MB took 1.001 seconds,  519.357 MB/s
+SHA-256            190 MB took 1.014 seconds,  187.429 MB/s
+SHA-384             55 MB took 1.016 seconds,   54.137 MB/s
+SHA-512             55 MB took 1.014 seconds,   54.263 MB/s
+ECC      256 key gen       219 ops took 1.003 sec, avg 4.579 ms, 218.377 ops/sec
+ECDHE    256 agree         300 ops took 1.377 sec, avg 4.591 ms, 217.796 ops/sec
+ECDSA    256 sign          300 ops took 1.462 sec, avg 4.872 ms, 205.255 ops/sec
+ECDSA    256 verify        200 ops took 1.807 sec, avg 9.035 ms, 110.679 ops/sec
+CURVE  25519 key gen       258 ops took 1.003 sec, avg 3.889 ms, 257.136 ops/sec
+CURVE  25519 agree         300 ops took 1.154 sec, avg 3.846 ms, 259.994 ops/sec
+ED     25519 key gen       258 ops took 1.001 sec, avg 3.880 ms, 257.738 ops/sec
+ED     25519 sign          300 ops took 1.189 sec, avg 3.963 ms, 252.351 ops/sec
+ED     25519 verify        200 ops took 1.635 sec, avg 8.173 ms, 122.352 ops/sec
+Benchmark complete
+{ "threads": [{ "name": "idle", "stack_size": 8192, "stack_used": 1100 }]}
+{ "threads": [{ "name": "main", "stack_size": 32768, "stack_used": 5556 }]}
+

@@ -1,0 +1,23 @@
+r
+/software/RIOT/tests/ztimer_overhead/bin/native/tests_ztimer_overhead.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+ZTIMER_USEC auto_adjust params:
+    ZTIMER_USEC->adjust_set = 6
+    ZTIMER_USEC->adjust_sleep = 32
+ZTIMER_USEC auto_adjust params cleared
+zitmer_overhead_set...
+min=4 max=103 avg_diff=15
+zitmer_overhead_sleep...
+min=33 max=524 avg_diff=143
+ZTIMER_USEC adjust params for native:
+    CONFIG_ZTIMER_USEC_ADJUST_SET    4
+    CONFIG_ZTIMER_USEC_ADJUST_SLEEP  33
+

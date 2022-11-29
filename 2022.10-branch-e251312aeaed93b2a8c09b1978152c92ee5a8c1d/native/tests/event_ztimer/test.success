@@ -1,0 +1,27 @@
+r
+/software/RIOT/tests/event_ztimer/bin/native/tests_event_ztimer.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+posting periodic timed callback with timeout 1sec
+waiting for periodic callback to be triggered 4 times
+trigger 1 of periodic timeout, elapsed time: 1000000 us
+trigger 2 of periodic timeout, elapsed time: 1000000 us
+stop periodic event
+resume periodic event, 2 triggers remaining
+trigger 3 of periodic timeout, elapsed time: 1000000 us
+trigger 4 of periodic timeout, elapsed time: 1000000 us
+posting timed callback with timeout 0.5sec, clear right after
+posting timed callback with timeout 1sec
+waiting for timed callback to trigger
+triggered timed callback after 1000111us
+[SUCCESS]
+{ "threads": [{ "name": "idle", "stack_size": 8192, "stack_used": 1100 }]}
+{ "threads": [{ "name": "main", "stack_size": 12288, "stack_used": 2452 }]}
+

@@ -1,0 +1,26 @@
+r
+/software/RIOT/tests/pkg_mbedtls/bin/native/tests_pkg_mbedtls.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+mbedtls test
+
+  SHA-224 test #1: passed
+  SHA-224 test #2: passed
+  SHA-224 test #3: passed
+  SHA-256 test #1: passed
+  SHA-256 test #2: passed
+  SHA-256 test #3: passed
+
+adc_noise_single_entropy: 0
+  ENTROPY test: passed
+
+{ "threads": [{ "name": "idle", "stack_size": 8192, "stack_used": 436 }]}
+{ "threads": [{ "name": "main", "stack_size": 16384, "stack_used": 3100 }]}
+

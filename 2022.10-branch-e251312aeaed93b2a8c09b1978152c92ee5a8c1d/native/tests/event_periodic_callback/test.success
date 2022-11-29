@@ -1,0 +1,24 @@
+r
+/software/RIOT/tests/event_periodic_callback/bin/native/tests_event_periodic_callback.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+event 0
+event A
+event B
+event A
+event C
+event A
+event B
+event A
+event A
+event C
+event B
+event A
+

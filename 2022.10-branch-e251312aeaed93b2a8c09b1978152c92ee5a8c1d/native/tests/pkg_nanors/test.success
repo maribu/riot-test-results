@@ -1,0 +1,29 @@
+r
+/software/RIOT/tests/pkg_nanors/bin/native/tests_pkg_nanors.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+START
+total: 30 shards (1920 bytes)
+clear shard 3 (64 byte)
+clear shard 2 (64 byte)
+clear shard 11 (64 byte)
+clear shard 10 (64 byte)
+clear shard 9 (64 byte)
+clear shard 29 (64 byte)
+clear shard 5 (64 byte)
+clear shard 8 (64 byte)
+clear shard 29 (64 byte)
+clear shard 15 (64 byte)
+reconstruct…
+done.
+SUCCESS
+{ "threads": [{ "name": "idle", "stack_size": 8192, "stack_used": 436 }]}
+{ "threads": [{ "name": "main", "stack_size": 12288, "stack_used": 2476 }]}
+

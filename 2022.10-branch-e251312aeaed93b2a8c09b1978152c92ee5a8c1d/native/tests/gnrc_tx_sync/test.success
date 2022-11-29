@@ -1,0 +1,28 @@
+r
+/software/RIOT/tests/gnrc_tx_sync/bin/native/tests_gnrc_tx_sync.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Test application for gnrc_tx_sync
+=================================
+
+This application sends a single UDP datagram over a virtual Ethernet
+or 802.15.4 device. (Set TEST_6LO to 1 for 802.15.4 and to 0 for
+Ethernet.) The simulated network devices blocks for 100ms - more than
+enough time for sock_upd_send() to return if no synchronization is done.
+If an 802.15.4 device is simulated, the test datagram will be transmitted
+in two fragments. In that case sock_udp_send() must only return after both
+fragments are out. In the Ethernet case, only a single frame is send.
+
+IEEE 802.15.4 mode (TEST_6LO=1, TEST_FRAG_SFR=1), sending 2 6LoWPAN fragmentstransmissions expected = 2, transmissions completed = 2
+sent 94 out of 94 bytes
+TEST PASSED
+{ "threads": [{ "name": "idle, "stack_size": 8192, "stack_used": 1100}]}
+{ "threads": [{ "name": "main, "stack_size": 12288, "stack_used": 2692}]}
+

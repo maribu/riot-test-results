@@ -1,0 +1,25 @@
+r
+/software/RIOT/tests/thread_exit/bin/native/tests_thread_exit.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+main: starting
+main: exiting
+{ "threads": [{ "name": "idle", "stack_size": 8192, "stack_used": 436 }]}
+{ "threads": [{ "name": "main", "stack_size": 12288, "stack_used": 2452 }]}
+2nd: starting
+3rd: starting
+3rd: exiting
+{ "threads": [{ "name": "nr3", "stack_size": 12288, "stack_used": 736 }]}
+2nd: exiting
+{ "threads": [{ "name": "nr2", "stack_size": 12288, "stack_used": 1196 }]}
+4th: starting
+4th: exiting
+{ "threads": [{ "name": "nr4", "stack_size": 12288, "stack_used": 736 }]}
+

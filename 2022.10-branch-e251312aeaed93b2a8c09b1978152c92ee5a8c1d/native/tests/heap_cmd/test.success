@@ -1,0 +1,16 @@
+
+
+/software/RIOT/tests/heap_cmd/bin/native/tests_heap_cmd.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+Shell-based test application for heap functions.
+Use the 'help' command to get more information on how to use it.
+> 
+> 
+> heap
+heap
+heap statistics are not supported for native cpu
+> 

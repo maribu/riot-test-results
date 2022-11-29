@@ -1,0 +1,18 @@
+r
+/software/RIOT/tests/build_system_cflags_spaces/bin/native/tests_build_system_cflags_spaces.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+The output of the configuration variables:
+SUPER_STRING: I love sentences with spaces
+DEFINED_AFTER_MAKEFILE_INCLUDE: 0
+CFLAGS_STRING_FROM_DOCKER: 
+{ "threads": [{ "name": "idle", "stack_size": 8192, "stack_used": 436 }]}
+{ "threads": [{ "name": "main", "stack_size": 12288, "stack_used": 2468 }]}
+

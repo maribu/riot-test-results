@@ -1,0 +1,11 @@
+O
+/software/RIOT/tests/stdin/bin/native/tests_stdin.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+You entered 'O'
+You entered '
+'
+

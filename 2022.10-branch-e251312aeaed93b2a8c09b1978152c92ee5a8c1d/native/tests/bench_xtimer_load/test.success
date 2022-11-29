@@ -1,0 +1,29 @@
+r
+/software/RIOT/tests/bench_xtimer_load/bin/native/tests_bench_xtimer_load.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+TEST_HZ=64
+[START]
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+drift: min=-51 max=182 final=-22
+jitter: min=-204 max=233 abs avg=81
+[DONE]
+{ "threads": [{ "name": "idle", "stack_size": 8192, "stack_used": 1100 }]}
+{ "threads": [{ "name": "main", "stack_size": 12288, "stack_used": 2492 }]}
+

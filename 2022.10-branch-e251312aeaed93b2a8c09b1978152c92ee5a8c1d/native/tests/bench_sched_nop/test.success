@@ -1,0 +1,16 @@
+r
+/software/RIOT/tests/bench_sched_nop/bin/native/tests_bench_sched_nop.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+main starting
+{ "result" : 525619, "ticks" : 1902 }
+{ "threads": [{ "name": "idle", "stack_size": 8192, "stack_used": 436 }]}
+{ "threads": [{ "name": "main", "stack_size": 12288, "stack_used": 2476 }]}
+

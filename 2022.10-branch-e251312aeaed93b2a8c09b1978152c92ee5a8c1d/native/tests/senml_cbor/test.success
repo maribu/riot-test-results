@@ -1,0 +1,16 @@
+r
+/software/RIOT/tests/senml_cbor/bin/native/tests_senml_cbor.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+.
+OK (1 tests)
+{ "threads": [{ "name": "idle, "stack_size": 1536, "stack_used": 436}]}
+{ "threads": [{ "name": "main, "stack_size": 5632, "stack_used": 2564}]}
+

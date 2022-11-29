@@ -1,0 +1,30 @@
+
+
+/software/RIOT/tests/rust_libs/bin/native/tests_rust_libs.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+test_shell.
+> 
+> 
+> start_test
+start_test
+[TEST_START]
+> help
+help
+Command              Description
+---------------------------------------
+bufsize              Get the shell's buffer size
+start_test           starts a test
+end_test             ends a test
+echo                 prints the input command
+empty                print nothing on command
+hello_world          Print a greeting
+xfa_test1            xfa test command 1
+xfa_test2            xfa test command 2
+> end_test
+end_test
+[TEST_END]
+> 

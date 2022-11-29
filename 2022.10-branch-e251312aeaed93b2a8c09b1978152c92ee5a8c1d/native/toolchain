@@ -1,0 +1,46 @@
+
+Operating System Environment
+----------------------------
+         Operating System: "Ubuntu" "22.04.1 LTS (Jammy Jellyfish)"
+                   Kernel: Linux 5.15.80-0-lts x86_64 x86_64
+             System shell: /usr/bin/dash (probably dash)
+             make's shell: /usr/bin/dash (probably dash)
+
+Installed compiler toolchains
+-----------------------------
+               native gcc: gcc (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0
+        arm-none-eabi-gcc: arm-none-eabi-gcc (GNU Arm Embedded Toolchain 10.3-2021.10) 10.3.1 20210824 (release)
+                  avr-gcc: avr-gcc (GCC) 5.4.0
+           msp430-elf-gcc: msp430-elf-gcc (GCC) 10.1.0
+       riscv-none-elf-gcc: missing
+  riscv64-unknown-elf-gcc: missing
+     riscv-none-embed-gcc: riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC x86_64) 10.2.0
+     xtensa-esp32-elf-gcc: xtensa-esp32-elf-gcc (crosstool-NG esp-2021r2-patch3) 8.4.0
+   xtensa-esp8266-elf-gcc: xtensa-esp8266-elf-gcc (crosstool-NG crosstool-ng-1.22.0-80-g6c4433a5) 5.2.0
+                    clang: Ubuntu clang version 14.0.0-1ubuntu1
+
+Installed compiler libs
+-----------------------
+     arm-none-eabi-newlib: "4.1.0"
+        msp430-elf-newlib: "3.3.0"
+    riscv-none-elf-newlib: missing
+riscv64-unknown-elf-newlib: missing
+  riscv-none-embed-newlib: "4.1.0"
+  xtensa-esp32-elf-newlib: "3.3.0"
+xtensa-esp8266-elf-newlib: "2.2.0"
+                 avr-libc: "2.0.0" ("20150208")
+
+Installed development tools
+---------------------------
+                   ccache: ccache version 4.5.1
+                    cmake: cmake version 3.22.1
+                 cppcheck: Cppcheck 2.7
+                  doxygen: 1.9.1
+                      git: git version 2.34.1
+                     make: GNU Make 4.3
+                  openocd: missing
+                   python: missing
+                  python2: Python 2.7.18
+                  python3: Python 3.10.6
+                   flake8: 3.8.4 (mccabe: 0.6.1, pycodestyle: 2.6.0, pyflakes: 2.2.0) CPython 3.10.6 on
+               coccinelle: spatch version 1.1.1 compiled with OCaml version 4.13.1

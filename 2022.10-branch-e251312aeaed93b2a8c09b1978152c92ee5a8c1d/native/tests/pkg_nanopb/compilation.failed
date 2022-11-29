@@ -1,0 +1,26 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /software/RIOT/tests/pkg_nanopb clean all
+rm -rf /software/RIOT/tests/pkg_nanopb/bin/native/pkg-build/nanopb
+Building application "tests_pkg_nanopb" for "native" with MCU "native".
+
+make[2]: Nothing to be done for 'all'.
+simple.proto:5:1: warning: Import nanopb.proto is unused.
+Traceback (most recent call last):
+  File "/software/RIOT/build/pkg/nanopb/generator/nanopb_generator.py", line 51, in <module>
+    from .proto import nanopb_pb2
+ImportError: attempted relative import with no known parent package
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/software/RIOT/build/pkg/nanopb/generator/nanopb_generator.py", line 72, in <module>
+    import proto.nanopb_pb2 as nanopb_pb2
+  File "/software/RIOT/build/pkg/nanopb/generator/proto/__init__.py", line 23, in <module>
+    from . import nanopb_pb2
+  File "/software/RIOT/build/pkg/nanopb/generator/proto/nanopb_pb2.py", line 5, in <module>
+    from google.protobuf.internal import builder as _builder
+ImportError: cannot import name 'builder' from 'google.protobuf.internal' (/usr/local/lib/python3.10/dist-packages/google/protobuf/internal/__init__.py)
+--nanopb_out: protoc-gen-nanopb: Plugin failed with status code 1.
+make[1]: *** [/software/RIOT/pkg/nanopb/Makefile.gensrc:22: /software/RIOT/tests/pkg_nanopb/bin/native/application_tests_pkg_nanopb/simple.pb.c] Error 1
+make: *** [/software/RIOT/tests/pkg_nanopb/../../Makefile.include:738: application_tests_pkg_nanopb.module] Error 2
+
+Return value: 2

@@ -1,0 +1,12 @@
+make -C benchmark_udp
+make[2]: Nothing to be done for 'all'.
+make -C dose
+make[2]: Nothing to be done for 'all'.
+make -C ethos
+make[2]: Nothing to be done for 'all'.
+make -C uhcpd
+make[2]: Nothing to be done for 'all'.
+make -C sliptty
+make[2]: Nothing to be done for 'all'.
+make -C zep_dispatch
+cc -g -O3 -Wall -Wextra -I/software/RIOT/core/lib/include -I/software/RIOT/cpu/native/include -I/software/RIOT/drivers/include -I/software/RIOT/sys/include -DNDEBUG  topogen.c -o bin/topogen -lm

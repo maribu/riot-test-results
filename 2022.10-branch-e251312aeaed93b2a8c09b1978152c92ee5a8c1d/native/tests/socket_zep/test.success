@@ -1,0 +1,21 @@
+r
+/software/RIOT/tests/socket_zep/bin/native/tests_socket_zep.elf --eui64=00:5a:45:50:0a:00:30:38 -z [127.0.0.1]:12345,[127.0.0.1]:17754 /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Socket ZEP device driver test
+Initializing socket ZEP with (local: [127.0.0.1]:12345, remote: [127.0.0.1]:17754)
+(Hwaddrs: 3038, 005a45500a003038)
+Send 'Hello\0World\0'
+Waiting for an incoming message (use `make test`)
+RSSI: 0, LQI: 255, Data:
+00000000  41  DC  02  23  00  38  30  00  0A  50  45  5A  00  5B  45  00
+00000010  0A  50  45  5A  00  48  65  6C  6C  6F  20  57  6F  72  6C  64
+
+Run tests successful

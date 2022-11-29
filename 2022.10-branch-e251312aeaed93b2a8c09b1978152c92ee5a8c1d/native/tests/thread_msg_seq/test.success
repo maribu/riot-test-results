@@ -1,0 +1,30 @@
+r
+/software/RIOT/tests/thread_msg_seq/bin/native/tests_thread_msg_seq.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+START
+THREAD nr1 (pid:3) start
+THREAD nr2 (pid:4) start
+THREAD nr3 (pid:5) start
+THREADS CREATED
+
+THREAD nr1 (pid:3) end.
+{ "threads": [{ "name": "nr1", "stack_size": 12288, "stack_used": 2380 }]}
+Got msg from pid 3: "nr1"
+THREAD nr2 (pid:4) end.
+{ "threads": [{ "name": "nr2", "stack_size": 12288, "stack_used": 2380 }]}
+Got msg from pid 4: "nr2"
+THREAD nr3 (pid:5) end.
+{ "threads": [{ "name": "nr3", "stack_size": 12288, "stack_used": 2380 }]}
+Got msg from pid 5: "nr3"
+SUCCESS
+{ "threads": [{ "name": "idle", "stack_size": 8192, "stack_used": 436 }]}
+{ "threads": [{ "name": "main", "stack_size": 12288, "stack_used": 2460 }]}
+

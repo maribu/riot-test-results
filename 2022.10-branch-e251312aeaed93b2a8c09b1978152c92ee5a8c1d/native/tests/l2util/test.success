@@ -1,0 +1,14 @@
+r
+/software/RIOT/tests/l2util/bin/native/tests_l2util.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+...............
+OK (15 tests)
+

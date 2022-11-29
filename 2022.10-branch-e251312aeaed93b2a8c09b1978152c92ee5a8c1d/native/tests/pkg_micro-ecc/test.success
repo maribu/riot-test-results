@@ -1,0 +1,22 @@
+r
+/software/RIOT/tests/pkg_micro-ecc/bin/native/tests_pkg_micro-ecc.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+micro-ecc compiled!
+Testing 4 random private key pairs and signature without using HWRNG
+Round 0
+Round 1
+Round 2
+Round 3
+Done with 0 error(s)
+SUCCESS
+{ "threads": [{ "name": "idle", "stack_size": 8192, "stack_used": 436 }]}
+{ "threads": [{ "name": "main", "stack_size": 12288, "stack_used": 2628 }]}
+

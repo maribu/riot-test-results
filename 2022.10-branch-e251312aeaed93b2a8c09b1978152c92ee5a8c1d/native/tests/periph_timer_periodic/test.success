@@ -1,0 +1,69 @@
+r
+/software/RIOT/tests/periph_timer_periodic/bin/native/tests_periph_timer_periodic.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+
+Running Timer 0 at 1000000 Hz.
+One counter cycle is 25000 ticks or 25 ms
+Will print 'tick' every cycle.
+
+TEST START
+Running iteration 1 of 3
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+
+Cycles:
+channel 0 = 12	[OK]
+Running iteration 2 of 3
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+
+Cycles:
+channel 0 = 12	[OK]
+Running iteration 3 of 3
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+[0] tick
+
+Cycles:
+channel 0 = 12	[OK]
+TEST SUCCEEDED
+{ "threads": [{ "name": "idle, "stack_size": 8192, "stack_used": 1100}]}
+{ "threads": [{ "name": "main, "stack_size": 12288, "stack_used": 2564}]}
+

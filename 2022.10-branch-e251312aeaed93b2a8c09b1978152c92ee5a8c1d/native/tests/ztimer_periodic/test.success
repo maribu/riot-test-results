@@ -1,0 +1,25 @@
+r
+/software/RIOT/tests/ztimer_periodic/bin/native/tests_ztimer_periodic.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Testing clock: ZTIMER_MSEC
+i: 0 time: 3123 offset: 0
+i: 1 time: 3223 offset: 0
+i: 2 time: 3323 offset: 0
+i: 3 time: 3424 offset: 1
+i: 4 time: 3523 offset: 1
+Testing clock: ZTIMER_USEC
+i: 0 time: 3533892 offset: 426
+i: 1 time: 3543681 offset: 211
+i: 2 time: 3553587 offset: 94
+i: 3 time: 3563677 offset: 90
+i: 4 time: 3573966 offset: 289
+Test successful.
+

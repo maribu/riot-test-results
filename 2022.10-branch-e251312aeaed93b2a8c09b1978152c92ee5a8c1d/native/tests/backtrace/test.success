@@ -1,0 +1,22 @@
+/software/RIOT/boards/native/Makefile.include:29: module backtrace is used, do not omit frame pointers
+r
+/software/RIOT/boards/native/Makefile.include:29: module backtrace is used, do not omit frame pointers
+/software/RIOT/tests/backtrace/bin/native/tests_backtrace.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+BACKTRACE_SIZE: 4
+0x8049631
+0x8049cc4
+0xf7cd2c79
+0x8049be0
+{ "threads": [{ "name": "idle", "stack_size": 8192, "stack_used": 436 }]}
+{ "threads": [{ "name": "main", "stack_size": 12288, "stack_used": 4340 }]}
+All tests successful
+

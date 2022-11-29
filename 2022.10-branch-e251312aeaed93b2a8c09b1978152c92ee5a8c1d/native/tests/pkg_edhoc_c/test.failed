@@ -1,0 +1,60 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /software/RIOT/tests/pkg_edhoc_c test
+
+
+/software/RIOT/tests/pkg_edhoc_c/bin/native/tests_pkg_edhoc_c.elf tap0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+/software/RIOT/tests/pkg_edhoc_c/bin/native/tests_pkg_edhoc_c.elf: open(/dev/net/tun): No such file or directory
+make[1]: *** [/software/RIOT/Makefile.include:869: cleanterm] Error 1
+Traceback (most recent call last):
+  File "/software/RIOT/tests/pkg_edhoc_c/tests/01-run.py", line 101, in <module>
+    sys.exit(run(testfunc))
+  File "/software/RIOT/dist/pythonlibs/testrunner/__init__.py", line 27, in run
+    child = setup_child(timeout, env=os.environ,
+  File "/software/RIOT/dist/pythonlibs/testrunner/spawn.py", line 95, in setup_child
+    sync_child(child, env)
+  File "/software/RIOT/dist/pythonlibs/testrunner/spawn.py", line 128, in sync_child
+    utils.test_utils_interactive_sync_shell(child,
+  File "/software/RIOT/dist/pythonlibs/testrunner/utils.py", line 41, in test_utils_interactive_sync_shell
+    _test_utils_interactive_sync(child, retries, delay, '\n', '>')
+  File "/software/RIOT/dist/pythonlibs/testrunner/utils.py", line 17, in _test_utils_interactive_sync
+    ret = child.expect_exact([ready_exp, pexpect.TIMEOUT], timeout=delay)
+  File "/usr/local/lib/python3.10/dist-packages/pexpect/spawnbase.py", line 421, in expect_exact
+    return exp.expect_loop(timeout)
+  File "/usr/local/lib/python3.10/dist-packages/pexpect/expect.py", line 179, in expect_loop
+    return self.eof(e)
+  File "/usr/local/lib/python3.10/dist-packages/pexpect/expect.py", line 122, in eof
+    raise exc
+pexpect.exceptions.EOF: End Of File (EOF). Exception style platform.
+<pexpect.pty_spawn.spawn object at 0x7f3e566f5210>
+command: /usr/bin/make
+args: [b'/usr/bin/make', b'cleanterm']
+buffer (last 100 chars): ''
+before (last 100 chars): ': No such file or directory\r\nmake[1]: *** [/software/RIOT/Makefile.include:869: cleanterm] Error 1\r\n'
+after: <class 'pexpect.exceptions.EOF'>
+match: None
+match_index: None
+exitstatus: 2
+flag_eof: True
+pid: 18005
+child_fd: 5
+closed: False
+timeout: 10
+delimiter: <class 'pexpect.exceptions.EOF'>
+logfile: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+searcher: searcher_string:
+    0: '>'
+    1: TIMEOUT
+make: *** [/software/RIOT/makefiles/tests/tests.inc.mk:22: test] Error 1
+
+Return value: 2

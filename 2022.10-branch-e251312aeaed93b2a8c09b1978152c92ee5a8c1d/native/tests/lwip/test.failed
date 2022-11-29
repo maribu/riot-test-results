@@ -1,0 +1,49 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /software/RIOT/tests/lwip test
+Testing for (<Board 'native',port='tap0',serial=None>, <Board 'native',port='tap1',serial=None>): 
+Traceback (most recent call last):
+  File "/software/RIOT/tests/lwip/tests/01-run.py", line 415, in <module>
+    TestStrategy().execute([BoardGroup((Board("native", "tap0"),
+  File "/software/RIOT/tests/lwip/tests/01-run.py", line 184, in execute
+    test_case(board_group, self.app_dir, env=None)
+  File "/software/RIOT/tests/lwip/tests/01-run.py", line 213, in test_ipv6_send
+    receiver_ip = get_ipv6_address(receiver)
+  File "/software/RIOT/tests/lwip/tests/01-run.py", line 194, in get_ipv6_address
+    spawn.expect(r" inet6 addr: (fe80:[0-9a-f:]+)\s")
+  File "/usr/local/lib/python3.10/dist-packages/pexpect/spawnbase.py", line 343, in expect
+    return self.expect_list(compiled_pattern_list,
+  File "/usr/local/lib/python3.10/dist-packages/pexpect/spawnbase.py", line 372, in expect_list
+    return exp.expect_loop(timeout)
+  File "/usr/local/lib/python3.10/dist-packages/pexpect/expect.py", line 179, in expect_loop
+    return self.eof(e)
+  File "/usr/local/lib/python3.10/dist-packages/pexpect/expect.py", line 122, in eof
+    raise exc
+pexpect.exceptions.EOF: End Of File (EOF). Exception style platform.
+<pexpect.pty_spawn.spawn object at 0x7f33400d21a0>
+command: /usr/bin/make
+args: [b'/usr/bin/make', b'-C', b'/software/RIOT/tests/lwip', b'term']
+buffer (last 100 chars): ''
+before (last 100 chars): '/tun): No such file or directory\r\nmake[1]: *** [/software/RIOT/Makefile.include:862: term] Error 1\r\n'
+after: <class 'pexpect.exceptions.EOF'>
+match: None
+match_index: None
+exitstatus: 2
+flag_eof: True
+pid: 23557
+child_fd: 6
+closed: False
+timeout: 5
+delimiter: <class 'pexpect.exceptions.EOF'>
+logfile: None
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+searcher: searcher_re:
+    0: re.compile(' inet6 addr: (fe80:[0-9a-f:]+)\\s')
+make: *** [/software/RIOT/makefiles/tests/tests.inc.mk:22: test] Error 1
+
+Return value: 2

@@ -1,0 +1,19 @@
+r
+/software/RIOT/tests/thread_race/bin/native/tests_thread_race.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Context swap race condition test application
+Starting IRQ check thread
+Checking for working context swap (to detect false positives)... [Success]
+Checking for reset of swaps (to detect false positives)... [Success]
+Checking for context swap race condition... [Success]
+{ "threads": [{ "name": "idle", "stack_size": 8192, "stack_used": 436 }]}
+{ "threads": [{ "name": "main", "stack_size": 12288, "stack_used": 2484 }]}
+

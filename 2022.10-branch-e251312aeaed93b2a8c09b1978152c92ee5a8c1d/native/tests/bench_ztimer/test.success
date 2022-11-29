@@ -1,0 +1,30 @@
+r
+/software/RIOT/tests/bench_ztimer/bin/native/tests_bench_ztimer.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+ztimer benchmark application.
+
+                     set() one     3618 / 1000 = 3
+                  remove() one      562 / 1000 = 0
+          set() + remove() one     5629 / 1000 = 5
+  set() many increasing target     1781 / 1000 = 1
+               re-set()  first     2773 / 1000 = 2
+               re-set() middle     1295 / 1000 = 1
+               re-set()   last     2125 / 1000 = 2
+       remove() + set()  first     5553 / 1000 = 5
+       remove() + set() middle     5571 / 1000 = 5
+       remove() + set()   last     5538 / 1000 = 5
+      remove() many decreasing     3438 / 1000 = 3
+                  ztimer_now()      594 / 1000 = 0
+              sizeof(ztimer_t)    16000 / 1000 = 16
+done.
+{ "threads": [{ "name": "idle", "stack_size": 8192, "stack_used": 436 }]}
+{ "threads": [{ "name": "main", "stack_size": 12288, "stack_used": 2620 }]}
+

@@ -1,0 +1,26 @@
+r
+/software/RIOT/tests/bloom_bytes/bin/native/tests_bloom_bytes.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Testing Bloom filter.
+
+m: 4096 k: 8
+
+adding 512 elements took 1ms
+checking 10000 elements took 14ms
+
+245 elements probably in the filter.
+9755 elements not in the filter.
+0.024499 false positive rate.
+
+All done!
+{ "threads": [{ "name": "idle, "stack_size": 8192, "stack_used": 436}]}
+{ "threads": [{ "name": "main, "stack_size": 12288, "stack_used": 2588}]}
+

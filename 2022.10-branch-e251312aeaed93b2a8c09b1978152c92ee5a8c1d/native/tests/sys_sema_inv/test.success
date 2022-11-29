@@ -1,0 +1,27 @@
+r
+/software/RIOT/tests/sys_sema_inv/bin/native/tests_sys_sema_inv.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+counter mode
+THREAD 1 start
+THREAD 2 start
+THREAD 3 start
+thread synced
+THREAD 3 woke main thread
+mask mode
+THREAD 1 start
+THREAD 2 start
+THREAD 3 start
+thread synced
+THREAD 3 woke main thread
+SUCCESS
+{ "threads": [{ "name": "idle", "stack_size": 8192, "stack_used": 1100 }]}
+{ "threads": [{ "name": "main", "stack_size": 12288, "stack_used": 2452 }]}
+

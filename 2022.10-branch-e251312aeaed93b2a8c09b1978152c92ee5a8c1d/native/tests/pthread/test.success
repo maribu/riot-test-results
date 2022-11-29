@@ -1,0 +1,20 @@
+r
+/software/RIOT/tests/pthread/bin/native/tests_pthread.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+main: parameter = 6
+pthread: parameter = 6
+pthread: factorial = 720
+{ "threads": [{ "name": "pthread", "stack_size": 8192, "stack_used": 2452 }]}
+main: factorial = 720
+SUCCESS
+{ "threads": [{ "name": "idle", "stack_size": 8192, "stack_used": 436 }]}
+{ "threads": [{ "name": "main", "stack_size": 12288, "stack_used": 2476 }]}
+

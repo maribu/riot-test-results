@@ -1,0 +1,40 @@
+r
+/software/RIOT/tests/ps_schedstatistics/bin/native/tests_ps_schedstatistics.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+Creating thread #0, next=1
+Creating thread #1, next=2
+Creating thread #2, next=3
+Creating thread #3, next=4
+Creating thread #4, next=0
+
+> 
+> 
+> help
+help
+Command              Description
+---------------------------------------
+pm                   interact with layered PM subsystem
+ps                   Prints information about running threads.
+reboot               Reboot the node
+version              Prints current RIOT_VERSION
+> ps
+ps
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     | runtime  | switches  | runtime_usec 
+	  - | isr_stack            | -        - |   - |   8192 (   -1) ( 8193) |  0x8067800 |  0x8067800
+	  1 | idle                 | pending  Q |  15 |   8192 ( 1100) ( 7092) |  0x8060200 |  0x8062060  | 24.215% |         1  |    1000187 
+	  2 | main                 | running  Q |   7 |  12288 ( 3104) ( 9184) |  0x8062200 |  0x8065060  | 75.656% |        96  |    3124929 
+	  3 | thread               | bl rx    _ |   6 |   8192 ( 2412) ( 5780) |  0x80560e0 |  0x8057f40  |  0.019% |        37  |        810 
+	  4 | thread               | bl rx    _ |   6 |   8192 ( 2412) ( 5780) |  0x80580e0 |  0x8059f40  |  0.021% |        37  |        870 
+	  5 | thread               | bl rx    _ |   6 |   8192 ( 2412) ( 5780) |  0x805a0e0 |  0x805bf40  |  0.027% |        37  |       1155 
+	  6 | thread               | bl mutex _ |   6 |   8192 ( 2412) ( 5780) |  0x805c0e0 |  0x805df40  |  0.031% |        36  |       1317 
+	  7 | thread               | bl rx    _ |   6 |   8192 ( 2412) ( 5780) |  0x805e0e0 |  0x805ff40  |  0.028% |        35  |       1173 
+	    | SUM                  |            |     |  69632 (16264) (53368)
+> 

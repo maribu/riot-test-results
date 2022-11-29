@@ -1,0 +1,21 @@
+r
+/software/RIOT/tests/xfa/bin/native/tests_xfa.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Cross file array test
+xfatest[2]:
+[0] = 1, "xfatest1"
+[1] = 2, "xfatest2"
+xfatest_const[2]:
+[0] = 123, "xfatest_const1"
+[1] = 45, "xfatest_const2"
+{ "threads": [{ "name": "idle", "stack_size": 8192, "stack_used": 436 }]}
+{ "threads": [{ "name": "main", "stack_size": 12288, "stack_used": 2460 }]}
+

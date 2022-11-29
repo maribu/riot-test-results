@@ -1,0 +1,50 @@
+r
+/software/RIOT/tests/cpp11_thread/bin/native/tests_cpp11_thread.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+
+************ C++ thread test ***********
+Creating one thread and passing an argument ...
+{ "threads": [{ "name": "riot_cpp_thread", "stack_size": 12288, "stack_used": 12284 }]}
+Done
+
+Creating detached thread ...
+{ "threads": [{ "name": "riot_cpp_thread", "stack_size": 12288, "stack_used": 12284 }]}
+Done
+
+Join on 'finished' thread ...
+{ "threads": [{ "name": "riot_cpp_thread", "stack_size": 12288, "stack_used": 12284 }]}
+Done
+
+Join on 'running' thread ...
+{ "threads": [{ "name": "riot_cpp_thread", "stack_size": 12288, "stack_used": 12284 }]}
+{ "threads": [{ "name": "riot_cpp_thread", "stack_size": 12288, "stack_used": 12284 }]}
+Done
+
+Testing sleep_for ...
+Done
+
+Testing sleep_until ...
+Done
+
+Swapping two threads ...
+{ "threads": [{ "name": "riot_cpp_thread", "stack_size": 12288, "stack_used": 12284 }]}
+{ "threads": [{ "name": "riot_cpp_thread", "stack_size": 12288, "stack_used": 12284 }]}
+Done
+
+Move constructor ...
+{ "threads": [{ "name": "riot_cpp_thread", "stack_size": 12288, "stack_used": 12284 }]}
+Done
+
+Bye, bye.
+******************************************
+{ "threads": [{ "name": "idle", "stack_size": 8192, "stack_used": 1100 }]}
+{ "threads": [{ "name": "main", "stack_size": 12288, "stack_used": 2452 }]}
+

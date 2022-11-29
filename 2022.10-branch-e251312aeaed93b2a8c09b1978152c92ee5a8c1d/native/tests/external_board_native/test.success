@@ -1,0 +1,12 @@
+/software/RIOT/tests/external_board_native/bin/native/external_board.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+Hello World!
+You are running RIOT on a(n) native board.
+THIS_BOARD_IS external_native
+This board is 'An external extended native'
+Test successful!!
+

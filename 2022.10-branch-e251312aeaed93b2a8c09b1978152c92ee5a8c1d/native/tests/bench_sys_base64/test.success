@@ -1,0 +1,17 @@
+r
+/software/RIOT/tests/bench_sys_base64/bin/native/tests_bench_sys_base64.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Verifying that base64 encoding works for benchmark input: OK
+Verifying that base64 decoding works for benchmark input: OK
+Encoding 1.000 x 96 bytes (128 bytes in base64): 888 µs
+Decoding 1.000 x 96 bytes (128 bytes in base64): 1330 µs
+{ "threads": [{ "name": "idle, "stack_size": 8192, "stack_used": 436}]}
+{ "threads": [{ "name": "main, "stack_size": 12288

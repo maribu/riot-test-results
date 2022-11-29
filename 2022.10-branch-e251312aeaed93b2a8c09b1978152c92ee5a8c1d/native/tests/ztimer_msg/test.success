@@ -1,0 +1,76 @@
+r
+/software/RIOT/tests/ztimer_msg/bin/native/tests_ztimer_msg.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+This is thread 3
+sending 1st msg
+now=3:25671 -> every 2.0s: Hello World
+sending 2nd msg
+now=3:25774 -> every 5.0s: This is a Test
+This is thread 4
+sec=4 min=0 hour=0
+now=5:25947 -> every 2.0s: Hello World
+sec=5 min=0 hour=0
+sec=6 min=0 hour=0
+now=7:26268 -> every 2.0s: Hello World
+sec=7 min=0 hour=0
+now=8:25866 -> every 5.0s: This is a Test
+sec=8 min=0 hour=0
+now=9:26426 -> every 2.0s: Hello World
+sec=9 min=0 hour=0
+sec=10 min=0 hour=0
+now=11:26545 -> every 2.0s: Hello World
+sec=11 min=0 hour=0
+sec=12 min=0 hour=0
+now=13:26008 -> every 5.0s: This is a Test
+now=13:26662 -> every 2.0s: Hello World
+sec=13 min=0 hour=0
+sec=14 min=0 hour=0
+now=15:26799 -> every 2.0s: Hello World
+sec=15 min=0 hour=0
+sec=16 min=0 hour=0
+now=17:26946 -> every 2.0s: Hello World
+sec=17 min=0 hour=0
+now=18:26166 -> every 5.0s: This is a Test
+sec=18 min=0 hour=0
+now=19:27106 -> every 2.0s: Hello World
+sec=19 min=0 hour=0
+sec=20 min=0 hour=0
+now=21:27243 -> every 2.0s: Hello World
+sec=21 min=0 hour=0
+sec=22 min=0 hour=0
+now=23:26355 -> every 5.0s: This is a Test
+now=23:27444 -> every 2.0s: Hello World
+sec=23 min=0 hour=0
+sec=24 min=0 hour=0
+now=25:27602 -> every 2.0s: Hello World
+sec=25 min=0 hour=0
+sec=26 min=0 hour=0
+now=27:27859 -> every 2.0s: Hello World
+sec=27 min=0 hour=0
+now=28:26597 -> every 5.0s: This is a Test
+sec=28 min=0 hour=0
+now=29:28098 -> every 2.0s: Hello World
+sec=29 min=0 hour=0
+sec=30 min=0 hour=0
+now=31:28405 -> every 2.0s: Hello World
+sec=31 min=0 hour=0
+sec=32 min=0 hour=0
+now=33:26744 -> every 5.0s: This is a Test
+now=33:28550 -> every 2.0s: Hello World
+sec=33 min=0 hour=0
+sec=34 min=0 hour=0
+now=35:28688 -> every 2.0s: Hello World
+sec=35 min=0 hour=0
+sec=36 min=0 hour=0
+now=37:28820 -> every 2.0s: Hello World
+sec=37 min=0 hour=0
+now=38:26892 -> every 5.0s: This is a Test
+

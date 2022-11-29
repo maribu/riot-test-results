@@ -1,0 +1,18 @@
+shellping
+/software/RIOT/tests/test_tools/bin/native/tests_test_tools.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+Running 'tests_tools' application
+shellpong
+true this should not be echoed
+shellping
+shellpong
+toupper lowercase
+LOWERCASE
+getchar
+
+getchar 0x0a
+

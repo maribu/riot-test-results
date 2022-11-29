@@ -1,0 +1,106 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /software/RIOT/examples/rust-gcoap clean all
+Building application "rust_gcoap" for "native" with MCU "native".
+
+   Compiling proc-macro2 v1.0.46
+   Compiling unicode-ident v1.0.4
+   Compiling quote v1.0.21
+   Compiling syn v1.0.101
+   Compiling serde_derive v1.0.145
+   Compiling autocfg v1.1.0
+   Compiling memchr v2.5.0
+   Compiling libc v0.2.134
+   Compiling serde v1.0.145
+   Compiling glob v0.3.0
+   Compiling cfg-if v1.0.0
+   Compiling log v0.4.17
+   Compiling indexmap v1.9.1
+   Compiling minimal-lexical v0.2.1
+   Compiling regex-syntax v0.6.27
+   Compiling os_str_bytes v6.3.0
+   Compiling termcolor v1.1.3
+   Compiling aho-corasick v0.7.19
+   Compiling clang-sys v1.4.0
+   Compiling hashbrown v0.12.3
+   Compiling atty v0.2.14
+   Compiling semver v1.0.14
+   Compiling clap_lex v0.2.4
+   Compiling nom v7.1.1
+   Compiling libloading v0.7.3
+   Compiling strsim v0.10.0
+   Compiling build_const v0.2.2
+   Compiling bitflags v1.3.2
+   Compiling serde_json v1.0.85
+   Compiling byteorder v1.4.3
+   Compiling humantime v2.1.0
+   Compiling textwrap v0.15.1
+   Compiling bindgen v0.60.1
+   Compiling either v1.8.0
+   Compiling clap v3.2.22
+   Compiling crc v1.8.1
+   Compiling which v4.3.0
+   Compiling regex v1.6.0
+   Compiling lazy_static v1.4.0
+   Compiling itoa v1.0.3
+   Compiling rustc-hash v1.1.0
+   Compiling lazycell v1.3.0
+   Compiling peeking_take_while v0.1.2
+   Compiling shlex v1.1.0
+   Compiling half v1.8.2
+   Compiling ryu v1.0.11
+   Compiling rustc_version v0.4.0
+   Compiling cexpr v0.6.0
+   Compiling minicbor v0.13.2
+   Compiling env_logger v0.9.1
+   Compiling heapless v0.7.16
+   Compiling coap-numbers v0.2.0
+   Compiling coap-message v0.2.3
+   Compiling hash32 v0.2.1
+   Compiling num-traits v0.2.15
+   Compiling shlex v0.1.1
+   Compiling stable_deref_trait v1.2.0
+   Compiling nb v1.0.0
+   Compiling void v1.0.2
+   Compiling nb v0.1.3
+   Compiling c2rust-asm-casts v0.2.0
+   Compiling riot-wrappers v0.8.0
+   Compiling cty v0.2.2
+   Compiling embedded-hal v0.2.7
+   Compiling embedded-graphics v0.6.2
+   Compiling cstr v0.2.11
+   Compiling pin-utils v0.1.0
+   Compiling bare-metal v1.0.0
+   Compiling hex v0.4.3
+   Compiling mutex-trait v0.2.0
+   Compiling rust_riotmodules v0.1.0 (/software/RIOT/sys/rust_riotmodules)
+   Compiling minicbor-derive v0.8.0
+   Compiling c2rust-bitfields-derive v0.2.1
+   Compiling c2rust-bitfields v0.3.0
+   Compiling serde_cbor v0.11.2
+   Compiling serde_bytes v0.10.5
+   Compiling windowed-infinity v0.1.1
+   Compiling coap-handler v0.1.4
+   Compiling coap-handler-implementations v0.3.5
+   Compiling coap-message-demos v0.2.0 (https://gitlab.com/chrysn/coap-message-demos/#6a55eef7)
+   Compiling riot-sys v0.7.9
+error: failed to run custom build command for `riot-sys v0.7.9`
+
+Caused by:
+  process didn't exit successfully: `/software/RIOT/examples/rust-gcoap/bin/native/target/release/build/riot-sys-b75d5b3ad4cb53e0/build-script-build` (exit status: 101)
+  --- stdout
+  cargo:rerun-if-env-changed=BUILDING_RIOT_RS
+  cargo:rerun-if-env-changed=RIOT_CC
+  cargo:rerun-if-env-changed=RIOT_CFLAGS
+  cargo:rerun-if-env-changed=RIOT_COMPILE_COMMANDS_JSON
+  cargo:rerun-if-changed=/software/RIOT/examples/rust-gcoap/bin/native/cargo-compile-commands.json
+  cargo:rerun-if-env-changed=RIOT_USEMODULE
+  cargo:CC=clang
+  cargo:CFLAGS="-DGCOAP_STACK_SIZE=(THREAD_STACKSIZE_DEFAULT+DEBUG_EXTRA_STACKSIZE+sizeof(coap_pkt_t)+1024)" -DDEVELHELP -Werror -Wall -Wextra -pedantic -g3 -Og -U_FORTIFY_SOURCE "-std=gnu11" -m32 -fstack-protector-all -ffunction-sections -fdata-sections -DDEBUG_ASSERT_VERBOSE "-DRIOT_APPLICATION=\"rust_gcoap\"" "-DBOARD_NATIVE=\"native\"" "-DRIOT_BOARD=BOARD_NATIVE" "-DCPU_NATIVE=\"native\"" "-DRIOT_CPU=CPU_NATIVE" "-DMCU_NATIVE=\"native\"" "-DRIOT_MCU=MCU_NATIVE" -fwrapv -Wstrict-overflow -fno-common -ffunction-sections -fdata-sections -Wall -Wextra -Wmissing-include-dirs -fno-delete-null-pointer-checks -Wstrict-prototypes -Wold-style-definition -gz "-Wformat=2" -Wformat-overflow -Wformat-truncation -Wcast-align -DSOCK_HAS_ASYNC -DSOCK_HAS_IPV6 -DSOCK_HAS_ASYNC -DSOCK_HAS_ASYNC_CTX -include /software/RIOT/examples/rust-gcoap/bin/native/riotbuild/riotbuild.h -Wno-unknown-warning-option -DNATIVE_INCLUDES -I/software/RIOT/boards/native/include -I/software/RIOT/core/lib/include -I/software/RIOT/core/include -I/software/RIOT/drivers/include -I/software/RIOT/cpu/native/include -I/software/RIOT/sys/include -DMODULE_AUTO_INIT -DMODULE_AUTO_INIT_GNRC_IPV6 -DMODULE_AUTO_INIT_GNRC_IPV6_NIB -DMODULE_AUTO_INIT_GNRC_NETIF -DMODULE_AUTO_INIT_GNRC_PKTBUF -DMODULE_AUTO_INIT_GNRC_UDP -DMODULE_AUTO_INIT_RANDOM -DMODULE_AUTO_INIT_ZTIMER -DMODULE_BOARD -DMODULE_BOARD_COMMON_INIT -DMODULE_CONSTFS -DMODULE_CORE -DMODULE_CORE_IDLE_THREAD -DMODULE_CORE_INIT -DMODULE_CORE_LIB -DMODULE_CORE_MBOX -DMODULE_CORE_MSG -DMODULE_CORE_PANIC -DMODULE_CORE_THREAD -DMODULE_CORE_THREAD_FLAGS -DMODULE_CPU -DMODULE_EUI_PROVIDER -DMODULE_EVENT -DMODULE_EVENT_CALLBACK -DMODULE_EVENT_TIMEOUT_ZTIMER -DMODULE_EVTIMER -DMODULE_EVTIMER_ON_ZTIMER -DMODULE_FMT -DMODULE_FRAC -DMODULE_GCOAP -DMODULE_GNRC -DMODULE_GNRC_ICMPV6 -DMODULE_GNRC_ICMPV6_ECHO -DMODULE_GNRC_IPV6 -DMODULE_GNRC_IPV6_DEFAULT -DMODULE_GNRC_IPV6_HDR -DMODULE_GNRC_IPV6_NIB -DMODULE_GNRC_NDP -DMODULE_GNRC_NETAPI -DMODULE_GNRC_NETAPI_CALLBACKS -DMODULE_GNRC_NETAPI_MBOX -DMODULE_GNRC_NETIF -DMODULE_GNRC_NETIF_ETHERNET -DMODULE_GNRC_NETIF_HDR -DMODULE_GNRC_NETIF_INIT_DEVS -DMODULE_GNRC_NETIF_IPV6 -DMODULE_GNRC_NETREG -DMODULE_GNRC_NETTYPE_ICMPV6 -DMODULE_GNRC_NETTYPE_IPV6 -DMODULE_GNRC_NETTYPE_UDP -DMODULE_GNRC_PKT -DMODULE_GNRC_PKTBUF -DMODULE_GNRC_PKTBUF_STATIC -DMODULE_GNRC_SOCK -DMODULE_GNRC_SOCK_ASYNC -DMODULE_GNRC_SOCK_UDP -DMODULE_GNRC_UDP -DMODULE_ICMPV6 -DMODULE_INET_CSUM -DMODULE_IOLIST -DMODULE_IPV6 -DMODULE_IPV6_ADDR -DMODULE_IPV6_HDR -DMODULE_L2UTIL -DMODULE_LIBC -DMODULE_LUID -DMODULE_NANOCOAP -DMODULE_NATIVE_CLI_EUI_PROVIDER -DMODULE_NATIVE_DRIVERS -DMODULE_NATIVE_VFS -DMODULE_NETDEV -DMODULE_NETDEV_DEFAULT -DMODULE_NETDEV_ETH -DMODULE_NETDEV_REGISTER -DMODULE_NETDEV_TAP -DMODULE_NETIF -DMODULE_PERIPH -DMODULE_PERIPH_COMMON -DMODULE_PERIPH_CPUID -DMODULE_PERIPH_GPIO -DMODULE_PERIPH_GPIO_LINUX -DMODULE_PERIPH_HWRNG -DMODULE_PERIPH_INIT -DMODULE_PERIPH_INIT_CPUID -DMODULE_PERIPH_INIT_GPIO -DMODULE_PERIPH_INIT_GPIO_LINUX -DMODULE_PERIPH_INIT_HWRNG -DMODULE_PERIPH_INIT_LED0 -DMODULE_PERIPH_INIT_LED1 -DMODULE_PERIPH_INIT_LED2 -DMODULE_PERIPH_INIT_LED3 -DMODULE_PERIPH_INIT_LED4 -DMODULE_PERIPH_INIT_LED5 -DMODULE_PERIPH_INIT_LED6 -DMODULE_PERIPH_INIT_LED7 -DMODULE_PERIPH_INIT_LEDS -DMODULE_PERIPH_INIT_PM -DMODULE_PERIPH_INIT_TIMER -DMODULE_PERIPH_INIT_UART -DMODULE_PERIPH_PM -DMODULE_PERIPH_TIMER -DMODULE_PERIPH_UART -DMODULE_POSIX_HEADERS -DMODULE_POSIX_INET -DMODULE_PRNG -DMODULE_PRNG_MUSL_LCG -DMODULE_RANDOM -DMODULE_SOCK -DMODULE_SOCK_ASYNC -DMODULE_SOCK_ASYNC_EVENT -DMODULE_SOCK_AUX_LOCAL -DMODULE_SOCK_UDP -DMODULE_SOCK_UTIL -DMODULE_STDIO_NATIVE -DMODULE_SYS -DMODULE_UDP -DMODULE_VFS -DMODULE_ZTIMER -DMODULE_ZTIMER_CONVERT -DMODULE_ZTIMER_CONVERT_FRAC -DMODULE_ZTIMER_CONVERT_SHIFT -DMODULE_ZTIMER_CORE -DMODULE_ZTIMER_EXTEND -DMODULE_ZTIMER_INIT -DMODULE_ZTIMER_MSEC -DMODULE_ZTIMER_PERIPH_TIMER -DMODULE_ZTIMER_SEC -DMODULE_ZTIMER_USEC
+  cargo:rerun-if-changed=riot-bindgen.h
+
+  --- stderr
+  /software/RIOT/sys/include/net/sock/udp.h:788:10: fatal error: 'sock_types.h' file not found
+  thread 'main' panicked at 'Unable to generate bindings: ClangDiagnostic("/software/RIOT/sys/include/net/sock/udp.h:788:10: fatal error: 'sock_types.h' file not found\n")', /data/riotbuild/.cargo/registry/src/github.com-1ecc6299db9ec823/riot-sys-0.7.9/build.rs:220:10
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+make: *** [/software/RIOT/makefiles/cargo-targets.inc.mk:44: /software/RIOT/examples/rust-gcoap/bin/native/target/i686-unknown-linux-gnu/release/librust_gcoap.a] Error 101
+
+Return value: 2

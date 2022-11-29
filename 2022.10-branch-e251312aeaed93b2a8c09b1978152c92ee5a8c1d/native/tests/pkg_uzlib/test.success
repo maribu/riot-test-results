@@ -1,0 +1,17 @@
+r
+/software/RIOT/tests/pkg_uzlib/bin/native/tests_pkg_uzlib.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Compressing message (len: 882): "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl vel pretium lectus quam id leo. Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum. Velit scelerisque in dictum non consectetur a erat nam. Pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus. Tristique et egestas quis ipsum suspendisse. At imperdiet dui accumsan sit amet nulla facilisi. Pulvinar neque laoreet suspendisse interdum consectetur libero. Vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae. Sed adipiscing diam donec adipiscing tristique risus nec. Venenatis tellus in metus vulputate eu scelerisque. Id faucibus nisl tincidunt eget nullam non nisi est. Integer feugiat scelerisque varus morbi enim. Est sit amet facilisis magna etiam. Venenatis cras sed felis eget velit aliquet sagittis."
+Message compressed to 812 raw bytes (ratio: 0.92)
+Decompressed message (len: 882): "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl vel pretium lectus quam id leo. Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum. Velit scelerisque in dictum non consectetur a erat nam. Pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus. Tristique et egestas quis ipsum suspendisse. At imperdiet dui accumsan sit amet nulla facilisi. Pulvinar neque laoreet suspendisse interdum consectetur libero. Vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae. Sed adipiscing diam donec adipiscing tristique risus nec. Venenatis tellus in metus vulputate eu scelerisque. Id faucibus nisl tincidunt eget nullam non nisi est. Integer feugiat scelerisque varus morbi enim. Est sit amet facilisis magna etiam. Venenatis cras sed felis eget velit aliquet sagittis."
+make[1]: *** [/software/RIOT/Makefile.include:869: cleanterm] Segmentation fault
+
+Process already stopped

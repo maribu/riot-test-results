@@ -1,0 +1,81 @@
+r
+/software/RIOT/tests/memarray/bin/native/tests_memarray.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+MAX_NUMBER_BLOCKS: 10
+NUMBER_OF_LOOPS: 1
+NUMBER_OF_TESTS: 1
+Starting (10, 8)
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     
+	  - | isr_stack            | -        - |   - |   8192 (   -1) ( 8193) |  0x805a900 |  0x805a900
+	  1 | idle                 | pending  Q |  15 |   8192 (  436) ( 7756) |  0x8053300 |  0x8055160 
+	  2 | main                 | running  Q |   7 |  12288 ( 2700) ( 9588) |  0x8055300 |  0x8058160 
+	    | SUM                  |            |     |  28672 ( 3136) (25536)
+LOOP #1:
+TEST #1:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x80531d0, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x80531c0, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x80531b0, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x80531a0, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x8053190, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x8053180, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x8053170, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x8053160, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x8053150, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x8053140, total 144
+	Free (0) 16 Bytes at 0x80531d0, total 144
+	Free (1) 16 Bytes at 0x80531c0, total 128
+	Free (2) 16 Bytes at 0x80531b0, total 112
+	Free (3) 16 Bytes at 0x80531a0, total 96
+	Free (4) 16 Bytes at 0x8053190, total 80
+	Free (5) 16 Bytes at 0x8053180, total 64
+	Free (6) 16 Bytes at 0x8053170, total 48
+	Free (7) 16 Bytes at 0x8053160, total 32
+	Free (8) 16 Bytes at 0x8053150, total 16
+	Free (9) 16 Bytes at 0x8053140, total 0
+LOOP #2:
+TEST #1:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x80531d0, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x80531c0, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x80531b0, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x80531a0, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x8053190, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x8053180, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x8053170, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x8053160, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x8053150, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x8053140, total 144
+	Free (0) 16 Bytes at 0x80531d0, total 144
+	Free (1) 16 Bytes at 0x80531c0, total 128
+	Free (2) 16 Bytes at 0x80531b0, total 112
+	Free (3) 16 Bytes at 0x80531a0, total 96
+	Free (4) 16 Bytes at 0x8053190, total 80
+	Free (5) 16 Bytes at 0x8053180, total 64
+	Free (6) 16 Bytes at 0x8053170, total 48
+	Free (7) 16 Bytes at 0x8053160, total 32
+	Free (8) 16 Bytes at 0x8053150, total 16
+	Free (9) 16 Bytes at 0x8053140, total 0
+Extend and reduce tests
+Memarray available: 10
+Memarray available: 20
+Memarray reduction: 0 available: 10
+Memarray reduction: -1 available: 10
+Memarray reduction: 0 available: 0
+Memarray available: 9
+Memarray reduction: -1 available: 9
+Finishing
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     
+	  - | isr_stack            | -        - |   - |   8192 (   -1) ( 8193) |  0x805a900 |  0x805a900
+	  1 | idle                 | pending  Q |  15 |   8192 (  436) ( 7756) |  0x8053300 |  0x8055160 
+	  2 | main                 | running  Q |   7 |  12288 ( 2700) ( 9588) |  0x8055300 |  0x8058160 
+	    | SUM                  |            |     |  28672 ( 3136) (25536)
+{ "threads": [{ "name": "idle", "stack_size": 8192, "stack_used": 436 }]}
+{ "threads": [{ "name": "main", "stack_size": 12288, "stack_used": 2700 }]}
+

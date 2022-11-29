@@ -1,0 +1,25 @@
+
+
+/software/RIOT/tests/mtd_raw/bin/native/tests_mtd_raw.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+Manual MTD test
+init MTD_0… OK (8 MiB)
+> 
+> 
+> info
+info
+mtd devices: 1
+ -=[ MTD_0 ]=-
+sectors: 2048
+pages per sector: 16
+page size: 256
+total: 8 MiB
+> test 0
+test 0
+[START]
+[SUCCESS]
+> 

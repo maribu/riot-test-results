@@ -1,0 +1,20 @@
+r
+/software/RIOT/tests/bitarithm_timings/bin/native/tests_bitarithm_timings.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Start.
++ bitarithm_msb: 175281724 iterations per second
++ bitarithm_lsb: 324518454 iterations per second
++ bitarithm_bits_set: 93387561 iterations per second
++ bitarithm_test_and_clear: 31972741 iterations per second
+Done.
+{ "threads": [{ "name": "idle", "stack_size": 8192, "stack_used": 436 }]}
+{ "threads": [{ "name": "main", "stack_size": 12288, "stack_used": 2564 }]}
+

@@ -1,0 +1,29 @@
+r
+/software/RIOT/tests/trickle/bin/native/tests_trickle.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+[START]
+now = 3066, t = 29
+now = 3153, t = 64
+now = 3356, t = 163
+now = 3734, t = 333
+now = 4448, t = 631
+[TRICKLE_RESET]
+now = 4461, t = 12
+now = 4484, t = 19
+now = 4557, t = 60
+now = 4639, t = 78
+now = 4935, t = 246
+now = 5445, t = 500
+now = 6089, t = 632
+[SUCCESS]
+{ "threads": [{ "name": "idle", "stack_size": 8192, "stack_used": 1100 }]}
+{ "threads": [{ "name": "main", "stack_size": 12288, "stack_used": 2556 }]}
+

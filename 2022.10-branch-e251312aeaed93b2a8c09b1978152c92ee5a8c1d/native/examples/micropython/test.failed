@@ -1,0 +1,94 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /software/RIOT/examples/micropython test
+/software/RIOT/examples/micropython/bin/native/micropython.elf /dev/ttyACM0 
+RIOT native interrupts/signals initialized.
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+-- Executing boot.py
+boot.py: MicroPython says hello!
+-- boot.py exited. Starting REPL..
+MicroPython bb8e51f on 2022-11-29; riot-native with native
+Type "help()" for more information.
+>>> print("echo this! " * 4)
+print("echo this! " * 4)
+echo this! echo this! echo this! echo this! 
+>>> import riot
+print(riot.thread_getpid())
+import riot
+>>> print(riot.thread_getpid())
+2
+>>> import utime
+import utime
+>>> utime.time()
+utime.time()
+3287
+>>> utime.sleep_ms(0)
+utime.sleep_ms(0)
+>>> utime.time()
+utime.time()
+3389
+>>> test_sleep(0, 1000): slept 102ms
+utime.time()
+utime.time()
+3440
+>>> utime.sleep_ms(50)
+utime.sleep_ms(50)
+>>> utime.time()
+utime.time()
+3593
+>>> test_sleep(50, 112): slept 153ms
+utime.time()
+utime.time()
+3644
+>>> utime.sleep_ms(250)
+utime.sleep_ms(250)
+>>> utime.time()
+utime.time()
+3996
+>>> test_sleep(250, 112): slept 352ms
+utime.time()
+utime.time()
+4047
+>>> utime.sleep_ms(500)
+utime.sleep_ms(500)
+>>> utime.time()
+utime.time()
+4649
+>>> test_sleep(500, 112): slept 602ms
+import xtimer
+import xtimer
+>>> a = 0
+a = 0
+>>> def inc_a(): global a; a+=1
+def inc_a(): global a; a+=1
+... 
+
+>>> t = xtimer.xtimer(inc_a)
+t = xtimer.xtimer(inc_a)
+>>> utime.time()
+utime.time()
+4954
+>>> t.set(500000)
+t.set(500000)
+>>> while a==0: pass
+while a==0: pass
+... 
+
+>>> utime.time()
+utime.time()
+make[1]: *** [/software/RIOT/Makefile.include:869: cleanterm] Floating point exception
+
+Traceback (most recent call last):
+  File "/software/RIOT/examples/micropython/tests/01-run.py", line 84, in <module>
+    sys.exit(run(testfunc))
+  File "/software/RIOT/dist/pythonlibs/testrunner/__init__.py", line 30, in run
+    testfunc(child)
+  File "/software/RIOT/examples/micropython/tests/01-run.py", line 77, in testfunc
+    duration = get_time() - before
+  File "/software/RIOT/examples/micropython/tests/01-run.py", line 11, in get_time
+    res = int(child.readline().rstrip())
+ValueError: invalid literal for int() with base 10: 'make[1]: *** [/software/RIOT/Makefile.include:869: cleanterm] Floating point exception'
+make: *** [/software/RIOT/makefiles/tests/tests.inc.mk:22: test] Error 1
+
+Return value: 2
