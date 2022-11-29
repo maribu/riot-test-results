@@ -1,0 +1,62 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM1
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+
+Test for peripheral TIMERs
+
+Available timers: 4
+
+Testing TIMER_0:
+TIMER_0: initialization successful
+TIMER_0: stopped
+TIMER_0: set channel 0 to 5000
+TIMER_0: set channel 1 to 10000
+TIMER_0: set channel 2 to 15000
+TIMER_0: starting
+TIMER_0: channel 0 fired at SW count    35557 - init:    35557
+TIMER_0: channel 1 fired at SW count    71085 - diff:    35528
+TIMER_0: channel 2 fired at SW count   106617 - diff:    35532
+
+Testing TIMER_1:
+TIMER_1: initialization successful
+TIMER_1: stopped
+TIMER_1: set channel 0 to 5000
+TIMER_1: set channel 1 to 10000
+TIMER_1: set channel 2 to 15000
+TIMER_1: starting
+TIMER_1: channel 0 fired at SW count      939 - init:      939
+TIMER_1: channel 1 fired at SW count      113 - diff: 4294966470
+TIMER_1: channel 2 fired at SW count     1029 - diff:      916
+
+Testing TIMER_2:
+TIMER_2: initialization successful
+TIMER_2: stopped
+TIMER_2: set channel 0 to 5000
+TIMER_2: set channel 1 to 10000
+TIMER_2: set channel 2 to 15000
+TIMER_2: starting
+TIMER_2: channel 0 fired at SW count      937 - init:      937
+TIMER_2: channel 1 fired at SW count      110 - diff: 4294966469
+TIMER_2: channel 2 fired at SW count     1027 - diff:      917
+
+Testing TIMER_3:
+TIMER_3: initialization successful
+TIMER_3: stopped
+TIMER_3: set channel 0 to 5000
+TIMER_3: set channel 1 to 10000
+TIMER_3: set channel 2 to 15000
+TIMER_3: starting
+TIMER_3: channel 0 fired at SW count      934 - init:      934
+TIMER_3: channel 1 fired at SW count      108 - diff: 4294966470
+TIMER_3: channel 2 fired at SW count     1024 - diff:      916
+
+TEST SUCCEEDED
+

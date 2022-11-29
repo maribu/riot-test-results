@@ -1,0 +1,151 @@
+
+
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM1
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+> curslotnr
+curslotnr
+Current slot=0
+> curslothdr
+curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x63862357
+compiling /home/maribu/Repos/software/RIOT/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /home/maribu/Repos/software/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot1.1669735256.bin...
+/home/maribu/Repos/software/RIOT/dist/tools/openocd/openocd.sh flash /home/maribu/Repos/software/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot1.1669735256.bin
+### Flashing Target ###
+Binfile detected, adding ROM base address: 0x00000000
+Flashing with IMAGE_OFFSET: 0x00081000
+Open On-Chip Debugger 0.12.0-rc2
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+swd
+Warn : Transport "swd" was already selected
+swd
+Info : J-Link OB-SAM3U128-V2-NordicSemi compiled Jan 20 2022 16:43:31
+Info : Hardware version: 1.00
+Info : VTarget = 3.300 V
+Info : clock speed 1000 kHz
+Info : SWD DPIDR 0x2ba01477
+Info : [nrf52.cpu] Cortex-M4 r0p1 processor detected
+Info : [nrf52.cpu] target has 6 breakpoints, 4 watchpoints
+Info : starting gdb server for nrf52.cpu on 0
+Info : Listening on port 37283 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* nrf52.cpu          cortex_m   little nrf52.cpu          halted
+
+[nrf52.cpu] halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x0000033c msp: 0x20000200
+Info : nRF52840-xxAA(build code: C0) 1024kB Flash, 256kB RAM
+Warn : Adding extra erase range, 0x000847f8 .. 0x00084fff
+auto erase enabled
+wrote 14328 bytes from file /home/maribu/Repos/software/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot1.1669735256.bin in 0.936728s (14.937 KiB/s)
+
+verified 14328 bytes in 0.074799s (187.064 KiB/s)
+
+shutdown command invoked
+Done flashing
+
+
+
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM1
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+> curslotnr
+curslotnr
+Current slot=1
+> curslothdr
+curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x63862358
+Image start address: 0x00081400
+Header chksum: 0x3d763888
+
+> getslotaddr 0
+getslotaddr 0
+Slot 0 address=0x00002400
+> dumpaddrs
+dumpaddrs
+slot 0: metadata: 0x2000 image: 0x00002400
+slot 1: metadata: 0x81000 image: 0x00081400
+> compiling /home/maribu/Repos/software/RIOT/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /home/maribu/Repos/software/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot0.1669735257.bin...
+/home/maribu/Repos/software/RIOT/dist/tools/openocd/openocd.sh flash /home/maribu/Repos/software/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot0.1669735257.bin
+### Flashing Target ###
+Binfile detected, adding ROM base address: 0x00000000
+Flashing with IMAGE_OFFSET: 0x00002000
+Open On-Chip Debugger 0.12.0-rc2
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+swd
+Warn : Transport "swd" was already selected
+swd
+Info : J-Link OB-SAM3U128-V2-NordicSemi compiled Jan 20 2022 16:43:31
+Info : Hardware version: 1.00
+Info : VTarget = 3.300 V
+Info : clock speed 1000 kHz
+Info : SWD DPIDR 0x2ba01477
+Info : [nrf52.cpu] Cortex-M4 r0p1 processor detected
+Info : [nrf52.cpu] target has 6 breakpoints, 4 watchpoints
+Info : starting gdb server for nrf52.cpu on 0
+Info : Listening on port 43781 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* nrf52.cpu          cortex_m   little nrf52.cpu          halted
+
+[nrf52.cpu] halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x0000033c msp: 0x20000200
+Info : nRF52840-xxAA(build code: C0) 1024kB Flash, 256kB RAM
+Warn : Adding extra erase range, 0x000057f8 .. 0x00005fff
+auto erase enabled
+wrote 14328 bytes from file /home/maribu/Repos/software/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot0.1669735257.bin in 0.936391s (14.943 KiB/s)
+
+verified 14328 bytes in 0.074389s (188.095 KiB/s)
+
+shutdown command invoked
+Done flashing
+
+
+
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM1
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+> curslotnr
+curslotnr
+Current slot=0
+> curslothdr
+curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x63862359
+Image start address: 0x00002400
+Header chksum: 0x5d724881
+
+> getslotaddr 0
+getslotaddr 0
+Slot 0 address=0x00002400
+> dumpaddrs
+dumpaddrs
+slot 0: metadata: 0x2000 image: 0x00002400
+slot 1: metadata: 0x81000 image: 0x00081400
+> 
+TEST PASSED
