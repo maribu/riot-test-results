@@ -38,7 +38,7 @@ Installed development tools
                   doxygen: 1.9.5
                       git: git version 2.38.1
                      make: GNU Make 4.4
-                  openocd: Open On-Chip Debugger 0.12.0-rc2
+                  openocd: Open On-Chip Debugger 0.12.0-rc2+dev-snapshot (2022-12-05-12:45)
                    python: Python 3.11.0
                   python2: missing
                   python3: Python 3.11.0

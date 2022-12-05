@@ -1,0 +1,11 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/pkg_arduino_sdi_12 clean all
+rm -rf /home/maribu/Repos/software/RIOT/tests/pkg_arduino_sdi_12/bin/arduino-mega2560/pkg-build/arduino_api
+rm -rf /home/maribu/Repos/software/RIOT/tests/pkg_arduino_sdi_12/bin/arduino-mega2560/pkg-build/arduino_sdi_12
+Building application "tests_pkg_arduino_sdi_12" for "arduino-mega2560" with MCU "atmega2560".
+
+/usr/lib/gcc/avr/12.2.0/../../../../avr/bin/ld: /home/maribu/Repos/software/RIOT/tests/pkg_arduino_sdi_12/bin/arduino-mega2560/application_tests_pkg_arduino_sdi_12/main.o: in function `.Loc.21':
+/home/maribu/Repos/software/RIOT/tests/pkg_arduino_sdi_12/main.cpp:28: undefined reference to `__cxa_atexit'
+collect2: error: ld returned 1 exit status
+make: *** [/home/maribu/Repos/software/RIOT/tests/pkg_arduino_sdi_12/../../Makefile.include:729: /home/maribu/Repos/software/RIOT/tests/pkg_arduino_sdi_12/bin/arduino-mega2560/tests_pkg_arduino_sdi_12.elf] Error 1
+
+Return value: 2

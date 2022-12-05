@@ -1,0 +1,51 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM1
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+
+Welcome to pyterm!
+Type '/exit' to exit.
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: 2022.10)
+Running test 5 times with 7 distinct sleep times
+Slept for 10060 us (expected: 10000 us) Offset: 60 us
+Slept for 50056 us (expected: 50000 us) Offset: 56 us
+Slept for 10292 us (expected: 10234 us) Offset: 58 us
+Slept for 56840 us (expected: 56780 us) Offset: 60 us
+Slept for 12176 us (expected: 12122 us) Offset: 54 us
+Slept for 98820 us (expected: 98765 us) Offset: 55 us
+Slept for 75056 us (expected: 75000 us) Offset: 56 us
+Slept for 10060 us (expected: 10000 us) Offset: 60 us
+Slept for 50056 us (expected: 50000 us) Offset: 56 us
+Slept for 10292 us (expected: 10234 us) Offset: 58 us
+Slept for 56836 us (expected: 56780 us) Offset: 56 us
+Slept for 12176 us (expected: 12122 us) Offset: 54 us
+Slept for 98824 us (expected: 98765 us) Offset: 59 us
+Slept for 75056 us (expected: 75000 us) Offset: 56 us
+Slept for 10056 us (expected: 10000 us) Offset: 56 us
+Slept for 50056 us (expected: 50000 us) Offset: 56 us
+Slept for 10288 us (expected: 10234 us) Offset: 54 us
+Slept for 56836 us (expected: 56780 us) Offset: 56 us
+Slept for 12176 us (expected: 12122 us) Offset: 54 us
+Slept for 98824 us (expected: 98765 us) Offset: 59 us
+Slept for 75056 us (expected: 75000 us) Offset: 56 us
+Slept for 10056 us (expected: 10000 us) Offset: 56 us
+Slept for 50056 us (expected: 50000 us) Offset: 56 us
+Slept for 10288 us (expected: 10234 us) Offset: 54 us
+Slept for 56836 us (expected: 56780 us) Offset: 56 us
+Slept for 12180 us (expected: 12122 us) Offset: 58 us
+Slept for 98820 us (expected: 98765 us) Offset: 55 us
+Slept for 75056 us (expected: 75000 us) Offset: 56 us
+Slept for 10060 us (expected: 10000 us) Offset: 60 us
+Slept for 50056 us (expected: 50000 us) Offset: 56 us
+Slept for 10292 us (expected: 10234 us) Offset: 58 us
+Slept for 56840 us (expected: 56780 us) Offset: 60 us
+Slept for 12176 us (expected: 12122 us) Offset: 54 us
+Slept for 98824 us (expected: 98765 us) Offset: 59 us
+Slept for 75056 us (expected: 75000 us) Offset: 56 us
+Test ran for 3461316 us
+

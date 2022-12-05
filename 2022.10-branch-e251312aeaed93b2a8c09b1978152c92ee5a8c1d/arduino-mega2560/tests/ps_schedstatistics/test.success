@@ -1,0 +1,41 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM1
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+Welcome to pyterm!
+Type '/exit' to exit.
+
+main(): This is RIOT! (Version: 2022.10)
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+Creating thread #0, next=1
+Creating thread #1, next=2
+Creating thread #2, next=3
+Creating thread #3, next=4
+Creating thread #4, next=0
+
+> help
+
+> 
+> help
+Command              Description
+---------------------------------------
+pm                   interact with layered PM subsystem
+ps                   Prints information about running threads.
+reboot               Reboot the node
+ps
+version              Prints current RIOT_VERSION
+> ps
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     | runtime  | switches  | runtime_usec 
+	  1 | idle                 | pending  Q |  15 |    512 (  156) (  356) |     0x1161 |     0x1305  | 46.046% |         6  |    1933292 
+	  2 | main                 | running  Q |   7 |    640 (  482) (  158) |     0x1361 |     0x1440  |  8.263% |       296  |     346968 
+	  3 | thread               | bl rx    _ |   6 |    512 (  188) (  324) |      0x6e6 |      0x884  | 10.349% |       145  |     434528 
+	  4 | thread               | bl rx    _ |   6 |    512 (  188) (  324) |      0x8e6 |      0xa84  | 17.513% |       171  |     735336 
+	  5 | thread               | bl mutex _ |   6 |    512 (  188) (  324) |      0xae6 |      0xc6b  | 26.598% |       198  |    1116756 
+	  6 | thread               | bl rx    _ |   6 |    512 (  188) (  324) |      0xce6 |      0xe84  | 37.142% |       225  |    1559468 
+	  7 | thread               | bl rx    _ |   6 |    512 (  188) (  324) |      0xee6 |     0x1084  |  9.521% |       251  |     399752 
+	    | SUM                  |            |     |   3712 ( 1578) ( 2134)
+> 

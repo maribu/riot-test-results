@@ -1,0 +1,32 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/sys_sema_inv test
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM1
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+Welcome to pyterm!
+Type '/exit' to exit.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: 2022.10)
+counter mode
+THREAD 1 start
+THRE{ "threads": [{ "name": "nr1", "stack_size": 256, "stack_used": 148 }]}
+AD 2 start
+THREAD 3 start
+{ "threads": [{ "name": "nr2", "stack_size": 256, "stack_used": 190 }]}
+thread synced
+THREAD 3 woke main thread
+{ "threads": [{ "namemask mode
+THREAD 1 start
+THRE{ "threads": [{ "name": "nr1", "stack_size": 256, "stack_used": 148 }]}
+AD 3 start
+{ "threads": [{ "name": "nr3", "stack_size": 256, "stack_used": 190 }]}
+Timeout in expect script at "child.expect_exact('THREAD 2 start')" (tests/sys_sema_inv/tests/01-run.py:10)
+
+make: *** [/home/maribu/Repos/software/RIOT/makefiles/tests/tests.inc.mk:22: test] Error 1
+
+Return value: 2

@@ -1,0 +1,154 @@
+
+
+socat - open:/dev/ttyACM1,b9600,echo=0,raw,cs8,parenb=0,cstopb=0 
+
+m This is RIOT! (Version: 2022.10)
+test_shell.
+> 
+main(): This is RIOT! (Version: 2022.10)
+test_shell.
+> bufsize
+
+> 
+> bufsize
+60
+>____________________________________________________verylong
+ ____________________________________________________verylong
+shell: maximum line length exceeded
+> garbage1234
+garbage1234
+> 
+
+> shell exited
+
+> 
+> start_test
+> 
+> start_test
+[TEST_START]
+> 
+
+
+> 
+> echo a string
+echo a string
+"echo""a""string"
+> echo   multiple   spaces   between   argv
+echo   multiple   spaces   between   argv
+"echo""multiple""spaces""between""argv"
+> echo 	 tabs		 processed 		like	 		spaces
+echo 	 tabs		 processed 		like	 		spaces
+"echo""tabs""processed""like""spaces"
+> unknown_command
+unknown_command
+shell: command not found: unknown_command
+>      echo leading spaces
+     echo leading spaces
+"echo""leading""spaces"
+> 					echo leading tabs
+					echo leading tabs
+"echo""leading""tabs"
+> echo trailing spaces     
+echo trailing spaces     
+"echo""trailing""spaces"
+> echo trailing tabs					
+echo trailing tabs					
+"echo""trailing""tabs"
+> hello-willyorld
+hello-willy    orld
+shell: command not found: hello-world
+> echo
+echo
+"echo"
+> echo \'
+echo \'
+"echo""'"
+> echo \"
+echo \"
+"echo""""
+> echo escaped\ space
+echo escaped\ space
+"echo""escaped space"
+> echo escape within '\s\i\n\g\l\e\q\u\o\t\e'
+echo escape within '\s\i\n\g\l\e\q\u\o\t\e'
+"echo""escape""within""singlequote"
+> echo escape within "\d\o\u\b\l\e\q\u\o\t\e"
+echo escape within "\d\o\u\b\l\e\q\u\o\t\e"
+"echo""escape""within""doublequote"
+> echo "t\e st" "\"" '\'' a\ b
+echo "t\e st" "\"" '\'' a\ b
+"echo""te st"""""'""a b"
+> echo "hello"world
+echo "hello"world
+"echo""helloworld"
+> echo hel"lowo"rld
+echo hel"lowo"rld
+"echo""helloworld"
+> echo hello"world"
+echo hello"world"
+"echo""helloworld"
+> echo quoted space " "
+echo quoted space " "
+"echo""quoted""space"" "
+> echo abc"def'ghijk"lmn
+echo abc"def'ghijk"lmn
+"echo""abcdef'ghijklmn"
+> echo abc'def"ghijk'lmn
+echo abc'def"ghijk'lmn
+"echo""abcdef"ghijklmn"
+> echo "'" '"'
+echo "'" '"'
+"echo""'""""
+> echo a\
+echo a\
+shell: incorrect quoting
+> echo "
+echo "
+shell: incorrect quoting
+> echo '
+echo '
+shell: incorrect quoting
+> echo abcdef"ghijklmn
+echo abcdef"ghijklmn
+shell: incorrect quoting
+> echo abcdef'ghijklmn
+echo abcdef'ghijklmn
+shell: incorrect quoting
+> ps
+ps
+	pid | state    Q | pri 
+	  1 | pending  Q |  15
+	  2 | running  Q |   7
+> help
+help
+Command              Description
+---------------------------------------
+bufsize              Get the shell's buffer size
+start_test           starts a test
+end_test             ends a test
+echo                 prints the input command
+empty                print nothing on command
+app_metadata         Returns application metadata
+pm                   interact with layered PM subsystem
+ps                   Prints information about running threads.
+reboot               Reboot the node
+version              Prints current RIOT_VERSION
+xfa_test1            xfa test command 1
+xfa_test2            xfa test command 2
+> xfa_test1
+xfa_test1
+[XFA TEST 1 OK]
+> xfa_test2
+xfa_test2
+[XFA TEST 2 OK]
+> reboot
+reboot
+
+main(): This is RIOT! (Version: 2022.10)
+test_shell.
+> end_test
+end_test
+[TEST_END]
+> 
+
+> 

@@ -1,0 +1,27 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM1
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+
+Welcome to pyterm!
+Type '/exit' to exit.
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: 2022.10)
+low priority thread (pid = 3, prio = 6) has started
+low priority thread started to work on its task
+high priority thread (pid = 5, prio = 4) has started
+low priority thread is done
+high priority thread started to work on its task
+high priority thread is done
+{ "threads": [{ "name": "high, "stack_size": 256, "stack_used": 94}]}
+mid priority thread (pid = 4, prio = 5) has started
+mid priority thread started to work on its task
+mid priority thread is done
+{ "threads": [{ "name": "mid, "stack_size": 256, "stack_used": 94}]}
+{ "threads": [{ "name": "low, "stack_size": 256, "stack_used": 94}]}
+TEST PASSED
+

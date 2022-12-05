@@ -1,0 +1,75 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM1
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+Welcome to pyterm!
+Type '/exit' to exit.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: 2022.10)
+MAX_NUMBER_BLOCKS: 10
+NUMBER_OF_LOOPS: 1
+NUMBER_OF_TESTS: 1
+Starting (10, 8)
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     
+	  1 | idle                 | pending  Q |  15 |    128 (   94) (   34) |      0x7f9 |      0x81d 
+	  2 | main                 | running  Q |   7 |    640 (  164) (  476) |      0x879 |      0xa8b 
+	    | SUM                  |            |     |    768 (  258) (  510)
+LOOP #1:
+TEST #1:
+	(0, @@@@@@@) Allocated 12 Bytes at 0x776, total 0
+	(1, @@@@@@@) Allocated 12 Bytes at 0x76a, total 12
+	(2, @@@@@@@) Allocated 12 Bytes at 0x75e, total 24
+	(3, @@@@@@@) Allocated 12 Bytes at 0x752, total 36
+	(4, @@@@@@@) Allocated 12 Bytes at 0x746, total 48
+	(5, @@@@@@@) Allocated 12 Bytes at 0x73a, total 60
+	(6, @@@@@@@) Allocated 12 Bytes at 0x72e, total 72
+	(7, @@@@@@@) Allocated 12 Bytes at 0x722, total 84
+	(8, @@@@@@@) Allocated 12 Bytes at 0x716, total 96
+	(9, @@@@@@@) Allocated 12 Bytes at 0x70a, total 108
+	Free (0) 12 Bytes at 0x776, total 108
+	Free (1) 12 Bytes at 0x76a, total 96
+	Free (2) 12 Bytes at 0x75e, total 84
+	Free (3) 12 Bytes at 0x752, total 72
+	Free (4) 12 Bytes at 0x746, total 60
+	Free (5) 12 Bytes at 0x73a, total 48
+	Free (6) 12 Bytes at 0x72e, total 36
+	Free (7) 12 Bytes at 0x722, total 24
+	Free (8) 12 Bytes at 0x716, total 12
+	Free (9) 12 Bytes at 0x70a, total 0
+LOOP #2:
+TEST #1:
+	(0, @@@@@@@) Allocated 12 Bytes at 0x776, total 0
+	(1, @@@@@@@) Allocated 12 Bytes at 0x76a, total 12
+	(2, @@@@@@@) Allocated 12 Bytes at 0x75e, total 24
+	(3, @@@@@@@) Allocated 12 Bytes at 0x752, total 36
+	(4, @@@@@@@) Allocated 12 Bytes at 0x746, total 48
+	(5, @@@@@@@) Allocated 12 Bytes at 0x73a, total 60
+	(6, @@@@@@@) Allocated 12 Bytes at 0x72e, total 72
+	(7, @@@@@@@) Allocated 12 Bytes at 0x722, total 84
+	(8, @@@@@@@) Allocated 12 Bytes at 0x716, total 96
+	(9, @@@@@@@) Allocated 12 Bytes at 0x70a, total 108
+	Free (0) 12 Bytes at 0x776, total 108
+	Free (1) 12 Bytes at 0x76a, total 96
+	Free (2) 12 Bytes at 0x75e, total 84
+	Free (3) 12 Bytes at 0x752, total 72
+	Free (4) 12 Bytes at 0x746, total 60
+	Free (5) 12 Bytes at 0x73a, total 48
+	Free (6) 12 Bytes at 0x72e, total 36
+	Free (7) 12 Bytes at 0x722, total 24
+	Free (8) 12 Bytes at 0x716, total 12
+	Free (9) 12 Bytes at 0x70a, total 0
+Extend and reduce tests
+Memarray available: 10
+Memarray available: 20
+Memarray reduction: 0 available: 10
+Memarray reduction: -1 available: 10
+Memarray reduction: 0 available: 0
+Memarray available: 9
+Memarray reduction: -1 available: 9
+Finishing
+

@@ -1,0 +1,298 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/pkg_micro-ecc clean all
+rm -rf /home/maribu/Repos/software/RIOT/tests/pkg_micro-ecc/bin/arduino-mega2560/pkg-build/micro-ecc
+Building application "tests_pkg_micro-ecc" for "arduino-mega2560" with MCU "atmega2560".
+
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c: In function 'uECC_vli_cmp':
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:314:25: error: 'tmp' may be used uninitialized [-Werror=maybe-uninitialized]
+  314 |     uECC_word_t equal = uECC_vli_isZero(tmp, num_words);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:222:26: note: by argument 1 of type 'const uECC_word_t *' {aka 'const unsigned char *'} to 'uECC_vli_isZero' declared here
+  222 | uECC_VLI_API uECC_word_t uECC_vli_isZero(const uECC_word_t *vli, wordcount_t num_words) {
+      |                          ^~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:312:17: note: 'tmp' declared here
+  312 |     uECC_word_t tmp[uECC_MAX_WORDS];
+      |                 ^~~
+In file included from /home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:743:
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc: In function 'vli_mmod_fast_secp192r1':
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:327:13: error: 'tmp' may be used uninitialized [-Werror=maybe-uninitialized]
+  327 |     carry = uECC_vli_add(result, result, tmp, num_words_secp192r1);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:186:
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc:125:26: note: by argument 3 of type 'const uECC_word_t *' {aka 'const unsigned char *'} to 'uECC_vli_add' declared here
+  125 | uECC_VLI_API uECC_word_t uECC_vli_add(uECC_word_t *result,
+      |                          ^~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:321:13: note: 'tmp' declared here
+  321 |     uint8_t tmp[num_words_secp192r1];
+      |             ^~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:334:14: error: 'tmp' may be used uninitialized [-Werror=maybe-uninitialized]
+  334 |     carry += uECC_vli_add(result, result, tmp, num_words_secp192r1);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc:125:26: note: by argument 3 of type 'const uECC_word_t *' {aka 'const unsigned char *'} to 'uECC_vli_add' declared here
+  125 | uECC_VLI_API uECC_word_t uECC_vli_add(uECC_word_t *result,
+      |                          ^~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:321:13: note: 'tmp' declared here
+  321 |     uint8_t tmp[num_words_secp192r1];
+      |             ^~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:345:14: error: 'tmp' may be used uninitialized [-Werror=maybe-uninitialized]
+  345 |     carry += uECC_vli_add(result, result, tmp, num_words_secp192r1);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc:125:26: note: by argument 3 of type 'const uECC_word_t *' {aka 'const unsigned char *'} to 'uECC_vli_add' declared here
+  125 | uECC_VLI_API uECC_word_t uECC_vli_add(uECC_word_t *result,
+      |                          ^~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:321:13: note: 'tmp' declared here
+  321 |     uint8_t tmp[num_words_secp192r1];
+      |             ^~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc: In function 'vli_mmod_fast_secp224r1':
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:589:13: error: 'tmp' may be used uninitialized [-Werror=maybe-uninitialized]
+  589 |     carry = uECC_vli_add(result, result, tmp, num_words_secp224r1);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc:125:26: note: by argument 3 of type 'const uECC_word_t *' {aka 'const unsigned char *'} to 'uECC_vli_add' declared here
+  125 | uECC_VLI_API uECC_word_t uECC_vli_add(uECC_word_t *result,
+      |                          ^~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:575:13: note: 'tmp' declared here
+  575 |     uint8_t tmp[num_words_secp224r1];
+      |             ^~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:596:14: error: 'tmp' may be used uninitialized [-Werror=maybe-uninitialized]
+  596 |     carry += uECC_vli_add(result, result, tmp, num_words_secp224r1);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc:125:26: note: by argument 3 of type 'const uECC_word_t *' {aka 'const unsigned char *'} to 'uECC_vli_add' declared here
+  125 | uECC_VLI_API uECC_word_t uECC_vli_add(uECC_word_t *result,
+      |                          ^~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:575:13: note: 'tmp' declared here
+  575 |     uint8_t tmp[num_words_secp224r1];
+      |             ^~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:606:14: error: 'tmp' may be used uninitialized [-Werror=maybe-uninitialized]
+  606 |     carry -= uECC_vli_sub(result, result, tmp, num_words_secp224r1);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc:172:26: note: by argument 3 of type 'const uECC_word_t *' {aka 'const unsigned char *'} to 'uECC_vli_sub' declared here
+  172 | uECC_VLI_API uECC_word_t uECC_vli_sub(uECC_word_t *result,
+      |                          ^~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:575:13: note: 'tmp' declared here
+  575 |     uint8_t tmp[num_words_secp224r1];
+      |             ^~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc: In function 'vli_mmod_fast_secp256r1':
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:794:13: error: 'tmp' may be used uninitialized [-Werror=maybe-uninitialized]
+  794 |     carry = uECC_vli_add(tmp, tmp, tmp, num_words_secp256r1);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc:125:26: note: by argument 2 of type 'const uECC_word_t *' {aka 'const unsigned char *'} to 'uECC_vli_add' declared here
+  125 | uECC_VLI_API uECC_word_t uECC_vli_add(uECC_word_t *result,
+      |                          ^~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:779:13: note: 'tmp' declared here
+  779 |     uint8_t tmp[num_words_secp256r1];
+      |             ^~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:794:13: error: 'tmp' may be used uninitialized [-Werror=maybe-uninitialized]
+  794 |     carry = uECC_vli_add(tmp, tmp, tmp, num_words_secp256r1);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc:125:26: note: by argument 3 of type 'const uECC_word_t *' {aka 'const unsigned char *'} to 'uECC_vli_add' declared here
+  125 | uECC_VLI_API uECC_word_t uECC_vli_add(uECC_word_t *result,
+      |                          ^~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:779:13: note: 'tmp' declared here
+  779 |     uint8_t tmp[num_words_secp256r1];
+      |             ^~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:795:14: error: 'tmp' may be used uninitialized [-Werror=maybe-uninitialized]
+  795 |     carry += uECC_vli_add(result, result, tmp, num_words_secp256r1);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc:125:26: note: by argument 3 of type 'const uECC_word_t *' {aka 'const unsigned char *'} to 'uECC_vli_add' declared here
+  125 | uECC_VLI_API uECC_word_t uECC_vli_add(uECC_word_t *result,
+      |                          ^~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:779:13: note: 'tmp' declared here
+  779 |     uint8_t tmp[num_words_secp256r1];
+      |             ^~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:803:14: error: 'tmp' may be used uninitialized [-Werror=maybe-uninitialized]
+  803 |     carry += uECC_vli_add(tmp, tmp, tmp, num_words_secp256r1);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc:125:26: note: by argument 2 of type 'const uECC_word_t *' {aka 'const unsigned char *'} to 'uECC_vli_add' declared here
+  125 | uECC_VLI_API uECC_word_t uECC_vli_add(uECC_word_t *result,
+      |                          ^~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:779:13: note: 'tmp' declared here
+  779 |     uint8_t tmp[num_words_secp256r1];
+      |             ^~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:803:14: error: 'tmp' may be used uninitialized [-Werror=maybe-uninitialized]
+  803 |     carry += uECC_vli_add(tmp, tmp, tmp, num_words_secp256r1);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc:125:26: note: by argument 3 of type 'const uECC_word_t *' {aka 'const unsigned char *'} to 'uECC_vli_add' declared here
+  125 | uECC_VLI_API uECC_word_t uECC_vli_add(uECC_word_t *result,
+      |                          ^~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:779:13: note: 'tmp' declared here
+  779 |     uint8_t tmp[num_words_secp256r1];
+      |             ^~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:804:14: error: 'tmp' may be used uninitialized [-Werror=maybe-uninitialized]
+  804 |     carry += uECC_vli_add(result, result, tmp, num_words_secp256r1);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc:125:26: note: by argument 3 of type 'const uECC_word_t *' {aka 'const unsigned char *'} to 'uECC_vli_add' declared here
+  125 | uECC_VLI_API uECC_word_t uECC_vli_add(uECC_word_t *result,
+      |                          ^~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:779:13: note: 'tmp' declared here
+  779 |     uint8_t tmp[num_words_secp256r1];
+      |             ^~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:815:14: error: 'tmp' may be used uninitialized [-Werror=maybe-uninitialized]
+  815 |     carry += uECC_vli_add(result, result, tmp, num_words_secp256r1);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc:125:26: note: by argument 3 of type 'const uECC_word_t *' {aka 'const unsigned char *'} to 'uECC_vli_add' declared here
+  125 | uECC_VLI_API uECC_word_t uECC_vli_add(uECC_word_t *result,
+      |                          ^~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:779:13: note: 'tmp' declared here
+  779 |     uint8_t tmp[num_words_secp256r1];
+      |             ^~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:826:14: error: 'tmp' may be used uninitialized [-Werror=maybe-uninitialized]
+  826 |     carry += uECC_vli_add(result, result, tmp, num_words_secp256r1);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc:125:26: note: by argument 3 of type 'const uECC_word_t *' {aka 'const unsigned char *'} to 'uECC_vli_add' declared here
+  125 | uECC_VLI_API uECC_word_t uECC_vli_add(uECC_word_t *result,
+      |                          ^~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:779:13: note: 'tmp' declared here
+  779 |     uint8_t tmp[num_words_secp256r1];
+      |             ^~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:837:14: error: 'tmp' may be used uninitialized [-Werror=maybe-uninitialized]
+  837 |     carry -= uECC_vli_sub(result, result, tmp, num_words_secp256r1);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc:172:26: note: by argument 3 of type 'const uECC_word_t *' {aka 'const unsigned char *'} to 'uECC_vli_sub' declared here
+  172 | uECC_VLI_API uECC_word_t uECC_vli_sub(uECC_word_t *result,
+      |                          ^~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:779:13: note: 'tmp' declared here
+  779 |     uint8_t tmp[num_words_secp256r1];
+      |             ^~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:848:14: error: 'tmp' may be used uninitialized [-Werror=maybe-uninitialized]
+  848 |     carry -= uECC_vli_sub(result, result, tmp, num_words_secp256r1);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc:172:26: note: by argument 3 of type 'const uECC_word_t *' {aka 'const unsigned char *'} to 'uECC_vli_sub' declared here
+  172 | uECC_VLI_API uECC_word_t uECC_vli_sub(uECC_word_t *result,
+      |                          ^~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/curve-specific.inc:779:13: note: 'tmp' declared here
+  779 |     uint8_t tmp[num_words_secp256r1];
+      |             ^~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c: In function 'XYcZ_add':
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:803:5: error: 't5' may be used uninitialized [-Werror=maybe-uninitialized]
+  803 |     uECC_vli_modSquare_fast(t5, t5, curve);                  /* t5 = (x2 - x1)^2 = A */
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:672:19: note: by argument 2 of type 'const uECC_word_t *' {aka 'const unsigned char *'} to 'uECC_vli_modSquare_fast' declared here
+  672 | uECC_VLI_API void uECC_vli_modSquare_fast(uECC_word_t *result,
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:799:17: note: 't5' declared here
+  799 |     uECC_word_t t5[uECC_MAX_WORDS];
+      |                 ^~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c: In function 'XYcZ_addC':
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:836:5: error: 't5' may be used uninitialized [-Werror=maybe-uninitialized]
+  836 |     uECC_vli_modSquare_fast(t5, t5, curve);                  /* t5 = (x2 - x1)^2 = A */
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:672:19: note: by argument 2 of type 'const uECC_word_t *' {aka 'const unsigned char *'} to 'uECC_vli_modSquare_fast' declared here
+  672 | uECC_VLI_API void uECC_vli_modSquare_fast(uECC_word_t *result,
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:830:17: note: 't5' declared here
+  830 |     uECC_word_t t5[uECC_MAX_WORDS];
+      |                 ^~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c: In function 'uECC_vli_modInv':
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:680:25: error: 'a' may be used uninitialized [-Werror=maybe-uninitialized]
+  680 | #define EVEN(vli) (!(vli[0] & 1))
+      |                         ^
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:700:17: note: 'a' declared here
+  700 |     uECC_word_t a[uECC_MAX_WORDS], b[uECC_MAX_WORDS], u[uECC_MAX_WORDS], v[uECC_MAX_WORDS];
+      |                 ^
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:680:25: error: 'b' may be used uninitialized [-Werror=maybe-uninitialized]
+  680 | #define EVEN(vli) (!(vli[0] & 1))
+      |                         ^
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:700:36: note: 'b' declared here
+  700 |     uECC_word_t a[uECC_MAX_WORDS], b[uECC_MAX_WORDS], u[uECC_MAX_WORDS], v[uECC_MAX_WORDS];
+      |                                    ^
+In function 'uECC_vli_modInv',
+    inlined from 'uECC_vli_modInv' at /home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:696:19:
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:721:13: error: 'a' may be used uninitialized [-Werror=maybe-uninitialized]
+  721 |             uECC_vli_sub(a, a, b, num_words);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc: In function 'uECC_vli_modInv':
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc:172:26: note: by argument 2 of type 'const uECC_word_t *' {aka 'const unsigned char *'} to 'uECC_vli_sub' declared here
+  172 | uECC_VLI_API uECC_word_t uECC_vli_sub(uECC_word_t *result,
+      |                          ^~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:700:17: note: 'a' declared here
+  700 |     uECC_word_t a[uECC_MAX_WORDS], b[uECC_MAX_WORDS], u[uECC_MAX_WORDS], v[uECC_MAX_WORDS];
+      |                 ^
+In function 'uECC_vli_modInv',
+    inlined from 'uECC_vli_modInv' at /home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:696:19:
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:721:13: error: 'b' may be used uninitialized [-Werror=maybe-uninitialized]
+  721 |             uECC_vli_sub(a, a, b, num_words);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc: In function 'uECC_vli_modInv':
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc:172:26: note: by argument 3 of type 'const uECC_word_t *' {aka 'const unsigned char *'} to 'uECC_vli_sub' declared here
+  172 | uECC_VLI_API uECC_word_t uECC_vli_sub(uECC_word_t *result,
+      |                          ^~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:700:36: note: 'b' declared here
+  700 |     uECC_word_t a[uECC_MAX_WORDS], b[uECC_MAX_WORDS], u[uECC_MAX_WORDS], v[uECC_MAX_WORDS];
+      |                                    ^
+In function 'uECC_vli_modInv',
+    inlined from 'uECC_vli_modInv' at /home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:696:19:
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:729:13: error: 'b' may be used uninitialized [-Werror=maybe-uninitialized]
+  729 |             uECC_vli_sub(b, b, a, num_words);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc: In function 'uECC_vli_modInv':
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc:172:26: note: by argument 2 of type 'const uECC_word_t *' {aka 'const unsigned char *'} to 'uECC_vli_sub' declared here
+  172 | uECC_VLI_API uECC_word_t uECC_vli_sub(uECC_word_t *result,
+      |                          ^~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:700:36: note: 'b' declared here
+  700 |     uECC_word_t a[uECC_MAX_WORDS], b[uECC_MAX_WORDS], u[uECC_MAX_WORDS], v[uECC_MAX_WORDS];
+      |                                    ^
+In function 'uECC_vli_modInv',
+    inlined from 'uECC_vli_modInv' at /home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:696:19:
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:729:13: error: 'a' may be used uninitialized [-Werror=maybe-uninitialized]
+  729 |             uECC_vli_sub(b, b, a, num_words);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc: In function 'uECC_vli_modInv':
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc:172:26: note: by argument 3 of type 'const uECC_word_t *' {aka 'const unsigned char *'} to 'uECC_vli_sub' declared here
+  172 | uECC_VLI_API uECC_word_t uECC_vli_sub(uECC_word_t *result,
+      |                          ^~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:700:17: note: 'a' declared here
+  700 |     uECC_word_t a[uECC_MAX_WORDS], b[uECC_MAX_WORDS], u[uECC_MAX_WORDS], v[uECC_MAX_WORDS];
+      |                 ^
+In function 'uECC_vli_modInv',
+    inlined from 'uECC_vli_modInv' at /home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:696:19:
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:713:25: error: 'a' may be used uninitialized [-Werror=maybe-uninitialized]
+  713 |     while ((cmpResult = uECC_vli_cmp_unsafe(a, b, num_words)) != 0) {
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c: In function 'uECC_vli_modInv':
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:276:20: note: by argument 1 of type 'const uECC_word_t *' {aka 'const unsigned char *'} to 'uECC_vli_cmp_unsafe' declared here
+  276 | static cmpresult_t uECC_vli_cmp_unsafe(const uECC_word_t *left,
+      |                    ^~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:700:17: note: 'a' declared here
+  700 |     uECC_word_t a[uECC_MAX_WORDS], b[uECC_MAX_WORDS], u[uECC_MAX_WORDS], v[uECC_MAX_WORDS];
+      |                 ^
+In function 'uECC_vli_modInv',
+    inlined from 'uECC_vli_modInv' at /home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:696:19:
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:713:25: error: 'b' may be used uninitialized [-Werror=maybe-uninitialized]
+  713 |     while ((cmpResult = uECC_vli_cmp_unsafe(a, b, num_words)) != 0) {
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c: In function 'uECC_vli_modInv':
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:276:20: note: by argument 2 of type 'const uECC_word_t *' {aka 'const unsigned char *'} to 'uECC_vli_cmp_unsafe' declared here
+  276 | static cmpresult_t uECC_vli_cmp_unsafe(const uECC_word_t *left,
+      |                    ^~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:700:36: note: 'b' declared here
+  700 |     uECC_word_t a[uECC_MAX_WORDS], b[uECC_MAX_WORDS], u[uECC_MAX_WORDS], v[uECC_MAX_WORDS];
+      |                                    ^
+In function 'XYcZ_initial_double',
+    inlined from 'EccPoint_mult' at /home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:879:5:
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:781:5: error: 'Rx' may be used uninitialized [-Werror=maybe-uninitialized]
+  781 |     uECC_vli_set(X2, X1, num_words);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc: In function 'EccPoint_mult':
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc:53:19: note: by argument 2 of type 'const uECC_word_t *' {aka 'const unsigned char *'} to 'uECC_vli_set' declared here
+   53 | uECC_VLI_API void uECC_vli_set(uECC_word_t *dest, const uECC_word_t *src, wordcount_t num_words) {
+      |                   ^~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:869:17: note: 'Rx' declared here
+  869 |     uECC_word_t Rx[2][uECC_MAX_WORDS];
+      |                 ^~
+In function 'XYcZ_initial_double',
+    inlined from 'EccPoint_mult' at /home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:879:5:
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:782:5: error: 'Ry' may be used uninitialized [-Werror=maybe-uninitialized]
+  782 |     uECC_vli_set(Y2, Y1, num_words);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc: In function 'EccPoint_mult':
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/asm_avr.inc:53:19: note: by argument 2 of type 'const uECC_word_t *' {aka 'const unsigned char *'} to 'uECC_vli_set' declared here
+   53 | uECC_VLI_API void uECC_vli_set(uECC_word_t *dest, const uECC_word_t *src, wordcount_t num_words) {
+      |                   ^~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/build/pkg/micro-ecc/uECC.c:870:17: note: 'Ry' declared here
+  870 |     uECC_word_t Ry[2][uECC_MAX_WORDS];
+      |                 ^~
+cc1: all warnings being treated as errors
+make[2]: *** [/home/maribu/Repos/software/RIOT/Makefile.base:146: /home/maribu/Repos/software/RIOT/tests/pkg_micro-ecc/bin/arduino-mega2560/micro-ecc/uECC.o] Error 1
+make[1]: *** [Makefile:9: all] Error 2
+make: *** [/home/maribu/Repos/software/RIOT/tests/pkg_micro-ecc/../../Makefile.include:803: pkg-build] Error 2
+
+Return value: 2
