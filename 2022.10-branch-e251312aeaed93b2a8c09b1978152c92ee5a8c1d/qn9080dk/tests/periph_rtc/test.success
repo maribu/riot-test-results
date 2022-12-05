@@ -1,0 +1,27 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM2" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM2
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: 2022.10)
+
+RIOT RTC low-level driver test
+This test will display 'Alarm!' every 2 seconds for 4 times
+  Setting clock to   2020-02-28 23:59:57
+Clock value is now   2020-02-28 23:59:57
+  Setting alarm to   2020-02-28 23:59:59
+   Alarm is set to   2020-02-28 23:59:59
+  Alarm cleared at   2020-02-28 23:59:57
+       No alarm at   2020-02-28 23:59:59
+  Setting alarm to   2020-02-28 23:59:61
+
+Alarm!
+Alarm!
+Alarm!
+Alarm!
+

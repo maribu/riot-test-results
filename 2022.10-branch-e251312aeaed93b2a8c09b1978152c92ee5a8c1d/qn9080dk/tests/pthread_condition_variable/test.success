@@ -1,0 +1,26 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM2" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM2
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: 2022.10)
+START
+Still alive alternated [count: 10k] times.
+Still alive alternated [count: 20k] times.
+Still alive alternated [count: 30k] times.
+Still alive alternated [count: 40k] times.
+Still alive alternated [count: 50k] times.
+Still alive alternated [count: 60k] times.
+Still alive alternated [count: 70k] times.
+Still alive alternated [count: 80k] times.
+Still alive alternated [count: 90k] times.
+Still alive alternated [count: 100k] times.
+condition fulfilled.
+{ "threads": [{ "name": "second_thread", "stack_size": 1536, "stack_used": 156 }]}
+SUCCESS
+

@@ -1,0 +1,39 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM2" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM2
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: 2022.10)
+Number of threads before the test = 1
+Creating first thread (sleeping)
+Creating second thread (sleeping)
+Creating third thread (sleeping)
+Current number of threads = 4
+OK
+Waking up first thread
+Thread: 1 is starting
+Thread: 1 calls zombify
+Current number of threads = 4
+OK
+Waking up second thread
+Thread: 2 is starting
+Thread: 2 calls zombify
+Current number of threads = 4
+OK
+Kill first thread
+Current number of threads = 3
+OK
+Waking up third thread
+Thread: 3 is starting
+Thread: 3 calls zombify
+OK
+Creating fourth thread (sleeping)
+OK
+Current number of threads = 4
+OK
+

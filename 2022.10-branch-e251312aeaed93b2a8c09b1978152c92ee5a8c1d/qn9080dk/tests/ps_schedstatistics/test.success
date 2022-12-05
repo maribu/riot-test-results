@@ -1,0 +1,38 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM2" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM2
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm:289: DeprecationWarning: setDaemon() is deprecated, set the daemon attribute instead
+  receiver_thread.setDaemon(1)
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+Creating thread #0, next=1
+Creating thread #1, next=2
+Creating thread #2, next=3
+Creating thread #3, next=4
+Creating thread #4, next=0
+
+> help
+
+> 
+> help
+Command              Description
+---------------------------------------
+pm                   interact with layered PM subsystem
+ps                   Prints information about running threads.
+reboot               Reboot the node
+ps
+version              Prints current RIOT_VERSION
+> ps
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     | runtime  | switches  | runtime_usec 
+	  - | isr_stack            | -        - |   - |    512 (  208) (  304) | 0x20000000 | 0x200001c8
+	  1 | main                 | running  Q |   7 |   1536 (  788) (  748) | 0x20001910 | 0x20001bfc  |  0.970% |        47  |      45015 
+	  2 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x20000434 | 0x20000764  |  0.198% |        47  |       9232 
+	  3 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x20000834 | 0x20000b64  |  0.280% |        51  |      13023 
+	  4 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x20000c34 | 0x20000f64  |  0.362% |        53  |      16818 
+	  5 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x20001034 | 0x20001364  |  0.462% |        57  |      21480 
+	  6 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x20001434 | 0x20001764  |  0.157% |        59  |       7301 
+	    | SUM                  |            |     |   7168 ( 3056) ( 4112)
+> 
