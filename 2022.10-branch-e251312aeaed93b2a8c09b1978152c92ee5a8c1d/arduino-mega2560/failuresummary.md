@@ -1,5 +1,4 @@
 Failures during compilation:
-- [tests/pkg_arduino_sdi_12](tests/pkg_arduino_sdi_12/compilation.failed)
 - [tests/pkg_micro-ecc](tests/pkg_micro-ecc/compilation.failed)
 
 Failures during test:

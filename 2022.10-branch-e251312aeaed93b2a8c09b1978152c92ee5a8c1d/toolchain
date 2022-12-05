@@ -17,7 +17,7 @@ Installed compiler toolchains
      riscv-none-embed-gcc: missing
      xtensa-esp32-elf-gcc: xtensa-esp32-elf-gcc (Alpine Linux) 12.2.0
    xtensa-esp8266-elf-gcc: xtensa-esp8266-elf-gcc (Alpine Linux) 12.2.0
-                    clang: Alpine clang version 15.0.5
+                    clang: Alpine clang version 15.0.6
 
 Installed compiler libs
 -----------------------
@@ -33,7 +33,7 @@ xtensa-esp8266-elf-newlib: "4.2.0"
 Installed development tools
 ---------------------------
                    ccache: missing
-                    cmake: cmake version 3.25.0
+                    cmake: cmake version 3.25.1
                  cppcheck: Cppcheck 2.9
                   doxygen: 1.9.5
                       git: git version 2.38.1
