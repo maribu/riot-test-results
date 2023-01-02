@@ -1,0 +1,37 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/gcoap_fileserver test
+make -C benchmark_udp
+make[2]: Nothing to be done for 'all'.
+make -C dose
+make[2]: Nothing to be done for 'all'.
+make -C ethos
+cc -O3 -Wall ethos.c -o ethos
+make -C uhcpd
+cc -g -O3 -Wall -DMODULE_UHCPD -I/home/maribu/Repos/software/RIOT/sys/include -I. /home/maribu/Repos/software/RIOT/sys/net/application_layer/uhcp/uhcp.c uhcpd.c -o bin/uhcpd
+make -C sliptty
+make[2]: Nothing to be done for 'all'.
+make -C zep_dispatch
+cc -g -O3 -Wall -Wextra -I/home/maribu/Repos/software/RIOT/core/lib/include -I/home/maribu/Repos/software/RIOT/cpu/native/include -I/home/maribu/Repos/software/RIOT/drivers/include -I/home/maribu/Repos/software/RIOT/sys/include -DNDEBUG   main.c topology.c zep_parser.c /home/maribu/Repos/software/RIOT/sys/net/link_layer/ieee802154/ieee802154.c /home/maribu/Repos/software/RIOT/sys/fmt/fmt.c /home/maribu/Repos/software/RIOT/sys/net/link_layer/l2util/l2util.c -o bin/zep_dispatch
+entering loop…
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/gcoap_fileserver/tests/01-run.py", line 129, in <module>
+    run_test(test_linear_topology, factory)
+  File "/home/maribu/Repos/software/RIOT/tests/gcoap_fileserver/tests/01-run.py", line 122, in run_test
+    func(factory, zep_dispatch)
+  File "/home/maribu/Repos/software/RIOT/tests/gcoap_fileserver/tests/01-run.py", line 92, in test_linear_topology
+    A.cmd("nib prefix add 7 2001:db8::/32")
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/lib/python3.11/site-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.EOF: ['> ', '[PEXPECT_PROMPT+']
+make: *** [/home/maribu/Repos/software/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2
