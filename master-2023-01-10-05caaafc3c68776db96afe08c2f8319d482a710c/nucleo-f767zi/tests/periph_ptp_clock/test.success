@@ -1,0 +1,29 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM1
+Welcome to pyterm!
+Type '/exit' to exit.
+3 0x11
+generatinREADY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Testing clock at speed 0 (~100.000 % of nominal speed): SUCCEEDED
+Testing clock at speed 2147483647 (~149.999 % of nominal speed): SUCCEEDED
+Testing clock at speed -2147483648 (~50.000 % of nominal speed): SUCCEEDED
+Testing clock at speed 42949673 (~101.000 % of nominal speed): SUCCEEDED
+Testing clock at speed -42949673 (~99.000 % of nominal speed): SUCCEEDED
+Testing clock at speed 4294967 (~100.099 % of nominal speed): SUCCEEDED
+Testing clock at speed -4294967 (~99.901 % of nominal speed): SUCCEEDED
+Testing clock at speed 42 (~100.000 % of nominal speed): SUCCEEDED
+Testing clock at speed -42 (~100.000 % of nominal speed): SUCCEEDED
+Testing clock adjustments for offset 0: SUCCEEDED
+Statistics: avg = 0, min = 0, max = 0, σ² = 0
+Testing clock adjustments for offset -1337: SUCCEEDED
+Statistics: avg = 0, min = 0, max = 0, σ² = 0
+Testing clock adjustments for offset 1337: SUCCEEDED
+Statistics: avg = 0, min = 0, max = 0, σ² = 0
+Testing clock adjustments for offset 2147483647: SUCCEEDED
+Statistics: avg = 0, min = 0, max = 0, σ² = 0
+TEST SUCCEEDED!
+

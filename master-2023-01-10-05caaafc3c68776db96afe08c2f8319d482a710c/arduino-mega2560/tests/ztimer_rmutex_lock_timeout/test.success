@@ -1,0 +1,44 @@
+
+
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+in(): This is RIOT! (Version: buildtest)
+> 
+main(): This is RIOT! (Version: buildtest)
+> help
+t1
+
+> 
+> help
+Command              Description
+---------------------------------------
+t1                   See main.c
+t2                   See main.c
+t3                   See main.c
+t4                   See main.c
+t5                   See main.c
+> t1
+OK
+
+> t2
+t2
+{ "threads": [{ "name": "lock_thread", "stack_size": 256, "stack_used": 70 }]}
+OK
+
+> t3
+t3
+OK
+{ "threads": [{ "name": "test_thread", "stack_size": 256, "stack_used": 88 }]}
+
+> t4
+t4
+OK
+
+> t5
+t5
+{ "threads": [{ "name": "lock_thread", "stack_size": 256, "stack_used": 70 }]}
+OK
+
+> 

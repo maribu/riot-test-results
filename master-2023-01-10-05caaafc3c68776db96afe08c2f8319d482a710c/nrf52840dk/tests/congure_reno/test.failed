@@ -1,0 +1,510 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/congure_reno test
+EEEEEEEEEEEEEEEEEEEEEEE.
+======================================================================
+ERROR: test_congestion_avoidance_increase (__main__.TestCongURERenoCustomIncDec.test_congestion_avoidance_increase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 803, in test_congestion_avoidance_increase
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 116, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 58, in exec_cmd
+    return self._parse(res)
+           ^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 53, in _parse
+    return self.json_parser.parse(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/json.py", line 68, in parse
+    return self.json_module.loads(cmd_output, *self._parser_args,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rapidjson.JSONDecodeError: Parse error at offset 67: Missing a closing quotation mark in string.
+
+======================================================================
+ERROR: test_custom_functions_initialized (__main__.TestCongURERenoCustomIncDec.test_custom_functions_initialized)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 784, in test_custom_functions_initialized
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 116, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 58, in exec_cmd
+    return self._parse(res)
+           ^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 53, in _parse
+    return self.json_parser.parse(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/json.py", line 68, in parse
+    return self.json_module.loads(cmd_output, *self._parser_args,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rapidjson.JSONDecodeError: Parse error at offset 67: Missing a closing quotation mark in string.
+
+======================================================================
+ERROR: test_fast_retransmit_decrease (__main__.TestCongURERenoCustomIncDec.test_fast_retransmit_decrease)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 818, in test_fast_retransmit_decrease
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 116, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 58, in exec_cmd
+    return self._parse(res)
+           ^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 53, in _parse
+    return self.json_parser.parse(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/json.py", line 68, in parse
+    return self.json_module.loads(cmd_output, *self._parser_args,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rapidjson.JSONDecodeError: Parse error at offset 67: Missing a closing quotation mark in string.
+
+======================================================================
+ERROR: test_slow_start_increase (__main__.TestCongURERenoCustomIncDec.test_slow_start_increase)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 790, in test_slow_start_increase
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 116, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 58, in exec_cmd
+    return self._parse(res)
+           ^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 53, in _parse
+    return self.json_parser.parse(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/json.py", line 68, in parse
+    return self.json_module.loads(cmd_output, *self._parser_args,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rapidjson.JSONDecodeError: Parse error at offset 67: Missing a closing quotation mark in string.
+
+======================================================================
+ERROR: test_congestion_avoidance_increase (__main__.TestCongURERenoDefault.test_congestion_avoidance_increase)
+During congestion avoidance, cwnd is incremented by roughly 1 full-
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 369, in test_congestion_avoidance_increase
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 116, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 58, in exec_cmd
+    return self._parse(res)
+           ^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 53, in _parse
+    return self.json_parser.parse(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/json.py", line 68, in parse
+    return self.json_module.loads(cmd_output, *self._parser_args,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rapidjson.JSONDecodeError: Parse error at offset 67: Missing a closing quotation mark in string.
+
+======================================================================
+ERROR: test_ecn_ce (__main__.TestCongURERenoDefault.test_ecn_ce)
+https://tools.ietf.org/html/rfc5681#section-3
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 727, in test_ecn_ce
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 116, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 58, in exec_cmd
+    return self._parse(res)
+           ^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 53, in _parse
+    return self.json_parser.parse(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/json.py", line 68, in parse
+    return self.json_module.loads(cmd_output, *self._parser_args,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rapidjson.JSONDecodeError: Parse error at offset 67: Missing a closing quotation mark in string.
+
+======================================================================
+ERROR: test_enter_fast_retransmit_all_check_true_1 (__main__.TestCongURERenoDefault.test_enter_fast_retransmit_all_check_true_1)
+See self.test_enter_fast_retransmit_check_a_not_true()
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 647, in test_enter_fast_retransmit_all_check_true_1
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 116, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 58, in exec_cmd
+    return self._parse(res)
+           ^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 53, in _parse
+    return self.json_parser.parse(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/json.py", line 68, in parse
+    return self.json_module.loads(cmd_output, *self._parser_args,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rapidjson.JSONDecodeError: Parse error at offset 67: Missing a closing quotation mark in string.
+
+======================================================================
+ERROR: test_enter_fast_retransmit_all_check_true_2 (__main__.TestCongURERenoDefault.test_enter_fast_retransmit_all_check_true_2)
+See self.test_enter_fast_retransmit_check_a_not_true()
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 677, in test_enter_fast_retransmit_all_check_true_2
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 116, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 58, in exec_cmd
+    return self._parse(res)
+           ^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 53, in _parse
+    return self.json_parser.parse(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/json.py", line 68, in parse
+    return self.json_module.loads(cmd_output, *self._parser_args,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rapidjson.JSONDecodeError: Parse error at offset 67: Missing a closing quotation mark in string.
+
+======================================================================
+ERROR: test_enter_fast_retransmit_check_a_not_true (__main__.TestCongURERenoDefault.test_enter_fast_retransmit_check_a_not_true)
+Fast retransmit according to RFC 5681 when receiving a duplicate
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 502, in test_enter_fast_retransmit_check_a_not_true
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 116, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 58, in exec_cmd
+    return self._parse(res)
+           ^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 53, in _parse
+    return self.json_parser.parse(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/json.py", line 68, in parse
+    return self.json_module.loads(cmd_output, *self._parser_args,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rapidjson.JSONDecodeError: Parse error at offset 67: Missing a closing quotation mark in string.
+
+======================================================================
+ERROR: test_enter_fast_retransmit_check_b_not_true (__main__.TestCongURERenoDefault.test_enter_fast_retransmit_check_b_not_true)
+See self.test_enter_fast_retransmit_check_a_not_true()
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 530, in test_enter_fast_retransmit_check_b_not_true
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 116, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 58, in exec_cmd
+    return self._parse(res)
+           ^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 53, in _parse
+    return self.json_parser.parse(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/json.py", line 68, in parse
+    return self.json_module.loads(cmd_output, *self._parser_args,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rapidjson.JSONDecodeError: Parse error at offset 67: Missing a closing quotation mark in string.
+
+======================================================================
+ERROR: test_enter_fast_retransmit_check_c_not_true (__main__.TestCongURERenoDefault.test_enter_fast_retransmit_check_c_not_true)
+See self.test_enter_fast_retransmit_check_a_not_true()
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 559, in test_enter_fast_retransmit_check_c_not_true
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 116, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 58, in exec_cmd
+    return self._parse(res)
+           ^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 53, in _parse
+    return self.json_parser.parse(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/json.py", line 68, in parse
+    return self.json_module.loads(cmd_output, *self._parser_args,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rapidjson.JSONDecodeError: Parse error at offset 67: Missing a closing quotation mark in string.
+
+======================================================================
+ERROR: test_enter_fast_retransmit_check_d_not_true (__main__.TestCongURERenoDefault.test_enter_fast_retransmit_check_d_not_true)
+See self.test_enter_fast_retransmit_check_a_not_true()
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 588, in test_enter_fast_retransmit_check_d_not_true
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 116, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 58, in exec_cmd
+    return self._parse(res)
+           ^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 53, in _parse
+    return self.json_parser.parse(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/json.py", line 68, in parse
+    return self.json_module.loads(cmd_output, *self._parser_args,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rapidjson.JSONDecodeError: Parse error at offset 67: Missing a closing quotation mark in string.
+
+======================================================================
+ERROR: test_enter_fast_retransmit_check_e_not_true (__main__.TestCongURERenoDefault.test_enter_fast_retransmit_check_e_not_true)
+See self.test_enter_fast_retransmit_check_a_not_true()
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 617, in test_enter_fast_retransmit_check_e_not_true
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 116, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 58, in exec_cmd
+    return self._parse(res)
+           ^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 53, in _parse
+    return self.json_parser.parse(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/json.py", line 68, in parse
+    return self.json_module.loads(cmd_output, *self._parser_args,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rapidjson.JSONDecodeError: Parse error at offset 67: Missing a closing quotation mark in string.
+
+======================================================================
+ERROR: test_msg_discarded (__main__.TestCongURERenoDefault.test_msg_discarded)
+RFC 5681 does not say anything about discarding messages. It's a
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 742, in test_msg_discarded
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 116, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 58, in exec_cmd
+    return self._parse(res)
+           ^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 53, in _parse
+    return self.json_parser.parse(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/json.py", line 68, in parse
+    return self.json_module.loads(cmd_output, *self._parser_args,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rapidjson.JSONDecodeError: Parse error at offset 67: Missing a closing quotation mark in string.
+
+======================================================================
+ERROR: test_msgs_lost (__main__.TestCongURERenoDefault.test_msgs_lost)
+RFC 5681 does not say anything about explicitly lost messages.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 757, in test_msgs_lost
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 116, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 58, in exec_cmd
+    return self._parse(res)
+           ^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 53, in _parse
+    return self.json_parser.parse(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/json.py", line 68, in parse
+    return self.json_module.loads(cmd_output, *self._parser_args,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rapidjson.JSONDecodeError: Parse error at offset 67: Missing a closing quotation mark in string.
+
+======================================================================
+ERROR: test_mss_1095 (__main__.TestCongURERenoDefault.test_mss_1095)
+https://tools.ietf.org/html/rfc5681#section-3.1
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 287, in test_mss_1095
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 116, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 58, in exec_cmd
+    return self._parse(res)
+           ^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 53, in _parse
+    return self.json_parser.parse(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/json.py", line 68, in parse
+    return self.json_module.loads(cmd_output, *self._parser_args,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rapidjson.JSONDecodeError: Parse error at offset 67: Missing a closing quotation mark in string.
+
+======================================================================
+ERROR: test_mss_2200 (__main__.TestCongURERenoDefault.test_mss_2200)
+https://tools.ietf.org/html/rfc5681#section-3.1
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 260, in test_mss_2200
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 116, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 58, in exec_cmd
+    return self._parse(res)
+           ^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 53, in _parse
+    return self.json_parser.parse(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/json.py", line 68, in parse
+    return self.json_module.loads(cmd_output, *self._parser_args,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rapidjson.JSONDecodeError: Parse error at offset 67: Missing a closing quotation mark in string.
+
+======================================================================
+ERROR: test_reduce_ssthresh_large_flight_size (__main__.TestCongURERenoDefault.test_reduce_ssthresh_large_flight_size)
+Same as test_reduce_ssthresh_small_flight_size, but with flight size
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 446, in test_reduce_ssthresh_large_flight_size
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 116, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 58, in exec_cmd
+    return self._parse(res)
+           ^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 53, in _parse
+    return self.json_parser.parse(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/json.py", line 68, in parse
+    return self.json_module.loads(cmd_output, *self._parser_args,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rapidjson.JSONDecodeError: Parse error at offset 67: Missing a closing quotation mark in string.
+
+======================================================================
+ERROR: test_reduce_ssthresh_small_flight_size (__main__.TestCongURERenoDefault.test_reduce_ssthresh_small_flight_size)
+https://tools.ietf.org/html/rfc5681#section-3.1
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 413, in test_reduce_ssthresh_small_flight_size
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 116, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 58, in exec_cmd
+    return self._parse(res)
+           ^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 53, in _parse
+    return self.json_parser.parse(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/json.py", line 68, in parse
+    return self.json_module.loads(cmd_output, *self._parser_args,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rapidjson.JSONDecodeError: Parse error at offset 67: Missing a closing quotation mark in string.
+
+======================================================================
+ERROR: test_slow_start_increase_large_N (__main__.TestCongURERenoDefault.test_slow_start_increase_large_N)
+Same as test_slow_start_increase_small_N(), but with N larger than SMSS
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 338, in test_slow_start_increase_large_N
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 116, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 58, in exec_cmd
+    return self._parse(res)
+           ^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 53, in _parse
+    return self.json_parser.parse(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/json.py", line 68, in parse
+    return self.json_module.loads(cmd_output, *self._parser_args,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rapidjson.JSONDecodeError: Parse error at offset 67: Missing a closing quotation mark in string.
+
+======================================================================
+ERROR: test_slow_start_increase_small_N (__main__.TestCongURERenoDefault.test_slow_start_increase_small_N)
+https://tools.ietf.org/html/rfc5681#section-3.1
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 318, in test_slow_start_increase_small_N
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 116, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 58, in exec_cmd
+    return self._parse(res)
+           ^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 53, in _parse
+    return self.json_parser.parse(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/json.py", line 68, in parse
+    return self.json_module.loads(cmd_output, *self._parser_args,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rapidjson.JSONDecodeError: Parse error at offset 67: Missing a closing quotation mark in string.
+
+======================================================================
+ERROR: test_init (__main__.TestCongURERenoDefaultInitTests.test_init)
+https://tools.ietf.org/html/rfc5681#section-3.1
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 224, in test_init
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 116, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 58, in exec_cmd
+    return self._parse(res)
+           ^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 53, in _parse
+    return self.json_parser.parse(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/json.py", line 68, in parse
+    return self.json_module.loads(cmd_output, *self._parser_args,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rapidjson.JSONDecodeError: Parse error at offset 67: Missing a closing quotation mark in string.
+
+======================================================================
+ERROR: test_setup (__main__.TestCongURERenoDefaultInitTests.test_setup)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 191, in test_setup
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 116, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 58, in exec_cmd
+    return self._parse(res)
+           ^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_reno/tests/01-run.py", line 53, in _parse
+    return self.json_parser.parse(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/json.py", line 68, in parse
+    return self.json_module.loads(cmd_output, *self._parser_args,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rapidjson.JSONDecodeError: Parse error at offset 48: Missing a closing quotation mark in string.
+
+----------------------------------------------------------------------
+Ran 24 tests in 34.225s
+
+FAILED (errors=23)
+make: *** [/home/maribu/Repos/software/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

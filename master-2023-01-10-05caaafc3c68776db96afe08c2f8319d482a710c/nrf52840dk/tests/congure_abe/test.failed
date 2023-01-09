@@ -1,0 +1,114 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/congure_abe test
+EEEEEE.
+======================================================================
+ERROR: test_ecn_ce_large_flight_size (__main__.TestCongUREABE.test_ecn_ce_large_flight_size)
+Same as test_ecn_ce_small_flight_size, but with flight size
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_abe/tests/01-run.py", line 311, in test_ecn_ce_large_flight_size
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_abe/tests/01-run.py", line 99, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_abe/tests/01-run.py", line 57, in exec_cmd
+    res = self.shell.cmd(cmd, timeout, async_)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/__init__.py", line 102, in cmd
+    return self.replwrap.run_command(cmd, timeout=timeout, async_=async_)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/pexpect/replwrap.py", line 103, in run_command
+    if self._expect_prompt(timeout=timeout) == 1:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_ecn_ce_small_flight_size (__main__.TestCongUREABE.test_ecn_ce_small_flight_size)
+https://tools.ietf.org/html/rfc8511#section-3
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_abe/tests/01-run.py", line 291, in test_ecn_ce_small_flight_size
+    beta_ecn = (state['consts']['abe_multiplier_numerator'] /
+                ~~~~~^^^^^^^^^^
+KeyError: 'consts'
+
+======================================================================
+ERROR: test_enter_fast_retransmit (__main__.TestCongUREABE.test_enter_fast_retransmit)
+See self.test_enter_fast_retransmit_all_check_true() from
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_abe/tests/01-run.py", line 255, in test_enter_fast_retransmit
+    self.assertEqual(0, self.get_ff_calls())
+                        ^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_abe/tests/01-run.py", line 89, in get_ff_calls
+    res = self.exec_cmd('get_ff_calls')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_abe/tests/01-run.py", line 58, in exec_cmd
+    return self._parse(res)
+           ^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_abe/tests/01-run.py", line 53, in _parse
+    return self.json_parser.parse(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/json.py", line 68, in parse
+    return self.json_module.loads(cmd_output, *self._parser_args,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rapidjson.JSONDecodeError: Parse error at offset 127: Missing a closing quotation mark in string.
+
+======================================================================
+ERROR: test_slow_start_increase (__main__.TestCongUREABE.test_slow_start_increase)
+See test_slow_start_increase_large_N() from `tests/congure_reno`
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_abe/tests/01-run.py", line 232, in test_slow_start_increase
+    init_cwnd = state['cwnd']
+                ~~~~~^^^^^^^^
+KeyError: 'cwnd'
+
+======================================================================
+ERROR: test_init (__main__.TestCongUREABEDefaultInitTests.test_init)
+This is inherited from `congure_reno`, so it should be the same as
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_abe/tests/01-run.py", line 180, in test_init
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_abe/tests/01-run.py", line 99, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_abe/tests/01-run.py", line 57, in exec_cmd
+    res = self.shell.cmd(cmd, timeout, async_)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/__init__.py", line 102, in cmd
+    return self.replwrap.run_command(cmd, timeout=timeout, async_=async_)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/pexpect/replwrap.py", line 103, in run_command
+    if self._expect_prompt(timeout=timeout) == 1:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_setup (__main__.TestCongUREABEDefaultInitTests.test_setup)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_abe/tests/01-run.py", line 140, in test_setup
+    self.assertIsNotNone(state['consts'])
+                         ~~~~~^^^^^^^^^^
+KeyError: 'consts'
+
+----------------------------------------------------------------------
+Ran 7 tests in 41.303s
+
+FAILED (errors=6)
+make: *** [/home/maribu/Repos/software/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

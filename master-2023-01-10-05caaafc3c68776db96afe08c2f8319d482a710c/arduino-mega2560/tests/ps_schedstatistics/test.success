@@ -1,0 +1,41 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+): This is RIOT! (Version: buildtest)
+Help: Press s to start test, r to print it is ready
+
+main(): This is RIOT! (Version: buildtest)
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+Creating thread #0, next=1
+Creating thread #1, next=2
+Creating thread #2, next=3
+Creating thread #3, next=4
+Creating thread #4, next=0
+
+> help
+
+> 
+> help
+Command              Description
+---------------------------------------
+pm                   interact with layered PM subsystem
+ps                   Prints information about running threads.
+reboot               Reboot the node
+ps
+version              Prints current RIOT_VERSION
+> ps
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     | runtime  | switches  | runtime_usec 
+	  1 | idle                 | pending  Q |  15 |    512 (  156) (  356) |     0x1165 |     0x130c  | 56.268% |         6  |    2909460 
+	  2 | main                 | running  Q |   7 |    640 (  482) (  158) |     0x1365 |     0x1444  |  6.741% |       297  |     348568 
+	  3 | thread               | bl mutex _ |   6 |    512 (  188) (  324) |      0x6ea |      0x86f  |  8.402% |       144  |     434488 
+	  4 | thread               | bl rx    _ |   6 |    512 (  188) (  324) |      0x8ea |      0xa88  | 14.221% |       171  |     735344 
+	  5 | thread               | bl rx    _ |   6 |    512 (  188) (  324) |      0xaea |      0xc88  | 21.385% |       197  |    1105796 
+	  6 | thread               | bl rx    _ |   6 |    512 (  188) (  324) |      0xcea |      0xe88  | 30.159% |       225  |    1559460 
+	  7 | thread               | bl rx    _ |   6 |    512 (  188) (  324) |      0xeea |     0x1088  |  7.731% |       251  |     399752 
+	    | SUM                  |            |     |   3712 ( 1578) ( 2134)
+> 

@@ -1,0 +1,7 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/periph_wdt test
+PASSED target time: 128[ms], actual_time: 125.153[ms]
+Timeout in expect script at "child.expect(r"start time: (\d+) us", timeout=1)" (tests/periph_wdt/tests/01-run.py:69)
+
+make: *** [/home/maribu/Repos/software/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

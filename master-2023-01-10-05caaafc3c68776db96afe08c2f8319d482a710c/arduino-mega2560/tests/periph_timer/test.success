@@ -1,0 +1,40 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+
+Test for peripheral TIMERs
+
+Available timers: 2
+
+Testing TIMER_0:
+TIMER_0: initialization successful
+TIMER_0: stopped
+TIMER_0: set channel 0 to 5000
+TIMER_0: set channel 1 to 10000
+TIMER_0: set channel 2 to 15000
+TIMER_0: starting
+TIMER_0: channel 0 fired at SW count     9997 - init:     9997
+TIMER_0: channel 1 fired at SW count    19990 - diff:     9993
+TIMER_0: channel 2 fired at SW count    29982 - diff:     9992
+
+Testing TIMER_1:
+TIMER_1: initialization successful
+TIMER_1: stopped
+TIMER_1: set channel 0 to 5000
+TIMER_1: set channel 1 to 10000
+TIMER_1: set channel 2 to 15000
+TIMER_1: starting
+TIMER_1: channel 0 fired at SW count     9998 - init:     9998
+TIMER_1: channel 1 fired at SW count    19990 - diff:     9992
+TIMER_1: channel 2 fired at SW count    29982 - diff:     9992
+
+TEST SUCCEEDED
+

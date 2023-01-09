@@ -1,0 +1,28 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Test Application for multithreaded use of malloc()
+==================================================
+
+This test will run duelling threads allocating and freeing memory.
+The running thread is interrupted every millisecond and the other
+threads gets scheduled. Eventually, this should yield to memory
+corruption unless proper guards are in place preventing them. After
+ca. two seconds without crash, the test is considered as passing.
+
+WARNING: Use of mallinfo() disabled.
+
+Testing: malloc()/free()
+{ "threadsTesting: realloc()/free()
+{{  ""thtrheraedasd"s:" :[ {[ {" n"anmaem"e:" :" t"1t"2," ," s"tsatcakc_ks_isziez"e:" :2 5265,6 ," s"tsatcakc_ku_suesde"d:" :7 07 0} ]}}
+]}
+TEST PASSED
+

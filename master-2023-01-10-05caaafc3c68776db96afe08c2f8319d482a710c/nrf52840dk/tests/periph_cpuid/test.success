@@ -1,0 +1,15 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Test for the CPUID driver
+This test is reading out the CPUID of the platforms CPU
+
+CPUID_LEN: 8
+CPUID: 0x9b 0x66 0x7f 0x61 0x51 0x4f 0x4c 0x96
+

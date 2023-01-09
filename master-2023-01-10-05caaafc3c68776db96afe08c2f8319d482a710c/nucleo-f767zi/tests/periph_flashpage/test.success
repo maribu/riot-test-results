@@ -1,0 +1,38 @@
+
+
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM1
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+> 
+test_last_raw
+
+> test_last_raw
+wrote raw short buffer to last flash page
+> help
+help
+Command              Description
+---------------------------------------
+info                 Show information about pages
+write_raw            Write (ASCII, max 64B) data to the given address
+erase                Erase the given page buffer
+test_last_raw        Write and verify raw short write on last page available
+> help
+help
+Command              Description
+---------------------------------------
+info                 Show information about pages
+write_raw            Write (ASCII, max 64B) data to the given address
+erase                Erase the given page buffer
+test_last_raw        Write and verify raw short write on last page available
+> help
+help
+Command              Description
+---------------------------------------
+info                 Show information about pages
+write_raw            Write (ASCII, max 64B) data to the given address
+erase                Erase the given page buffer
+test_last_raw        Write and verify raw short write on last page available
+> 

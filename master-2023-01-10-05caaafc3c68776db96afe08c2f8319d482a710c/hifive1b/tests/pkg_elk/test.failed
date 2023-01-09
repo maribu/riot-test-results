@@ -1,0 +1,32 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/pkg_elk test
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM2" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM2
+Welcome to pyterm!
+Type '/exit' to exit.
+[1F[0J[?25h[0;39;49mBench Clock Reset Complete
+
+ATE0-->ATE0
+OK
+AT+BLEINIT=0-->OK
+AT+CWMODE=0-->OK
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Unhandled trap:
+  mcause: 0x6
+  mepc:   0x2001353a
+  mtval:  0x80000425
+*** RIOT kernel panic:
+Unhandled trap
+
+*** halted.
+
+Timeout in expect script at "child.expect_exact("result: 7")" (tests/pkg_elk/tests/01-run.py:14)
+
+make: *** [/home/maribu/Repos/software/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

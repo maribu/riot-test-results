@@ -1,0 +1,22 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/unittests test
+Due to limitations in the gcoap API it is currently not possible to use a dual stack setup
+r
+Due to limitations in the gcoap API it is currently not possible to use a dual stack setup
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+.............................................................................................................................................................................................................................................................mtd_tests.test_mtd_write_read (tests/unittests/tests-mtd/tests-mtd.c 198) exp 0 was -190
+.
+mtd_tests.test_mtd_write_read_flash (tests/unittests/tests-mtd/tests-mtd.c 267) exp 0 was -221
+.
+mtd_tests.test_mtd_vfs (tests/unittests/tests-mtd/tests-mtd.c 291) exp 0 was -146
+..............................................................................................................................run 1147 failures 3
+Timeout in expect script at "child.expect(r'OK \((\d+) tests\)', timeout=timeout)" (dist/pythonlibs/testrunner/__init__.py:57)
+
+make: *** [/home/maribu/Repos/software/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

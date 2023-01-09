@@ -1,0 +1,37 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/periph_rtc test
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM2" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM2
+Welcome to pyterm!
+Type '/exit' to exit.
+[1F[0J[?25h[0;39;49mBench Clock Reset Complete
+
+ATE0-->ATE0
+OK
+AT+BLEINIT=0-->OK
+AT+CWMODE=0-->OK
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+
+RIOT RTC low-level driver test
+This test will display 'Alarm!' every 2 seconds for 4 times
+  Setting clock to   2020-02-28 23:59:57
+Clock value is now   2020-02-29 00:00:05
+
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/periph_rtc/tests/01-run.py", line 45, in <module>
+    sys.exit(run(testfunc))
+             ^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/dist/pythonlibs/testrunner/__init__.py", line 30, in run
+    testfunc(child)
+  File "/home/maribu/Repos/software/RIOT/tests/periph_rtc/tests/01-run.py", line 26, in testfunc
+    assert clock_set == clock_value
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+make: *** [/home/maribu/Repos/software/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

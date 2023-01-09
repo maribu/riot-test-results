@@ -1,0 +1,98 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/riotboot flash
+Building application "tests_riotboot" for "nrf52840dk" with MCU "nrf52".
+
+"make" -C /home/maribu/Repos/software/RIOT/boards/common/init
+"make" -C /home/maribu/Repos/software/RIOT/boards/nrf52840dk
+"make" -C /home/maribu/Repos/software/RIOT/boards/common/nrf52xxxdk
+"make" -C /home/maribu/Repos/software/RIOT/core
+"make" -C /home/maribu/Repos/software/RIOT/core/lib
+"make" -C /home/maribu/Repos/software/RIOT/cpu/nrf52
+"make" -C /home/maribu/Repos/software/RIOT/cpu/cortexm_common
+"make" -C /home/maribu/Repos/software/RIOT/cpu/cortexm_common/periph
+"make" -C /home/maribu/Repos/software/RIOT/cpu/nrf52/periph
+"make" -C /home/maribu/Repos/software/RIOT/cpu/nrf52/vectors
+"make" -C /home/maribu/Repos/software/RIOT/cpu/nrf5x_common
+"make" -C /home/maribu/Repos/software/RIOT/cpu/nrf5x_common/periph
+"make" -C /home/maribu/Repos/software/RIOT/drivers
+"make" -C /home/maribu/Repos/software/RIOT/drivers/periph_common
+"make" -C /home/maribu/Repos/software/RIOT/sys
+"make" -C /home/maribu/Repos/software/RIOT/sys/checksum
+"make" -C /home/maribu/Repos/software/RIOT/sys/div
+"make" -C /home/maribu/Repos/software/RIOT/sys/libc
+"make" -C /home/maribu/Repos/software/RIOT/sys/malloc_thread_safe
+"make" -C /home/maribu/Repos/software/RIOT/sys/newlib_syscalls_default
+"make" -C /home/maribu/Repos/software/RIOT/sys/riotboot
+"make" -C /home/maribu/Repos/software/RIOT/sys/stdio_null
+compiling /home/maribu/Repos/software/RIOT/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /home/maribu/Repos/software/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot0.1673349940.bin...
+   text	   data	    bss	    dec	    hex	filename
+  13192	    128	   2396	  15716	   3d64	/home/maribu/Repos/software/RIOT/tests/riotboot/bin/nrf52840dk/tests_riotboot.elf
+/home/maribu/Repos/software/RIOT/dist/tools/jlink/jlink.sh flash /home/maribu/Repos/software/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot0-extended.bin
+### Flashing Target ###
+### Flashing at base address 0x0 with offset 0 ###
+SEGGER J-Link Commander V7.84a (Compiled Dec 22 2022 16:12:25)
+DLL version V7.84a, compiled Dec 22 2022 16:11:55
+
+J-Link Commander will now exit on Error
+
+J-Link Command File read successfully.
+Processing script file...
+J-Link>loadbin /home/maribu/Repos/software/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot0-extended.bin 0x00000000
+J-Link connection not established yet but required for command.
+Connecting to J-Link via USB...O.K.
+Firmware: J-Link OB-SAM3U128-V2-NordicSemi compiled Nov  7 2022 16:21:57
+Hardware version: V1.00
+J-Link uptime (since boot): 0d 03h 53m 00s
+S/N: 683873630
+License(s): RDI, FlashBP, FlashDL, JFlash, GDB
+USB speed mode: High speed (480 MBit/s)
+VTref=3.300V
+Target connection not established yet but required for command.
+Device "NRF52" selected.
+
+
+Connecting to target via SWD
+InitTarget() start
+InitTarget() end
+Found SW-DP with ID 0x2BA01477
+DPIDR: 0x2BA01477
+CoreSight SoC-400 or earlier
+Scanning AP map to find all available APs
+AP[2]: Stopped AP scan as end of AP map has been reached
+AP[0]: AHB-AP (IDR: 0x24770011)
+AP[1]: JTAG-AP (IDR: 0x02880000)
+Iterating through AP map to find AHB-AP to use
+AP[0]: Core found
+AP[0]: AHB-AP ROM base: 0xE00FF000
+CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)
+Found Cortex-M4 r0p1, Little endian.
+FPUnit: 6 code (BP) slots and 2 literal slots
+CoreSight components:
+ROMTbl[0] @ E00FF000
+[0][0]: E000E000 CID B105E00D PID 000BB00C SCS-M7
+[0][1]: E0001000 CID B105E00D PID 003BB002 DWT
+[0][2]: E0002000 CID B105E00D PID 002BB003 FPB
+[0][3]: E0000000 CID B105E00D PID 003BB001 ITM
+[0][4]: E0040000 CID B105900D PID 000BB9A1 TPIU
+[0][5]: E0041000 CID B105900D PID 000BB925 ETM
+Memory zones:
+  Zone: Default Description: Default access mode
+Cortex-M4 identified.
+'loadbin': Performing implicit reset & halt of MCU.
+Reset: Halt core after reset via DEMCR.VC_CORERESET.
+Reset: Reset device via AIRCR.SYSRESETREQ.
+Downloading file [/home/maribu/Repos/software/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot0-extended.bin]...
+Comparing flash   [000%]000%]010%]010%]025%]025%]035%]035%]050%]050%]060%]100%] Done.
+Erasing flash     [000%]000%]030%]030%]060%]060%]095%]095%]100%] Done.
+Programming flash [000%]000%]000%]000%]000%]000%]000%]000%]000%]000%]005%]005%]005%]005%]005%]005%]005%]005%]005%]005%]010%]010%]010%]010%]010%]010%]010%]010%]010%]010%]015%]015%]015%]015%]015%]015%]015%]015%]015%]015%]020%]020%]020%]020%]020%]020%]020%]020%]020%]020%]025%]025%]025%]025%]025%]025%]025%]025%]025%]025%]030%]030%]030%]030%]030%]030%]030%]030%]030%]030%]035%]035%]035%]035%]035%]035%]035%]035%]035%]035%]040%]040%]040%]040%]040%]040%]040%]040%]040%]040%]045%]045%]045%]045%]045%]045%]045%]045%]045%]045%]050%]050%]050%]050%]050%]050%]050%]050%]050%]050%]055%]055%]055%]055%]055%]055%]055%]055%]055%]055%]060%]060%]060%]060%]060%]060%]060%]060%]060%]060%]065%]065%]065%]065%]065%]065%]065%]065%]065%]065%]070%]070%]070%]070%]070%]070%]070%]070%]070%]070%]075%]075%]075%]075%]075%]075%]075%]075%]075%]075%]080%]080%]080%]080%]080%]080%]080%]080%]080%]080%]085%]085%]085%]085%]085%]085%]085%]085%]085%]085%]090%]090%]090%]090%]090%]090%]090%]090%]090%]090%]095%]095%]095%]095%]095%]095%]095%]095%]100%] Done.
+J-Link: Flash download: Bank 0 @ 0x00000000: 1 range affected (405504 bytes)
+J-Link: Flash download: Total: 13.985s (Prepare: 0.160s, Compare: 0.125s, Erase: 8.372s, Program & Verify: 5.199s, Restore: 0.127s)
+J-Link: Flash download: Program & Verify speed: 75 KB/s
+Writing target memory failed.
+
+Script processing completed.
+
+make: *** [/home/maribu/Repos/software/RIOT/tests/riotboot/../../Makefile.include:849: flash] Error 1
+
+Return value: 2

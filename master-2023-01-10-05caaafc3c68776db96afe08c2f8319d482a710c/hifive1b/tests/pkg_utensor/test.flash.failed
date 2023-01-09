@@ -1,0 +1,76 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/pkg_utensor flash
+Building application "tests_pkg_utensor" for "hifive1b" with MCU "fe310".
+
+/usr/lib/gcc/riscv-none-elf/12.2.0/../../../../riscv-none-elf/bin/ld: /home/maribu/Repos/software/RIOT/tests/pkg_utensor/bin/hifive1b/tests_pkg_utensor.elf: section `.gcc_except_table._ZNSt11logic_errorC2EPKc' can't be allocated in segment 1
+LOAD: .data .gcc_except_table.main .gcc_except_table._ZN12BinaryTensorIiEC2ERK11TensorShapePKi .gcc_except_table._ZN12BinaryTensorIhEC2ERK11TensorShapePKh .gcc_except_table._ZN12BinaryTensorIfEC2ERK11TensorShapePKf .gcc_except_table._Z10dequantizeIhEvP6TensorS1_S1_S1_ .gcc_except_table._ZN9RamTensorIfEC2ESt16initializer_listImE .gcc_except_table._Z10QuantizeV2IhEvP6TensorS1_S1_S1_S1_S1_ .gcc_except_table._Z7reshapeIfEvP6TensorS1_S1_ .gcc_except_table._ZNSt6vectorImSaImEEC2ESt16initializer_listImERKS0_.constprop.0 .gcc_except_table._Z10RequantizeIifhEvP6TensorS1_S1_S1_S1_S1_S1_S1_ .gcc_except_table._Z20Requantization_RangeIifEvP6TensorS1_S1_S1_S1_ .gcc_except_table._Z16get_deep_mlp_ctxR7ContextP6Tensor .gcc_except_table._Z12MinMaxHelperIfifEvP6TensorS1_S1_b .gcc_except_table._Z6ArgMaxIfiEvP6TensorS1_S1_ .gcc_except_table._Z16QuantizedMatMul2IhhiEvP6TensorS1_S1_S1_S1_S1_S1_S1_S1_bb .gcc_except_table._ZNSt10_HashtableIN7utensor6stringESt4pairIKS1_10Ref_RecordESaIS5_ENSt8__detail10_Select1stESt8equal_toIS1_ESt4hashIS1_ENS7_18_Mod_range_hashingENS7_20_Default_ranged_hashENS7_20_Prime_rehash_policyENS7_17_Hashtable_traitsILb0ELb0ELb1EEEE9_M_rehashEjRKj .gcc_except_table._ZNSt8__detail9_Map_baseIN7utensor6stringESt4pairIKS2_10Ref_RecordESaIS6_ENS_10_Select1stESt8equal_toIS2_ESt4hashIS2_ENS_18_Mod_range_hashingENS_20_Default_ranged_hashENS_20_Prime_rehash_policyENS_17_Hashtable_traitsILb0ELb0ELb1EEELb1EEixERS4_ .gcc_except_table._ZN7Context4pushEP8OperatorRSt6vectorIN7utensor6stringESaIS4_EES7_ .gcc_except_table._ZN7Context4pushEP8OperatorSt16initializer_listIN7utensor6stringEES5_ .gcc_except_table._ZN7Context4evalEv .gcc_except_table._ZN6TensorC2Ev .gcc_except_table._ZN21permuteIndexTransformC2ERK11TensorShapeRKSt6vectorIhSaIhEE .gcc_except_table.__gxx_personality_v0 .gcc_except_table._ZN10__cxxabiv111__terminateEPFvvE .gcc_except_table._ZN9__gnu_cxx27__verbose_terminate_handlerEv .gcc_except_table._ZSt19__throw_logic_errorPKc .gcc_except_table._ZSt20__throw_length_errorPKc .gcc_except_table._ZNSt11logic_errorC2EPKc
+/usr/lib/gcc/riscv-none-elf/12.2.0/../../../../riscv-none-elf/bin/ld: warning: /home/maribu/Repos/software/RIOT/tests/pkg_utensor/bin/hifive1b/tests_pkg_utensor.elf has a LOAD segment with RWX permissions
+   text	   data	    bss	    dec	    hex	filename
+  84488	 136537	   3224	 224249	  36bf9	/home/maribu/Repos/software/RIOT/tests/pkg_utensor/bin/hifive1b/tests_pkg_utensor.elf
+/home/maribu/Repos/software/RIOT/dist/tools/jlink/jlink.sh flash /home/maribu/Repos/software/RIOT/tests/pkg_utensor/bin/hifive1b/tests_pkg_utensor.bin
+### Flashing Target ###
+### Flashing at base address 0x20010000 with offset 0 ###
+SEGGER J-Link Commander V7.84a (Compiled Dec 22 2022 16:12:25)
+DLL version V7.84a, compiled Dec 22 2022 16:11:55
+
+J-Link Commander will now exit on Error
+
+J-Link Command File read successfully.
+Processing script file...
+J-Link>loadbin /home/maribu/Repos/software/RIOT/tests/pkg_utensor/bin/hifive1b/tests_pkg_utensor.bin 0x20010000
+J-Link connection not established yet but required for command.
+Connecting to J-Link via USB...O.K.
+Firmware: J-Link OB-K22-SiFive compiled Nov  7 2022 16:21:52
+Hardware version: V1.00
+J-Link uptime (since boot): 0d 00h 23m 47s
+S/N: 979017447
+USB speed mode: Full speed (12 MBit/s)
+VTref=3.300V
+Target connection not established yet but required for command.
+Device "FE310" selected.
+
+
+Connecting to target via JTAG
+ConfigTargetSettings() start
+ConfigTargetSettings() end
+TotalIRLen = 5, IRPrint = 0x01
+JTAG chain detection found 1 devices:
+ #0 Id: 0x20000913, IRLen: 05, Unknown device
+Debug architecture:
+  RISC-V debug: 0.13
+  AddrBits: 7
+  DataBits: 32
+  IdleClks: 5
+Memory access:
+  Via system bus: No
+  Via ProgBuf: Yes (16 ProgBuf entries)
+  Via abstract command (AAM): May be tried as last resort
+DataBuf: 1 entries
+  autoexec[0] implemented: Yes
+Detected: RV32 core
+RISC-V: The connected J-Link (S/N 979017447) uses an old firmware module V0 with known problems / limitations.
+Temp. halting CPU for for feature detection...
+HW instruction/data BPs: 8
+Support set/clr BPs while running: No
+HW data BPs trigger before execution of inst
+CSR access via abs. commands: No
+Feature detection done. Restarting core...
+BG memory access support: No
+Memory zones:
+  Zone: Default Description: Default access mode
+RISC-V identified.
+'loadbin': Performing implicit reset & halt of MCU.
+RISC-V: Performing reset via <ndmreset>
+Downloading file [/home/maribu/Repos/software/RIOT/tests/pkg_utensor/bin/hifive1b/tests_pkg_utensor.bin]...
+Writing target memory failed.
+
+Script processing completed.
+
+Comparing flash   [000%]000%]000%]000%]000%]000%]000%]000%]000%]000%]005%]005%]005%]005%]005%]005%]005%]005%]010%]010%]010%]010%]010%]010%]015%]015%]015%]015%]015%]015%]020%]020%]020%]020%]020%]020%]025%]025%]025%]025%]025%]025%]030%]030%]030%]030%]030%]030%]030%]030%]035%]035%]035%]035%]035%]035%]040%]040%]040%]040%]040%]040%]045%]045%]045%]045%]045%]045%]050%]050%]050%]050%]050%]050%]050%]050%]055%]055%]055%]055%]055%]055%]060%]060%]060%]060%]060%]060%]065%]065%]065%]065%]065%]065%]070%]070%]070%]070%]070%]070%]075%]075%]075%]075%]075%]075%]080%]080%]080%]080%]080%]080%]080%]080%]085%]085%]085%]085%]085%]085%]090%]090%]090%]090%]090%]090%]095%]095%]095%]095%]095%]095%]100%] Done.
+Erasing flash     [000%]000%]050%]050%]100%] Done.
+Programming flash [000%]000%]000%]000%]000%]000%]000%]000%]005%]005%]005%]005%]005%]005%]010%]010%]010%]010%]010%]010%]015%]015%]015%]015%]015%]015%]020%]020%]020%]020%]020%]020%]025%]025%]025%]025%]025%]025%]025%]025%]030%]030%]030%]030%]030%]030%]035%]035%]035%]035%]035%]035%]040%]040%]040%]040%]040%]040%]045%]045%]045%]045%]045%]045%]050%]050%]050%]050%]050%]050%]050%]050%]055%]055%]055%]055%]055%]055%]060%]060%]060%]060%]060%]060%]065%]065%]065%]065%]065%]065%]070%]070%]070%]070%]070%]070%]075%]075%]075%]075%]075%]075%]075%]075%]080%]080%]080%]080%]080%]080%]085%]085%]085%]085%]085%]085%]090%]090%]090%]090%]090%]090%]095%]095%]095%]095%]095%]095%]100%] Done.
+J-Link: Flash download: Bank 0 @ 0x20000000: 1 range affected (262144 bytes)
+J-Link: Flash download: Total: 46.732s (Prepare: 0.014s, Compare: 40.800s, Erase: 0.315s, Program & Verify: 5.455s, Restore: 0.145s)
+J-Link: Flash download: Program & Verify speed: 47 KB/s
+make: *** [/home/maribu/Repos/software/RIOT/tests/pkg_utensor/../../Makefile.include:849: flash] Error 1
+
+Return value: 2

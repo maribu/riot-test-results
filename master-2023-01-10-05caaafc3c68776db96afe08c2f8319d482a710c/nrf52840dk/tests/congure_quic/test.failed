@@ -1,0 +1,524 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/congure_quic test
+EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE.
+======================================================================
+ERROR: test_on_ecn_information_not_recovery (__main__.TestCongUREQUICDefault.test_on_ecn_information_not_recovery)
+See https://tools.ietf.org/html/rfc9002#appendix-B.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 543, in test_on_ecn_information_not_recovery
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 122, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 57, in exec_cmd
+    res = self.shell.cmd(cmd, timeout, async_)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/__init__.py", line 102, in cmd
+    return self.replwrap.run_command(cmd, timeout=timeout, async_=async_)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/pexpect/replwrap.py", line 103, in run_command
+    if self._expect_prompt(timeout=timeout) == 1:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_ecn_information_not_recovery_low_ssthresh (__main__.TestCongUREQUICDefault.test_on_ecn_information_not_recovery_low_ssthresh)
+See https://tools.ietf.org/html/rfc9002#appendix-B.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 558, in test_on_ecn_information_not_recovery_low_ssthresh
+    init_cwnd = state['consts']['min_wnd']
+                ~~~~~^^^^^^^^^^
+KeyError: 'consts'
+
+======================================================================
+ERROR: test_on_ecn_information_recovery (__main__.TestCongUREQUICDefault.test_on_ecn_information_recovery)
+See https://tools.ietf.org/html/rfc9002#appendix-B.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 574, in test_on_ecn_information_recovery
+    init_cwnd = state['cwnd']
+                ~~~~~^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+======================================================================
+ERROR: test_on_packet_ack_limited (__main__.TestCongUREQUICDefault.test_on_packet_ack_limited)
+See https://tools.ietf.org/html/rfc9002#appendix-B.5
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 466, in test_on_packet_ack_limited
+    self.assertSlowStart(state)
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 70, in assertSlowStart
+    self.assertLess(state['cwnd'], state['ssthresh'])
+                    ~~~~~^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+======================================================================
+ERROR: test_on_packet_ack_no_rtt_sample (__main__.TestCongUREQUICDefault.test_on_packet_ack_no_rtt_sample)
+See https://tools.ietf.org/html/rfc9002#appendix-A.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 305, in test_on_packet_ack_no_rtt_sample
+    self.assertEqual(state['first_rtt_sample'], 0)
+                     ~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'first_rtt_sample'
+
+======================================================================
+ERROR: test_on_packet_ack_not_limited_congestion_avoidance (__main__.TestCongUREQUICDefault.test_on_packet_ack_not_limited_congestion_avoidance)
+See https://tools.ietf.org/html/rfc9002#appendix-B.5
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 414, in test_on_packet_ack_not_limited_congestion_avoidance
+    self.set_ssthresh(state['cwnd'] - 100)
+                      ~~~~~^^^^^^^^
+KeyError: 'cwnd'
+
+======================================================================
+ERROR: test_on_packet_ack_not_limited_recovery (__main__.TestCongUREQUICDefault.test_on_packet_ack_not_limited_recovery)
+See https://tools.ietf.org/html/rfc9002#appendix-B.5
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 444, in test_on_packet_ack_not_limited_recovery
+    self.assertInRecovery(state)
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 89, in assertInRecovery
+    self.assertGreater(state['recovery_start'], 0)
+                       ~~~~~^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+======================================================================
+ERROR: test_on_packet_ack_not_limited_slow_start (__main__.TestCongUREQUICDefault.test_on_packet_ack_not_limited_slow_start)
+See https://tools.ietf.org/html/rfc9002#appendix-B.5
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 393, in test_on_packet_ack_not_limited_slow_start
+    self.assertSlowStart(state)
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 70, in assertSlowStart
+    self.assertLess(state['cwnd'], state['ssthresh'])
+                    ~~~~~^^^^^^^^
+KeyError: 'cwnd'
+
+======================================================================
+ERROR: test_on_packet_ack_rtt_sample_greater_rtt (__main__.TestCongUREQUICDefault.test_on_packet_ack_rtt_sample_greater_rtt)
+See https://tools.ietf.org/html/rfc9002#appendix-A.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 341, in test_on_packet_ack_rtt_sample_greater_rtt
+    self.test_on_packet_ack_no_rtt_sample()
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 305, in test_on_packet_ack_no_rtt_sample
+    self.assertEqual(state['first_rtt_sample'], 0)
+                     ~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'first_rtt_sample'
+
+======================================================================
+ERROR: test_on_packet_ack_rtt_sample_less_rtt (__main__.TestCongUREQUICDefault.test_on_packet_ack_rtt_sample_less_rtt)
+See https://tools.ietf.org/html/rfc9002#appendix-A.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 367, in test_on_packet_ack_rtt_sample_less_rtt
+    self.test_on_packet_ack_no_rtt_sample()
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 305, in test_on_packet_ack_no_rtt_sample
+    self.assertEqual(state['first_rtt_sample'], 0)
+                     ~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'first_rtt_sample'
+
+======================================================================
+ERROR: test_on_packet_sent (__main__.TestCongUREQUICDefault.test_on_packet_sent)
+See https://tools.ietf.org/html/rfc9002#appendix-B.4
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 278, in test_on_packet_sent
+    init_in_flight_size = state['in_flight_size']
+                          ~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 'in_flight_size'
+
+======================================================================
+ERROR: test_on_packets_lost_not_recovery_no_pc (__main__.TestCongUREQUICDefault.test_on_packets_lost_not_recovery_no_pc)
+See https://tools.ietf.org/html/rfc9002#appendix-B.8
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 603, in test_on_packets_lost_not_recovery_no_pc
+    msg, ack = self.test_on_packet_ack_no_rtt_sample(self.cong_state())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 305, in test_on_packet_ack_no_rtt_sample
+    self.assertEqual(state['first_rtt_sample'], 0)
+                     ~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'first_rtt_sample'
+
+======================================================================
+ERROR: test_on_packets_lost_not_recovery_no_pc_low_cwnd (__main__.TestCongUREQUICDefault.test_on_packets_lost_not_recovery_no_pc_low_cwnd)
+See https://tools.ietf.org/html/rfc9002#appendix-B.8
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 626, in test_on_packets_lost_not_recovery_no_pc_low_cwnd
+    msg, ack = self.test_on_packet_ack_no_rtt_sample(self.cong_state())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 305, in test_on_packet_ack_no_rtt_sample
+    self.assertEqual(state['first_rtt_sample'], 0)
+                     ~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'first_rtt_sample'
+
+======================================================================
+ERROR: test_on_packets_lost_not_recovery_pc (__main__.TestCongUREQUICDefault.test_on_packets_lost_not_recovery_pc)
+See https://tools.ietf.org/html/rfc9002#appendix-B.8
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 676, in test_on_packets_lost_not_recovery_pc
+    msg, ack = self.test_on_packet_ack_no_rtt_sample(self.cong_state())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 305, in test_on_packet_ack_no_rtt_sample
+    self.assertEqual(state['first_rtt_sample'], 0)
+                     ~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'first_rtt_sample'
+
+======================================================================
+ERROR: test_on_packets_lost_not_recovery_pc_low_cwnd (__main__.TestCongUREQUICDefault.test_on_packets_lost_not_recovery_pc_low_cwnd)
+See https://tools.ietf.org/html/rfc9002#appendix-B.8
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 717, in test_on_packets_lost_not_recovery_pc_low_cwnd
+    msg, ack = self.test_on_packet_ack_no_rtt_sample(self.cong_state())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 305, in test_on_packet_ack_no_rtt_sample
+    self.assertEqual(state['first_rtt_sample'], 0)
+                     ~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'first_rtt_sample'
+
+======================================================================
+ERROR: test_on_packets_lost_recovery_no_pc (__main__.TestCongUREQUICDefault.test_on_packets_lost_recovery_no_pc)
+See https://tools.ietf.org/html/rfc9002#appendix-B.8
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 653, in test_on_packets_lost_recovery_no_pc
+    msg, ack = self.test_on_packet_ack_no_rtt_sample(self.cong_state())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 305, in test_on_packet_ack_no_rtt_sample
+    self.assertEqual(state['first_rtt_sample'], 0)
+                     ~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'first_rtt_sample'
+
+======================================================================
+ERROR: test_on_packets_lost_recovery_pc (__main__.TestCongUREQUICDefault.test_on_packets_lost_recovery_pc)
+See https://tools.ietf.org/html/rfc9002#appendix-B.8
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 764, in test_on_packets_lost_recovery_pc
+    msg, ack = self.test_on_packet_ack_no_rtt_sample(self.cong_state())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 305, in test_on_packet_ack_no_rtt_sample
+    self.assertEqual(state['first_rtt_sample'], 0)
+                     ~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'first_rtt_sample'
+
+======================================================================
+ERROR: test_pacing (__main__.TestCongUREQUICDefault.test_pacing)
+See https://tools.ietf.org/html/rfc9002#section-7.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 824, in test_pacing
+    self.assertGreater(state["smoothed_rtt"], 0)
+                       ~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'smoothed_rtt'
+
+======================================================================
+ERROR: test_removing_discarded_packets_from_bytes_in_flight (__main__.TestCongUREQUICDefault.test_removing_discarded_packets_from_bytes_in_flight)
+See https://tools.ietf.org/html/rfc9002#appendix-B.9
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 813, in test_removing_discarded_packets_from_bytes_in_flight
+    init_in_flight_size = state['in_flight_size']
+                          ~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 'in_flight_size'
+
+======================================================================
+ERROR: test_init (__main__.TestCongUREQUICDefaultInitTests.test_init)
+> B.3.  Initialization
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 239, in test_init
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 122, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 57, in exec_cmd
+    res = self.shell.cmd(cmd, timeout, async_)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/__init__.py", line 102, in cmd
+    return self.replwrap.run_command(cmd, timeout=timeout, async_=async_)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/pexpect/replwrap.py", line 103, in run_command
+    if self._expect_prompt(timeout=timeout) == 1:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_setup (__main__.TestCongUREQUICDefaultInitTests.test_setup)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 191, in test_setup
+    self.assertIsNotNone(state['consts'])
+                         ~~~~~^^^^^^^^^^
+KeyError: 'consts'
+
+======================================================================
+ERROR: test_on_ecn_information_not_recovery (__main__.TestCongUREQUICEventCb.test_on_ecn_information_not_recovery)
+See https://tools.ietf.org/html/rfc9002#appendix-B.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 543, in test_on_ecn_information_not_recovery
+    state = self.cong_state()
+            ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 122, in cong_state
+    return self.exec_cmd('state')
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 57, in exec_cmd
+    res = self.shell.cmd(cmd, timeout, async_)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/__init__.py", line 102, in cmd
+    return self.replwrap.run_command(cmd, timeout=timeout, async_=async_)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/pexpect/replwrap.py", line 103, in run_command
+    if self._expect_prompt(timeout=timeout) == 1:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_ecn_information_not_recovery_low_ssthresh (__main__.TestCongUREQUICEventCb.test_on_ecn_information_not_recovery_low_ssthresh)
+See https://tools.ietf.org/html/rfc9002#appendix-B.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 558, in test_on_ecn_information_not_recovery_low_ssthresh
+    init_cwnd = state['consts']['min_wnd']
+                ~~~~~^^^^^^^^^^
+KeyError: 'consts'
+
+======================================================================
+ERROR: test_on_ecn_information_recovery (__main__.TestCongUREQUICEventCb.test_on_ecn_information_recovery)
+See https://tools.ietf.org/html/rfc9002#appendix-B.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 574, in test_on_ecn_information_recovery
+    init_cwnd = state['cwnd']
+                ~~~~~^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+======================================================================
+ERROR: test_on_packet_ack_limited (__main__.TestCongUREQUICEventCb.test_on_packet_ack_limited)
+See https://tools.ietf.org/html/rfc9002#appendix-B.5
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 466, in test_on_packet_ack_limited
+    self.assertSlowStart(state)
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 70, in assertSlowStart
+    self.assertLess(state['cwnd'], state['ssthresh'])
+                    ~~~~~^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+======================================================================
+ERROR: test_on_packet_ack_no_rtt_sample (__main__.TestCongUREQUICEventCb.test_on_packet_ack_no_rtt_sample)
+See https://tools.ietf.org/html/rfc9002#appendix-A.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 305, in test_on_packet_ack_no_rtt_sample
+    self.assertEqual(state['first_rtt_sample'], 0)
+                     ~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'first_rtt_sample'
+
+======================================================================
+ERROR: test_on_packet_ack_not_limited_congestion_avoidance (__main__.TestCongUREQUICEventCb.test_on_packet_ack_not_limited_congestion_avoidance)
+See https://tools.ietf.org/html/rfc9002#appendix-B.5
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 414, in test_on_packet_ack_not_limited_congestion_avoidance
+    self.set_ssthresh(state['cwnd'] - 100)
+                      ~~~~~^^^^^^^^
+KeyError: 'cwnd'
+
+======================================================================
+ERROR: test_on_packet_ack_not_limited_recovery (__main__.TestCongUREQUICEventCb.test_on_packet_ack_not_limited_recovery)
+See https://tools.ietf.org/html/rfc9002#appendix-B.5
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 444, in test_on_packet_ack_not_limited_recovery
+    self.assertInRecovery(state)
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 89, in assertInRecovery
+    self.assertGreater(state['recovery_start'], 0)
+                       ~~~~~^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+======================================================================
+ERROR: test_on_packet_ack_not_limited_slow_start (__main__.TestCongUREQUICEventCb.test_on_packet_ack_not_limited_slow_start)
+See https://tools.ietf.org/html/rfc9002#appendix-B.5
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 393, in test_on_packet_ack_not_limited_slow_start
+    self.assertSlowStart(state)
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 70, in assertSlowStart
+    self.assertLess(state['cwnd'], state['ssthresh'])
+                    ~~~~~^^^^^^^^
+KeyError: 'cwnd'
+
+======================================================================
+ERROR: test_on_packet_ack_rtt_sample_greater_rtt (__main__.TestCongUREQUICEventCb.test_on_packet_ack_rtt_sample_greater_rtt)
+See https://tools.ietf.org/html/rfc9002#appendix-A.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 341, in test_on_packet_ack_rtt_sample_greater_rtt
+    self.test_on_packet_ack_no_rtt_sample()
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 305, in test_on_packet_ack_no_rtt_sample
+    self.assertEqual(state['first_rtt_sample'], 0)
+                     ~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'first_rtt_sample'
+
+======================================================================
+ERROR: test_on_packet_ack_rtt_sample_less_rtt (__main__.TestCongUREQUICEventCb.test_on_packet_ack_rtt_sample_less_rtt)
+See https://tools.ietf.org/html/rfc9002#appendix-A.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 367, in test_on_packet_ack_rtt_sample_less_rtt
+    self.test_on_packet_ack_no_rtt_sample()
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 305, in test_on_packet_ack_no_rtt_sample
+    self.assertEqual(state['first_rtt_sample'], 0)
+                     ~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'first_rtt_sample'
+
+======================================================================
+ERROR: test_on_packet_sent (__main__.TestCongUREQUICEventCb.test_on_packet_sent)
+See https://tools.ietf.org/html/rfc9002#appendix-B.4
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 278, in test_on_packet_sent
+    init_in_flight_size = state['in_flight_size']
+                          ~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 'in_flight_size'
+
+======================================================================
+ERROR: test_on_packets_lost_not_recovery_no_pc (__main__.TestCongUREQUICEventCb.test_on_packets_lost_not_recovery_no_pc)
+See https://tools.ietf.org/html/rfc9002#appendix-B.8
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 603, in test_on_packets_lost_not_recovery_no_pc
+    msg, ack = self.test_on_packet_ack_no_rtt_sample(self.cong_state())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 305, in test_on_packet_ack_no_rtt_sample
+    self.assertEqual(state['first_rtt_sample'], 0)
+                     ~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'first_rtt_sample'
+
+======================================================================
+ERROR: test_on_packets_lost_not_recovery_no_pc_low_cwnd (__main__.TestCongUREQUICEventCb.test_on_packets_lost_not_recovery_no_pc_low_cwnd)
+See https://tools.ietf.org/html/rfc9002#appendix-B.8
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 626, in test_on_packets_lost_not_recovery_no_pc_low_cwnd
+    msg, ack = self.test_on_packet_ack_no_rtt_sample(self.cong_state())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 305, in test_on_packet_ack_no_rtt_sample
+    self.assertEqual(state['first_rtt_sample'], 0)
+                     ~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'first_rtt_sample'
+
+======================================================================
+ERROR: test_on_packets_lost_not_recovery_pc (__main__.TestCongUREQUICEventCb.test_on_packets_lost_not_recovery_pc)
+See https://tools.ietf.org/html/rfc9002#appendix-B.8
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 676, in test_on_packets_lost_not_recovery_pc
+    msg, ack = self.test_on_packet_ack_no_rtt_sample(self.cong_state())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 305, in test_on_packet_ack_no_rtt_sample
+    self.assertEqual(state['first_rtt_sample'], 0)
+                     ~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'first_rtt_sample'
+
+======================================================================
+ERROR: test_on_packets_lost_not_recovery_pc_low_cwnd (__main__.TestCongUREQUICEventCb.test_on_packets_lost_not_recovery_pc_low_cwnd)
+See https://tools.ietf.org/html/rfc9002#appendix-B.8
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 717, in test_on_packets_lost_not_recovery_pc_low_cwnd
+    msg, ack = self.test_on_packet_ack_no_rtt_sample(self.cong_state())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 305, in test_on_packet_ack_no_rtt_sample
+    self.assertEqual(state['first_rtt_sample'], 0)
+                     ~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'first_rtt_sample'
+
+======================================================================
+ERROR: test_on_packets_lost_recovery_no_pc (__main__.TestCongUREQUICEventCb.test_on_packets_lost_recovery_no_pc)
+See https://tools.ietf.org/html/rfc9002#appendix-B.8
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 653, in test_on_packets_lost_recovery_no_pc
+    msg, ack = self.test_on_packet_ack_no_rtt_sample(self.cong_state())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 305, in test_on_packet_ack_no_rtt_sample
+    self.assertEqual(state['first_rtt_sample'], 0)
+                     ~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'first_rtt_sample'
+
+======================================================================
+ERROR: test_on_packets_lost_recovery_pc (__main__.TestCongUREQUICEventCb.test_on_packets_lost_recovery_pc)
+See https://tools.ietf.org/html/rfc9002#appendix-B.8
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 764, in test_on_packets_lost_recovery_pc
+    msg, ack = self.test_on_packet_ack_no_rtt_sample(self.cong_state())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 305, in test_on_packet_ack_no_rtt_sample
+    self.assertEqual(state['first_rtt_sample'], 0)
+                     ~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'first_rtt_sample'
+
+======================================================================
+ERROR: test_pacing (__main__.TestCongUREQUICEventCb.test_pacing)
+See https://tools.ietf.org/html/rfc9002#section-7.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 824, in test_pacing
+    self.assertGreater(state["smoothed_rtt"], 0)
+                       ~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'smoothed_rtt'
+
+======================================================================
+ERROR: test_removing_discarded_packets_from_bytes_in_flight (__main__.TestCongUREQUICEventCb.test_removing_discarded_packets_from_bytes_in_flight)
+See https://tools.ietf.org/html/rfc9002#appendix-B.9
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 813, in test_removing_discarded_packets_from_bytes_in_flight
+    init_in_flight_size = state['in_flight_size']
+                          ~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 'in_flight_size'
+
+======================================================================
+ERROR: test_setup_and_init (__main__.TestCongUREQUICEventCb.test_setup_and_init)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/congure_quic/tests/01-run.py", line 855, in test_setup_and_init
+    self.assertNotEqual(int(state['consts']['cong_event_cb'], base=16), 0)
+                            ~~~~~^^^^^^^^^^
+KeyError: 'consts'
+
+----------------------------------------------------------------------
+Ran 42 tests in 69.105s
+
+FAILED (errors=41)
+make: *** [/home/maribu/Repos/software/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

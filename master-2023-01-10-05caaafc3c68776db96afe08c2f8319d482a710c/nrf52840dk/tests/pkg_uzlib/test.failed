@@ -1,0 +1,17 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/pkg_uzlib test
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Compressing message (len: 882): "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna Message compressed to 812 raw bytes (ratio: 0.92)
+Decompressed message (len: 882): "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna { "threads": [{ "name": "main", "stack_size": 2048, "stack_used": 1712 }]}
+Timeout in expect script at "child.expect(r"Compressing message \(len: (\d+)\): \"([A-Za-z\., ]+)\"\r\n")" (tests/pkg_uzlib/tests/01-run.py:14)
+
+make: *** [/home/maribu/Repos/software/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

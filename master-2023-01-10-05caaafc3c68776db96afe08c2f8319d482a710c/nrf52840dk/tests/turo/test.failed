@@ -1,0 +1,27 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/turo test
+.E...........
+======================================================================
+ERROR: test_test_netif (__main__.TestTuro.test_test_netif)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/tests/turo/tests/01-run.py", line 131, in test_test_netif
+    resp = self.exec_turo_cmd("test_netif")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/turo/tests/01-run.py", line 41, in exec_turo_cmd
+    return self._parse(resp)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/tests/turo/tests/01-run.py", line 44, in _parse
+    resp = self.json_parser.parse(resp)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/riotctrl/shell/json.py", line 68, in parse
+    return self.json_module.loads(cmd_output, *self._parser_args,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rapidjson.JSONDecodeError: Parse error at offset 131: Missing a closing quotation mark in string.
+
+----------------------------------------------------------------------
+Ran 13 tests in 8.178s
+
+FAILED (errors=1)
+make: *** [/home/maribu/Repos/software/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

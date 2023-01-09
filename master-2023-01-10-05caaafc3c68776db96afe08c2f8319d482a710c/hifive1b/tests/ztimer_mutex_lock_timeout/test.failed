@@ -1,0 +1,36 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/ztimer_mutex_lock_timeout test
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM2" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM2
+Welcome to pyterm!
+Type '/exit' to exit.
+[1F[0J[?25h[0;39;49mBench Clock Reset Complete
+
+ATE0-->OK
+AT+BLEINIT=0-->OK
+AT+CWMODE=0-->OK
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Test Application for ztimer_mutex_lock_timeout_timeout()
+================================================
+
+Test on unlocked mutex with zero timeout: OK
+Test on unlocked mutex with small timeout: OK
+Test on unlocked mutex with large timeout: OK
+Test on locked mutex with zero timeout: OK
+Test on locked mutex with small timeout: OK
+Test on locked mutex with large timeout: tests/ztimer_mutex_lock_timeout/main.c:88 => failed condition
+*** RIOT kernel panic:
+CONDITION FAILED.
+
+*** halted.
+
+Timeout in expect script at "child.expect("TEST PASSED")" (tests/ztimer_mutex_lock_timeout/tests/01-run.py:16)
+
+make: *** [/home/maribu/Repos/software/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

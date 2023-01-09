@@ -1,0 +1,40 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/malloc_thread_safety test
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM2" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM2
+Welcome to pyterm!
+Type '/exit' to exit.
+[1F[0J[?25h[0;39;49mBench Clock Reset Complete
+
+ATE0-->ATE0
+OK
+AT+BLEINIT=0-->OK
+AT+CWMODE=0-->OK
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Test Application for multithreaded use of malloc()
+==================================================
+
+This test will run duelling threads allocating and freeing memory.
+The running thread is interrupted every millisecond and the other
+threads gets scheduled. Eventually, this should yield to memory
+corruption unless proper guards are in place preventing them. After
+ca. two seconds without crash, the test is considered as passing.
+
+Testing: malloc()/free()
+{ "threads": [{ "name": "t2", "stack_size": 512, "stack_used": 276 }]}
+{ "threads": [{ "name": "t1", "stack_size": 512, "scheduler(): stack overflow detected, pid=3
+*** RIOT kernel panic:
+STACK OVERFLOW
+
+*** halted.
+
+Timeout in expect script at "child.expect("TEST PASSED")" (tests/malloc_thread_safety/tests/01-run.py:16)
+
+make: *** [/home/maribu/Repos/software/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

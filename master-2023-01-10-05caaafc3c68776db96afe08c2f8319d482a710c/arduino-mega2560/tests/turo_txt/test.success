@@ -1,0 +1,130 @@
+
+
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+in(): This is RIOT! (Version: buildtest)
+Test for the test utilities result output
+> 
+main(): This is RIOT! (Version: buildtest)
+Test for the test utilities result output
+> turo_simple_s32 0
+
+> 
+> turo_simple_s32 0
+0 
+Success
+turo_simple_s32 -1
+> turo_simple_s32 -1
+-1 
+Success
+turo_simple_s32 0x7FFFFFFF
+> turo_simple_s32 0x7FFFFFFF
+2147483647 
+Success
+turo_simple_s32 -2147483648
+> turo_simple_s32 -2147483648
+-2147483648 
+Success
+turo_simple_array_u8 1
+> turo_simple_array_u8 1
+1 
+
+Success
+turo_simple_array_u8 2 255
+> turo_simple_array_u8 2 255
+2 255 
+
+Success
+turo_simple_array_s32 0 -1 0x7FFFFFFF -2147483648
+> turo_simple_array_s32 0 -1 0x7FFFFFFF -2147483648
+0 -1 2147483647 -2147483648 
+
+Success
+turo_simple_dict_string foo bar
+> turo_simple_dict_string foo bar
+foo: bar 
+
+Success
+turo_simple_dict_s32 baz -2147483648
+> turo_simple_dict_s32 baz -2147483648
+baz: -2147483648 
+
+Success
+> turo_simple_exit_status 0
+turo_simple_exit_status 0
+
+Success
+> test_multi_element_dict a b c d
+test_multi_element_dict a b c d
+a: b c: d 
+
+Success
+test_netif
+> test_netif
+netif: num: 5 HWaddr: 1 2 3 4 5 6 7 8 
+inet6 addr: addr: fe80::2445:7fff:fe5a:6fd9 scope: link flags: VAL 
+
+inet6 group: ff02::2 ff02::1 ff02::1:ff5a:6fd9 
+flags: L2-PDU: 1500 
+MTU: 1500 
+HL: 64 
+RTR RTR_ADV Source address length: 6 
+
+
+
+netif: num: 6 HWaddr: 1 2 3 4 5 6 7 8 
+inet6 addr: addr: fe80::2445:7fff:fe5a:6fd9 scope: link flags: VAL 
+
+inet6 group: ff02::2 ff02::1 ff02::1:ff5a:6fd9 
+flags: L2-PDU: 1500 
+MTU: 1500 
+HL: 64 
+RTR RTR_ADV Source address length: 6 
+
+
+
+
+Success
+> turo_simple_s32 a
+turo_simple_s32 a
+
+Error
+> turo_simple_s32 0x100000000
+turo_simple_s32 0x100000000
+
+Error
+> turo_simple_s32 -2147483649
+turo_simple_s32 -2147483649
+
+Error
+> turo_simple_array_u8 -1
+turo_simple_array_u8 -1
+
+Error
+turo_simple_array_u8 2 256
+> turo_simple_array_u8 2 256
+
+Error
+> turo_simple_array_s32 a b
+turo_simple_array_s32 a b
+
+Error
+> turo_simple_array_s32 -2147483649
+turo_simple_array_s32 -2147483649
+
+Error
+> turo_simple_dict_s32 baz s
+turo_simple_dict_s32 baz s
+
+Error
+turo_simple_dict_s32 baz -2147483649
+> turo_simple_dict_s32 baz -2147483649
+
+Error
+turo_simple_exit_status 1
+> turo_simple_exit_status 1
+
+Error
+

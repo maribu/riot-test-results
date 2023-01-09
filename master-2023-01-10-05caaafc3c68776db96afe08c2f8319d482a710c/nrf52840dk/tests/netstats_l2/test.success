@@ -1,0 +1,20 @@
+
+
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM1
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+ifconfig
+> ifconfig
+Iface  2  HWaddr: 3B:26  Channel: 26  NID: 0x23  PHY: O-QPSK 
+          Long HWaddr: 6A:08:35:DD:38:74:BB:26 
+           State: IDLE 
+          ACK_REQ  L2-PDU:102  Source address length: 2
+          
+          Statistics for Layer 2
+            RX packets 0  bytes 0
+            TX packets 0 (Multicast: 0)  bytes 0
+            TX succeeded 0 errors 0
+

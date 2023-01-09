@@ -1,0 +1,28 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM2" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM2
+Welcome to pyterm!
+Type '/exit' to exit.
+[1F[0J[?25h[0;39;49mBench Clock Reset Complete
+
+ATE0-->OK
+AT+BLEINIT=0-->OK
+AT+CWMODE=0-->OK
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+ZTIMER_USEC auto_adjust params:
+    ZTIMER_USEC->adjust_set = 7
+    ZTIMER_USEC->adjust_sleep = 7
+ZTIMER_USEC auto_adjust params cleared
+zitmer_overhead_set...
+min=7 max=8 avg_diff=7
+zitmer_overhead_sleep...
+min=7 max=8 avg_diff=7
+ZTIMER_USEC adjust params for hifive1b:
+    CONFIG_ZTIMER_USEC_ADJUST_SET    7
+    CONFIG_ZTIMER_USEC_ADJUST_SLEEP  7
+

@@ -1,0 +1,18 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+This test tests re-setting of an already active timer.
+It should print three times "now=<value>", with values approximately 100ms (100000us) apart.
+now=2207188
+now=2307284
+now=2406956
+Test completed!
+

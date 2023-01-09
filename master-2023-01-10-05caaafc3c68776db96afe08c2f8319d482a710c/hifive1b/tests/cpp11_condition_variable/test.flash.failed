@@ -1,0 +1,76 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/cpp11_condition_variable flash
+Building application "tests_cpp11_condition_variable" for "hifive1b" with MCU "fe310".
+
+/usr/lib/gcc/riscv-none-elf/12.2.0/../../../../riscv-none-elf/bin/ld: /home/maribu/Repos/software/RIOT/tests/cpp11_condition_variable/bin/hifive1b/tests_cpp11_condition_variable.elf: section `.gcc_except_table._ZNSt11logic_errorC2EPKc' can't be allocated in segment 1
+LOAD: .data .gcc_except_table._ZNSt12system_errorC2ESt10error_codePKc .gcc_except_table._ZN4riot12thread_proxyISt5tupleIJPNS_11thread_dataEZ4mainEUlvE_EEEEPvS6_ .gcc_except_table._ZN4riot12thread_proxyISt5tupleIJPNS_11thread_dataEZ4mainEUlvE1_EEEEPvS6_ .gcc_except_table._ZN4riot12thread_proxyISt5tupleIJPNS_11thread_dataEZ4mainEUlvE2_EEEEPvS6_ .gcc_except_table._ZN4riot6threadC2IRZ4mainEUlvE1_JEEEOT_DpOT0_ .gcc_except_table.main .gcc_except_table._ZN4riot18condition_variable10notify_oneEv .gcc_except_table._ZN4riot18condition_variable10notify_allEv .gcc_except_table._ZN4riot18condition_variable4waitERNS_11unique_lockINS_5mutexEEE .gcc_except_table._ZN4riot5mutex6unlockEv .gcc_except_table._ZN4riot6thread4joinEv .gcc_except_table._ZN4riot6thread6detachEv .gcc_except_table.__gxx_personality_v0 .gcc_except_table._ZN10__cxxabiv111__terminateEPFvvE .gcc_except_table._ZNSt13runtime_errorC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE .gcc_except_table._ZSt19__throw_logic_errorPKc .gcc_except_table._ZSt20__throw_length_errorPKc .gcc_except_table._ZSt24__throw_out_of_range_fmtPKcz .gcc_except_table._ZNKSt3_V214error_category10_M_messageB5cxx11Ei .gcc_except_table._ZNSt11logic_errorC2EPKc
+/usr/lib/gcc/riscv-none-elf/12.2.0/../../../../riscv-none-elf/bin/ld: warning: /home/maribu/Repos/software/RIOT/tests/cpp11_condition_variable/bin/hifive1b/tests_cpp11_condition_variable.elf has a LOAD segment with RWX permissions
+   text	   data	    bss	    dec	    hex	filename
+  31040	   6700	   2572	  40312	   9d78	/home/maribu/Repos/software/RIOT/tests/cpp11_condition_variable/bin/hifive1b/tests_cpp11_condition_variable.elf
+/home/maribu/Repos/software/RIOT/dist/tools/jlink/jlink.sh flash /home/maribu/Repos/software/RIOT/tests/cpp11_condition_variable/bin/hifive1b/tests_cpp11_condition_variable.bin
+### Flashing Target ###
+### Flashing at base address 0x20010000 with offset 0 ###
+SEGGER J-Link Commander V7.84a (Compiled Dec 22 2022 16:12:25)
+DLL version V7.84a, compiled Dec 22 2022 16:11:55
+
+J-Link Commander will now exit on Error
+
+J-Link Command File read successfully.
+Processing script file...
+J-Link>loadbin /home/maribu/Repos/software/RIOT/tests/cpp11_condition_variable/bin/hifive1b/tests_cpp11_condition_variable.bin 0x20010000
+J-Link connection not established yet but required for command.
+Connecting to J-Link via USB...O.K.
+Firmware: J-Link OB-K22-SiFive compiled Nov  7 2022 16:21:52
+Hardware version: V1.00
+J-Link uptime (since boot): 0d 00h 02m 35s
+S/N: 979017447
+USB speed mode: Full speed (12 MBit/s)
+VTref=3.300V
+Target connection not established yet but required for command.
+Device "FE310" selected.
+
+
+Connecting to target via JTAG
+ConfigTargetSettings() start
+ConfigTargetSettings() end
+TotalIRLen = 5, IRPrint = 0x01
+JTAG chain detection found 1 devices:
+ #0 Id: 0x20000913, IRLen: 05, Unknown device
+Debug architecture:
+  RISC-V debug: 0.13
+  AddrBits: 7
+  DataBits: 32
+  IdleClks: 5
+Memory access:
+  Via system bus: No
+  Via ProgBuf: Yes (16 ProgBuf entries)
+  Via abstract command (AAM): May be tried as last resort
+DataBuf: 1 entries
+  autoexec[0] implemented: Yes
+Detected: RV32 core
+RISC-V: The connected J-Link (S/N 979017447) uses an old firmware module V0 with known problems / limitations.
+Temp. halting CPU for for feature detection...
+HW instruction/data BPs: 8
+Support set/clr BPs while running: No
+HW data BPs trigger before execution of inst
+CSR access via abs. commands: No
+Feature detection done. Restarting core...
+BG memory access support: No
+Memory zones:
+  Zone: Default Description: Default access mode
+RISC-V identified.
+'loadbin': Performing implicit reset & halt of MCU.
+RISC-V: Performing reset via <ndmreset>
+Downloading file [/home/maribu/Repos/software/RIOT/tests/cpp11_condition_variable/bin/hifive1b/tests_cpp11_condition_variable.bin]...
+Writing target memory failed.
+
+Script processing completed.
+
+Comparing flash   [000%]000%]000%]000%]000%]000%]000%]000%]000%]000%]005%]005%]005%]005%]005%]005%]005%]005%]010%]010%]010%]010%]010%]010%]015%]015%]015%]015%]015%]015%]020%]020%]020%]020%]020%]020%]025%]025%]025%]025%]025%]025%]030%]030%]030%]030%]030%]030%]030%]030%]035%]035%]035%]035%]035%]035%]040%]040%]040%]040%]040%]040%]045%]045%]045%]045%]045%]045%]050%]050%]050%]050%]050%]050%]050%]050%]055%]055%]055%]055%]055%]055%]060%]060%]060%]060%]060%]060%]065%]065%]065%]065%]065%]065%]070%]070%]070%]070%]070%]070%]075%]075%]075%]075%]075%]075%]080%]080%]080%]080%]080%]080%]080%]080%]085%]085%]085%]085%]085%]085%]090%]090%]090%]090%]090%]090%]095%]095%]095%]095%]095%]095%]100%] Done.
+Erasing flash     [000%]000%]050%]050%]100%] Done.
+Programming flash [000%]000%]000%]000%]000%]000%]000%]000%]005%]005%]005%]005%]005%]005%]010%]010%]010%]010%]010%]010%]015%]015%]015%]015%]015%]015%]020%]020%]020%]020%]020%]020%]025%]025%]025%]025%]025%]025%]025%]025%]030%]030%]030%]030%]030%]030%]035%]035%]035%]035%]035%]035%]040%]040%]040%]040%]040%]040%]045%]045%]045%]045%]045%]045%]050%]050%]050%]050%]050%]050%]050%]050%]055%]055%]055%]055%]055%]055%]060%]060%]060%]060%]060%]060%]065%]065%]065%]065%]065%]065%]070%]070%]070%]070%]070%]070%]075%]075%]075%]075%]075%]075%]075%]075%]080%]080%]080%]080%]080%]080%]085%]085%]085%]085%]085%]085%]090%]090%]090%]090%]090%]090%]095%]095%]095%]095%]095%]095%]100%] Done.
+J-Link: Flash download: Bank 0 @ 0x20000000: 1 range affected (262144 bytes)
+J-Link: Flash download: Total: 46.682s (Prepare: 0.014s, Compare: 40.650s, Erase: 0.423s, Program & Verify: 5.448s, Restore: 0.145s)
+J-Link: Flash download: Program & Verify speed: 47 KB/s
+make: *** [/home/maribu/Repos/software/RIOT/tests/cpp11_condition_variable/../../Makefile.include:849: flash] Error 1
+
+Return value: 2

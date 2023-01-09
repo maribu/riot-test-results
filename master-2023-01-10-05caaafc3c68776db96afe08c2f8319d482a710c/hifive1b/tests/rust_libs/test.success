@@ -1,0 +1,35 @@
+
+
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+[1F[0J[?25h[0;39;49mBench Clock Reset Complete
+
+ATE0-->ATE0
+OK
+AT+BLEINIT=0-->OK
+AT+CWMODE=0--> Send sync error 
+main(): This is RIOT! (Version: buildtest)
+test_shell.
+> start_test
+
+> 
+> start_test
+[TEST_START]
+> help
+help
+Command              Description
+---------------------------------------
+bufsize              Get the shell's buffer size
+start_test           starts a test
+end_test             ends a test
+echo                 prints the input command
+empty                print nothing on command
+hello_world          Print a greeting
+xfa_test1            xfa test command 1
+xfa_test2            xfa test command 2
+> end_test
+end_test
+[TEST_END]
+> 

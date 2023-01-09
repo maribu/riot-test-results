@@ -1,0 +1,45 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+[1F[0J[?25h[0;39;49mBench Clock Reset Complete
+
+ATE0-->ATE0
+OK
+AT+BLEINIT=0-->OK
+AT+CWMODE=0-->OK
+
+main(): This is RIOT! (Version: buildtest)
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+Creating thread #0, next=1
+Creating thread #1, next=2
+Creating thread #2, next=3
+Creating thread #3, next=4
+Creating thread #4, next=0
+
+> help
+
+> 
+> help
+Command              Description
+---------------------------------------
+pm                   interact with layered PM subsystem
+ps                   Prints information about running threads.
+reboot               Reboot the node
+ps
+version              Prints current RIOT_VERSION
+> ps
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     | runtime  | switches  | runtime_usec 
+	  1 | idle                 | pending  Q |  15 |    256 (  208) (   48) | 0x80001780 | 0x800017b0  | 94.468% |        56  |    2083161 
+	  2 | main                 | running  Q |   7 |   1280 ( 1040) (  240) | 0x80001880 | 0x80001970  |  1.713% |        47  |      37777 
+	  3 | thread               | bl rx    _ |   6 |   1024 (  512) (  512) | 0x800002bc | 0x800005b0  |  0.687% |        35  |      15165 
+	  4 | thread               | bl rx    _ |   6 |   1024 (  512) (  512) | 0x800006bc | 0x800009b0  |  1.044% |        37  |      23043 
+	  5 | thread               | bl mutex _ |   6 |   1024 (  512) (  512) | 0x80000abc | 0x80000d80  |  1.486% |        40  |      32775 
+	  6 | thread               | bl rx    _ |   6 |   1024 (  512) (  512) | 0x80000ebc | 0x800011b0  |  1.905% |        43  |      42023 
+	  7 | thread               | bl rx    _ |   6 |   1024 (  512) (  512) | 0x800012bc | 0x800015b0  |  0.500% |        45  |      11045 
+	    | SUM                  |            |     |   6656 ( 3808) ( 2848)
+> 

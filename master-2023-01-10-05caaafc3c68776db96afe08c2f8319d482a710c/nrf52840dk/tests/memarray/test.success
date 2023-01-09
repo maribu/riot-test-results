@@ -1,0 +1,71 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+MAX_NUMBER_BLOCKS: 10
+NUMBER_OF_LOOPS: 1
+NUMBER_OF_TESTS: 1
+Starting (10, 8)
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     
+	  - | isr_stack            | -        - |   - |    512 (  164) (  348) | 0x20000000 | 0x200001c8
+	  1 | main                 | running  Q |   7 |   1536 (  476) ( 1060) | 0x200004a4 | 0x20000a24 
+	    | SUM                  |            |     |   2048 (  640) ( 1408)
+LOOP #1:
+TEST #1:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x200003bc, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x200003ac, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x2000039c, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x2000038c, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x2000037c, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x2000036c, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x2000035c, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x2000034c, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x2000033c, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x2000032c, total 144
+	Free (0) 16 Bytes at 0x200003bc, total 144
+	Free (1) 16 Bytes at 0x200003ac, total 128
+	Free (2) 16 Bytes at 0x2000039c, total 112
+	Free (3) 16 Bytes at 0x2000038c, total 96
+	Free (4) 16 Bytes at 0x2000037c, total 80
+	Free (5) 16 Bytes at 0x2000036c, total 64
+	Free (6) 16 Bytes at 0x2000035c, total 48
+	Free (7) 16 Bytes at 0x2000034c, total 32
+	Free (8) 16 Bytes at 0x2000033c, total 16
+	Free (9) 16 Bytes at 0x2000032c, total 0
+LOOP #2:
+TEST #1:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x200003bc, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x200003ac, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x2000039c, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x2000038c, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x2000037c, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x2000036c, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x2000035c, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x2000034c, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x2000033c, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x2000032c, total 144
+	Free (0) 16 Bytes at 0x200003bc, total 144
+	Free (1) 16 Bytes at 0x200003ac, total 128
+	Free (2) 16 Bytes at 0x2000039c, total 112
+	Free (3) 16 Bytes at 0x2000038c, total 96
+	Free (4) 16 Bytes at 0x2000037c, total 80
+	Free (5) 16 Bytes at 0x2000036c, total 64
+	Free (6) 16 Bytes at 0x2000035c, total 48
+	Free (7) 16 Bytes at 0x2000034c, total 32
+	Free (8) 16 Bytes at 0x2000033c, total 16
+	Free (9) 16 Bytes at 0x2000032c, total 0
+Extend and reduce tests
+Memarray available: 10
+Memarray available: 20
+Memarray reduction: 0 available: 10
+Memarray reduction: -1 available: 10
+Memarray reduction: 0 available: 0
+Memarray available: 9
+Memarray reduction: -1 available: 9
+Finishing
+

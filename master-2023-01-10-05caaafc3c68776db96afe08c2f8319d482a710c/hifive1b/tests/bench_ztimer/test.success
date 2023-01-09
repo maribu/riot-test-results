@@ -1,0 +1,34 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+[1F[0J[?25h[0;39;49mBench Clock Reset Complete
+
+ATE0-->ATE0
+OK
+AT+BLEINIT=0-->OK
+AT+CWMODE=0--> Send sync error 
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+ztimer benchmark application.
+
+                     set() one    10467 / 1000 = 10
+                  remove() one      153 / 1000 = 0
+          set() + remove() one    20600 / 1000 = 20
+  set() many increasing target      580 / 100 = 5
+               re-set()  first    10407 / 1000 = 10
+               re-set() middle    10437 / 1000 = 10
+               re-set()   last    10437 / 1000 = 10
+       remove() + set()  first    20752 / 1000 = 20
+       remove() + set() middle    20752 / 1000 = 20
+       remove() + set()   last    20691 / 1000 = 20
+      remove() many decreasing     1099 / 100 = 10
+                  ztimer_now()     3815 / 1000 = 3
+              sizeof(ztimer_t)     1600 / 100 = 16
+done.
+
