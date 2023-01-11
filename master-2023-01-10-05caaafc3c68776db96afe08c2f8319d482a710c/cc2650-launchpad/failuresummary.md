@@ -1,0 +1,32 @@
+Failures during compilation:
+- [examples/benchmark_udp](examples/benchmark_udp/compilation.failed)
+- [examples/gnrc_minimal](examples/gnrc_minimal/compilation.failed)
+- [examples/micropython](examples/micropython/compilation.failed)
+- [examples/nanocoap_server](examples/nanocoap_server/compilation.failed)
+- [examples/rust-hello-world](examples/rust-hello-world/compilation.failed)
+- [examples/sniffer](examples/sniffer/compilation.failed)
+- [examples/spectrum-scanner](examples/spectrum-scanner/compilation.failed)
+- [tests/entropy_source](tests/entropy_source/compilation.failed)
+- [tests/l2util](tests/l2util/compilation.failed)
+- [tests/netdev_test](tests/netdev_test/compilation.failed)
+- [tests/rust_libs](tests/rust_libs/compilation.failed)
+- [tests/rust_minimal](tests/rust_minimal/compilation.failed)
+- [tests/shell](tests/shell/compilation.failed)
+- [tests/shell_lock](tests/shell_lock/compilation.failed)
+- [tests/test_tools](tests/test_tools/compilation.failed)
+- [tests/vfs_plus_stdio](tests/vfs_plus_stdio/compilation.failed)
+- [tests/xtimer_overhead](tests/xtimer_overhead/compilation.failed)
+- [tests/ztimer_overhead](tests/ztimer_overhead/compilation.failed)
+- [tests/ztimer_periodic](tests/ztimer_periodic/compilation.failed)
+
+Failures during test:
+- [tests/mpu_noexec_ram](tests/mpu_noexec_ram/test.failed)
+- [tests/mpu_stack_guard](tests/mpu_stack_guard/test.failed)
+- [tests/periph_timer](tests/periph_timer/test.failed)
+
+Failures during test.flash:
+- [tests/bench_xtimer](tests/bench_xtimer/test.flash.failed)
+- [tests/msg_try_receive](tests/msg_try_receive/test.flash.failed)
+- [tests/sys_sema_inv](tests/sys_sema_inv/test.flash.failed)
+- [tests/thread_flood](tests/thread_flood/test.flash.failed)
+- [tests/thread_msg_block_w_queue](tests/thread_msg_block_w_queue/test.flash.failed)

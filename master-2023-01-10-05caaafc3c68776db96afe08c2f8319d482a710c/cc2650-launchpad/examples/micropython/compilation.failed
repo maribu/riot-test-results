@@ -1,0 +1,468 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/examples/micropython clean all --jobs 16
+Building application "micropython" for "cc2650-launchpad" with MCU "cc26x0_cc13x0".
+
+make[1]: [/home/maribu/Repos/software/RIOT/pkg/pkg.mk:155: clean] Error 1 (ignored)
+BUILD=/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython "make" -C /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/ports/riot
+Use make V=1 or set BUILD_VERBOSE in your environment to increase build verbosity.
+mkdir -p /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/genhdr
+mkdir -p /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython//home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/
+GEN /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/frozen.c
+GEN /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/genhdr/mpversion.h
+GEN /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/genhdr/moduledefs.h
+GEN /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/genhdr/qstr.i.last
+GEN /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/genhdr/qstr.split
+GEN /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/genhdr/qstrdefs.collected.h
+QSTR updated
+GEN /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/genhdr/qstrdefs.generated.h
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/mpstate.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/nlr.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/nlrx86.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/nlrx64.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/nlrthumb.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/nlrxtensa.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/nlrsetjmp.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/malloc.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/gc.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/pystack.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/qstr.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/vstr.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/mpprint.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/unicode.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/mpz.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/reader.c
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/gc.c: In function 'gc_dump_alloc_table':
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/gc.c:869:30: warning: cast increases required alignment of target type [-Wcast-align]
+  869 |                 void **ptr = (void**)(MP_STATE_MEM(gc_pool_start) + bl * BYTES_PER_BLOCK);
+      |                              ^
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/lexer.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/parse.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/scope.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/compile.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitcommon.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitbc.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/asmbase.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/asmx64.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitnx64.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/asmx86.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitnx86.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/asmthumb.c
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/scope.c: In function 'scope_close_over_in_parents':
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/scope.c:111:54: warning: implicit conversion from 'enum <anonymous>' to 'scope_kind_t' [-Wenum-conversion]
+  111 |         id_info_t *id = scope_find_or_add_id(s, qst, ID_INFO_KIND_UNDECIDED);
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitcommon.c:29:
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emit.h: In function 'mp_emit_common_get_id_for_load':
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emit.h:165:38: warning: implicit conversion from 'enum <anonymous>' to 'scope_kind_t' [-Wenum-conversion]
+  165 |     scope_find_or_add_id(scope, qst, ID_INFO_KIND_GLOBAL_IMPLICIT);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitcommon.c: In function 'mp_emit_common_get_id_for_modification':
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitcommon.c:35:54: warning: implicit conversion from 'enum <anonymous>' to 'scope_kind_t' [-Wenum-conversion]
+   35 |     id_info_t *id = scope_find_or_add_id(scope, qst, ID_INFO_KIND_GLOBAL_IMPLICIT);
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/compile.c:34:
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emit.h: In function 'mp_emit_common_get_id_for_load':
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emit.h:165:38: warning: implicit conversion from 'enum <anonymous>' to 'scope_kind_t' [-Wenum-conversion]
+  165 |     scope_find_or_add_id(scope, qst, ID_INFO_KIND_GLOBAL_IMPLICIT);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitbc.c:34:
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emit.h: In function 'mp_emit_common_get_id_for_load':
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emit.h:165:38: warning: implicit conversion from 'enum <anonymous>' to 'scope_kind_t' [-Wenum-conversion]
+  165 |     scope_find_or_add_id(scope, qst, ID_INFO_KIND_GLOBAL_IMPLICIT);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitbc.c: In function 'emit_write_bytecode_byte_obj':
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitbc.c:258:19: warning: cast increases required alignment of target type [-Wcast-align]
+  258 |     mp_obj_t *c = (mp_obj_t*)emit_get_cur_to_write_bytecode(emit, sizeof(mp_obj_t));
+      |                   ^
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitbc.c: In function 'emit_write_bytecode_byte_raw_code':
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitbc.c:274:16: warning: cast increases required alignment of target type [-Wcast-align]
+  274 |     void **c = (void**)emit_get_cur_to_write_bytecode(emit, sizeof(void*));
+      |                ^
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/compile.c: In function 'compile_global_nonlocal_stmt':
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/compile.c:1281:77: warning: implicit conversion from 'enum <anonymous>' to 'scope_kind_t' [-Wenum-conversion]
+ 1281 |             id_info_t *id_info = scope_find_or_add_id(comp->scope_cur, qst, ID_INFO_KIND_UNDECIDED);
+      |                                                                             ^~~~~~~~~~~~~~~~~~~~~~
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitnthumb.c
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/compile.c: In function 'compile_scope_func_lambda_param':
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/compile.c:2914:80: warning: implicit conversion from 'enum <anonymous>' to 'scope_kind_t' [-Wenum-conversion]
+ 2914 |         id_info_t *id_info = scope_find_or_add_id(comp->scope_cur, param_name, ID_INFO_KIND_UNDECIDED);
+      |                                                                                ^~~~~~~~~~~~~~~~~~~~~~
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitinlinethumb.c
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/compile.c: In function 'compile_scope':
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/compile.c:3111:61: warning: implicit conversion from 'enum <anonymous>' to 'scope_kind_t' [-Wenum-conversion]
+ 3111 |             scope_find_or_add_id(comp->scope_cur, qstr_arg, ID_INFO_KIND_LOCAL);
+      |                                                             ^~~~~~~~~~~~~~~~~~
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/compile.c:3151:60: warning: implicit conversion from 'enum <anonymous>' to 'scope_kind_t' [-Wenum-conversion]
+ 3151 |             scope_find_or_add_id(scope, MP_QSTR___class__, ID_INFO_KIND_LOCAL);
+      |                                                            ^~~~~~~~~~~~~~~~~~
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/asmarm.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitnarm.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/asmxtensa.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitnxtensa.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitinlinextensa.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/formatfloat.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/parsenumbase.c
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/parse.c: In function 'parser_alloc':
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/parse.c:259:38: warning: cast increases required alignment of target type [-Wcast-align]
+  259 |         mp_parse_chunk_t *new_data = (mp_parse_chunk_t*)m_renew_maybe(byte, chunk,
+      |                                      ^
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/parse.c:282:17: warning: cast increases required alignment of target type [-Wcast-align]
+  282 |         chunk = (mp_parse_chunk_t*)m_new(byte, sizeof(mp_parse_chunk_t) + alloc);
+      |                 ^
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/parsenum.c
+In file included from /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitinlinethumb.c:33:
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emit.h: In function 'mp_emit_common_get_id_for_load':
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emit.h:165:38: warning: implicit conversion from 'enum <anonymous>' to 'scope_kind_t' [-Wenum-conversion]
+  165 |     scope_find_or_add_id(scope, qst, ID_INFO_KIND_GLOBAL_IMPLICIT);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitinlinextensa.c:33:
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emit.h: In function 'mp_emit_common_get_id_for_load':
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emit.h:165:38: warning: implicit conversion from 'enum <anonymous>' to 'scope_kind_t' [-Wenum-conversion]
+  165 |     scope_find_or_add_id(scope, qst, ID_INFO_KIND_GLOBAL_IMPLICIT);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitglue.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/persistentcode.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/runtime.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/runtime_utils.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/scheduler.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/nativeglue.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/stackctrl.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/argcheck.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/warning.c
+In file included from /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/warning.c:31:
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emit.h: In function 'mp_emit_common_get_id_for_load':
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emit.h:165:38: warning: implicit conversion from 'enum <anonymous>' to 'scope_kind_t' [-Wenum-conversion]
+  165 |     scope_find_or_add_id(scope, qst, ID_INFO_KIND_GLOBAL_IMPLICIT);
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/map.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/obj.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objarray.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objattrtuple.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objbool.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objboundmeth.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objcell.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objclosure.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objcomplex.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objdeque.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objdict.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objenumerate.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objexcept.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objfilter.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objfloat.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objfun.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objgenerator.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objgetitemiter.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objint.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objint_longlong.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objint_mpz.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objlist.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objmap.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objmodule.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objobject.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objpolyiter.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objproperty.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objnone.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objnamedtuple.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objrange.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objreversed.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objset.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objsingleton.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objslice.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objstr.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objstrunicode.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objstringio.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objtuple.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objtype.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objzip.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/opmethods.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/sequence.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/stream.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/binary.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/builtinimport.c
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objtype.c: In function 'mp_obj_class_lookup':
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objtype.c:149:18: warning: cast increases required alignment of target type [-Wcast-align]
+  149 |             if (*(void**)((char*)type + lookup->meth_offset) != NULL) {
+      |                  ^
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/builtinevex.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/builtinhelp.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modarray.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modbuiltins.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modcollections.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modgc.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modio.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modmath.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modcmath.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modmicropython.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modstruct.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modsys.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/moduerrno.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modthread.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/vm.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/bc.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/showbc.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/repl.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/smallint.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/frozenmod.c
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/vm.c: In function 'mp_execute_bytecode':
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/vm.c:83:21: warning: cast increases required alignment of target type [-Wcast-align]
+   83 |     mp_obj_t obj = *(mp_obj_t*)ip; \
+      |                     ^
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/vm.c:236:21: note: in expansion of macro 'DECODE_OBJ'
+  236 |                     DECODE_OBJ;
+      |                     ^~~~~~~~~~
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/moductypes.c
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/vm.c:79:18: warning: cast increases required alignment of target type [-Wcast-align]
+   79 |     void *ptr = *(void**)ip; \
+      |                  ^
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/vm.c:858:21: note: in expansion of macro 'DECODE_PTR'
+  858 |                     DECODE_PTR;
+      |                     ^~~~~~~~~~
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/vm.c:79:18: warning: cast increases required alignment of target type [-Wcast-align]
+   79 |     void *ptr = *(void**)ip; \
+      |                  ^
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/vm.c:864:21: note: in expansion of macro 'DECODE_PTR'
+  864 |                     DECODE_PTR;
+      |                     ^~~~~~~~~~
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/vm.c:79:18: warning: cast increases required alignment of target type [-Wcast-align]
+   79 |     void *ptr = *(void**)ip; \
+      |                  ^
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/vm.c:872:21: note: in expansion of macro 'DECODE_PTR'
+  872 |                     DECODE_PTR;
+      |                     ^~~~~~~~~~
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/vm.c:79:18: warning: cast increases required alignment of target type [-Wcast-align]
+   79 |     void *ptr = *(void**)ip; \
+      |                  ^
+/home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/vm.c:881:21: note: in expansion of macro 'DECODE_PTR'
+  881 |                     DECODE_PTR;
+      |                     ^~~~~~~~~~
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/modujson.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/modure.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/moduzlib.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/moduheapq.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/modutimeq.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/moduhashlib.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/moducryptolib.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/modubinascii.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/virtpin.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/machine_mem.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/machine_pinbase.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/machine_signal.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/machine_pulse.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/machine_i2c.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/machine_spi.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/modussl_axtls.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/modussl_mbedtls.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/modurandom.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/moduselect.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/moduwebsocket.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/modwebrepl.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/modframebuf.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/vfs.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/vfs_reader.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/vfs_posix.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/vfs_posix_file.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/vfs_fat.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/vfs_fat_diskio.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/vfs_fat_file.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/utime_mphal.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/uos_dupterm.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/lib/embed/abort_.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/lib/utils/printf.c
+CC help.c
+CC machine_adc.c
+CC machine_hw_spi.c
+CC machine_pin.c
+CC modmachine.c
+CC modriot.c
+CC modutime.c
+CC modxtimer.c
+CC mp_riot.c
+CC riot_io.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/lib/utils/pyexec.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/lib/mp-readline/readline.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/ports/unix/gccollect.c
+CC /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/frozen.c
+arm-none-eabi-ar -rv /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/micropython.a /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/mpstate.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/nlr.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/nlrx86.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/nlrx64.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/nlrthumb.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/nlrxtensa.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/nlrsetjmp.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/malloc.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/gc.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/pystack.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/qstr.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/vstr.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/mpprint.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/unicode.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/mpz.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/reader.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/lexer.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/parse.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/scope.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/compile.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitcommon.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitbc.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/asmbase.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/asmx64.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitnx64.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/asmx86.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitnx86.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/asmthumb.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitnthumb.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitinlinethumb.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/asmarm.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitnarm.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/asmxtensa.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitnxtensa.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitinlinextensa.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/formatfloat.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/parsenumbase.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/parsenum.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitglue.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/persistentcode.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/runtime.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/runtime_utils.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/scheduler.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/nativeglue.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/stackctrl.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/argcheck.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/warning.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/map.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/obj.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objarray.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objattrtuple.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objbool.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objboundmeth.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objcell.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objclosure.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objcomplex.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objdeque.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objdict.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objenumerate.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objexcept.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objfilter.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objfloat.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objfun.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objgenerator.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objgetitemiter.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objint.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objint_longlong.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objint_mpz.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objlist.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objmap.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objmodule.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objobject.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objpolyiter.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objproperty.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objnone.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objnamedtuple.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objrange.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objreversed.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objset.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objsingleton.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objslice.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objstr.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objstrunicode.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objstringio.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objtuple.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objtype.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objzip.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/opmethods.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/sequence.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/stream.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/binary.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/builtinimport.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/builtinevex.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/builtinhelp.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modarray.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modbuiltins.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modcollections.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modgc.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modio.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modmath.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modcmath.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modmicropython.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modstruct.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modsys.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/moduerrno.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modthread.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/vm.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/bc.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/showbc.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/repl.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/smallint.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/frozenmod.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/moductypes.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/modujson.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/modure.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/moduzlib.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/moduheapq.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/modutimeq.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/moduhashlib.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/moducryptolib.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/modubinascii.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/virtpin.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/machine_mem.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/machine_pinbase.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/machine_signal.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/machine_pulse.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/machine_i2c.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/machine_spi.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/modussl_axtls.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/modussl_mbedtls.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/modurandom.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/moduselect.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/moduwebsocket.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/modwebrepl.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/modframebuf.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/vfs.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/vfs_reader.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/vfs_posix.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/vfs_posix_file.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/vfs_fat.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/vfs_fat_diskio.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/vfs_fat_file.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/utime_mphal.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/uos_dupterm.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/lib/embed/abort_.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/lib/utils/printf.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/help.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/machine_adc.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/machine_hw_spi.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/machine_pin.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/modmachine.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/modriot.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/modutime.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/modxtimer.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/mp_riot.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/riot_io.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/lib/utils/pyexec.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/lib/mp-readline/readline.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/ports/unix/gccollect.o /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython//home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/frozen.o
+arm-none-eabi-ar: creating /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/micropython.a
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/mpstate.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/nlr.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/nlrx86.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/nlrx64.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/nlrthumb.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/nlrxtensa.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/nlrsetjmp.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/malloc.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/gc.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/pystack.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/qstr.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/vstr.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/mpprint.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/unicode.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/mpz.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/reader.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/lexer.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/parse.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/scope.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/compile.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitcommon.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitbc.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/asmbase.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/asmx64.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitnx64.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/asmx86.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitnx86.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/asmthumb.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitnthumb.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitinlinethumb.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/asmarm.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitnarm.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/asmxtensa.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitnxtensa.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitinlinextensa.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/formatfloat.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/parsenumbase.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/parsenum.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/emitglue.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/persistentcode.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/runtime.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/runtime_utils.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/scheduler.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/nativeglue.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/stackctrl.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/argcheck.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/warning.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/map.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/obj.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objarray.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objattrtuple.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objbool.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objboundmeth.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objcell.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objclosure.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objcomplex.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objdeque.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objdict.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objenumerate.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objexcept.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objfilter.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objfloat.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objfun.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objgenerator.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objgetitemiter.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objint.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objint_longlong.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objint_mpz.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objlist.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objmap.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objmodule.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objobject.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objpolyiter.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objproperty.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objnone.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objnamedtuple.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objrange.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objreversed.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objset.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objsingleton.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objslice.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objstr.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objstrunicode.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objstringio.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objtuple.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objtype.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/objzip.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/opmethods.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/sequence.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/stream.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/binary.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/builtinimport.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/builtinevex.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/builtinhelp.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modarray.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modbuiltins.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modcollections.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modgc.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modio.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modmath.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modcmath.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modmicropython.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modstruct.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modsys.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/moduerrno.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/modthread.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/vm.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/bc.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/showbc.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/repl.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/smallint.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/py/frozenmod.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/moductypes.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/modujson.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/modure.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/moduzlib.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/moduheapq.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/modutimeq.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/moduhashlib.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/moducryptolib.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/modubinascii.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/virtpin.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/machine_mem.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/machine_pinbase.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/machine_signal.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/machine_pulse.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/machine_i2c.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/machine_spi.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/modussl_axtls.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/modussl_mbedtls.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/modurandom.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/moduselect.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/moduwebsocket.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/modwebrepl.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/modframebuf.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/vfs.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/vfs_reader.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/vfs_posix.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/vfs_posix_file.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/vfs_fat.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/vfs_fat_diskio.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/vfs_fat_file.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/utime_mphal.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/extmod/uos_dupterm.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/lib/embed/abort_.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/lib/utils/printf.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/help.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/machine_adc.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/machine_hw_spi.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/machine_pin.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/modmachine.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/modriot.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/modutime.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/modxtimer.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/mp_riot.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/riot_io.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/lib/utils/pyexec.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/lib/mp-readline/readline.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/ports/unix/gccollect.o
+a - /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython//home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/pkg/micropython/frozen.o
+/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/periph/uart.c: In function 'uart_init':
+/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/periph/uart.c:88:8: error: array subscript 1 is above array bounds of 'uart_isr_ctx_t[1]' [-Werror=array-bounds]
+   88 |     ctx[uart].rx_cb = rx_cb;
+      |     ~~~^~~~~~
+/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/periph/uart.c:52:23: note: while referencing 'ctx'
+   52 | static uart_isr_ctx_t ctx[UART_NUMOF];
+      |                       ^~~
+/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/periph/uart.c:89:8: error: array subscript 1 is above array bounds of 'uart_isr_ctx_t[1]' [-Werror=array-bounds]
+   89 |     ctx[uart].arg = arg;
+      |     ~~~^~~~~~
+/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/periph/uart.c:52:23: note: while referencing 'ctx'
+   52 | static uart_isr_ctx_t ctx[UART_NUMOF];
+      |                       ^~~
+cc1: all warnings being treated as errors
+make[4]: *** [/home/maribu/Repos/software/RIOT/Makefile.base:146: /home/maribu/Repos/software/RIOT/examples/micropython/bin/cc2650-launchpad/cc26xx_cc13xx_periph/uart.o] Error 1
+make[4]: *** Waiting for unfinished jobs....
+make[3]: *** [/home/maribu/Repos/software/RIOT/Makefile.base:31: ALL--/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/periph] Error 2
+make[2]: *** [/home/maribu/Repos/software/RIOT/Makefile.base:31: ALL--/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx] Error 2
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [/home/maribu/Repos/software/RIOT/Makefile.base:31: ALL--/home/maribu/Repos/software/RIOT/cpu/cc26x0_cc13x0] Error 2
+make: *** [/home/maribu/Repos/software/RIOT/examples/micropython/../../Makefile.include:749: application_micropython.module] Error 2
+
+Return value: 2

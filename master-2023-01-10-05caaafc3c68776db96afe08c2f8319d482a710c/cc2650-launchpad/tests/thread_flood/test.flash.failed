@@ -1,0 +1,45 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/thread_flood flash-only
+/home/maribu/Repos/software/RIOT/dist/tools/openocd/openocd.sh flash /home/maribu/Repos/software/RIOT/tests/thread_flood/bin/cc2650-launchpad/tests_thread_flood.elf
+### Flashing Target ###
+Open On-Chip Debugger 0.12.0-rc3+dev-snapshot (2023-01-02-15:45)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+jtag
+cortex_m reset_config vectreset
+
+Warn : An adapter speed is not selected in the init scripts. OpenOCD will try to run the adapter at the low speed (100 kHz)
+Warn : To remove this warnings and achieve reasonable communication speed with the target, set "adapter speed" or "jtag_rclk" in the init scripts.
+Info : XDS110: connected
+Info : XDS110: vid/pid = 0451/bef3
+Info : XDS110: firmware version = 3.0.0.22
+Info : XDS110: hardware version = 0x002b
+Info : XDS110: connected to target via JTAG
+Info : XDS110: TCK set to 2500 kHz
+Info : clock speed 100 kHz
+Info : JTAG tap: cc26x0.jrc tap/device found: 0x9b99a02f (mfg: 0x017 (Texas Instruments), part: 0xb99a, ver: 0x9)
+Info : JTAG tap: cc26x0.cpu enabled
+Info : [cc26x0.cpu] Cortex-M3 r2p1 processor detected
+Info : [cc26x0.cpu] target has 6 breakpoints, 4 watchpoints
+Info : starting gdb server for cc26x0.cpu on 0
+Info : Listening on port 32815 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* cc26x0.cpu         cortex_m   little cc26x0.cpu         running
+
+[cc26x0.cpu] halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x0000250e psp: 0x200015c0
+Error: Invalid ACK (0) in DAP response
+Error: Invalid ACK (0) in DAP response
+Error: Failed to write memory and, additionally, failed to find out where
+Error: Invalid ACK (0) in DAP response
+Error: Invalid ACK (0) in DAP response
+Warn : [cc26x0.cpu] target was in unknown state when halt was requested
+Error: Invalid ACK (0) in DAP response
+Error: Invalid ACK (0) in DAP response
+Error: failed erasing sectors 0 to 2
+auto erase enabled
+Info : XDS110: disconnected
+make: *** [/home/maribu/Repos/software/RIOT/tests/thread_flood/../../Makefile.include:852: flash-only] Error 1
+
+Return value: 2

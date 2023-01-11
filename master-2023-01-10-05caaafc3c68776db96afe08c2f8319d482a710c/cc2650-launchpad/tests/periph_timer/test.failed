@@ -1,0 +1,48 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/periph_timer test
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+
+Test for peripheral TIMERs
+
+Available timers: 4
+
+Testing TIMER_0:
+TIMER_0: initialization successful
+TIMER_0: stopped
+TIMER_0: set channel 0 to 5000
+TIMER_0: set channel 1 to 10000
+TIMER_0: starting
+TIMER_0: channel 0 fired at SW count    14118 - init:    14118
+TIMER_0: channel 1 fired at SW count    14118 - diff:        0
+
+Testing TIMER_1:
+TIMER_1: ERROR on initialization - skipping
+
+
+Testing TIMER_2:
+TIMER_2: initialization successful
+TIMER_2: stopped
+TIMER_2: set channel 0 to 5000
+TIMER_2: set channel 1 to 10000
+TIMER_2: starting
+TIMER_2: channel 0 fired at SW count    14119 - init:    14119
+TIMER_2: channel 1 fired at SW count    28234 - diff:    14115
+
+Testing TIMER_3:
+TIMER_3: ERROR on initialization - skipping
+
+
+TEST FAILED
+{ "threads": [{ "name": "main", "stack_size": 1536, "stack_used": 436 }]}
+Timeout in expect script at "child.expect_exact('TIMER_{}: initialization successful'.format(timer))" (tests/periph_timer/tests/01-run.py:18)
+
+make: *** [/home/maribu/Repos/software/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

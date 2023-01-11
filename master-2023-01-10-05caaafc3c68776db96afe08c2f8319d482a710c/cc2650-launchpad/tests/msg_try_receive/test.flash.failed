@@ -1,0 +1,35 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/msg_try_receive flash-only
+/home/maribu/Repos/software/RIOT/dist/tools/openocd/openocd.sh flash /home/maribu/Repos/software/RIOT/tests/msg_try_receive/bin/cc2650-launchpad/tests_msg_try_receive.elf
+### Flashing Target ###
+Open On-Chip Debugger 0.12.0-rc3+dev-snapshot (2023-01-02-15:45)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+jtag
+cortex_m reset_config vectreset
+
+Warn : An adapter speed is not selected in the init scripts. OpenOCD will try to run the adapter at the low speed (100 kHz)
+Warn : To remove this warnings and achieve reasonable communication speed with the target, set "adapter speed" or "jtag_rclk" in the init scripts.
+Info : XDS110: connected
+Info : XDS110: vid/pid = 0451/bef3
+Info : XDS110: firmware version = 3.0.0.22
+Info : XDS110: hardware version = 0x002b
+Info : XDS110: connected to target via JTAG
+Info : XDS110: TCK set to 2500 kHz
+Info : clock speed 100 kHz
+Error: JTAG scan chain interrogation failed: all zeroes
+Error: Check JTAG interface, timings, target power, etc.
+Error: Trying to use configured scan chain anyway...
+Warn : Bypassing JTAG setup events due to errors
+Info : starting gdb server for cc26x0.cpu on 0
+Info : Listening on port 35707 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* cc26x0.cpu         cortex_m   little cc26x0.cpu         tap-disabled
+
+Error: Target not examined yet
+
+Info : XDS110: disconnected
+make: *** [/home/maribu/Repos/software/RIOT/tests/msg_try_receive/../../Makefile.include:852: flash-only] Error 1
+
+Return value: 2

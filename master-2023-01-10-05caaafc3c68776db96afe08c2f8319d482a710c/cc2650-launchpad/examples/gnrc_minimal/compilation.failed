@@ -1,0 +1,27 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/examples/gnrc_minimal clean all --jobs 16
+Building application "gnrc_minimal" for "cc2650-launchpad" with MCU "cc26x0_cc13x0".
+
+/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/periph/uart.c: In function 'uart_init':
+/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/periph/uart.c:88:8: error: array subscript 1 is above array bounds of 'uart_isr_ctx_t[1]' [-Werror=array-bounds]
+   88 |     ctx[uart].rx_cb = rx_cb;
+      |     ~~~^~~~~~
+/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/periph/uart.c:52:23: note: while referencing 'ctx'
+   52 | static uart_isr_ctx_t ctx[UART_NUMOF];
+      |                       ^~~
+/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/periph/uart.c:89:8: error: array subscript 1 is above array bounds of 'uart_isr_ctx_t[1]' [-Werror=array-bounds]
+   89 |     ctx[uart].arg = arg;
+      |     ~~~^~~~~~
+/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/periph/uart.c:52:23: note: while referencing 'ctx'
+   52 | static uart_isr_ctx_t ctx[UART_NUMOF];
+      |                       ^~~
+cc1: all warnings being treated as errors
+make[4]: *** [/home/maribu/Repos/software/RIOT/Makefile.base:146: /home/maribu/Repos/software/RIOT/examples/gnrc_minimal/bin/cc2650-launchpad/cc26xx_cc13xx_periph/uart.o] Error 1
+make[4]: *** Waiting for unfinished jobs....
+make[3]: *** [/home/maribu/Repos/software/RIOT/Makefile.base:31: ALL--/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/periph] Error 2
+make[2]: *** [/home/maribu/Repos/software/RIOT/Makefile.base:31: ALL--/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx] Error 2
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [/home/maribu/Repos/software/RIOT/Makefile.base:31: ALL--/home/maribu/Repos/software/RIOT/cpu/cc26x0_cc13x0] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [/home/maribu/Repos/software/RIOT/examples/gnrc_minimal/../../Makefile.include:749: application_gnrc_minimal.module] Error 2
+
+Return value: 2

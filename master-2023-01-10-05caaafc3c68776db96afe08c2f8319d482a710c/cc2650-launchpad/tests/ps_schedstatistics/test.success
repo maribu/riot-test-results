@@ -1,0 +1,36 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+Creating thread #0, next=1
+Creating thread #1, next=2
+Creating thread #2, next=3
+Creating thread #3, next=4
+Creating thread #4, next=0
+
+> help
+
+> 
+> help
+Command              Description
+---------------------------------------
+pm                   interact with layered PM subsystem
+ps                   Prints information about running threads.
+reboot               Reboot the node
+ps
+version              Prints current RIOT_VERSION
+> ps
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     | runtime  | switches  | runtime_usec 
+	  - | isr_stack            | -        - |   - |    512 (  232) (  280) | 0x20000000 | 0x200001c8
+	  1 | main                 | running  Q |   7 |   1536 (  796) (  740) | 0x20001928 | 0x20001c0c  |  1.104% |        53  |      50180 
+	  2 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x20000424 | 0x20000754  |  0.306% |        43  |      13900 
+	  3 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x20000824 | 0x20000b54  |  0.460% |        47  |      20922 
+	  4 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x20000c24 | 0x20000f54  |  0.638% |        51  |      28994 
+	  5 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x20001024 | 0x20001354  |  0.838% |        55  |      38100 
+	  6 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x20001424 | 0x20001754  |  0.237% |        59  |      10808 
+	    | SUM                  |            |     |   7168 ( 3088) ( 4080)
+> 
