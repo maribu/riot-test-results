@@ -1,0 +1,23 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+No messages or no message queue
+No messages or no message queue
+Message queue of thread 1
+    size: 8 (avail: 8)
+    * 0: sender: 1, type: 0x0000, content: 0 (0)
+    * 1: sender: 1, type: 0x0001, content: 1 (0x1)
+    * 2: sender: 1, type: 0x0002, content: 2 (0x2)
+    * 3: sender: 1, type: 0x0003, content: 3 (0x3)
+    * 4: sender: 1, type: 0x0004, content: 4 (0x4)
+    * 5: sender: 1, type: 0x0005, content: 5 (0x5)
+    * 6: sender: 1, type: 0x0006, content: 6 (0x6)
+    * 7: sender: 1, type: 0x0007, content: 7 (0x7)
+DONE
+

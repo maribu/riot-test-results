@@ -1,0 +1,27 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Runtime of Selected Core API functions
+
+                 nop loop:     66668us  ---   0.066us per call  ---   14999700 calls per sec
+
+             mutex_init():         1us  ---   0.000us per call  ---  3567587328 calls per sec
+        mutex lock/unlock:   1100002us  ---   1.100us per call  ---     909089 calls per sec
+
+       thread_flags_set():    550001us  ---   0.550us per call  ---    1818178 calls per sec
+     thread_flags_clear():    533334us  ---   0.533us per call  ---    1874997 calls per sec
+thread flags set/wait any:   1916668us  ---   1.916us per call  ---     521738 calls per sec
+thread flags set/wait all:   1416669us  ---   1.416us per call  ---     705881 calls per sec
+thread flags set/wait one:   1883335us  ---   1.883us per call  ---     530972 calls per sec
+
+        msg_try_receive():    700002us  ---   0.700us per call  ---    1428567 calls per sec
+              msg_avail():    283334us  ---   0.283us per call  ---    3529403 calls per sec
+
+[SUCCESS]
+

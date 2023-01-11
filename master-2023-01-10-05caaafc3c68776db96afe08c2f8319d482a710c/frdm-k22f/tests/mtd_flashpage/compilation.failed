@@ -1,0 +1,8 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/maribu/Repos/software/RIOT/tests/mtd_flashpage clean all --jobs 16
+Building application "tests_mtd_flashpage" for "frdm-k22f" with MCU "kinetis".
+
+/usr/lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/bin/ld: warning: /home/maribu/Repos/software/RIOT/tests/mtd_flashpage/bin/frdm-k22f/tests_mtd_flashpage.elf has a LOAD segment with RWX permissions
+collect2: error: ld returned 1 exit status
+make: *** [/home/maribu/Repos/software/RIOT/tests/mtd_flashpage/../../Makefile.include:740: /home/maribu/Repos/software/RIOT/tests/mtd_flashpage/bin/frdm-k22f/tests_mtd_flashpage.elf] Error 1
+
+Return value: 2

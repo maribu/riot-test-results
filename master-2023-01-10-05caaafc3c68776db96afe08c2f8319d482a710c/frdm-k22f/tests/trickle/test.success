@@ -1,0 +1,25 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+[START]
+now = 3205, t = 25
+now = 3270, t = 58
+now = 3391, t = 118
+now = 3634, t = 239
+now = 4029, t = 392
+[TRICKLE_RESET]
+now = 4042, t = 12
+now = 4068, t = 20
+now = 4114, t = 32
+now = 4271, t = 124
+now = 4449, t = 172
+now = 5016, t = 481
+now = 5981, t = 933
+[SUCCESS]
+
