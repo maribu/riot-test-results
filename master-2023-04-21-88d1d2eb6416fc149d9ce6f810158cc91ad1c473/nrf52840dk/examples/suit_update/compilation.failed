@@ -1,0 +1,49 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./examples/suit_update clean all --jobs 16
+Building application "suit_update" for "nrf52840dk" with MCU "nrf52".
+
+compiling /home/maribu/Repos/software/RIOT/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+# Reset package to checkout state.
+rm -rf /home/maribu/Repos/software/RIOT/build/pkg/c25519
+rm -rf /home/maribu/Repos/software/RIOT/examples/suit_update/bin/nrf52840dk/pkg-build/libcose
+rm -rf /home/maribu/Repos/software/RIOT/examples/suit_update/bin/nrf52840dk/pkg-build/littlefs2
+rm -rf /home/maribu/Repos/software/RIOT/examples/suit_update/bin/nrf52840dk/pkg-build/nanocbor
+usage: suit-tool pubkey [-h] -k FILE
+                        [-f {uecc,header,pem,der,hsslms,c-hsslms}] [-o FILE]
+                        [-p PASSWORD]
+suit-tool pubkey: error: argument -k/--private-key: can't open '/home/maribu/Repos/software/RIOT/examples/suit_update/bin/nrf52840dk/default.pem': [Errno 2] No such file or directory: '/home/maribu/Repos/software/RIOT/examples/suit_update/bin/nrf52840dk/default.pem'
+"make" -C /home/maribu/Repos/software/RIOT/boards/common/init
+"make" -C /home/maribu/Repos/software/RIOT/boards/nrf52840dk
+"make" -C /home/maribu/Repos/software/RIOT/boards/common/nrf52xxxdk
+"make" -C /home/maribu/Repos/software/RIOT/core
+"make" -C /home/maribu/Repos/software/RIOT/core/lib
+"make" -C /home/maribu/Repos/software/RIOT/cpu/nrf52
+"make" -C /home/maribu/Repos/software/RIOT/cpu/cortexm_common
+"make" -C /home/maribu/Repos/software/RIOT/cpu/cortexm_common/periph
+"make" -C /home/maribu/Repos/software/RIOT/cpu/nrf52/periph
+"make" -C /home/maribu/Repos/software/RIOT/cpu/nrf52/vectors
+"make" -C /home/maribu/Repos/software/RIOT/cpu/nrf5x_common
+/home/maribu/Repos/software/RIOT/sys/suit/handlers_envelope.c: In function '_auth_handler':
+/home/maribu/Repos/software/RIOT/sys/suit/handlers_envelope.c:115:28: error: comparison of unsigned expression in '< 0' is always false [-Werror=type-limits]
+  115 |     for (unsigned i = 0; i < ARRAY_SIZE(public_key); ++i) {
+      |                            ^
+cc1: all warnings being treated as errors
+make[3]: *** [/home/maribu/Repos/software/RIOT/Makefile.base:146: /home/maribu/Repos/software/RIOT/examples/suit_update/bin/nrf52840dk/suit/handlers_envelope.o] Error 1
+make[3]: *** Waiting for unfinished jobs....
+"make" -C /home/maribu/Repos/software/RIOT/cpu/nrf5x_common/periph
+make[2]: *** [/home/maribu/Repos/software/RIOT/Makefile.base:31: ALL--/home/maribu/Repos/software/RIOT/sys/suit] Error 2
+make[1]: *** [/home/maribu/Repos/software/RIOT/Makefile.base:31: ALL--/home/maribu/Repos/software/RIOT/sys] Error 2
+make: *** [/home/maribu/Repos/software/RIOT/examples/suit_update/../../Makefile.include:749: application_suit_update.module] Error 2
+make: *** Waiting for unfinished jobs....
+"make" -C /home/maribu/Repos/software/RIOT/drivers
+"make" -C /home/maribu/Repos/software/RIOT/drivers/periph_common
+"make" -C /home/maribu/Repos/software/RIOT/sys
+"make" -C /home/maribu/Repos/software/RIOT/sys/checksum
+"make" -C /home/maribu/Repos/software/RIOT/sys/div
+"make" -C /home/maribu/Repos/software/RIOT/sys/libc
+"make" -C /home/maribu/Repos/software/RIOT/sys/malloc_thread_safe
+"make" -C /home/maribu/Repos/software/RIOT/sys/newlib_syscalls_default
+"make" -C /home/maribu/Repos/software/RIOT/sys/riotboot
+"make" -C /home/maribu/Repos/software/RIOT/sys/stdio_null
+
+Return value: 2

@@ -1,0 +1,23 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+W��������ɥ���͒����READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Testing clock: ZTIMER_MSEC
+i: 0 time: 2973 offset: 0
+i: 1 time: 3073 offset: 0
+i: 2 time: 3173 offset: 0
+i: 3 time: 3273 offset: 0
+i: 4 time: 3373 offset: 0
+Testing clock: ZTIMER_USEC
+i: 0 time: 3411636 offset: 19
+i: 1 time: 3421636 offset: 0
+i: 2 time: 3431636 offset: 0
+i: 3 time: 3441636 offset: 0
+i: 4 time: 3451636 offset: 0
+Test successful.
+

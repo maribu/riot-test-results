@@ -1,0 +1,17 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/suit_manifest clean all --jobs 16
+Building application "tests_suit_manifest" for "nrf52840dk" with MCU "nrf52".
+# Reset package to checkout state.
+rm -rf /home/maribu/Repos/software/RIOT/build/pkg/c25519
+
+rm -rf /home/maribu/Repos/software/RIOT/tests/suit_manifest/bin/nrf52840dk/pkg-build/libcose
+rm -rf /home/maribu/Repos/software/RIOT/tests/suit_manifest/bin/nrf52840dk/pkg-build/nanocbor
+usage: suit-tool pubkey [-h] -k FILE
+                        [-f {uecc,header,pem,der,hsslms,c-hsslms}] [-o FILE]
+                        [-p PASSWORD]
+suit-tool pubkey: error: argument -k/--private-key: can't open '/home/maribu/Repos/software/RIOT/tests/suit_manifest/bin/nrf52840dk/default.pem': [Errno 2] No such file or directory: '/home/maribu/Repos/software/RIOT/tests/suit_manifest/bin/nrf52840dk/default.pem'
+sh create_test_data.sh
+usage: suit-tool sign [-h] -m FILE -k FILE [-i ID] -o FILE [-p PASSWORD]
+suit-tool sign: error: argument -k/--private-key: can't open '/home/maribu/Repos/software/RIOT/tests/suit_manifest/bin/nrf52840dk/default.pem': [Errno 2] No such file or directory: '/home/maribu/Repos/software/RIOT/tests/suit_manifest/bin/nrf52840dk/default.pem'
+make: *** [Makefile:44: bin/nrf52840dk/manifests/created] Error 2
+
+Return value: 2

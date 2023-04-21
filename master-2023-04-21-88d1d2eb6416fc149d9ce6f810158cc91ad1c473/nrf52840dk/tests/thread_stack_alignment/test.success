@@ -1,0 +1,269 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Testing with a stack sized 1664 and an alignment up to 128
+Testing for alignment 0: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 772 }]}
+Testing for alignment 1: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 2: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 3: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 4: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 700 }]}
+Testing for alignment 5: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 6: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 7: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 8: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 9: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 10: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 11: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 12: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 700 }]}
+Testing for alignment 13: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 14: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 15: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 16: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 17: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 18: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 19: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 20: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 700 }]}
+Testing for alignment 21: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 22: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 23: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 24: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 25: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 26: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 27: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 28: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 700 }]}
+Testing for alignment 29: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 30: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 31: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 32: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 33: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 34: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 35: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 36: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 700 }]}
+Testing for alignment 37: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 38: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 39: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 40: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 41: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 42: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 43: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 44: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 700 }]}
+Testing for alignment 45: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 46: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 47: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 48: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 49: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 50: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 51: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 52: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 700 }]}
+Testing for alignment 53: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 54: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 55: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 56: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 57: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 58: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 59: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 60: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 700 }]}
+Testing for alignment 61: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 62: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 63: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 64: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 65: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 66: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 67: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 68: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 700 }]}
+Testing for alignment 69: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 70: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 71: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 72: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 73: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 74: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 75: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 76: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 700 }]}
+Testing for alignment 77: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 78: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 79: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 80: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 81: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 82: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 83: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 84: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 700 }]}
+Testing for alignment 85: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 86: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 87: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 88: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 89: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 90: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 91: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 92: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 700 }]}
+Testing for alignment 93: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 94: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 95: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 96: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 97: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 98: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 99: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 100: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 700 }]}
+Testing for alignment 101: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 102: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 103: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 104: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 105: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 106: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 107: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 108: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 700 }]}
+Testing for alignment 109: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 110: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 111: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 112: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 113: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 114: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 115: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 116: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 700 }]}
+Testing for alignment 117: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 118: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 119: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 120: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 121: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 122: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 123: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 708 }]}
+Testing for alignment 124: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 700 }]}
+Testing for alignment 125: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 126: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+Testing for alignment 127: OK
+{ "threads": [{ "name": "test", "stack_size": 1664, "stack_used": 704 }]}
+TEST PASSED
+NOTE: Up to 72 B of RAM is lost when thread stacks are not properly aligned
+
