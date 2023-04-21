@@ -1,0 +1,48 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/mpu_noexec_ram test
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Attempting to jump to stack buffer ...
+
+
+Context before hardfault:
+   r0: 0x0000000a
+   r1: 0x20000af1
+   r2: 0x00000000
+   r3: 0x20000905
+  r12: 0x00001b5d
+   lr: 0x00001727
+   pc: 0x20000904
+  psr: 0x01000000
+
+FSR/FAR:
+ CFSR: 0x00010000
+ HFSR: 0x40000000
+ DFSR: 0x00000000
+ AFSR: 0x00000000
+Misc
+EXC_RET: 0xfffffffd
+Active thread: 1 "main"
+Attempting to reconstruct state for debugging...
+In GDB:
+  set $pc=0x20000904
+  frame 0
+  bt
+
+ISR stack overflowed by at least 16 bytes.
+*** RIOT kernel panic:
+HARD FAULT HANDLER
+
+*** halted.
+
+Timeout in expect script at "child.expect_exact("MEM MANAGE HANDLER\r\n")" (tests/mpu_noexec_ram/tests/01-run.py:14)
+
+make: *** [/home/maribu/Repos/software/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

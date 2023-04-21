@@ -1,0 +1,722 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./examples/rust-gcoap clean all --jobs 16
+Building application "rust_gcoap" for "cc2650-launchpad" with MCU "cc26x0_cc13x0".
+
+make[3]: Nothing to be done for 'compile-commands'.
+   Compiling proc-macro2 v1.0.50
+   Compiling quote v1.0.23
+   Compiling unicode-ident v1.0.6
+   Compiling syn v1.0.107
+   Compiling serde_derive v1.0.152
+   Compiling autocfg v1.1.0
+   Compiling memchr v2.5.0
+   Compiling libc v0.2.139
+   Compiling glob v0.3.1
+   Compiling cfg-if v1.0.0
+   Compiling serde v1.0.152
+   Compiling log v0.4.17
+   Compiling os_str_bytes v6.4.1
+   Compiling regex-syntax v0.6.28
+   Compiling hashbrown v0.12.3
+   Compiling minimal-lexical v0.2.1
+   Compiling semver v1.0.16
+   Compiling termcolor v1.2.0
+   Compiling clap_lex v0.2.4
+   Compiling libloading v0.7.4
+   Compiling either v1.8.0
+   Compiling humantime v2.1.0
+   Compiling byteorder v1.4.3
+   Compiling bitflags v1.3.2
+   Compiling indexmap v1.9.2
+   Compiling build_const v0.2.2
+   Compiling clang-sys v1.4.0
+   Compiling strsim v0.10.0
+   Compiling serde_json v1.0.91
+   Compiling textwrap v0.16.0
+   Compiling bindgen v0.60.1
+   Compiling half v1.8.2
+   Compiling shlex v1.1.0
+   Compiling crc v1.8.1
+   Compiling peeking_take_while v0.1.2
+   Compiling rustc-hash v1.1.0
+   Compiling lazycell v1.3.0
+   Compiling itoa v1.0.5
+   Compiling aho-corasick v0.7.20
+   Compiling nom v7.1.3
+   Compiling lazy_static v1.4.0
+   Compiling ryu v1.0.12
+   Compiling rustc_version v0.4.0
+   Compiling nb v1.0.0
+   Compiling minicbor v0.13.2
+   Compiling coap-numbers v0.2.0
+   Compiling coap-message v0.2.3
+   Compiling atty v0.2.14
+   Compiling which v4.4.0
+   Compiling nb v0.1.3
+   Compiling clap v3.2.23
+   Compiling hash32 v0.2.1
+   Compiling num-traits v0.2.15
+   Compiling shlex v0.1.1
+   Compiling stable_deref_trait v1.2.0
+   Compiling void v1.0.2
+   Compiling cty v0.2.2
+   Compiling c2rust-asm-casts v0.2.0
+   Compiling embedded-graphics v0.6.2
+   Compiling embedded-hal v0.2.7
+   Compiling cstr v0.2.11
+   Compiling mutex-trait v0.2.0
+   Compiling heapless v0.7.16
+   Compiling hex v0.4.3
+   Compiling riot-wrappers v0.8.1 (https://github.com/RIOT-OS/rust-riot-wrappers#9c29faf5)
+   Compiling switch-hal v0.4.0
+   Compiling bare-metal v1.0.0
+   Compiling pin-utils v0.1.0
+   Compiling rust_riotmodules v0.1.0 (/home/maribu/Repos/software/RIOT/sys/rust_riotmodules)
+   Compiling regex v1.7.1
+   Compiling cexpr v0.6.0
+   Compiling env_logger v0.9.3
+   Compiling c2rust-bitfields-derive v0.2.1
+   Compiling minicbor-derive v0.8.0
+   Compiling c2rust-bitfields v0.3.0
+   Compiling serde_cbor v0.11.2
+   Compiling serde_bytes v0.10.5
+   Compiling windowed-infinity v0.1.2
+   Compiling coap-handler v0.1.4
+   Compiling coap-handler-implementations v0.3.5
+   Compiling coap-message-demos v0.2.0 (https://gitlab.com/chrysn/coap-message-demos/#6a55eef7)
+   Compiling riot-sys v0.7.9 (https://github.com/RIOT-OS/rust-riot-sys#81d79178)
+error: failed to run custom build command for `riot-sys v0.7.9 (https://github.com/RIOT-OS/rust-riot-sys#81d79178)`
+
+Caused by:
+  process didn't exit successfully: `/home/maribu/Repos/software/RIOT/examples/rust-gcoap/bin/cc2650-launchpad/target/release/build/riot-sys-5e4cf5267558f1ae/build-script-build` (exit status: 101)
+  --- stdout
+  cargo:rerun-if-env-changed=BUILDING_RIOT_RS
+  cargo:rerun-if-env-changed=RIOT_CC
+  cargo:rerun-if-env-changed=RIOT_CFLAGS
+  cargo:rerun-if-env-changed=RIOT_COMPILE_COMMANDS_JSON
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/examples/rust-gcoap/bin/cc2650-launchpad/cargo-compile-commands.json
+  cargo:rerun-if-env-changed=RIOT_USEMODULE
+  cargo:CC=clang
+  cargo:CFLAGS="-DGCOAP_STACK_SIZE=(THREAD_STACKSIZE_DEFAULT+DEBUG_EXTRA_STACKSIZE+sizeof(coap_pkt_t)+1024)" -DDEVELHELP -Werror -DCPU_VARIANT_X0 "-mcpu=cortex-m3" -mlittle-endian -mthumb "-mfloat-abi=soft" -ffunction-sections -fdata-sections -fshort-enums -ggdb -g3 -Os -DCPU_MODEL_CC26X0F128 -DCPU_CORE_CORTEX_M3 "-DRIOT_APPLICATION=\"rust_gcoap\"" "-DBOARD_CC2650_LAUNCHPAD=\"cc2650-launchpad\"" "-DRIOT_BOARD=BOARD_CC2650_LAUNCHPAD" "-DCPU_CC26X0_CC13X0=\"cc26x0_cc13x0\"" "-DRIOT_CPU=CPU_CC26X0_CC13X0" "-DMCU_CC26X0_CC13X0=\"cc26x0_cc13x0\"" "-DRIOT_MCU=MCU_CC26X0_CC13X0" "-std=c11" -fwrapv -Wstrict-overflow -fno-common -ffunction-sections -fdata-sections -Wall -Wextra -Wmissing-include-dirs -fno-delete-null-pointer-checks -Wstrict-prototypes -Wold-style-definition -gz "-Wformat=2" -Wformat-overflow -Wformat-truncation "-fmacro-prefix-map=/home/maribu/Repos/software/RIOT/=" -Wcast-align -DSOCK_HAS_ASYNC -fshort-wchar -DSOCK_HAS_IPV6 -DSOCK_HAS_ASYNC -DSOCK_HAS_ASYNC_CTX -include /home/maribu/Repos/software/RIOT/examples/rust-gcoap/bin/cc2650-launchpad/riotbuild/riotbuild.h -Wno-unknown-warning-option -target arm-none-eabi -isystem /usr/arm-none-eabi/include/newlib-nano -I/home/maribu/Repos/software/RIOT/core/lib/include -I/home/maribu/Repos/software/RIOT/core/include -I/home/maribu/Repos/software/RIOT/drivers/include -I/home/maribu/Repos/software/RIOT/sys/include -I/home/maribu/Repos/software/RIOT/boards/cc2650-launchpad/include -I/home/maribu/Repos/software/RIOT/cpu/cc26x0_cc13x0/include -I/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include -I/home/maribu/Repos/software/RIOT/cpu/cortexm_common/include -I/home/maribu/Repos/software/RIOT/cpu/cortexm_common/include/vendor -I/home/maribu/Repos/software/RIOT/sys/libc/include -I/home/maribu/Repos/software/RIOT/sys/net/gnrc/sock/include -I/home/maribu/Repos/software/RIOT/sys/net/gnrc/pktbuf/include -I/home/maribu/Repos/software/RIOT/sys/net/gnrc/pktbuf_static/include -I/home/maribu/Repos/software/RIOT/sys/posix/include -I/home/maribu/Repos/software/RIOT/sys/net/link_layer/eui_provider/include -I/home/maribu/Repos/software/RIOT/sys/auto_init/include -I/home/maribu/Repos/software/RIOT/sys/net/sock/async/event -I/home/maribu/Repos/software/RIOT/examples/rust-gcoap/bin/cc2650-launchpad/preprocessor -isystem /usr/arm-none-eabi/include -isystem /usr/lib/gcc/arm-none-eabi/12.2.0/include -isystem /usr/lib/gcc/arm-none-eabi/12.2.0/include-fixed -DMODULE_AUTO_INIT -DMODULE_AUTO_INIT_GNRC_IPV6 -DMODULE_AUTO_INIT_GNRC_IPV6_NIB -DMODULE_AUTO_INIT_GNRC_NETIF -DMODULE_AUTO_INIT_GNRC_PKTBUF -DMODULE_AUTO_INIT_GNRC_UDP -DMODULE_AUTO_INIT_RANDOM -DMODULE_AUTO_INIT_ZTIMER -DMODULE_BOARD -DMODULE_BOARD_COMMON_INIT -DMODULE_CC26X0_DRIVERLIB -DMODULE_CC26XX_CC13XX -DMODULE_CC26XX_CC13XX_PERIPH -DMODULE_CONSTFS -DMODULE_CORE -DMODULE_CORE_INIT -DMODULE_CORE_LIB -DMODULE_CORE_MBOX -DMODULE_CORE_MSG -DMODULE_CORE_PANIC -DMODULE_CORE_THREAD -DMODULE_CORE_THREAD_FLAGS -DMODULE_CORTEXM_COMMON -DMODULE_CORTEXM_COMMON_PERIPH -DMODULE_CPU -DMODULE_DIV -DMODULE_EUI_PROVIDER -DMODULE_EVENT -DMODULE_EVENT_CALLBACK -DMODULE_EVENT_TIMEOUT_ZTIMER -DMODULE_EVTIMER -DMODULE_EVTIMER_ON_ZTIMER -DMODULE_FMT -DMODULE_FRAC -DMODULE_GCOAP -DMODULE_GNRC -DMODULE_GNRC_ICMPV6 -DMODULE_GNRC_ICMPV6_ECHO -DMODULE_GNRC_IPV6 -DMODULE_GNRC_IPV6_DEFAULT -DMODULE_GNRC_IPV6_HDR -DMODULE_GNRC_IPV6_NIB -DMODULE_GNRC_NDP -DMODULE_GNRC_NETAPI -DMODULE_GNRC_NETAPI_CALLBACKS -DMODULE_GNRC_NETAPI_MBOX -DMODULE_GNRC_NETIF -DMODULE_GNRC_NETIF_HDR -DMODULE_GNRC_NETIF_INIT_DEVS -DMODULE_GNRC_NETIF_IPV6 -DMODULE_GNRC_NETREG -DMODULE_GNRC_NETTYPE_ICMPV6 -DMODULE_GNRC_NETTYPE_IPV6 -DMODULE_GNRC_NETTYPE_UDP -DMODULE_GNRC_PKT -DMODULE_GNRC_PKTBUF -DMODULE_GNRC_PKTBUF_STATIC -DMODULE_GNRC_SOCK -DMODULE_GNRC_SOCK_ASYNC -DMODULE_GNRC_SOCK_UDP -DMODULE_GNRC_UDP -DMODULE_ICMPV6 -DMODULE_INET_CSUM -DMODULE_IOLIST -DMODULE_IPV6 -DMODULE_IPV6_ADDR -DMODULE_IPV6_HDR -DMODULE_L2UTIL -DMODULE_LIBC -DMODULE_LUID -DMODULE_MALLOC_THREAD_SAFE -DMODULE_MPU_STACK_GUARD -DMODULE_NANOCOAP -DMODULE_NETDEV -DMODULE_NETDEV_DEFAULT -DMODULE_NETIF -DMODULE_NEWLIB -DMODULE_NEWLIB_NANO -DMODULE_NEWLIB_SYSCALLS_DEFAULT -DMODULE_PERIPH -DMODULE_PERIPH_COMMON -DMODULE_PERIPH_CPUID -DMODULE_PERIPH_GPIO -DMODULE_PERIPH_INIT -DMODULE_PERIPH_INIT_CPUID -DMODULE_PERIPH_INIT_GPIO -DMODULE_PERIPH_INIT_LED0 -DMODULE_PERIPH_INIT_LED1 -DMODULE_PERIPH_INIT_LED2 -DMODULE_PERIPH_INIT_LED3 -DMODULE_PERIPH_INIT_LED4 -DMODULE_PERIPH_INIT_LED5 -DMODULE_PERIPH_INIT_LED6 -DMODULE_PERIPH_INIT_LED7 -DMODULE_PERIPH_INIT_LEDS -DMODULE_PERIPH_INIT_PM -DMODULE_PERIPH_INIT_TIMER -DMODULE_PERIPH_INIT_UART -DMODULE_PERIPH_PM -DMODULE_PERIPH_TIMER -DMODULE_PERIPH_UART -DMODULE_POSIX_HEADERS -DMODULE_POSIX_INET -DMODULE_PREPROCESSOR -DMODULE_PREPROCESSOR_SUCCESSOR -DMODULE_PRNG -DMODULE_PRNG_MUSL_LCG -DMODULE_RANDOM -DMODULE_SOCK -DMODULE_SOCK_ASYNC -DMODULE_SOCK_ASYNC_EVENT -DMODULE_SOCK_AUX_LOCAL -DMODULE_SOCK_UDP -DMODULE_SOCK_UTIL -DMODULE_STDIO_UART -DMODULE_SYS -DMODULE_UDP -DMODULE_VFS -DMODULE_ZTIMER -DMODULE_ZTIMER_CONVERT -DMODULE_ZTIMER_CONVERT_FRAC -DMODULE_ZTIMER_CONVERT_SHIFT -DMODULE_ZTIMER_CORE -DMODULE_ZTIMER_EXTEND -DMODULE_ZTIMER_INIT -DMODULE_ZTIMER_MSEC -DMODULE_ZTIMER_PERIPH_TIMER -DMODULE_ZTIMER_SEC -DMODULE_ZTIMER_USEC
+  cargo:rerun-if-changed=riot-bindgen.h
+  cargo:rerun-if-changed=./riot-headers.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/irq.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26x0_cc13x0/include/cpu_conf.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include/cpu_conf_cc26xx_cc13xx.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/kernel_defines.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/modules.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/riot_version.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/machine/_default_types.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/features.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/_newlib_version.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/_intsup.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/features.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/_stdint.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/machine/_default_types.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/compiler_hints.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/container.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cortexm_common/include/cpu_conf_common.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include/cc26xx_cc13xx.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cortexm_common/include/vendor/core_cm3.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cortexm_common/include/vendor/cmsis_version.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cortexm_common/include/vendor/cmsis_compiler.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cortexm_common/include/vendor/cmsis_gcc.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cortexm_common/include/vendor/mpu_armv7.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include/cc26xx_cc13xx_adi.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include/cc26xx_cc13xx.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include/cc26xx_cc13xx_ccfg.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include/cc26xx_cc13xx.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include/cc26xx_cc13xx_gpio.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include/cc26xx_cc13xx.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include/cc26xx_cc13xx_gpt.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include/cc26xx_cc13xx.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include/cc26xx_cc13xx_hard_api.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include/cc26xx_cc13xx.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include/cc26xx_cc13xx_i2c.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include/cc26xx_cc13xx.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include/cc26xx_cc13xx_ioc.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include/cc26xx_cc13xx.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include/cc26xx_cc13xx_rfc.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include/cc26xx_cc13xx.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include/cc26xx_cc13xx_uart.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include/cc26xx_cc13xx.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include/cc26xx_cc13xx_vims.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include/cc26xx_cc13xx_wdt.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include/cc26xx_cc13xx.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26x0_cc13x0/include/cc26x0_cc13x0_aux.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include/cc26xx_cc13xx.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26x0_cc13x0/include/cc26x0_cc13x0_fcfg.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include/cc26xx_cc13xx.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26x0_cc13x0/include/cc26x0_cc13x0_prcm.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include/cc26xx_cc13xx.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cortexm_common/include/irq_arch.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26x0_cc13x0/include/cpu_conf.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/kernel_defines.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/debug_irq_disable.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/msg.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/sched.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/inttypes.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/newlib-nano/newlib.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/_newlib_version.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/config.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/machine/ieeefp.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/features.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/_intsup.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/_ansi.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/newlib-nano/newlib.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/config.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/kernel_defines.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/native_sched.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/clist.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/list.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/mutex.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/kernel_defines.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/list.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/thread.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/clist.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/cib.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/assert.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/msg.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26x0_cc13x0/include/cpu_conf.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/sched.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/thread_config.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26x0_cc13x0/include/cpu_conf.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/sched.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/thread_flags.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/sched.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cortexm_common/include/thread_arch.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/panic.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/kernel_defines.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/thread_flags.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/thread.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/boards/cc2650-launchpad/include/board.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/drivers/include/periph/gpio.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/limits.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/newlib-nano/newlib.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/cdefs.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/machine/_default_types.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/features.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/syslimits.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include-fixed/limits.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26x0_cc13x0/include/periph_cpu.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26xx_cc13xx/include/periph_cpu_common.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cortexm_common/include/cpu.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdio.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/_ansi.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/cdefs.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stdarg.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/reent.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/_ansi.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/_types.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/newlib-nano/newlib.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/config.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/machine/_types.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/machine/_default_types.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/lock.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/newlib-nano/newlib.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/_ansi.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/assert.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/_types.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/stdio.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/lock.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/reent.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/irq.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/sched.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/thread.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26x0_cc13x0/include/cpu_conf.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/boards/cc2650-launchpad/include/periph_conf.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26x0_cc13x0/include/periph_cpu.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/drivers/include/periph/cpuid.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26x0_cc13x0/include/periph_cpu.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/drivers/include/periph/gpio.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/drivers/include/periph/gpio_util.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/drivers/include/periph/gpio.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/drivers/include/periph/init.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/drivers/include/periph/pm.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26x0_cc13x0/include/periph_cpu.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/drivers/include/periph/timer.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/limits.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include-fixed/limits.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26x0_cc13x0/include/periph_cpu.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/boards/cc2650-launchpad/include/periph_conf.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/drivers/include/periph/uart.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/errno.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/errno.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/reent.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/limits.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include-fixed/limits.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26x0_cc13x0/include/periph_cpu.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/boards/cc2650-launchpad/include/periph_conf.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gcoap.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/event/callback.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/event.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/string.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/_ansi.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/reent.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/cdefs.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/features.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/string.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/assert.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/clist.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/irq.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/thread.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/thread_flags.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/ptrtag.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/assert.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/inttypes.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/ztimer.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/sched.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/msg.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/mutex.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/rmutex.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/mutex.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/sched.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/event/timeout.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/event.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/ztimer.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ipv6/addr.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/string.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/byteorder.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/string.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/unaligned.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ipv4/addr.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/byteorder.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/sock/udp.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/assert.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/errno.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdlib.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/machine/ieeefp.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/_ansi.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/reent.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/cdefs.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/machine/stdlib.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/types.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/_ansi.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/cdefs.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/machine/_types.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/_types.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/_stdint.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/features.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/_pthreadtypes.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/machine/types.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/af.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/sock.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/iolist.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/unistd.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/unistd.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/_ansi.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/cdefs.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/types.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/_types.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/features.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ipv4/addr.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ipv6/addr.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/net/gnrc/sock/include/sock_types.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/mbox.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/list.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/cib.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/msg.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/af.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/netopt.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/netapi.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/thread.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/netopt.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/nettype.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/inttypes.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/modules.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ethertype.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/protnum.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/pkt.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/inttypes.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdlib.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/sched.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/nettype.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/list.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/netreg.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/inttypes.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/sched.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/nettype.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/pkt.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/mbox.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/nettype.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/netif.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/sched.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/msg.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/event.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ipv6/addr.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/netapi.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/pkt.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/netif/conf.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/modules.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/dhcpv6/client.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/byteorder.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/event.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ipv6/addr.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/thread.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ieee802154.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdlib.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/byteorder.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/eui64.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/byteorder.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/modules.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ethernet/hdr.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/inttypes.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/byteorder.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/ipv6/nib/conf.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/modules.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/thread.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/netif/flags.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/netif/ipv6.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/modules.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/evtimer_msg.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/msg.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/evtimer.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/modules.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/ztimer.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/timex.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/inttypes.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/time_units.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ipv6/addr.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/ipv6/nib/conf.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/netapi.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/netif/conf.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/l2util.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/eui64.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ndp.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/byteorder.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ipv6/addr.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ndp.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/drivers/include/net/netdev.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/errno.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/iolist.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/netopt.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/kernel_defines.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/netopt.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/rmutex.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/netif.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/string.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/unistd.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/list.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/netopt.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ipv6.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ipv6/addr.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ipv6/ext.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ipv6/ext/frag.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/byteorder.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ipv6/ext/rh.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ipv6/hdr.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/byteorder.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/inet_csum.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/inttypes.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ipv6/addr.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/netif/hdr.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/errno.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/string.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/netif/internal.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/modules.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/netif.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/l2util.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/netopt.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/ipv6/nib/conf.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/pkt.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/pktbuf.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdlib.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/string.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26x0_cc13x0/include/cpu_conf.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/mutex.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/pkt.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/neterr.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/errno.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/msg.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/pkt.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/thread.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/nettype.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/utlist.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/assert.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/netif.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/pktbuf.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/pkt.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/netreg.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/sock/async/types.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/net/sock/async/event/sock_async_ctx.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/event.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/net/gnrc/sock/include/sock_types.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/sock/ip.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/errno.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdlib.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/types.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/sock.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/net/gnrc/sock/include/sock_types.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/sock/udp.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/sock/tcp.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/errno.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdlib.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/types.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/sock.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/net/gnrc/sock/include/sock_types.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/nanocoap.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/assert.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/errno.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/string.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/unistd.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/bitarithm.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/cpu/cc26x0_cc13x0/include/cpu_conf.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/bitfield.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/string.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/irq.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/byteorder.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/iolist.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/coap.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/sock/udp.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/nanocoap/cache.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/assert.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/clist.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/nanocoap.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/hashes/sha256.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/inttypes.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/hashes/sha2xx_common.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/string.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/ztimer.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/timex.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/udp.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/byteorder.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/udp.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/byteorder.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/pktbuf.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/ipv6.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/sched.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/thread.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ipv6.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/ipv6/ext.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdlib.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/pkt.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ipv6/ext.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/timex.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/ipv6/hdr.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ipv6/hdr.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/pkt.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/ipv6/nib.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/ipv6/nib/abr.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/modules.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/evtimer.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ipv6/addr.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/ipv6/nib/conf.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/ipv6/nib/ft.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/pkt.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ipv6/addr.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/ipv6/nib/nc.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/eui64.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/netif/hdr.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/ipv6/nib/conf.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ipv6/addr.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/ipv6/nib/pl.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/modules.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/evtimer.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ipv6/addr.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/icmpv6.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/byteorder.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ipv6/addr.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ipv6/hdr.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/ipv6/nib/nc.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/netif.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/pkt.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/nettype.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/netapi.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/icmpv6.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/icmpv6.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/netif.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/pkt.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/icmpv6/echo.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/inttypes.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/byteorder.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/netif.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/netif/hdr.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ipv6/hdr.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/icmpv6.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/icmpv6/error.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/errno.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/icmpv6.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/ipv6/hdr.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/ipv6.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/netapi.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/gnrc/pkt.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/nanocoap.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/sock.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/sock/udp.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/sock/async.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/sock/async/types.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/net/sock/async/event/sock_async_ctx.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/drivers/include/saul.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/errno.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/types.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/phydat.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/types.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/modules.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/saul_reg.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/drivers/include/saul.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/phydat.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/stdio_base.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/unistd.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/modules.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/sock/util.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stdbool.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/sock/udp.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/net/sock/tcp.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/ztimer.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/posix/include/fcntl.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/fcntl.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/fcntl.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/_default_fcntl.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/_ansi.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/cdefs.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/types.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/stat.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/_ansi.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/time.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/_ansi.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/cdefs.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/reent.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/machine/time.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/types.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/timespec.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/cdefs.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/_timespec.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/_types.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/features.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/cdefs.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/types.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/_timespec.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/vfs.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdatomic.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/cdefs.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/_types.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/stat.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/types.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/posix/include/sys/statvfs.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/sys/types.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/include/sched.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/clist.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/iolist.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/drivers/include/mtd.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/xfa.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/inttypes.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/compiler_hints.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/sys/include/auto_init_utils.h
+  cargo:rerun-if-changed=/usr/arm-none-eabi/include/stdint.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/xfa.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/macros/xtstr.h
+  cargo:rerun-if-changed=/usr/lib/gcc/arm-none-eabi/12.2.0/include/stddef.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/core/lib/include/modules.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/examples/rust-gcoap/bin/cc2650-launchpad/preprocessor/preprocessor_successor.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/drivers/include/led.h
+  cargo:rerun-if-changed=/home/maribu/Repos/software/RIOT/boards/cc2650-launchpad/include/board.h
+
+  --- stderr
+  thread 'main' panicked at '"APSR_Type_struct_(unnamed_at_/home/maribu/Repos/software/RIOT/cpu/cortexm_common/include/vendor/core_cm3_h_208_3)" is not a valid Ident', /home/maribu/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.50/src/fallback.rs:752:9
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+make: *** [/home/maribu/Repos/software/RIOT/makefiles/cargo-targets.inc.mk:53: /home/maribu/Repos/software/RIOT/examples/rust-gcoap/bin/cc2650-launchpad/target/thumbv7m-none-eabi/release/librust_gcoap.a] Error 101
+
+Return value: 2

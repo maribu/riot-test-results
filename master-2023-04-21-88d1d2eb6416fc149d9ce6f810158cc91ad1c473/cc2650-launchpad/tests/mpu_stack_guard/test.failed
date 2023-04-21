@@ -1,0 +1,182 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/mpu_stack_guard test
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+
+MPU Stack Guard Test
+
+If the test fails, the canary value will change unexpectedly
+after ~150 iterations. If the test succeeds, the MEM MANAGE HANDLER
+will trigger a RIOT kernel panic before the canary value changes.
+
+The mpu_stack_guard module is present. Expect the test to succeed.
+
+counter =   0, SP = 0x20000838, canary = 0xdeadbeef
+counter =   1, SP = 0x20000830, canary = 0xdeadbeef
+counter =   2, SP = 0x20000828, canary = 0xdeadbeef
+counter =   3, SP = 0x20000820, canary = 0xdeadbeef
+counter =   4, SP = 0x20000818, canary = 0xdeadbeef
+counter =   5, SP = 0x20000810, canary = 0xdeadbeef
+counter =   6, SP = 0x20000808, canary = 0xdeadbeef
+counter =   7, SP = 0x20000800, canary = 0xdeadbeef
+counter =   8, SP = 0x200007f8, canary = 0xdeadbeef
+counter =   9, SP = 0x200007f0, canary = 0xdeadbeef
+counter =  10, SP = 0x200007e8, canary = 0xdeadbeef
+counter =  11, SP = 0x200007e0, canary = 0xdeadbeef
+counter =  12, SP = 0x200007d8, canary = 0xdeadbeef
+counter =  13, SP = 0x200007d0, canary = 0xdeadbeef
+counter =  14, SP = 0x200007c8, canary = 0xdeadbeef
+counter =  15, SP = 0x200007c0, canary = 0xdeadbeef
+counter =  16, SP = 0x200007b8, canary = 0xdeadbeef
+counter =  17, SP = 0x200007b0, canary = 0xdeadbeef
+counter =  18, SP = 0x200007a8, canary = 0xdeadbeef
+counter =  19, SP = 0x200007a0, canary = 0xdeadbeef
+counter =  20, SP = 0x20000798, canary = 0xdeadbeef
+counter =  21, SP = 0x20000790, canary = 0xdeadbeef
+counter =  22, SP = 0x20000788, canary = 0xdeadbeef
+counter =  23, SP = 0x20000780, canary = 0xdeadbeef
+counter =  24, SP = 0x20000778, canary = 0xdeadbeef
+counter =  25, SP = 0x20000770, canary = 0xdeadbeef
+counter =  26, SP = 0x20000768, canary = 0xdeadbeef
+counter =  27, SP = 0x20000760, canary = 0xdeadbeef
+counter =  28, SP = 0x20000758, canary = 0xdeadbeef
+counter =  29, SP = 0x20000750, canary = 0xdeadbeef
+counter =  30, SP = 0x20000748, canary = 0xdeadbeef
+counter =  31, SP = 0x20000740, canary = 0xdeadbeef
+counter =  32, SP = 0x20000738, canary = 0xdeadbeef
+counter =  33, SP = 0x20000730, canary = 0xdeadbeef
+counter =  34, SP = 0x20000728, canary = 0xdeadbeef
+counter =  35, SP = 0x20000720, canary = 0xdeadbeef
+counter =  36, SP = 0x20000718, canary = 0xdeadbeef
+counter =  37, SP = 0x20000710, canary = 0xdeadbeef
+counter =  38, SP = 0x20000708, canary = 0xdeadbeef
+counter =  39, SP = 0x20000700, canary = 0xdeadbeef
+counter =  40, SP = 0x200006f8, canary = 0xdeadbeef
+counter =  41, SP = 0x200006f0, canary = 0xdeadbeef
+counter =  42, SP = 0x200006e8, canary = 0xdeadbeef
+counter =  43, SP = 0x200006e0, canary = 0xdeadbeef
+counter =  44, SP = 0x200006d8, canary = 0xdeadbeef
+counter =  45, SP = 0x200006d0, canary = 0xdeadbeef
+counter =  46, SP = 0x200006c8, canary = 0xdeadbeef
+counter =  47, SP = 0x200006c0, canary = 0xdeadbeef
+counter =  48, SP = 0x200006b8, canary = 0xdeadbeef
+counter =  49, SP = 0x200006b0, canary = 0xdeadbeef
+counter =  50, SP = 0x200006a8, canary = 0xdeadbeef
+counter =  51, SP = 0x200006a0, canary = 0xdeadbeef
+counter =  52, SP = 0x20000698, canary = 0xdeadbeef
+counter =  53, SP = 0x20000690, canary = 0xdeadbeef
+counter =  54, SP = 0x20000688, canary = 0xdeadbeef
+counter =  55, SP = 0x20000680, canary = 0xdeadbeef
+counter =  56, SP = 0x20000678, canary = 0xdeadbeef
+counter =  57, SP = 0x20000670, canary = 0xdeadbeef
+counter =  58, SP = 0x20000668, canary = 0xdeadbeef
+counter =  59, SP = 0x20000660, canary = 0xdeadbeef
+counter =  60, SP = 0x20000658, canary = 0xdeadbeef
+counter =  61, SP = 0x20000650, canary = 0xdeadbeef
+counter =  62, SP = 0x20000648, canary = 0xdeadbeef
+counter =  63, SP = 0x20000640, canary = 0xdeadbeef
+counter =  64, SP = 0x20000638, canary = 0xdeadbeef
+counter =  65, SP = 0x20000630, canary = 0xdeadbeef
+counter =  66, SP = 0x20000628, canary = 0xdeadbeef
+counter =  67, SP = 0x20000620, canary = 0xdeadbeef
+counter =  68, SP = 0x20000618, canary = 0xdeadbeef
+counter =  69, SP = 0x20000610, canary = 0xdeadbeef
+counter =  70, SP = 0x20000608, canary = 0xdeadbeef
+counter =  71, SP = 0x20000600, canary = 0xdeadbeef
+counter =  72, SP = 0x200005f8, canary = 0xdeadbeef
+counter =  73, SP = 0x200005f0, canary = 0xdeadbeef
+counter =  74, SP = 0x200005e8, canary = 0xdeadbeef
+counter =  75, SP = 0x200005e0, canary = 0xdeadbeef
+counter =  76, SP = 0x200005d8, canary = 0xdeadbeef
+counter =  77, SP = 0x200005d0, canary = 0xdeadbeef
+counter =  78, SP = 0x200005c8, canary = 0xdeadbeef
+counter =  79, SP = 0x200005c0, canary = 0xdeadbeef
+counter =  80, SP = 0x200005b8, canary = 0xdeadbeef
+counter =  81, SP = 0x200005b0, canary = 0xdeadbeef
+counter =  82, SP = 0x200005a8, canary = 0xdeadbeef
+counter =  83, SP = 0x200005a0, canary = 0xdeadbeef
+counter =  84, SP = 0x20000598, canary = 0xdeadbeef
+counter =  85, SP = 0x20000590, canary = 0xdeadbeef
+counter =  86, SP = 0x20000588, canary = 0xdeadbeef
+counter =  87, SP = 0x20000580, canary = 0xdeadbeef
+counter =  88, SP = 0x20000578, canary = 0xdeadbeef
+counter =  89, SP = 0x20000570, canary = 0xdeadbeef
+counter =  90, SP = 0x20000568, canary = 0xdeadbeef
+counter =  91, SP = 0x20000560, canary = 0xdeadbeef
+counter =  92, SP = 0x20000558, canary = 0xdeadbeef
+counter =  93, SP = 0x20000550, canary = 0xdeadbeef
+counter =  94, SP = 0x20000548, canary = 0xdeadbeef
+counter =  95, SP = 0x20000540, canary = 0xdeadbeef
+counter =  96, SP = 0x20000538, canary = 0xdeadbeef
+counter =  97, SP = 0x20000530, canary = 0xdeadbeef
+counter =  98, SP = 0x20000528, canary = 0xdeadbeef
+counter =  99, SP = 0x20000520, canary = 0xdeadbeef
+counter = 100, SP = 0x20000518, canary = 0xdeadbeef
+counter = 101, SP = 0x20000510, canary = 0xdeadbeef
+counter = 102, SP = 0x20000508, canary = 0xdeadbeef
+counter = 103, SP = 0x20000500, canary = 0xdeadbeef
+counter = 104, SP = 0x200004f8, canary = 0xdeadbeef
+counter = 105, SP = 0x200004f0, canary = 0xdeadbeef
+counter = 106, SP = 0x200004e8, canary = 0xdeadbeef
+counter = 107, SP = 0x200004e0, canary = 0xdeadbeef
+counter = 108, SP = 0x200004d8, canary = 0xdeadbeef
+counter = 109, SP = 0x200004d0, canary = 0xdeadbeef
+counter = 110, SP = 0x200004c8, canary = 0xdeadbeef
+counter = 111, SP = 0x200004c0, canary = 0xdeadbeef
+counter = 112, SP = 0x200004b8, canary = 0xdeadbeef
+counter = 113, SP = 0x200004b0, canary = 0xdeadbeef
+counter = 114, SP = 0x200004a8, canary = 0xdeadbeef
+counter = 115, SP = 0x200004a0, canary = 0xdeadbeef
+counter = 116, SP = 0x20000498, canary = 0xdeadbeef
+counter = 117, SP = 0x20000490, canary = 0xdeadbeef
+counter = 118, SP = 0x20000488, canary = 0xdeadbeef
+counter = 119, SP = 0x20000480, canary = 0xdeadbeef
+counter = 120, SP = 0x20000478, canary = 0xdeadbeef
+counter = 121, SP = 0x20000470, canary = 0xdeadbeef
+counter = 122, SP = 0x20000468, canary = 0xdeadbeef
+counter = 123, SP = 0x20000460, canary = 0xdeadbeef
+counter = 124, SP = 0x20000458, canary = 0xdeadbeef
+counter = 125, SP = 0x20000450, canary = 0xdeadbeef
+counter = 126, SP = 0x20000448, canary = 0xdeadbeef
+counter = 127, SP = 0x20000440, canary = 0xdeadbeef
+counter = 128, SP = 0x20000438, canary = 0xdeadbeef
+counter = 129, SP = 0x20000430, canary = 0xdeadbeef
+counter = 130, SP = 0x20000428, canary = 0xdeadbeef
+counter = 131, SP = 0x20000420, canary = 0xdeadbeef
+counter = 132, SP = 0x20000418, canary = 0xdeadbeef
+counter = 133, SP = 0x20000410, canary = 0xdeadbeef
+counter = 134, SP = 0x20000408, canary = 0xdeadbeef
+counter = 135, SP = 0x20000400, canary = 0xdeadbeef
+counter = 136, SP = 0x200003f8, canary = 0xdeadbeef
+counter = 137, SP = 0x200003f0, canary = 0xdeadbeef
+counter = 138, SP = 0x200003e8, canary = 0xdeadbeef
+counter = 139, SP = 0x200003e0, canary = 0xdeadbeef
+counter = 140, SP = 0x200003d8, canary = 0xdeadbeef
+counter = 141, SP = 0x200003d0, canary = 0xdeadbeef
+counter = 142, SP = 0x200003c8, canary = 0xdeadbeef
+counter = 143, SP = 0x200003c0, canary = 0xdeadbeef
+counter = 144, SP = 0x200003b8, canary = 0xdeadbeef
+counter = 145, SP = 0x200003b0, canary = 0xdeadbeef
+counter = 146, SP = 0x200003a8, canary = 0xdeadbeef
+counter = 147, SP = 0x200003a0, canary = 0xdeadbeef
+canary = 0x2000022c
+Test failed.
+scheduler(): stack overflow detected, pid=2
+*** RIOT kernel panic:
+STACK OVERFLOW
+
+*** halted.
+
+Inside isr -2
+
+Timeout in expect script at "child.expect_exact("MEM MANAGE HANDLER\r\n")" (tests/mpu_stack_guard/tests/01-run.py:18)
+
+make: *** [/home/maribu/Repos/software/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2
