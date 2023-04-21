@@ -1,0 +1,74 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+This is thread 2
+sending 1st msg
+now=3:138954 -> every 2.0s: Hello World
+sending 2nd msg
+now=3:144036 -> every 5.0s: This is a Test
+This is thread 3
+sec=4 min=0 hour=0
+now=5:142619 -> every 2.0s: Hello World
+sec=5 min=0 hour=0
+sec=6 min=0 hour=0
+now=7:146284 -> every 2.0s: Hello World
+sec=7 min=0 hour=0
+now=8:147967 -> every 5.0s: This is a Test
+sec=8 min=0 hour=0
+now=9:149950 -> every 2.0s: Hello World
+sec=9 min=0 hour=0
+sec=10 min=0 hour=0
+now=11:153615 -> every 2.0s: Hello World
+sec=11 min=0 hour=0
+sec=12 min=0 hour=0
+now=13:151898 -> every 5.0s: This is a Test
+now=13:157367 -> every 2.0s: Hello World
+sec=13 min=0 hour=0
+sec=14 min=0 hour=0
+now=15:161121 -> every 2.0s: Hello World
+sec=15 min=0 hour=0
+sec=16 min=0 hour=0
+now=17:164874 -> every 2.0s: Hello World
+sec=17 min=0 hour=0
+now=18:155918 -> every 5.0s: This is a Test
+sec=18 min=0 hour=0
+now=19:168629 -> every 2.0s: Hello World
+sec=19 min=0 hour=0
+sec=20 min=0 hour=0
+now=21:172383 -> every 2.0s: Hello World
+sec=21 min=0 hour=0
+sec=22 min=0 hour=0
+now=23:159937 -> every 5.0s: This is a Test
+now=23:176135 -> every 2.0s: Hello World
+sec=23 min=0 hour=0
+sec=24 min=0 hour=0
+now=25:179889 -> every 2.0s: Hello World
+sec=25 min=0 hour=0
+sec=26 min=0 hour=0
+now=27:183643 -> every 2.0s: Hello World
+sec=27 min=0 hour=0
+now=28:163957 -> every 5.0s: This is a Test
+sec=28 min=0 hour=0
+now=29:187398 -> every 2.0s: Hello World
+sec=29 min=0 hour=0
+sec=30 min=0 hour=0
+now=31:191152 -> every 2.0s: Hello World
+sec=31 min=0 hour=0
+sec=32 min=0 hour=0
+now=33:167976 -> every 5.0s: This is a Test
+now=33:194904 -> every 2.0s: Hello World
+sec=33 min=0 hour=0
+sec=34 min=0 hour=0
+now=35:198658 -> every 2.0s: Hello World
+sec=35 min=0 hour=0
+sec=36 min=0 hour=0
+now=37:202412 -> every 2.0s: Hello World
+sec=37 min=0 hour=0
+now=38:171996 -> every 5.0s: This is a Test
+

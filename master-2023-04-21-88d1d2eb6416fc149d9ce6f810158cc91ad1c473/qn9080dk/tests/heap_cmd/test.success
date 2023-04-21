@@ -1,0 +1,24 @@
+
+
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> heap
+
+> heap
+heap: 128220 (used 2064, free 126156) [bytes]
+malloc 100
+> malloc 100
+allocated 0x20001338
+> heap
+heap
+heap: 128220 (used 2172, free 126048) [bytes]
+> free 0x20001338
+free 0x20001338
+freeing 0x20001338
+> heap
+heap
+heap: 128220 (used 2064, free 126156) [bytes]
+> 

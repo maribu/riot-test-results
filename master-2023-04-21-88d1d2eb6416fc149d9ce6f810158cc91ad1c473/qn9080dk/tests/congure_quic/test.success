@@ -1,0 +1,9 @@
+..../usr/lib/python3.11/unittest/case.py:678: DeprecationWarning: It is deprecated to return a value that is not None from a test case (<bound method TestCongUREQUICDefault.test_on_packet_ack_no_rtt_sample of <__main__.TestCongUREQUICDefault testMethod=test_on_packet_ack_no_rtt_sample>>)
+  return self.run(*args, **kwds)
+...................../usr/lib/python3.11/unittest/case.py:678: DeprecationWarning: It is deprecated to return a value that is not None from a test case (<bound method TestCongUREQUICDefault.test_on_packet_ack_no_rtt_sample of <__main__.TestCongUREQUICEventCb testMethod=test_on_packet_ack_no_rtt_sample>>)
+  return self.run(*args, **kwds)
+.................
+----------------------------------------------------------------------
+Ran 42 tests in 72.534s
+
+OK

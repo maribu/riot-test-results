@@ -1,0 +1,30 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+THREADS CREATED
+
+Context switch every 1562 µs
+{ "threads": [{ "name": "main", "stack_size": 1536, "stack_used": 396 }]}
+THREAD t1 start
+THREAD t2 start
+THREAD t3 start
+t1: 141.443787
+t3: 141.466812
+t1: 141.443787
+t3: 141.466812
+t1: 141.443787
+t3: 141.466812
+t1: 141.443787
+t3: 141.466812
+t1: 141.443787
+t3: 141.466812
+t1: 141.443787
+t3: 141.466812
+t1: 141.443787
+
