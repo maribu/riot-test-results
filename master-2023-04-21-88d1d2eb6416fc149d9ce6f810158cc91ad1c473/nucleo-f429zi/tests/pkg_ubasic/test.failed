@@ -1,0 +1,22 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/pkg_ubasic test
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+    |
+04|       READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Running test #1... done. Run time: 0.000 s
+Running test #2... done. Run time: 0.000 s
+Running test #3... Run time: 0.000 s
+Running test #4... done. Run time: 0.000 s
+Running test #5... done. Run time: 0.000 s
+{ "threads": [{ "name": "main", "stack_size": 1536, "stack_used": 596 }]}
+Timeout in expect script at "child.expect(r"Running test #%d... done. Run time: \d+.\d{3} s" % i," (tests/pkg_ubasic/tests/01-run.py:20)
+
+make: *** [/home/maribu/Repos/software/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

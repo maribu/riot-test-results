@@ -1,0 +1,26 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+ztimer benchmark application.
+
+                     set() one     4157 / 1000 = 4
+                  remove() one      293 / 1000 = 0
+          set() + remove() one     7690 / 1000 = 7
+  set() many increasing target    34726 / 1000 = 34
+               re-set()  first     4157 / 1000 = 4
+               re-set() middle     4181 / 1000 = 4
+               re-set()   last     4207 / 1000 = 4
+       remove() + set()  first     7735 / 1000 = 7
+       remove() + set() middle     7735 / 1000 = 7
+       remove() + set()   last     7735 / 1000 = 7
+      remove() many decreasing    28787 / 1000 = 28
+                  ztimer_now()      667 / 1000 = 0
+              sizeof(ztimer_t)    16000 / 1000 = 16
+done.
+

@@ -1,0 +1,47 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Running test 5 times with 7 distinct sleep times
+Slept for 10006 us (expected: 10000 us) Offset: 6 us
+Slept for 50006 us (expected: 50000 us) Offset: 6 us
+Slept for 10240 us (expected: 10234 us) Offset: 6 us
+Slept for 56786 us (expected: 56780 us) Offset: 6 us
+Slept for 12128 us (expected: 12122 us) Offset: 6 us
+Slept for 98771 us (expected: 98765 us) Offset: 6 us
+Slept for 75006 us (expected: 75000 us) Offset: 6 us
+Slept for 10006 us (expected: 10000 us) Offset: 6 us
+Slept for 50006 us (expected: 50000 us) Offset: 6 us
+Slept for 10239 us (expected: 10234 us) Offset: 5 us
+Slept for 56786 us (expected: 56780 us) Offset: 6 us
+Slept for 12128 us (expected: 12122 us) Offset: 6 us
+Slept for 98771 us (expected: 98765 us) Offset: 6 us
+Slept for 75006 us (expected: 75000 us) Offset: 6 us
+Slept for 10006 us (expected: 10000 us) Offset: 6 us
+Slept for 50006 us (expected: 50000 us) Offset: 6 us
+Slept for 10240 us (expected: 10234 us) Offset: 6 us
+Slept for 56786 us (expected: 56780 us) Offset: 6 us
+Slept for 12128 us (expected: 12122 us) Offset: 6 us
+Slept for 98771 us (expected: 98765 us) Offset: 6 us
+Slept for 75006 us (expected: 75000 us) Offset: 6 us
+Slept for 10006 us (expected: 10000 us) Offset: 6 us
+Slept for 50006 us (expected: 50000 us) Offset: 6 us
+Slept for 10239 us (expected: 10234 us) Offset: 5 us
+Slept for 56786 us (expected: 56780 us) Offset: 6 us
+Slept for 12128 us (expected: 12122 us) Offset: 6 us
+Slept for 98771 us (expected: 98765 us) Offset: 6 us
+Slept for 75006 us (expected: 75000 us) Offset: 6 us
+Slept for 10006 us (expected: 10000 us) Offset: 6 us
+Slept for 50006 us (expected: 50000 us) Offset: 6 us
+Slept for 10240 us (expected: 10234 us) Offset: 6 us
+Slept for 56786 us (expected: 56780 us) Offset: 6 us
+Slept for 12128 us (expected: 12122 us) Offset: 6 us
+Slept for 98771 us (expected: 98765 us) Offset: 6 us
+Slept for 75006 us (expected: 75000 us) Offset: 6 us
+Test ran for 1726591 us
+

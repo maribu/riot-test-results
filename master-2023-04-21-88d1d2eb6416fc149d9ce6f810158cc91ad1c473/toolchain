@@ -1,0 +1,52 @@
+
+Operating System Environment
+----------------------------
+         Operating System: "Alpine Linux" 
+                   Kernel: Linux 6.1.25-0-lts x86_64 unknown
+             System shell: /bin/busybox (probably dash)
+             make's shell: /bin/busybox (probably dash)
+
+Installed compiler toolchains
+-----------------------------
+               native gcc: gcc (Alpine 12.2.1_git20220924-r10) 12.2.1 20220924
+        arm-none-eabi-gcc: arm-none-eabi-gcc (Alpine Linux) 12.2.0
+                  avr-gcc: avr-gcc (Alpine Linux) 12.2.0
+           msp430-elf-gcc: msp430-elf-gcc (Alpine Linux) 12.2.0
+       riscv-none-elf-gcc: riscv-none-elf-gcc (Alpine Linux) 12.2.0
+  riscv64-unknown-elf-gcc: missing
+     riscv-none-embed-gcc: missing
+      riscv32-esp-elf-gcc: missing
+     xtensa-esp32-elf-gcc: xtensa-esp32-elf-gcc (Alpine Linux) 12.2.0
+   xtensa-esp32s2-elf-gcc: xtensa-esp32s2-elf-gcc (Alpine Linux) 12.2.0
+   xtensa-esp32s3-elf-gcc: xtensa-esp32s3-elf-gcc (Alpine Linux) 12.2.0
+   xtensa-esp8266-elf-gcc: xtensa-esp8266-elf-gcc (Alpine Linux) 12.2.0
+                    clang: Alpine clang version 16.0.2
+
+Installed compiler libs
+-----------------------
+     arm-none-eabi-newlib: "4.3.0"
+        msp430-elf-newlib: "4.3.0"
+    riscv-none-elf-newlib: "4.3.0"
+riscv64-unknown-elf-newlib: missing
+  riscv-none-embed-newlib: missing
+   riscv32-esp-elf-newlib: missing
+  xtensa-esp32-elf-newlib: "3.3.0"
+xtensa-esp32s2-elf-newlib: "3.3.0"
+xtensa-esp32s3-elf-newlib: "3.3.0"
+xtensa-esp8266-elf-newlib: "3.3.0"
+                 avr-libc: "2.1.0" ("20220128")
+
+Installed development tools
+---------------------------
+                   ccache: missing
+                    cmake: cmake version 3.26.3
+                 cppcheck: Cppcheck 2.10.3
+                  doxygen: 1.9.6
+                      git: git version 2.40.0
+                     make: GNU Make 4.4.1
+                  openocd: Open On-Chip Debugger 0.12.0+dev-snapshot (2023-03-13-08:56)
+                   python: Python 3.11.3
+                  python2: missing
+                  python3: Python 3.11.3
+                   flake8: 6.0.0 (mccabe: 0.7.0, pycodestyle: 2.10.0, pyflakes: 3.0.1) CPython 3.11.3 on
+               coccinelle: spatch version 1.1.1 compiled with OCaml version 4.14.1

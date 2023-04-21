@@ -1,0 +1,114 @@
+r
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+.Stored sequence number: 1
+
+--- testing manifest 0
+---- res=-6 (expected=-6)
+
+--- testing manifest 1
+suit: verifying manifest signature
+suit: validated manifest version
+Retrieved sequence number: 1
+Manifest seq_no: 1, highest available: 1
+seq_nr <= running image
+---- res=-5 (expected=-5)
+
+--- testing manifest 2
+suit: verifying manifest signature
+suit: validated manifest version
+Retrieved sequence number: 1
+Manifest seq_no: 2, highest available: 1
+suit: validated sequence number
+Formatted component name: .ram.0
+---- res=-4 (expected=-4)
+
+--- testing manifest 3
+suit: verifying manifest signature
+suit: validated manifest version
+Retrieved sequence number: 1
+Manifest seq_no: 2, highest available: 1
+suit: validated sequence number
+Formatted component name: .ram.0
+validating vendor ID
+Comparing 547d0d74-6d3a-5a92-9662-4881afd9407b to 547d0d74-6d3a-5a92-9662-4881afd9407b from manifest
+validating vendor ID: OK
+validating class id
+Comparing c6e72c15-5e72-5dfb-a21e-9ebec57a1086 to c6e72c15-5e72-5dfb-a21e-9ebec57a1086 from manifest
+validating class id: OK
+SUIT policy check OK.
+Formatted component name: .ram.0
+Mock writing payload 0
+Verifying image digest
+Starting digest verification against image
+Install correct payload
+Stored sequence number: 2
+Verified installed payload
+Verifying image digest
+Starting digest verification against image
+Verified installed payload
+---- res=0 (expected=0)
+
+--- testing manifest 4
+suit: verifying manifest signature
+suit: validated manifest version
+Retrieved sequence number: 2
+Manifest seq_no: 3, highest available: 2
+suit: validated sequence number
+Formatted component name: .ram.0
+Formatted component name: .ram.1
+Formatted component name: .ram.0
+Setting component index to 0
+validating vendor ID
+Comparing 547d0d74-6d3a-5a92-9662-4881afd9407b to 547d0d74-6d3a-5a92-9662-4881afd9407b from manifest
+validating vendor ID: OK
+validating class id
+Comparing c6e72c15-5e72-5dfb-a21e-9ebec57a1086 to c6e72c15-5e72-5dfb-a21e-9ebec57a1086 from manifest
+validating class id: OK
+Formatted component name: .ram.1
+Setting component index to 1
+validating vendor ID
+Comparing 547d0d74-6d3a-5a92-9662-4881afd9407b to 547d0d74-6d3a-5a92-9662-4881afd9407b from manifest
+validating vendor ID: OK
+validating class id
+Comparing c6e72c15-5e72-5dfb-a21e-9ebec57a1086 to c6e72c15-5e72-5dfb-a21e-9ebec57a1086 from manifest
+validating class id: OK
+Formatted component name: .ram.0
+Setting component index to 0
+SUIT policy check OK.
+Formatted component name: .ram.0
+Mock writing payload 0
+Verifying image digest
+Starting digest verification against image
+Install correct payload
+Stored sequence number: 3
+Verified installed payload
+Formatted component name: .ram.1
+Setting component index to 1
+SUIT policy check OK.
+Formatted component name: .ram.1
+Mock writing payload 1
+Verifying image digest
+Starting digest verification against image
+Install correct payload
+Verified installed payload
+Formatted component name: .ram.0
+Setting component index to 0
+Verifying image digest
+Starting digest verification against image
+Verified installed payload
+Formatted component name: .ram.1
+Setting component index to 1
+Verifying image digest
+Starting digest verification against image
+Verified installed payload
+---- res=0 (expected=0)
+
+OK (1 tests)
+
