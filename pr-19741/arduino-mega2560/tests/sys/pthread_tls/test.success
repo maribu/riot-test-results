@@ -1,0 +1,100 @@
+r
+/home/maribu/Repos/software/RIOT/avr-threadless-idle/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+START
+
+-= TEST 1 - create 20 tls with sequential values 0...19 =-
+now rise sequential by one values 1...20
+pick deliberate storage (key[3]:2673) and change the value
+show tls values:
+key[0]: 2637, val: 1
+key[1]: 2649, val: 2
+key[2]: 2661, val: 3
+key[3]: 2673, val: 42
+key[4]: 2685, val: 5
+key[5]: 2697, val: 6
+key[6]: 2709, val: 7
+key[7]: 2721, val: 8
+key[8]: 2733, val: 9
+key[9]: 2745, val: 10
+key[10]: 2757, val: 11
+key[11]: 2769, val: 12
+key[12]: 2781, val: 13
+key[13]: 2793, val: 14
+key[14]: 2805, val: 15
+key[15]: 2817, val: 16
+key[16]: 2829, val: 17
+key[17]: 2841, val: 18
+key[18]: 2853, val: 19
+key[19]: 2865, val: 20
+
+ -= TEST 2 - delete deliberate key (key[5]:2697) =-
+show tls values:
+key[0]: 2637, val: 1
+key[1]: 2649, val: 2
+key[2]: 2661, val: 3
+key[3]: 2673, val: 42
+key[4]: 2685, val: 5
+key[6]: 2709, val: 7
+key[7]: 2721, val: 8
+key[8]: 2733, val: 9
+key[9]: 2745, val: 10
+key[10]: 2757, val: 11
+key[11]: 2769, val: 12
+key[12]: 2781, val: 13
+key[13]: 2793, val: 14
+key[14]: 2805, val: 15
+key[15]: 2817, val: 16
+key[16]: 2829, val: 17
+key[17]: 2841, val: 18
+key[18]: 2853, val: 19
+key[19]: 2865, val: 20
+
+-= TEST 3 - create new tls =-
+added new tls, key: 2877, val: 99
+show tls values:
+key[0]: 2637, val: 1
+key[1]: 2649, val: 2
+key[2]: 2661, val: 3
+key[3]: 2673, val: 42
+key[4]: 2685, val: 5
+key[6]: 2709, val: 7
+key[7]: 2721, val: 8
+key[8]: 2733, val: 9
+key[9]: 2745, val: 10
+key[10]: 2757, val: 11
+key[11]: 2769, val: 12
+key[12]: 2781, val: 13
+key[13]: 2793, val: 14
+key[14]: 2805, val: 15
+key[15]: 2817, val: 16
+key[16]: 2829, val: 17
+key[17]: 2841, val: 18
+key[18]: 2853, val: 19
+key[19]: 2865, val: 20
+
+-= TEST 4 - delete all keys =-
+show tls values:
+
+-= TEST 5 - try delete non-existing key =-
+try to delete returns: 0
+
+-= TEST 6 - add key and delete without a tls =-
+created key: 2889
+try to delete returns: 0
+
+-= TEST 7 - add key without tls =-
+created key: 2893
+test_7_val: 0
+{ "threads": [{ "name": "pthread", "stack_size": 512, "stack_used": 264 }]}
+tls tests finished.
+SUCCESS
+

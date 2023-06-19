@@ -1,0 +1,30 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/sys/evtimer_msg test
+r
+/home/maribu/Repos/software/RIOT/avr-threadless-idle/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Testing generic evtimer
+This should list 2 items
+ev #1 offset=998
+ev #2 offset=500
+This should list 4 items
+ev #1 offset=659
+ev #2 offset=340
+ev #3 offset=500
+ev #4 offset=2455
+Are the reception times of all 4 msgs close to the supposed values?
+At   2813 ms received msg 0: "#2 supposed to be 2812"
+.
+Help: Press s to start test, r to print it is ready
+Timeout in expect script at "child.expect(r'At \s*(\d+) ms received msg %i: "#\d+ supposed to be (\d+)"' % i)" (tests/sys/evtimer_msg/tests/01-run.py:21)
+
+make: *** [/home/maribu/Repos/software/RIOT/avr-threadless-idle/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

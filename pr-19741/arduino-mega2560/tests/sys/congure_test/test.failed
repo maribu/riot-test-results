@@ -1,0 +1,41 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/sys/congure_test test
+F.F...........F.....F............................
+======================================================================
+FAIL: test_init_success (__main__.TestCongUREWithCongureTestSI.test_init_success)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/avr-threadless-idle/tests/sys/congure_test/tests/01-run.py", line 526, in test_init_success
+    self.assertEqual(int(res['init']['last_args']['ctx'], base=16),
+AssertionError: 9029 != 74565
+
+======================================================================
+FAIL: test_report_ecn_ce_success (__main__.TestCongUREWithCongureTestSI.test_report_ecn_ce_success)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/avr-threadless-idle/tests/sys/congure_test/tests/01-run.py", line 650, in test_report_ecn_ce_success
+    self.assertEqual(res['report_ecn_ce']['last_args']['time'],
+AssertionError: 18446744073709550432 != 64352
+
+======================================================================
+FAIL: test_init_success (__main__.TestCongUREWithSetup.test_init_success)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/avr-threadless-idle/tests/sys/congure_test/tests/01-run.py", line 186, in test_init_success
+    self.assertEqual(int(res['init']['last_args']['ctx'], base=16),
+AssertionError: 9029 != 74565
+
+======================================================================
+FAIL: test_report_ecn_ce_success (__main__.TestCongUREWithSetup.test_report_ecn_ce_success)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/avr-threadless-idle/tests/sys/congure_test/tests/01-run.py", line 490, in test_report_ecn_ce_success
+    self.assertEqual(res['report_ecn_ce']['last_args']['time'],
+AssertionError: 18446744073709550432 != 64352
+
+----------------------------------------------------------------------
+Ran 49 tests in 51.843s
+
+FAILED (failures=4)
+make: *** [/home/maribu/Repos/software/RIOT/avr-threadless-idle/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

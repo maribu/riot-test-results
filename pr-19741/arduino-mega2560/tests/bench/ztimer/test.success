@@ -1,0 +1,29 @@
+r
+/home/maribu/Repos/software/RIOT/avr-threadless-idle/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+p: Press s to start test, r to print it is ready
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+ztimer benchmark application.
+
+                     set() one   190836 / 1000 = 190
+                  remove() one     6020 / 1000 = 6
+          set() + remove() one   357616 / 1000 = 357
+  set() many increasing target    19660 / 100 = 196
+               re-set()  first   193348 / 1000 = 193
+               re-set() middle   193392 / 1000 = 193
+               re-set()   last   193432 / 1000 = 193
+       remove() + set()  first   364552 / 1000 = 364
+       remove() + set() middle   364568 / 1000 = 364
+       remove() + set()   last   364512 / 1000 = 364
+      remove() many decreasing    22120 / 100 = 221
+                  ztimer_now()    62972 / 1000 = 62
+              sizeof(ztimer_t)     1000 / 100 = 10
+done.
+

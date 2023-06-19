@@ -1,0 +1,38 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/sys/events test
+r
+/home/maribu/Repos/software/RIOT/avr-threadless-idle/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+[START] event test application.
+
+initializing detached event queues 0x888
+posting 0x21c to delayed queue at index 1
+posting 0x218 to delayed queue at index 1
+posting 0x214 to delayed queue at index 0
+running thread that will claim event queues 0x888
+claiming event queues 0x888
+launching event queue for queues 0x888
+triggered delayed event 0x214
+triggered delayed event 0x21c
+triggered delayed event 0x218
+posting 0x00000224
+posting 0x00000220
+canceling 0x00000220
+posting custom event
+posting timed callback with timeout 1sec
+posting timed callback with timeout 0.5sec and canceling it again
+launching event queue
+triggered 0x00000224
+triggered custom event with text: "CUSTOM CALLBACK"
+Timeout in expect script at "child.expect_exact(u"[SUCCESS]")" (tests/sys/events/tests/01-run.py:15)
+
+make: *** [/home/maribu/Repos/software/RIOT/avr-threadless-idle/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

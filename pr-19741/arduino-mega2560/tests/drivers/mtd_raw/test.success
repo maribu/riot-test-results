@@ -1,0 +1,16 @@
+
+
+/home/maribu/Repos/software/RIOT/avr-threadless-idle/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+
+Welcome to pyterm!
+Type '/exit' to exit.
+main(): This is RIOT! (Version: buildtest)
+Manual MTD test
+no MTD device present on the board.
+> info
+
+> 
+> info
+mtd devices: 0
+> 

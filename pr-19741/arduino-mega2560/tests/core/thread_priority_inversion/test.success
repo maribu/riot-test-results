@@ -1,0 +1,25 @@
+r
+/home/maribu/Repos/software/RIOT/avr-threadless-idle/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+low priority thread (pid = 2, prio = 6) has started
+low priority thread started to work on its task
+high priority thread (pid = 4, prio = 4) has started
+low priority thread is done
+high priority thread started to work on its task
+high priority thread is done
+{ "threads": [{ "name": "high", "stack_size": 256, "stack_used": 88}]}
+mid priority thread (pid = 3, prio = 5) has started
+mid priority thread started to work on its task
+mid priority thread is done
+{ "threads": [{ "name": "mid", "stack_size": 256, "stack_used": 88}]}
+{ "threads": [{ "name": "low", "stack_size": 256, "stack_used": 88}]}
+TEST PASSED
+

@@ -1,0 +1,22 @@
+r
+/home/maribu/Repos/software/RIOT/avr-threadless-idle/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Test Application for ztimer_mutex_lock_timeout_timeout()
+================================================
+
+Test on unlocked mutex with zero timeout: OK
+Test on unlocked mutex with small timeout: OK
+Test on unlocked mutex with large timeout: OK
+Test on locked mutex with zero timeout: OK
+Test on locked mutex with small timeout: OK
+Test on locked mutex with large timeout: OK
+TEST PASSED
+

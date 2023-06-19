@@ -1,0 +1,17 @@
+
+
+socat - open:/dev/ttyACM0,b9600,echo=0,raw,cs8,parenb=0,cstopb=0 
+
+main(): This is RIOT! (Version: buildtest)
+> 
+main(): This is RIOT! (Version: buildtest)
+> help
+
+> 
+> help
+Command              Description
+---------------------------------------
+coreclk              Print the CPU frequency
+>coreclk
+ coreclk
+core clock: 16000000 Hz

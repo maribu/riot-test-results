@@ -1,0 +1,38 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/sys/ztimer_overhead test
+r
+/home/maribu/Repos/software/RIOT/avr-threadless-idle/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+: Press s to start test, r to print it is ready
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+ZTIMER_USEC auto_adjust params:
+    ZTIMER_USEC->adjust_set = 132
+    ZTIMER_USEC->adjust_sleep = 120
+ZTIMER_USEC auto_adjust params cleared
+zitmer_overhead_set...
+min=160 max=164 avg_diff=160
+zitmer_overhead_sleep...
+min=136 max=136 avg_diff=136
+ZTIMER_USEC adjust params for arduino-mega2560:
+    CONFIG_ZTIMER_USEC_ADJUST_SET    160
+    CONFIG_ZTIMER_USEC_ADJUST_SLEEP  136
+
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/avr-threadless-idle/tests/sys/ztimer_overhead/tests/01-run.py", line 33, in <module>
+    sys.exit(run(testfunc))
+             ^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/avr-threadless-idle/dist/pythonlibs/testrunner/__init__.py", line 30, in run
+    testfunc(child)
+  File "/home/maribu/Repos/software/RIOT/avr-threadless-idle/tests/sys/ztimer_overhead/tests/01-run.py", line 28, in testfunc
+    assert auto_adjust_set >= adjust_set - ADJUST_SET_MARGIN
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+make: *** [/home/maribu/Repos/software/RIOT/avr-threadless-idle/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

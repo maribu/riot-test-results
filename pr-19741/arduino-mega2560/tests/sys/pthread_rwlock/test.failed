@@ -1,0 +1,57 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/sys/pthread_rwlock test
+r
+/home/maribu/Repos/software/RIOT/avr-threadless-idle/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+START
+start
+d2 (prio=8): sleep for    11381 µs.
+start
+d3 (prio=8): sleep for   -20544 µs.
+start
+r2 (prio=8): 0: read  <-  0 (correct = 1)
+d2 (prio=8): sleep for     1552 µs.
+r3 (prio=8): 0: read  <-  0 (correct = 1)
+d3 (prio=8): sleep for    26911 µs.
+d7 (prio=8): sleep for   -16145 µs.
+start
+start
+start
+start
+start
+w7 (prio=8): 0: write ->  1 (correct = 1)
+d7 (prio=8): sleep for     3490 µs.
+d2 (prio=8): sleep for    10082 µs.
+d3 (prio=8): sleep for    22990 µs.
+d4 (prio=9): sleep for   -26753 µs.
+r3 (prio=8): 1: read  <-  1 (correct = 1)
+r2 (prio=8): 1: read  <-  1 (correct = 1)
+d3 (prio=8): sleep for     7297 µs.
+d2 (prio=8): sleep for    -4713 µs.
+d5 (prio=9): sleep for    25119 µs.
+d6 (prio=9): sleep for   -21231 µs.
+r4 (prio=9): 0: read  <-  1 (correct = 1)
+d4 (prio=9): sleep for    18809 µs.
+r6 (prio=9): 0: read  <-  1 (correct = 1)
+d6 (prio=9): sleep for    14066 µs.
+r5 (prio=9): 0: read  <-  1 (correct = 1)
+d7 (prio=8): sleep for    28972 µs.
+d5 (prio=9): sleep for    32041 µs.
+w7 (prio=8): 1: write ->  2 (correct = 1)
+d7 (prio=8): sleep for   -29018 µs.
+d3 (prio=8): sleep for   -24232 µs.
+d2 (prio=8): sleep for    25634 µs.
+r3 (prio=8): 2: read  <-  2 (correct = 1)
+d3 (prio=8): sleep for    30225 µs.
+Timeout in expect script at "child.expect('done')" (tests/sys/pthread_rwlock/tests/01-run.py:13)
+
+make: *** [/home/maribu/Repos/software/RIOT/avr-threadless-idle/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

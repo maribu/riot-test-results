@@ -1,0 +1,36 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/core/thread_flags test
+r
+/home/maribu/Repos/software/RIOT/avr-threadless-idle/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+START
+thread(): waiting for 0x1...
+main(): setting flag 0x0001
+thread(): received flags: 0x0001
+thread(): waiting for 0x1 || 0x64...
+main(): setting flag 0x0064
+thread(): received flags: 0x0064
+thread(): waiting for 0x2 && 0x4...
+main(): setting flag 0x0001
+main(): setting flag 0x0008
+main(): setting flag 0x0002
+main(): setting flag 0x0004
+thread(): received flags: 0x0006
+thread(): waiting for any flag, one by one
+thread(): received flags: 0x0001
+thread(): waiting for any flag, one by one
+thread(): received flags: 0x0008
+{ "threads": [{ "name": "second_thread", "stack_size": 640, "stack_used": 130 }]}
+main: setting 100ms timeout...
+Timeout in expect script at "child.expect("main: timeout triggered. time passed: [0-9]{6}us")" (tests/core/thread_flags/tests/01-run.py:26)
+
+make: *** [/home/maribu/Repos/software/RIOT/avr-threadless-idle/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

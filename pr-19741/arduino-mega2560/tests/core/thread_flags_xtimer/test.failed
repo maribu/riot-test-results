@@ -1,0 +1,25 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/core/thread_flags_xtimer test
+r
+/home/maribu/Repos/software/RIOT/avr-threadless-idle/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+: Press s to start test, r to print it is ready
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+START
+Test setting thread flags from (x)timer callback
+You should see the message '+++ timeout XX +++' printed to the 
+screen 5 times, once every 100 milliseconds
+
+
+Help: Press s to start test, r to print it is ready
+Timeout in expect script at "child.expect_exact("+++ timeout  {} +++".format(i + 1))" (tests/core/thread_flags_xtimer/tests/01-run.py:10)
+
+make: *** [/home/maribu/Repos/software/RIOT/avr-threadless-idle/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

@@ -1,0 +1,41 @@
+
+
+/home/maribu/Repos/software/RIOT/avr-threadless-idle/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+96
+> This is RIOT! (Version: buildtest)
+EEPROM read write test
+
+Please refer to the README.md for more details
+
+EEPROM size:		4096
+> 
+main(): This is RIOT! (Version: buildtest)
+EEPROM read write test
+
+Please refer to the README.md for more details
+
+EEPROM size:		4096
+> test
+
+> 
+> test
+SUCCESS
+> reboot
+reboot
+
+main(): This is RIOT! (Version: buildtest)
+EEPROM read write test
+
+Please refer to the README.md for more details
+
+EEPROM size:		4096
+> read 0 4
+read 0 4
+Data read from EEPROM (4 bytes): AAAA
+> read 4092 4
+read 4092 4
+Data read from EEPROM (4 bytes): AAAA
+

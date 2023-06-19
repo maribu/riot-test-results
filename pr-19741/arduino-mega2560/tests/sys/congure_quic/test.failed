@@ -1,0 +1,39 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/sys/congure_quic test
+..../usr/lib/python3.11/unittest/case.py:678: DeprecationWarning: It is deprecated to return a value that is not None from a test case (<bound method TestCongUREQUICDefault.test_on_packet_ack_no_rtt_sample of <__main__.TestCongUREQUICDefault testMethod=test_on_packet_ack_no_rtt_sample>>)
+  return self.run(*args, **kwds)
+.............F......./usr/lib/python3.11/unittest/case.py:678: DeprecationWarning: It is deprecated to return a value that is not None from a test case (<bound method TestCongUREQUICDefault.test_on_packet_ack_no_rtt_sample of <__main__.TestCongUREQUICEventCb testMethod=test_on_packet_ack_no_rtt_sample>>)
+  return self.run(*args, **kwds)
+.............F.F.
+======================================================================
+FAIL: test_pacing (__main__.TestCongUREQUICDefault.test_pacing)
+See https://tools.ietf.org/html/rfc9002#section-7.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/avr-threadless-idle/tests/sys/congure_quic/tests/01-run.py", line 841, in test_pacing
+    self.assertAlmostEqual(
+AssertionError: 16872 != 488 within 7 places (16384 difference)
+
+======================================================================
+FAIL: test_pacing (__main__.TestCongUREQUICEventCb.test_pacing)
+See https://tools.ietf.org/html/rfc9002#section-7.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/avr-threadless-idle/tests/sys/congure_quic/tests/01-run.py", line 841, in test_pacing
+    self.assertAlmostEqual(
+AssertionError: 16872 != 488 within 7 places (16384 difference)
+
+======================================================================
+FAIL: test_setup_and_init (__main__.TestCongUREQUICEventCb.test_setup_and_init)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/avr-threadless-idle/tests/sys/congure_quic/tests/01-run.py", line 860, in test_setup_and_init
+    self.assertEqual(int(state['ctx'], base=16), 0xdead)
+AssertionError: 4294958765 != 57005
+
+----------------------------------------------------------------------
+Ran 42 tests in 162.373s
+
+FAILED (failures=3)
+make: *** [/home/maribu/Repos/software/RIOT/avr-threadless-idle/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2
