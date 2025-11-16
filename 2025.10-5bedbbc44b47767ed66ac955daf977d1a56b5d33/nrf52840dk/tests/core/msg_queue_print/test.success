@@ -1,0 +1,38 @@
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" -ln "/tmp/pyterm-maribu" -rn "2025-11-15_21.08.30-tests_msg_queue_print-nrf52840dk" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+No messages or no message queue
+No messages or no message queue
+Message queue of thread 1
+    size: 8 (avail: 8)
+    * 0: sender: 1, type: 0x0000, content: 0 ((nil))
+    * 1: sender: 1, type: 0x0001, content: 1 (0x00000001)
+    * 2: sender: 1, type: 0x0002, content: 2 (0x00000002)
+    * 3: sender: 1, type: 0x0003, content: 3 (0x00000003)
+    * 4: sender: 1, type: 0x0004, content: 4 (0x00000004)
+    * 5: sender: 1, type: 0x0005, content: 5 (0x00000005)
+    ... (print more by changing CONFIG_MSG_QUEUE_PRINT_MAX)
+Message queue of thread 1
+    size: 8 (avail: 4)
+    * 0: sender: 1, type: 0x0004, content: 4 (0x00000004)
+    * 1: sender: 1, type: 0x0005, content: 5 (0x00000005)
+    * 2: sender: 1, type: 0x0006, content: 6 (0x00000006)
+    * 3: sender: 1, type: 0x0007, content: 7 (0x00000007)
+Message queue of thread 1
+    size: 8 (avail: 8)
+    * 0: sender: 1, type: 0x0004, content: 4 (0x00000004)
+    * 1: sender: 1, type: 0x0005, content: 5 (0x00000005)
+    * 2: sender: 1, type: 0x0006, content: 6 (0x00000006)
+    * 3: sender: 1, type: 0x0007, content: 7 (0x00000007)
+    * 4: sender: 1, type: 0x0008, content: 8 (0x00000008)
+    * 5: sender: 1, type: 0x0009, content: 9 (0x00000009)
+    ... (print more by changing CONFIG_MSG_QUEUE_PRINT_MAX)
+DONE
+

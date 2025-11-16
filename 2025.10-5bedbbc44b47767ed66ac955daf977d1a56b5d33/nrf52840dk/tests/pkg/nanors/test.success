@@ -1,0 +1,26 @@
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" -ln "/tmp/pyterm-maribu" -rn "2025-11-15_22.18.49-tests_nanors-nrf52840dk" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+START
+total: 30 shards (1920 bytes)
+clear shard 5 (64 byte)
+clear shard 12 (64 byte)
+clear shard 28 (64 byte)
+clear shard 4 (64 byte)
+clear shard 0 (64 byte)
+clear shard 24 (64 byte)
+clear shard 22 (64 byte)
+clear shard 11 (64 byte)
+clear shard 11 (64 byte)
+clear shard 16 (64 byte)
+reconstruct…
+done.
+SUCCESS
+

@@ -1,0 +1,24 @@
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" -ln "/tmp/pyterm-maribu" -rn "2025-11-15_16.12.36-tests_thread_priority_inversion-same54-xpro" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+low priority thread (pid = 2, prio = 6) has started
+low priority thread started to work on its task
+high priority thread (pid = 4, prio = 4) has started
+low priority thread is done
+high priority thread started to work on its task
+high priority thread is done
+{ "threads": [{ "name": "high", "stack_size": 512, "stack_used": 148}]}
+mid priority thread (pid = 3, prio = 5) has started
+mid priority thread started to work on its task
+mid priority thread is done
+{ "threads": [{ "name": "mid", "stack_size": 512, "stack_used": 148}]}
+{ "threads": [{ "name": "low", "stack_size": 512, "stack_used": 148}]}
+TEST PASSED
+

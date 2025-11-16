@@ -1,0 +1,22 @@
+
+
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" -ln "/tmp/pyterm-maribu" -rn "2025-11-15_21.34.54-tests_netstats_l2-nrf52840dk" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+> ifconfig
+ifconfig
+Iface  2  HWaddr: 1C:72  Channel: 26  NID: 0x23  PHY: O-QPSK 
+          Long HWaddr: A6:A5:6F:38:4D:E5:1C:72 
+           TX-Power: 0dBm  State: IDLE 
+          ACK_REQ  L2-PDU:102  Source address length: 2
+          Link type: wireless
+          
+          Statistics for Layer 2
+            RX packets 0  bytes 0
+            TX packets 0 (Multicast: 0)  bytes 0
+            TX succeeded 0 errors 0
+

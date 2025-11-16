@@ -1,0 +1,23 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/sys/posix_sleep test
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" -ln "/tmp/pyterm-maribu" -rn "2025-11-15_17.11.32-tests_posix_sleep-same54-xpro" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+5 x usleep(i++ * 500000)
+wake up
+wake up
+wake up
+wake up
+wake up
+5 x sleep(i++)
+Timeout in expect script at "child.expect_exact("wake up")" (tests/sys/posix_sleep/tests/01-run.py:31)
+
+make: *** [/home/maribu/Repos/software/RIOT/2025.10-branch/makefiles/tests/tests.inc.mk:32: test] Error 1
+
+Return value: 2

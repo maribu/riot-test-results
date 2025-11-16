@@ -1,0 +1,13 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/pkg/arduino_sdi_12 clean all --jobs 16
+Building application "tests_arduino_sdi_12" for "arduino-mega2560" with CPU "atmega2560".
+
+rm -rf /home/maribu/Repos/software/RIOT/2025.10-branch/tests/pkg/arduino_sdi_12/bin/arduino-mega2560/pkg-build/arduino_api
+rm -rf /home/maribu/Repos/software/RIOT/2025.10-branch/tests/pkg/arduino_sdi_12/bin/arduino-mega2560/pkg-build/arduino_sdi_12
+fatal: previous rebase directory .git/rebase-apply still exists but mbox given.
+make[1]: *** [/home/maribu/Repos/software/RIOT/2025.10-branch/pkg/pkg.mk:125: /home/maribu/.cache/RIOT/pkg/arduino_api/.pkg-state.git-patched] Error 128
+make: [/home/maribu/Repos/software/RIOT/2025.10-branch/tests/pkg/arduino_sdi_12/../../../Makefile.include:802: pkg-prepare] Error 2 (ignored)
+fatal: previous rebase directory .git/rebase-apply still exists but mbox given.
+make[1]: *** [/home/maribu/Repos/software/RIOT/2025.10-branch/pkg/pkg.mk:125: /home/maribu/.cache/RIOT/pkg/arduino_api/.pkg-state.git-patched] Error 128
+make: *** [/home/maribu/Repos/software/RIOT/2025.10-branch/tests/pkg/arduino_sdi_12/../../../Makefile.include:807: pkg-build] Error 2
+
+Return value: 2

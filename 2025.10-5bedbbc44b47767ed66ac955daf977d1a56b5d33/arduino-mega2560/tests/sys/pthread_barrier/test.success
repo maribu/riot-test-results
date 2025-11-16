@@ -1,0 +1,63 @@
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" -ln "/tmp/pyterm-maribu" -rn "2025-11-16_01.56.49-tests_pthread_barrier-arduino-mega2560" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+NUM_CHILDREN: 4, NUM_ITERATIONS: 5
+Start 1
+Start 2
+Start 3
+Start 4
+
+======================================
+
+Child 4 sleeps for   355768 us.
+Child 3 sleeps for  2485849 us.
+Child 2 sleeps for   776159 us.
+Child 1 sleeps for  1930819 us.
+
+======================================
+
+Child 3 sleeps for   424018 us.
+Child 1 sleeps for   448046 us.
+Child 2 sleeps for  2286974 us.
+Child 4 sleeps for   837814 us.
+
+======================================
+
+Child 2 sleeps for  2256690 us.
+Child 4 sleeps for   899222 us.
+Child 1 sleeps for  2103198 us.
+Child 3 sleeps for   533803 us.
+
+======================================
+
+Child 2 sleeps for  1305950 us.
+Child 1 sleeps for  2491791 us.
+Child 4 sleeps for   306523 us.
+Child 3 sleeps for   189256 us.
+
+======================================
+
+Child 1 sleeps for  1970097 us.
+Child 2 sleeps for  1380081 us.
+Child 4 sleeps for   815769 us.
+Child 3 sleeps for    94400 us.
+Done 3
+{ "threads": [{ "name": "pthread", "stack_size": 512, "stack_used": 152 }]}
+Done 4
+{ "threads": [{ "name": "pthread", "stack_size": 512, "stack_used": 152 }]}
+Done 2
+{ "threads": [{ "name": "pthread", "stack_size": 512, "stack_used": 152 }]}
+Done 1
+{ "threads": [{ "name": "pthread", "stack_size": 512, "stack_used": 152 }]}
+
+SUCCESS
+

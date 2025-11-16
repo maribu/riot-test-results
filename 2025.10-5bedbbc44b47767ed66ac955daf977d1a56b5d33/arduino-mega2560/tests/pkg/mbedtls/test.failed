@@ -1,0 +1,23 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/pkg/mbedtls test
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" -ln "/tmp/pyterm-maribu" -rn "2025-11-16_01.34.16-tests_mbedtls-arduino-mega2560" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+: Press s to start test, r to print it is ready
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+mbedtls test
+
+  SHA-224 test #1: passed
+  SHA-224 test #2: passed
+Timeout in expect script at "child.expect_exact('SHA-224 test #3: passed')" (tests/pkg/mbedtls/tests/01-run.py:16)
+
+make: *** [/home/maribu/Repos/software/RIOT/2025.10-branch/makefiles/tests/tests.inc.mk:32: test] Error 1
+
+Return value: 2

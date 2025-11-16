@@ -1,0 +1,22 @@
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" -ln "/tmp/pyterm-maribu" -rn "2025-11-16_01.47.36-tests_eepreg-arduino-mega2560" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+EEPROM registry (eepreg) test routine
+Testing new registry creation: reset check [SUCCESS]
+Testing writing and reading entries: add write add read [SUCCESS]
+Testing detection of conflicting size: add [SUCCESS]
+Testing calculation of lengths: len len [SUCCESS]
+Testing of successful data move after rm: rm read data [SUCCESS]
+Testing of free space change after write: free add free [SUCCESS]
+Testing of iteration over registry: iter bar foo [SUCCESS]
+Tests complete!
+

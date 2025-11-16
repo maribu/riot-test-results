@@ -1,0 +1,194 @@
+/home/maribu/Repos/software/RIOT/2025.10-branch/tests/sys/shell/tests/01-run.py:88: SyntaxWarning: invalid escape sequence '\ '
+  ("""echo "t\\e st" "\\"" '\\'' a\ b""", '"echo""te st"""""\'""a b"'),  # noqa: W605
+
+
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" -ln "/tmp/pyterm-maribu" -rn "2025-11-15_17.15.43-tests_shell-same54-xpro" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> bufsize
+
+> bufsize
+60
+____________________________________________________verylong
+> ____________________________________________________verylong
+shell: maximum line length exceeded
+skipping check_line_canceling()
+
+> shell exited
+> 
+
+> periodic 5
+> 
+> periodic 5
+> test
+test
+test
+test
+test
+
+
+> start_test
+start_test
+[TEST_START]
+> 
+
+
+> 
+> echo a string
+echo a string
+"echo""a""string"
+> echo   multiple   spaces   between   argv
+echo   multiple   spaces   between   argv
+"echo""multiple""spaces""between""argv"
+> echo 	 tabs		 processed 		like	 		spaces
+echo  tabs processed like spaces
+"echo""tabs""processed""like""spaces"
+> unknown_command
+unknown_command
+shell: command not found: unknown_command
+>      echo leading spaces
+echo leading spaces
+"echo""leading""spaces"
+> 					echo leading tabs
+
+EOF                 PYTERM_reset        PYTERM_trigger
+PYTERM_alias        PYTERM_rmalias      PYTERM_unfilter
+PYTERM_exit         PYTERM_rmtrigger    PYTERM_unignore
+PYTERM_filter       PYTERM_save         PYTERM_unjson
+PYTERM_ignore       PYTERM_show_config  help
+PYTERM_init         PYTERM_sleep        
+PYTERM_json         PYTERM_timer        
+
+EOF                 PYTERM_reset        PYTERM_trigger
+PYTERM_alias        PYTERM_rmalias      PYTERM_unfilter
+PYTERM_exit         PYTERM_rmtrigger    PYTERM_unignore
+PYTERM_filter       PYTERM_save         PYTERM_unjson
+PYTERM_ignore       PYTERM_show_config  help
+PYTERM_init         PYTERM_sleep        
+PYTERM_json         PYTERM_timer        
+
+EOF                 PYTERM_reset        PYTERM_trigger
+PYTERM_alias        PYTERM_rmalias      PYTERM_unfilter
+PYTERM_exit         PYTERM_rmtrigger    PYTERM_unignore
+PYTERM_filter       PYTERM_save         PYTERM_unjson
+PYTERM_ignore       PYTERM_show_config  help
+PYTERM_init         PYTERM_sleep        
+PYTERM_json         PYTERM_timer        
+
+EOF                 PYTERM_reset        PYTERM_trigger
+PYTERM_alias        PYTERM_rmalias      PYTERM_unfilter
+PYTERM_exit         PYTERM_rmtrigger    PYTERM_unignore
+PYTERM_filter       PYTERM_save         PYTERM_unjson
+PYTERM_ignore       PYTERM_show_config  help
+PYTERM_init         PYTERM_sleep        
+PYTERM_json         PYTERM_timer        
+echo leading tabs
+"echo""leading""tabs"
+> echo trailing spaces     
+echo trailing spaces
+"echo""trailing""spaces"
+> echo trailing tabs					
+echo trailing tabs
+"echo""trailing""tabs"
+> hello-willyorld
+hello-world
+shell: command not found: hello-world
+> echo
+echo
+"echo"
+> echo \'
+echo \'
+"echo""'"
+> echo \"
+echo \"
+"echo""""
+> echo escaped\ space
+echo escaped\ space
+"echo""escaped space"
+> echo escape within '\s\i\n\g\l\e\q\u\o\t\e'
+echo escape within '\s\i\n\g\l\e\q\u\o\t\e'
+"echo""escape""within""singlequote"
+> echo escape within "\d\o\u\b\l\e\q\u\o\t\e"
+echo escape within "\d\o\u\b\l\e\q\u\o\t\e"
+"echo""escape""within""doublequote"
+> echo "t\e st" "\"" '\'' a\ b
+echo "t\e st" "\"" '\'' a\ b
+"echo""te st"""""'""a b"
+> echo "hello"world
+echo "hello"world
+"echo""helloworld"
+> echo hel"lowo"rld
+echo hel"lowo"rld
+"echo""helloworld"
+> echo hello"world"
+echo hello"world"
+"echo""helloworld"
+> echo quoted space " "
+echo quoted space " "
+"echo""quoted""space"" "
+> echo abc"def'ghijk"lmn
+echo abc"def'ghijk"lmn
+"echo""abcdef'ghijklmn"
+> echo abc'def"ghijk'lmn
+echo abc'def"ghijk'lmn
+"echo""abcdef"ghijklmn"
+> echo "'" '"'
+echo "'" '"'
+"echo""'""""
+> echo a\
+echo a\
+shell: incorrect quoting
+> echo "
+echo "
+shell: incorrect quoting
+> echo '
+echo '
+shell: incorrect quoting
+> echo abcdef"ghijklmn
+echo abcdef"ghijklmn
+shell: incorrect quoting
+> echo abcdef'ghijklmn
+echo abcdef'ghijklmn
+shell: incorrect quoting
+> ps
+ps
+	pid | state    Q | pri 
+	  1 | running  Q |   7
+> xfa_test1
+xfa_test1
+[XFA TEST 1 OK]
+> xfa_test2
+xfa_test2
+[XFA TEST 2 OK]
+> reboot
+reboot
+main(): This is RIOT! (Version: buildtest)
+test_shell.
+> end_test
+end_test
+[TEST_END]
+> help_json
+help_json
+{"cmds": [{"cmd": "bufsize", "desc": "Get the shell's buffer size"}, {"cmd": "start_test", "desc": "starts a test"}, {"cmd": "end_test", "desc": "ends a test"}, {"cmd": "echo", "desc": "prints the input command"}, {"cmd": "empty", "desc": "print nothing on command"}, {"cmd": "periodic", "desc": "periodically print command"}, {"cmd": "xfa_test1", "desc": "xfa test command 1"}, {"cmd": "xfa_test2", "desc": "xfa test command 2"}, {"cmd": "app_metadata", "desc": "Returns application metadata"}, {"cmd": "pm", "desc": "interact with layered PM subsystem"}, {"cmd": "ps", "desc": "Prints information about running threads."}, {"cmd": "version", "desc": "Prints current RIOT_VERSION"}, {"cmd": "reboot", "desc": "Reboot the node"}]}
+> help
+help
+Command              Description
+---------------------------------------
+bufsize              Get the shell's buffer size
+start_test           starts a test
+end_test             ends a test
+echo                 prints the input command
+empty                print nothing on command
+periodic             periodically print command
+xfa_test1            xfa test command 1
+xfa_test2            xfa test command 2
+app_metadata         Returns application metadata
+pm                   interact with layered PM subsystem
+ps                   Prints information about running threads.
+version              Prints current RIOT_VERSION
+reboot               Reboot the node
+> skipping cleanterm tests
+

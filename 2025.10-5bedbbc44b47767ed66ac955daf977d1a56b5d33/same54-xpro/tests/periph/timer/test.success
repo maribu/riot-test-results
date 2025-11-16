@@ -1,0 +1,123 @@
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" -ln "/tmp/pyterm-maribu" -rn "2025-11-15_16.38.27-tests_timer-same54-xpro" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+
+Test for peripheral TIMERs
+
+Available timers: 2
+
+TIMER 0
+=======
+
+  - supported frequencies:
+    0: 8000000
+    1: 4000000
+    2: 2000000
+    ....
+    7: 7812
+Testing timer_get_closest_freq()...
+[OK]
+Testing timer_query_freqs() for out of bound index...
+[OK]
+  - Calling timer_init(0, 8000000)
+    initialization successful
+  - timer_stop(0): stopped
+  - timer_set(0, 0, 40000)
+    Successfully set timeout 40000 for channel 0
+  - timer_set(0, 1, 80000)
+    Successfully set timeout 80000 for channel 1
+  - timer_start(0)
+  - Results:
+    - channel 0 fired at SW count    30003      - init:    30003
+    - channel 1 fired at SW count    59995      - diff:    29992
+  - Validating no spurious IRQs are triggered:
+    [OK] (no spurious IRQs)
+  - Calling timer_init(0, 4000000)
+    initialization successful
+  - timer_stop(0): stopped
+  - timer_set(0, 0, 20000)
+    Successfully set timeout 20000 for channel 0
+  - timer_set(0, 1, 40000)
+    Successfully set timeout 40000 for channel 1
+  - timer_start(0)
+  - Results:
+    - channel 0 fired at SW count    30003      - init:    30003
+    - channel 1 fired at SW count    59996      - diff:    29993
+  - Validating no spurious IRQs are triggered:
+    [OK] (no spurious IRQs)
+  - Calling timer_init(0, 2000000)
+    initialization successful
+  - timer_stop(0): stopped
+  - timer_set(0, 0, 10000)
+    Successfully set timeout 10000 for channel 0
+  - timer_set(0, 1, 20000)
+    Successfully set timeout 20000 for channel 1
+  - timer_start(0)
+  - Results:
+    - channel 0 fired at SW count    30003      - init:    30003
+    - channel 1 fired at SW count    59996      - diff:    29993
+  - Validating no spurious IRQs are triggered:
+    [OK] (no spurious IRQs)
+
+TIMER 1
+=======
+
+  - supported frequencies:
+    0: 8000000
+    1: 4000000
+    2: 2000000
+    ....
+    7: 7812
+Testing timer_get_closest_freq()...
+[OK]
+Testing timer_query_freqs() for out of bound index...
+[OK]
+  - Calling timer_init(1, 8000000)
+    initialization successful
+  - timer_stop(1): stopped
+  - timer_set(1, 0, 40000)
+    Successfully set timeout 40000 for channel 0
+  - timer_set(1, 1, 80000)
+    Successfully set timeout 80000 for channel 1
+  - timer_start(1)
+  - Results:
+    - channel 0 fired at SW count    30004      - init:    30004
+    - channel 1 fired at SW count    59996      - diff:    29992
+  - Validating no spurious IRQs are triggered:
+    [OK] (no spurious IRQs)
+  - Calling timer_init(1, 4000000)
+    initialization successful
+  - timer_stop(1): stopped
+  - timer_set(1, 0, 20000)
+    Successfully set timeout 20000 for channel 0
+  - timer_set(1, 1, 40000)
+    Successfully set timeout 40000 for channel 1
+  - timer_start(1)
+  - Results:
+    - channel 0 fired at SW count    30004      - init:    30004
+    - channel 1 fired at SW count    59997      - diff:    29993
+  - Validating no spurious IRQs are triggered:
+    [OK] (no spurious IRQs)
+  - Calling timer_init(1, 2000000)
+    initialization successful
+  - timer_stop(1): stopped
+  - timer_set(1, 0, 10000)
+    Successfully set timeout 10000 for channel 0
+  - timer_set(1, 1, 20000)
+    Successfully set timeout 20000 for channel 1
+  - timer_start(1)
+  - Results:
+    - channel 0 fired at SW count    30003      - init:    30003
+    - channel 1 fired at SW count    59997      - diff:    29994
+  - Validating no spurious IRQs are triggered:
+    [OK] (no spurious IRQs)
+
+TEST SUCCEEDED
+

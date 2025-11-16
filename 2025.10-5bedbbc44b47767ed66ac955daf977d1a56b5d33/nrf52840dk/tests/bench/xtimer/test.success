@@ -1,0 +1,27 @@
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" -ln "/tmp/pyterm-maribu" -rn "2025-11-15_21.03.15-tests_xtimer-nrf52840dk" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+xtimer benchmark application.
+
+                     set() one     8376 / 1000 = 8
+                  remove() one      975 / 1000 = 0
+          set() + remove() one    12189 / 1000 = 12
+  set() many increasing target   140174 / 1000 = 140
+               re-set()  first     8251 / 1000 = 8
+               re-set() middle   197965 / 1000 = 197
+               re-set()   last   382000 / 1000 = 382
+       remove() + set()  first    15127 / 1000 = 15
+       remove() + set() middle   204940 / 1000 = 204
+       remove() + set()   last   388841 / 1000 = 388
+      remove() many decreasing    62246 / 1000 = 62
+                  xtimer_now()     1189 / 1000 = 1
+              sizeof(xtimer_t)    16000 / 1000 = 16
+done.
+

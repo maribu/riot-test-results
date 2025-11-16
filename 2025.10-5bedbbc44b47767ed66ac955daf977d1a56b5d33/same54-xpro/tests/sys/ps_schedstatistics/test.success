@@ -1,0 +1,37 @@
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" -ln "/tmp/pyterm-maribu" -rn "2025-11-15_17.12.47-tests_ps_schedstatistics-same54-xpro" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+Creating thread #0, next=1
+Creating thread #1, next=2
+Creating thread #2, next=3
+Creating thread #3, next=4
+Creating thread #4, next=0
+
+> help
+
+> 
+> help
+Command              Description
+---------------------------------------
+pm                   interact with layered PM subsystem
+ps                   Prints information about running threads.
+version              Prints current RIOT_VERSION
+reboot               Reboot the node
+ps
+> ps
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     | runtime  | switches  | runtime_usec 
+	  - | isr_stack            | -        - |   - |    512 (  208) (  304) | 0x20000000 | 0x200001c8
+	  1 | main                 | running  Q |   7 |   1536 (  792) (  744) | 0x20001798 | 0x20001b14  |  1.188% |        54  |      50869 
+	  2 | thread               | bl rx    _ |   6 |   1024 (  468) (  556) | 0x200002bc | 0x200005ec  |  0.261% |        49  |      11178 
+	  3 | thread               | bl rx    _ |   6 |   1024 (  468) (  556) | 0x200006bc | 0x200009ec  |  0.384% |        53  |      16454 
+	  4 | thread               | bl rx    _ |   6 |   1024 (  468) (  556) | 0x20000abc | 0x20000dec  |  0.524% |        57  |      22436 
+	  5 | thread               | bl rx    _ |   6 |   1024 (  468) (  556) | 0x20000ebc | 0x200011ec  |  0.680% |        61  |      29124 
+	  6 | thread               | bl rx    _ |   6 |   1024 (  468) (  556) | 0x200012bc | 0x200015ec  |  0.198% |        65  |       8514 
+	    | SUM                  |            |     |   7168 ( 3340) ( 3828)
+> 

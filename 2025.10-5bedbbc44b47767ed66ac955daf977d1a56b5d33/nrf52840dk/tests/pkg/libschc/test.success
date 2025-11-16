@@ -1,0 +1,48 @@
+test_compiled_unittests (__main__.TestCompiledUnittests.test_compiled_unittests) ... ok
+test_compress_rule_2_down (__main__.TestFragmentation.test_compress_rule_2_down) ... ok
+test_compress_rule_2_up (__main__.TestFragmentation.test_compress_rule_2_up) ... ok
+test_decompress_rule_2_down (__main__.TestFragmentation.test_decompress_rule_2_down) ... ok
+test_decompress_rule_2_up (__main__.TestFragmentation.test_decompress_rule_2_up) ... ok
+test_compress_init_parse_error (__main__.TestSelfTest.test_compress_init_parse_error) ... ok
+test_compress_init_success (__main__.TestSelfTest.test_compress_init_success) ... ok
+test_compress_no_input (__main__.TestSelfTest.test_compress_no_input) ... ok
+test_compress_success (__main__.TestSelfTest.test_compress_success) ... /usr/lib/python3.12/unittest/case.py:690: DeprecationWarning: It is deprecated to return a value that is not None from a test case (<bound method TestSelfTest.test_compress_success of <__main__.TestSelfTest testMethod=test_compress_success>>)
+  return self.run(*args, **kwds)
+ok
+test_compress_usage (__main__.TestSelfTest.test_compress_usage) ... ok
+test_compress_wrong_device_id (__main__.TestSelfTest.test_compress_wrong_device_id) ... ok
+test_decompress_no_input (__main__.TestSelfTest.test_decompress_no_input) ... ok
+test_decompress_success (__main__.TestSelfTest.test_decompress_success) ... ok
+test_decompress_usage (__main__.TestSelfTest.test_decompress_usage) ... ok
+test_fragment_init (__main__.TestSelfTest.test_fragment_init) ... ok
+test_fragment_no_input (__main__.TestSelfTest.test_fragment_no_input) ... ok
+test_fragment_no_rule (__main__.TestSelfTest.test_fragment_no_rule) ... ok
+test_fragment_success_ack_always_001 (__main__.TestSelfTest.test_fragment_success_ack_always_001) ... ok
+test_fragment_success_ack_always_all1 (__main__.TestSelfTest.test_fragment_success_ack_always_all1) ... ok
+test_fragment_success_ack_on_error_10 (__main__.TestSelfTest.test_fragment_success_ack_on_error_10) ... ok
+test_fragment_success_ack_on_error_all1 (__main__.TestSelfTest.test_fragment_success_ack_on_error_all1) ... ok
+test_fragment_success_no_ack (__main__.TestSelfTest.test_fragment_success_no_ack) ... ok
+test_fragment_success_no_frag (__main__.TestSelfTest.test_fragment_success_no_frag) ... ok
+test_fragment_usage (__main__.TestSelfTest.test_fragment_usage) ... ok
+test_input_add (__main__.TestSelfTest.test_input_add) ... ok
+test_input_add_full_buf_mod_128 (__main__.TestSelfTest.test_input_add_full_buf_mod_128) ... ok
+test_input_add_full_buf_not_mod_128 (__main__.TestSelfTest.test_input_add_full_buf_not_mod_128) ... ok
+test_input_reset (__main__.TestSelfTest.test_input_reset) ... ok
+test_input_usage (__main__.TestSelfTest.test_input_usage) ... ok
+test_output_copy (__main__.TestSelfTest.test_output_copy) ... ok
+test_output_show (__main__.TestSelfTest.test_output_show) ... ok
+test_output_usage (__main__.TestSelfTest.test_output_usage) ... ok
+test_reassemble_no_frag (__main__.TestSelfTest.test_reassemble_no_frag) ... ok
+test_reassemble_no_input (__main__.TestSelfTest.test_reassemble_no_input) ... ok
+test_reassemble_success_ack_always (__main__.TestSelfTest.test_reassemble_success_ack_always) ... ok
+test_reassemble_success_no_ack (__main__.TestSelfTest.test_reassemble_success_no_ack) ... ok
+test_reassemble_usage (__main__.TestSelfTest.test_reassemble_usage) ... ok
+test_set_ack_success (__main__.TestSelfTest.test_set_ack_success) ... ok
+test_set_ack_too_large (__main__.TestSelfTest.test_set_ack_too_large) ... ok
+test_set_ack_usage (__main__.TestSelfTest.test_set_ack_usage) ... ok
+test_timer_success (__main__.TestSelfTest.test_timer_success) ... ok
+
+----------------------------------------------------------------------
+Ran 41 tests in 53.907s
+
+OK

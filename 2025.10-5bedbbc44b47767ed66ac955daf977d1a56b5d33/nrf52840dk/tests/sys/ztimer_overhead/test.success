@@ -1,0 +1,22 @@
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" -ln "/tmp/pyterm-maribu" -rn "2025-11-15_23.06.42-tests_ztimer_overhead-nrf52840dk" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+ZTIMER_USEC auto_adjust params:
+    ZTIMER_USEC->adjust_set = 7
+    ZTIMER_USEC->adjust_sleep = 22
+ZTIMER_USEC auto_adjust params cleared
+ztimer_overhead_set...
+min=7 max=7 avg_diff=7
+ztimer_overhead_sleep...
+min=22 max=22 avg_diff=22
+ZTIMER_USEC adjust params for nrf52840dk:
+    CONFIG_ZTIMER_USEC_ADJUST_SET    7
+    CONFIG_ZTIMER_USEC_ADJUST_SLEEP  22
+

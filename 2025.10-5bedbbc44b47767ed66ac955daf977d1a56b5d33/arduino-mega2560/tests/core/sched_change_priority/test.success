@@ -1,0 +1,26 @@
+
+
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" -ln "/tmp/pyterm-maribu" -rn "2025-11-16_01.10.56-tests_sched_change_priority-arduino-mega2560" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+to increase prio of t3.
+[main] If it works, it will run again. The "hint" cmd can be useful.
+> 
+[main] Use shell command "nice" to increase prio of t3.
+[main] If it works, it will run again. The "hint" cmd can be useful.
+> 
+main(): This is RIOT! (Version: buildtest)
+[t3] Setting my priority to THREAD_PRIORITY_MAIN + 2 = 9
+[main] Use shell command "nice" to increase prio of t3.
+[main] If it works, it will run again. The "hint" cmd can be useful.
+> hint
+
+> 
+> hint
+Run "nice 4 6"
+nice 4 6
+> nice 4 6
+[t3] Running again.
+

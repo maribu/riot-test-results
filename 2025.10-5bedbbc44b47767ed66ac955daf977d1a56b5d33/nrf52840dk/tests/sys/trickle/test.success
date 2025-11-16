@@ -1,0 +1,26 @@
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" -ln "/tmp/pyterm-maribu" -rn "2025-11-15_22.58.54-tests_trickle-nrf52840dk" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+[START]
+now = 2912, t = 32
+now = 2966, t = 43
+now = 3151, t = 142
+now = 3387, t = 208
+now = 3953, t = 436
+[TRICKLE_RESET]
+now = 3970, t = 14
+now = 3994, t = 21
+now = 4051, t = 44
+now = 4146, t = 73
+now = 4455, t = 253
+now = 4755, t = 295
+now = 5572, t = 598
+[SUCCESS]
+

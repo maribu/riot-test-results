@@ -1,0 +1,106 @@
+
+
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" -ln "/tmp/pyterm-maribu" -rn "2025-11-15_16.57.05-tests_riotboot-same54-xpro" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+> curslotnr
+curslotnr
+Current slot=0
+> curslothdr
+curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x6918a2b9
+compiling /home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /home/maribu/Repos/software/RIOT/2025.10-branch/tests/riotboot/bin/same54-xpro/riotboot_files/slot1.1763222202.bin...
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/edbg/edbg.sh flash /home/maribu/Repos/software/RIOT/2025.10-branch/tests/riotboot/bin/same54-xpro/riotboot_files/slot1.1763222202.bin
+### Flashing Target ###
+Debugger: ATMEL EDBG CMSIS-DAP ATML2748051800006032 03.25.01B6 (S)
+Clock frequency: 16.0 MHz
+Target: SAM E54P20A (Rev A)
+Verification...
+at address 0x82000 expected 0x52, read 0x00
+Error: verification failed
+Debugger: ATMEL EDBG CMSIS-DAP ATML2748051800006032 03.25.01B6 (S)
+Clock frequency: 16.0 MHz
+Target: SAM E54P20A (Rev A)
+Programming..... done.
+Verification.................................. done.
+Done flashing
+
+
+
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" -ln "/tmp/pyterm-maribu" -rn "2025-11-15_16.57.10-tests_riotboot-same54-xpro" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+> curslotnr
+curslotnr
+Current slot=1
+> curslothdr
+curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x6918a2ba
+Image start address: 0x00082400
+Header chksum: 0x6bb6cd7c
+
+> getslotaddr 0
+getslotaddr 0
+Slot 0 address=0x00004400
+> dumpaddrs
+dumpaddrs
+slot 0: metadata: 0x00004000 image: 0x00004400
+slot 1: metadata: 0x00082000 image: 0x00082400
+> compiling /home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /home/maribu/Repos/software/RIOT/2025.10-branch/tests/riotboot/bin/same54-xpro/riotboot_files/slot0.1763222203.bin...
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/edbg/edbg.sh flash /home/maribu/Repos/software/RIOT/2025.10-branch/tests/riotboot/bin/same54-xpro/riotboot_files/slot0.1763222203.bin
+### Flashing Target ###
+Debugger: ATMEL EDBG CMSIS-DAP ATML2748051800006032 03.25.01B6 (S)
+Clock frequency: 16.0 MHz
+Target: SAM E54P20A (Rev A)
+Verification...
+at address 0x4004 expected 0xbb, read 0xb9
+Error: verification failed
+Debugger: ATMEL EDBG CMSIS-DAP ATML2748051800006032 03.25.01B6 (S)
+Clock frequency: 16.0 MHz
+Target: SAM E54P20A (Rev A)
+Programming..... done.
+Verification.................................. done.
+Done flashing
+
+
+
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" -ln "/tmp/pyterm-maribu" -rn "2025-11-15_16.57.16-tests_riotboot-same54-xpro" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+> curslotnr
+curslotnr
+Current slot=0
+> curslothdr
+curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x6918a2bb
+Image start address: 0x00004400
+Header chksum: 0xabb2ed75
+
+> getslotaddr 0
+getslotaddr 0
+Slot 0 address=0x00004400
+> dumpaddrs
+dumpaddrs
+slot 0: metadata: 0x00004000 image: 0x00004400
+slot 1: metadata: 0x00082000 image: 0x00082400
+> 
+TEST PASSED

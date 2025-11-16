@@ -1,0 +1,15 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/pkg/micro-ecc clean all --jobs 16
+Building application "tests_micro-ecc" for "arduino-mega2560" with CPU "atmega2560".
+
+rm -rf /home/maribu/Repos/software/RIOT/2025.10-branch/tests/pkg/micro-ecc/bin/arduino-mega2560/pkg-build/micro-ecc
+In file included from /home/maribu/.cache/RIOT/pkg/micro-ecc/uECC.c:186:
+/home/maribu/.cache/RIOT/pkg/micro-ecc/asm_avr.inc: In function 'uECC_vli_mult':
+/home/maribu/.cache/RIOT/pkg/micro-ecc/asm_avr.inc:915:5: error: cannot find a register in class 'POINTER_Y_REGS' while reloading 'asm'
+  915 |     __asm__ volatile (
+      |     ^~~~~~~
+/home/maribu/.cache/RIOT/pkg/micro-ecc/asm_avr.inc:915:5: error: 'asm' operand has impossible constraints
+make[2]: *** [/home/maribu/Repos/software/RIOT/2025.10-branch/Makefile.base:157: /home/maribu/Repos/software/RIOT/2025.10-branch/tests/pkg/micro-ecc/bin/arduino-mega2560/micro-ecc/uECC.o] Error 1
+make[1]: *** [Makefile:15: all] Error 2
+make: *** [/home/maribu/Repos/software/RIOT/2025.10-branch/tests/pkg/micro-ecc/../../../Makefile.include:807: pkg-build] Error 2
+
+Return value: 2

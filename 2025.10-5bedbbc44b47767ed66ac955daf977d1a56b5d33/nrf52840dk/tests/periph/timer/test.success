@@ -1,0 +1,301 @@
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" -ln "/tmp/pyterm-maribu" -rn "2025-11-15_21.38.23-tests_timer-nrf52840dk" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+
+Test for peripheral TIMERs
+
+Available timers: 4
+
+TIMER 0
+=======
+
+  - supported frequencies:
+    0: 16000000
+    1: 8000000
+    2: 4000000
+    ....
+    9: 31250
+Testing timer_get_closest_freq()...
+[OK]
+Testing timer_query_freqs() for out of bound index...
+[OK]
+  - Calling timer_init(0, 16000000)
+    initialization successful
+  - timer_stop(0): stopped
+  - timer_set(0, 0, 80000)
+    Successfully set timeout 80000 for channel 0
+  - timer_set(0, 1, 160000)
+    Successfully set timeout 160000 for channel 1
+  - timer_set(0, 2, 240000)
+    Successfully set timeout 240000 for channel 2
+  - timer_start(0)
+  - Results:
+    - channel 0 fired at SW count    16000      - init:    16000
+    - channel 1 fired at SW count    31988      - diff:    15988
+    - channel 2 fired at SW count    47976      - diff:    15988
+  - Validating no spurious IRQs are triggered:
+    [OK] (no spurious IRQs)
+  - Calling timer_init(0, 8000000)
+    initialization successful
+  - timer_stop(0): stopped
+  - timer_set(0, 0, 40000)
+    Successfully set timeout 40000 for channel 0
+  - timer_set(0, 1, 80000)
+    Successfully set timeout 80000 for channel 1
+  - timer_set(0, 2, 120000)
+    Successfully set timeout 120000 for channel 2
+  - timer_start(0)
+  - Results:
+    - channel 0 fired at SW count    16000      - init:    16000
+    - channel 1 fired at SW count    31988      - diff:    15988
+    - channel 2 fired at SW count    47976      - diff:    15988
+  - Validating no spurious IRQs are triggered:
+    [OK] (no spurious IRQs)
+  - Calling timer_init(0, 4000000)
+    initialization successful
+  - timer_stop(0): stopped
+  - timer_set(0, 0, 20000)
+    Successfully set timeout 20000 for channel 0
+  - timer_set(0, 1, 40000)
+    Successfully set timeout 40000 for channel 1
+  - timer_set(0, 2, 60000)
+    Successfully set timeout 60000 for channel 2
+  - timer_start(0)
+  - Results:
+    - channel 0 fired at SW count    16000      - init:    16000
+    - channel 1 fired at SW count    31988      - diff:    15988
+    - channel 2 fired at SW count    47976      - diff:    15988
+  - Validating no spurious IRQs are triggered:
+    [OK] (no spurious IRQs)
+
+TIMER 1
+=======
+
+  - supported frequencies:
+    0: 16000000
+    1: 8000000
+    2: 4000000
+    ....
+    9: 31250
+Testing timer_get_closest_freq()...
+[OK]
+Testing timer_query_freqs() for out of bound index...
+[OK]
+  - Calling timer_init(1, 16000000)
+    initialization successful
+  - timer_stop(1): stopped
+  - timer_set(1, 0, 80000)
+    Successfully set timeout 80000 for channel 0
+  - timer_set(1, 1, 160000)
+    Successfully set timeout 160000 for channel 1
+  - timer_set(1, 2, 240000)
+    Successfully set timeout 240000 for channel 2
+  - timer_start(1)
+  - Results:
+    - channel 0 fired at SW count    16000      - init:    16000
+    - channel 1 fired at SW count    31987      - diff:    15987
+    - channel 2 fired at SW count    47976      - diff:    15989
+  - Validating no spurious IRQs are triggered:
+    [OK] (no spurious IRQs)
+  - Calling timer_init(1, 8000000)
+    initialization successful
+  - timer_stop(1): stopped
+  - timer_set(1, 0, 40000)
+    Successfully set timeout 40000 for channel 0
+  - timer_set(1, 1, 80000)
+    Successfully set timeout 80000 for channel 1
+  - timer_set(1, 2, 120000)
+    Successfully set timeout 120000 for channel 2
+  - timer_start(1)
+  - Results:
+    - channel 0 fired at SW count    16000      - init:    16000
+    - channel 1 fired at SW count    31987      - diff:    15987
+    - channel 2 fired at SW count    47976      - diff:    15989
+  - Validating no spurious IRQs are triggered:
+    [OK] (no spurious IRQs)
+  - Calling timer_init(1, 4000000)
+    initialization successful
+  - timer_stop(1): stopped
+  - timer_set(1, 0, 20000)
+    Successfully set timeout 20000 for channel 0
+  - timer_set(1, 1, 40000)
+    Successfully set timeout 40000 for channel 1
+  - timer_set(1, 2, 60000)
+    Successfully set timeout 60000 for channel 2
+  - timer_start(1)
+  - Results:
+    - channel 0 fired at SW count    16000      - init:    16000
+    - channel 1 fired at SW count    31987      - diff:    15987
+    - channel 2 fired at SW count    47976      - diff:    15989
+  - Validating no spurious IRQs are triggered:
+    [OK] (no spurious IRQs)
+
+TIMER 2
+=======
+
+  - supported frequencies:
+    0: 16000000
+    1: 8000000
+    2: 4000000
+    ....
+    9: 31250
+Testing timer_get_closest_freq()...
+[OK]
+Testing timer_query_freqs() for out of bound index...
+[OK]
+  - Calling timer_init(2, 16000000)
+    initialization successful
+  - timer_stop(2): stopped
+  - timer_set(2, 0, 80000)
+    Successfully set timeout 80000 for channel 0
+  - timer_set(2, 1, 160000)
+    Successfully set timeout 160000 for channel 1
+  - timer_set(2, 2, 240000)
+    Successfully set timeout 240000 for channel 2
+  - timer_set(2, 3, 320000)
+    Successfully set timeout 320000 for channel 3
+  - timer_set(2, 4, 400000)
+    Successfully set timeout 400000 for channel 4
+  - timer_start(2)
+  - Results:
+    - channel 0 fired at SW count    16000      - init:    16000
+    - channel 1 fired at SW count    31985      - diff:    15985
+    - channel 2 fired at SW count    47971      - diff:    15986
+    - channel 3 fired at SW count    63957      - diff:    15986
+    - channel 4 fired at SW count    79943      - diff:    15986
+  - Validating no spurious IRQs are triggered:
+    [OK] (no spurious IRQs)
+  - Calling timer_init(2, 8000000)
+    initialization successful
+  - timer_stop(2): stopped
+  - timer_set(2, 0, 40000)
+    Successfully set timeout 40000 for channel 0
+  - timer_set(2, 1, 80000)
+    Successfully set timeout 80000 for channel 1
+  - timer_set(2, 2, 120000)
+    Successfully set timeout 120000 for channel 2
+  - timer_set(2, 3, 160000)
+    Successfully set timeout 160000 for channel 3
+  - timer_set(2, 4, 200000)
+    Successfully set timeout 200000 for channel 4
+  - timer_start(2)
+  - Results:
+    - channel 0 fired at SW count    16000      - init:    16000
+    - channel 1 fired at SW count    31985      - diff:    15985
+    - channel 2 fired at SW count    47971      - diff:    15986
+    - channel 3 fired at SW count    63957      - diff:    15986
+    - channel 4 fired at SW count    79943      - diff:    15986
+  - Validating no spurious IRQs are triggered:
+    [OK] (no spurious IRQs)
+  - Calling timer_init(2, 4000000)
+    initialization successful
+  - timer_stop(2): stopped
+  - timer_set(2, 0, 20000)
+    Successfully set timeout 20000 for channel 0
+  - timer_set(2, 1, 40000)
+    Successfully set timeout 40000 for channel 1
+  - timer_set(2, 2, 60000)
+    Successfully set timeout 60000 for channel 2
+  - timer_set(2, 3, 80000)
+    Successfully set timeout 80000 for channel 3
+  - timer_set(2, 4, 100000)
+    Successfully set timeout 100000 for channel 4
+  - timer_start(2)
+  - Results:
+    - channel 0 fired at SW count    16000      - init:    16000
+    - channel 1 fired at SW count    31985      - diff:    15985
+    - channel 2 fired at SW count    47971      - diff:    15986
+    - channel 3 fired at SW count    63957      - diff:    15986
+    - channel 4 fired at SW count    79943      - diff:    15986
+  - Validating no spurious IRQs are triggered:
+    [OK] (no spurious IRQs)
+
+TIMER 3
+=======
+
+  - supported frequencies:
+    0: 16000000
+    1: 8000000
+    2: 4000000
+    ....
+    9: 31250
+Testing timer_get_closest_freq()...
+[OK]
+Testing timer_query_freqs() for out of bound index...
+[OK]
+  - Calling timer_init(3, 16000000)
+    initialization successful
+  - timer_stop(3): stopped
+  - timer_set(3, 0, 80000)
+    Successfully set timeout 80000 for channel 0
+  - timer_set(3, 1, 160000)
+    Successfully set timeout 160000 for channel 1
+  - timer_set(3, 2, 240000)
+    Successfully set timeout 240000 for channel 2
+  - timer_set(3, 3, 320000)
+    Successfully set timeout 320000 for channel 3
+  - timer_set(3, 4, 400000)
+    Successfully set timeout 400000 for channel 4
+  - timer_start(3)
+  - Results:
+    - channel 0 fired at SW count    16000      - init:    16000
+    - channel 1 fired at SW count    31985      - diff:    15985
+    - channel 2 fired at SW count    47971      - diff:    15986
+    - channel 3 fired at SW count    63957      - diff:    15986
+    - channel 4 fired at SW count    79943      - diff:    15986
+  - Validating no spurious IRQs are triggered:
+    [OK] (no spurious IRQs)
+  - Calling timer_init(3, 8000000)
+    initialization successful
+  - timer_stop(3): stopped
+  - timer_set(3, 0, 40000)
+    Successfully set timeout 40000 for channel 0
+  - timer_set(3, 1, 80000)
+    Successfully set timeout 80000 for channel 1
+  - timer_set(3, 2, 120000)
+    Successfully set timeout 120000 for channel 2
+  - timer_set(3, 3, 160000)
+    Successfully set timeout 160000 for channel 3
+  - timer_set(3, 4, 200000)
+    Successfully set timeout 200000 for channel 4
+  - timer_start(3)
+  - Results:
+    - channel 0 fired at SW count    16000      - init:    16000
+    - channel 1 fired at SW count    31985      - diff:    15985
+    - channel 2 fired at SW count    47971      - diff:    15986
+    - channel 3 fired at SW count    63957      - diff:    15986
+    - channel 4 fired at SW count    79943      - diff:    15986
+  - Validating no spurious IRQs are triggered:
+    [OK] (no spurious IRQs)
+  - Calling timer_init(3, 4000000)
+    initialization successful
+  - timer_stop(3): stopped
+  - timer_set(3, 0, 20000)
+    Successfully set timeout 20000 for channel 0
+  - timer_set(3, 1, 40000)
+    Successfully set timeout 40000 for channel 1
+  - timer_set(3, 2, 60000)
+    Successfully set timeout 60000 for channel 2
+  - timer_set(3, 3, 80000)
+    Successfully set timeout 80000 for channel 3
+  - timer_set(3, 4, 100000)
+    Successfully set timeout 100000 for channel 4
+  - timer_start(3)
+  - Results:
+    - channel 0 fired at SW count    16000      - init:    16000
+    - channel 1 fired at SW count    31985      - diff:    15985
+    - channel 2 fired at SW count    47971      - diff:    15986
+    - channel 3 fired at SW count    63957      - diff:    15986
+    - channel 4 fired at SW count    79943      - diff:    15986
+  - Validating no spurious IRQs are triggered:
+    [OK] (no spurious IRQs)
+
+TEST SUCCEEDED
+

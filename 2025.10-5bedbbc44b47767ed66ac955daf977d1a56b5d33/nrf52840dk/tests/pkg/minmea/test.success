@@ -1,0 +1,41 @@
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" -ln "/tmp/pyterm-maribu" -rn "2025-11-15_22.17.30-tests_minmea-nrf52840dk" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+START
+check_nmea: GGA recorded
+	lat: 52.450366
+	lon: 13.298649
+	alt: 0
+	n_sats: 12
+check_nmea: GLL recorded
+	lat: 52.483631
+	lon: 13.446008
+check_nmea: GSA recorded
+	mode: A
+	fix_type: 3D
+	0. sat: 1
+	1. sat: 2
+	2. sat: 3
+	3. sat: 4
+	4. sat: 5
+	5. sat: 6
+	6. sat: 7
+	7. sat: 8
+	8. sat: 9
+	9. sat: 10
+	10. sat: 11
+	11. sat: 12
+check_nmea: RMC recorded
+	lat: 52.450366
+	lon: 13.298649
+	date: 20.10.23
+	time: 14h 21m 42s, 227ms
+SUCCESS
+

@@ -1,0 +1,26 @@
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" -ln "/tmp/pyterm-maribu" -rn "2025-11-16_02.08.05-tests_ztimer_periodic-arduino-mega2560" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Testing clock: ZTIMER_MSEC
+i: 0 time: 2205 offset: 0
+i: 1 time: 2305 offset: 0
+i: 2 time: 2406 offset: 1
+i: 3 time: 2505 offset: 1
+i: 4 time: 2606 offset: 1
+Testing clock: ZTIMER_USEC
+i: 0 time: 2777512 offset: 12
+i: 1 time: 2787528 offset: 16
+i: 2 time: 2797528 offset: 0
+i: 3 time: 2807528 offset: 0
+i: 4 time: 2817528 offset: 0
+Test successful.
+

@@ -1,0 +1,22 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/pkg/edhoc_c test
+
+
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" -ln "/tmp/pyterm-maribu" -rn "2025-11-15_16.41.14-tests_edhoc_c-same54-xpro" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+> ifconfig
+ifconfig
+Iface  5  HWaddr: FC:C2:3D:0B:CF:49  Link: down 
+          L2-PDU:1500  MTU:1500  HL:64  RTR  
+          Source address length: 6
+          Link type: wired
+          
+> Timeout in expect script at "child.expect(" (tests/pkg/edhoc_c/tests/01-run.py:58)
+
+make: *** [/home/maribu/Repos/software/RIOT/2025.10-branch/makefiles/tests/tests.inc.mk:32: test] Error 1
+
+Return value: 2

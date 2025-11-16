@@ -1,0 +1,190 @@
+
+
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" -ln "/tmp/pyterm-maribu" -rn "2025-11-15_22.33.00-tests_atomic_utils-nrf52840dk" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> tearing_test atomic_fetch_add_u8 1
+
+> tearing_test atomic_fetch_add_u8 1
+> OK
+tearing_test atomic_fetch_sub_u8 1
+tearing_test atomic_fetch_sub_u8 1
+> OK
+tearing_test atomic_fetch_or_u8 1
+tearing_test atomic_fetch_or_u8 1
+> OK
+tearing_test atomic_fetch_xor_u8 1
+tearing_test atomic_fetch_xor_u8 1
+> OK
+tearing_test atomic_fetch_and_u8 1
+tearing_test atomic_fetch_and_u8 1
+> OK
+tearing_test atomic_fetch_add_u16 1
+tearing_test atomic_fetch_add_u16 1
+> OK
+tearing_test atomic_fetch_sub_u16 1
+tearing_test atomic_fetch_sub_u16 1
+> OK
+tearing_test atomic_fetch_or_u16 1
+tearing_test atomic_fetch_or_u16 1
+> OK
+tearing_test atomic_fetch_xor_u16 1
+tearing_test atomic_fetch_xor_u16 1
+> OK
+tearing_test atomic_fetch_and_u16 1
+tearing_test atomic_fetch_and_u16 1
+> OK
+tearing_test atomic_fetch_add_u32 1
+tearing_test atomic_fetch_add_u32 1
+> OK
+tearing_test atomic_fetch_sub_u32 1
+tearing_test atomic_fetch_sub_u32 1
+> OK
+tearing_test atomic_fetch_or_u32 1
+tearing_test atomic_fetch_or_u32 1
+> OK
+tearing_test atomic_fetch_xor_u32 1
+tearing_test atomic_fetch_xor_u32 1
+> OK
+tearing_test atomic_fetch_and_u32 1
+tearing_test atomic_fetch_and_u32 1
+> OK
+tearing_test atomic_fetch_add_u64 1
+tearing_test atomic_fetch_add_u64 1
+> OK
+tearing_test atomic_fetch_sub_u64 1
+tearing_test atomic_fetch_sub_u64 1
+> OK
+tearing_test atomic_fetch_or_u64 1
+tearing_test atomic_fetch_or_u64 1
+> OK
+tearing_test atomic_fetch_xor_u64 1
+tearing_test atomic_fetch_xor_u64 1
+> OK
+tearing_test atomic_fetch_and_u64 1
+tearing_test atomic_fetch_and_u64 1
+> OK
+tearing_test semi_atomic_fetch_add_u8 1
+tearing_test semi_atomic_fetch_add_u8 1
+> OK
+tearing_test semi_atomic_fetch_sub_u8 1
+tearing_test semi_atomic_fetch_sub_u8 1
+> OK
+tearing_test semi_atomic_fetch_or_u8 1
+tearing_test semi_atomic_fetch_or_u8 1
+> OK
+tearing_test semi_atomic_fetch_xor_u8 1
+tearing_test semi_atomic_fetch_xor_u8 1
+> OK
+tearing_test semi_atomic_fetch_and_u8 1
+tearing_test semi_atomic_fetch_and_u8 1
+> OK
+tearing_test semi_atomic_fetch_add_u16 1
+tearing_test semi_atomic_fetch_add_u16 1
+> OK
+tearing_test semi_atomic_fetch_sub_u16 1
+tearing_test semi_atomic_fetch_sub_u16 1
+> OK
+tearing_test semi_atomic_fetch_or_u16 1
+tearing_test semi_atomic_fetch_or_u16 1
+> OK
+tearing_test semi_atomic_fetch_xor_u16 1
+tearing_test semi_atomic_fetch_xor_u16 1
+> OK
+tearing_test semi_atomic_fetch_and_u16 1
+tearing_test semi_atomic_fetch_and_u16 1
+> OK
+tearing_test semi_atomic_fetch_add_u32 1
+tearing_test semi_atomic_fetch_add_u32 1
+> OK
+tearing_test semi_atomic_fetch_sub_u32 1
+tearing_test semi_atomic_fetch_sub_u32 1
+> OK
+tearing_test semi_atomic_fetch_or_u32 1
+tearing_test semi_atomic_fetch_or_u32 1
+> OK
+tearing_test semi_atomic_fetch_xor_u32 1
+tearing_test semi_atomic_fetch_xor_u32 1
+> OK
+tearing_test semi_atomic_fetch_and_u32 1
+tearing_test semi_atomic_fetch_and_u32 1
+> OK
+tearing_test semi_atomic_fetch_add_u64 1
+tearing_test semi_atomic_fetch_add_u64 1
+> OK
+tearing_test semi_atomic_fetch_sub_u64 1
+tearing_test semi_atomic_fetch_sub_u64 1
+> OK
+tearing_test semi_atomic_fetch_or_u64 1
+tearing_test semi_atomic_fetch_or_u64 1
+> OK
+tearing_test semi_atomic_fetch_xor_u64 1
+tearing_test semi_atomic_fetch_xor_u64 1
+> OK
+tearing_test semi_atomic_fetch_and_u64 1
+tearing_test semi_atomic_fetch_and_u64 1
+> OK
+lost_update_test atomic_fetch_add_u8 1
+lost_update_test atomic_fetch_add_u8 1
+> OK
+lost_update_test atomic_fetch_sub_u8 1
+lost_update_test atomic_fetch_sub_u8 1
+> OK
+lost_update_test atomic_fetch_or_u8 1
+lost_update_test atomic_fetch_or_u8 1
+> OK
+lost_update_test atomic_fetch_xor_u8 1
+lost_update_test atomic_fetch_xor_u8 1
+> OK
+lost_update_test atomic_fetch_and_u8 1
+lost_update_test atomic_fetch_and_u8 1
+> OK
+lost_update_test atomic_fetch_add_u16 1
+lost_update_test atomic_fetch_add_u16 1
+> OK
+lost_update_test atomic_fetch_sub_u16 1
+lost_update_test atomic_fetch_sub_u16 1
+> OK
+lost_update_test atomic_fetch_or_u16 1
+lost_update_test atomic_fetch_or_u16 1
+> OK
+lost_update_test atomic_fetch_xor_u16 1
+lost_update_test atomic_fetch_xor_u16 1
+> OK
+lost_update_test atomic_fetch_and_u16 1
+lost_update_test atomic_fetch_and_u16 1
+> OK
+lost_update_test atomic_fetch_add_u32 1
+lost_update_test atomic_fetch_add_u32 1
+> OK
+lost_update_test atomic_fetch_sub_u32 1
+lost_update_test atomic_fetch_sub_u32 1
+> OK
+lost_update_test atomic_fetch_or_u32 1
+lost_update_test atomic_fetch_or_u32 1
+> OK
+lost_update_test atomic_fetch_xor_u32 1
+lost_update_test atomic_fetch_xor_u32 1
+> OK
+lost_update_test atomic_fetch_and_u32 1
+lost_update_test atomic_fetch_and_u32 1
+> OK
+lost_update_test atomic_fetch_add_u64 1
+lost_update_test atomic_fetch_add_u64 1
+> OK
+lost_update_test atomic_fetch_sub_u64 1
+lost_update_test atomic_fetch_sub_u64 1
+> OK
+lost_update_test atomic_fetch_or_u64 1
+lost_update_test atomic_fetch_or_u64 1
+> OK
+lost_update_test atomic_fetch_xor_u64 1
+lost_update_test atomic_fetch_xor_u64 1
+> OK
+lost_update_test atomic_fetch_and_u64 1
+lost_update_test atomic_fetch_and_u64 1
+> OK
+

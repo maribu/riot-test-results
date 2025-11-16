@@ -1,0 +1,21 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/pkg/cn-cbor test
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" -ln "/tmp/pyterm-maribu" -rn "2025-11-15_16.40.23-tests_cn-cbor-same54-xpro" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+.
+tests_cn_cbor.test_parse (tests/pkg/cn-cbor/main.c 150) exp 63 was 0
+.
+run 2 failures 1
+{ "threads": [{ "name": "main", "stack_size": 1536, "stack_used": 768}]}
+Timeout in expect script at "child.expect(r'OK \((\d+) tests\)', timeout=timeout)" (dist/pythonlibs/testrunner/__init__.py:57)
+
+make: *** [/home/maribu/Repos/software/RIOT/2025.10-branch/makefiles/tests/tests.inc.mk:32: test] Error 1
+
+Return value: 2

@@ -1,0 +1,29 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/pkg/arduino_sdi_12 clean all --jobs 16
+Building application "tests_arduino_sdi_12" for "nrf52840dk" with CPU "nrf52".
+
+rm -rf /home/maribu/Repos/software/RIOT/2025.10-branch/tests/pkg/arduino_sdi_12/bin/nrf52840dk/pkg-build/arduino_api
+rm -rf /home/maribu/Repos/software/RIOT/2025.10-branch/tests/pkg/arduino_sdi_12/bin/nrf52840dk/pkg-build/arduino_sdi_12
+rm -rf /home/maribu/Repos/software/RIOT/2025.10-branch/tests/pkg/arduino_sdi_12/bin/nrf52840dk/pkg-build/cmsis
+rm -rf /home/maribu/Repos/software/RIOT/2025.10-branch/tests/pkg/arduino_sdi_12/bin/nrf52840dk/pkg-build/mpaland-printf
+Applying: Chages for RIOT integration
+Using index info to reconstruct a base tree...
+A	Common.h
+A	Interrupts.h
+A	Stream.h
+Falling back to patching base and 3-way merge...
+error: gpg failed to sign the data:
+[GNUPG:] KEY_CONSIDERED 8A6148F14794FC966E49221D77AA882EC78084E6 2
+[GNUPG:] BEGIN_SIGNING H10
+[GNUPG:] PINENTRY_LAUNCHED 3   
+gpg: signing failed: IPC call has been cancelled
+[GNUPG:] FAILURE sign 83886357
+gpg: signing failed: IPC call has been cancelled
+
+fatal: failed to write commit object
+make[1]: *** [/home/maribu/Repos/software/RIOT/2025.10-branch/pkg/pkg.mk:125: /home/maribu/.cache/RIOT/pkg/arduino_api/.pkg-state.git-patched] Error 128
+make: [/home/maribu/Repos/software/RIOT/2025.10-branch/tests/pkg/arduino_sdi_12/../../../Makefile.include:802: pkg-prepare] Error 2 (ignored)
+fatal: previous rebase directory .git/rebase-apply still exists but mbox given.
+make[1]: *** [/home/maribu/Repos/software/RIOT/2025.10-branch/pkg/pkg.mk:125: /home/maribu/.cache/RIOT/pkg/arduino_api/.pkg-state.git-patched] Error 128
+make: *** [/home/maribu/Repos/software/RIOT/2025.10-branch/tests/pkg/arduino_sdi_12/../../../Makefile.include:807: pkg-build] Error 2
+
+Return value: 2

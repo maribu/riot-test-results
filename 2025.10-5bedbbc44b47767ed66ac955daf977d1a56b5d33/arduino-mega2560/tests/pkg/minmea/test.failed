@@ -1,0 +1,50 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/pkg/minmea test
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" -ln "/tmp/pyterm-maribu" -rn "2025-11-16_01.34.51-tests_minmea-arduino-mega2560" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+START
+check_nmea: GGA recorded
+	lat: 52.450366
+	lon: 13.298649
+	alt: 0
+	n_sats: 12
+check_nmea: GLL recorded
+	lat: 52.483631
+	lon: 13.446008
+check_nmea: GSA recorded
+	mode: A
+	fix_type: 3D
+	0. sat: 1
+	1. sat: 2
+	2. sat: 3
+	3. sat: 4
+	4. sat: 5
+	5. sat: 6
+	6. sat: 7
+	7. sat: 8
+	8. sat: 9
+	9. sat: 10
+	10. sat: 11
+	11. sat: 12
+check_nmea: RMC recorded
+	lat: 52.450366
+	lon: 13.298649
+	date: 20.10.23
+	time: 14h 21m 42s, 30ms
+SUCCESS
+{ "threads": [{ "name": "idle", "stack_size": 128, "stack_used": 98}]}
+{ "threads": [{ "name": "main", "stack_size": 644, "stack_used": 238}]}
+Timeout in expect script at "child.expect_exact('\ttime: 14h 21m 42s, 227ms\r\n')" (tests/pkg/minmea/tests/01-run.py:36)
+
+make: *** [/home/maribu/Repos/software/RIOT/2025.10-branch/makefiles/tests/tests.inc.mk:32: test] Error 1
+
+Return value: 2

@@ -1,0 +1,66 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/bench/runtime_coreapis test
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" -ln "/tmp/pyterm-maribu" -rn "2025-11-16_01.03.43-tests_runtime_coreapis-arduino-mega2560" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+: Press s to start test, r to print it is ready
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Runtime of Selected Core API functions
+
+                 nop loop:    437664us  ---   0.437us per call  ---    2284857 calls per sec
+
+             mutex_init():        20us  ---   0.000us per call  ---  2755359744 calls per sec
+        mutex lock/unlock:   6689876us  ---   6.689us per call  ---     149479 calls per sec
+
+       thread_flags_set():   3313724us  ---   3.313us per call  ---     301775 calls per sec
+     thread_flags_clear():   3188680us  ---   3.188us per call  ---     313609 calls per sec
+thread flags set/wait any:  10753808us  ---  10.753us per call  ---      92990 calls per sec
+thread flags set/wait all:   8503024us  ---   8.503us per call  ---     117605 calls per sec
+thread flags set/wait one:   9378300us  ---   9.378us per call  ---     106629 calls per sec
+
+        msg_try_receive():   5126824us  ---   5.126us per call  ---     195052 calls per sec
+              msg_avail():   2375856us  ---   2.375us per call  ---     420900 calls per sec
+
+{'BENCH_CLIST_SORT_TEST_NODES': 256}
+      clist_sort, #4, rev:     76084us  ---  76.084us per call  ---      13143 calls per sec
+     clist_sort, #4, prng:     79320us  ---  79.320us per call  ---      12607 calls per sec
+     clist_sort, #4, sort:     76024us  ---  76.024us per call  ---      13153 calls per sec
+  clist_sort, #4, alm.srt:     80092us  ---  80.092us per call  ---      12485 calls per sec
+
+      clist_sort, #8, rev:    173548us  ---  173.548us per call  ---       5762 calls per sec
+     clist_sort, #8, prng:    186992us  ---  186.992us per call  ---       5347 calls per sec
+     clist_sort, #8, sort:    173496us  ---  173.496us per call  ---       5763 calls per sec
+  clist_sort, #8, alm.srt:    186992us  ---  186.992us per call  ---       5347 calls per sec
+
+     clist_sort, #16, rev:    402224us  ---  402.224us per call  ---       2486 calls per sec
+    clist_sort, #16, prng:    431460us  ---  431.460us per call  ---       2317 calls per sec
+    clist_sort, #16, sort:    402212us  ---  402.212us per call  ---       2486 calls per sec
+ clist_sort, #16, alm.srt:    437152us  ---  437.152us per call  ---       2287 calls per sec
+
+     clist_sort, #32, rev:    929576us  ---  929.576us per call  ---       1075 calls per sec
+    clist_sort, #32, prng:   1020460us  ---  1020.460us per call  ---        979 calls per sec
+    clist_sort, #32, sort:    929476us  ---  929.476us per call  ---       1075 calls per sec
+ clist_sort, #32, alm.srt:   1009852us  ---  1009.852us per call  ---        990 calls per sec
+
+     clist_sort, #64, rev:   2126068us  ---  2126.068us per call  ---        470 calls per sec
+    clist_sort, #64, prng:   2379796us  ---  2379.796us per call  ---        420 calls per sec
+    clist_sort, #64, sort:   2126012us  ---  2126.012us per call  ---        470 calls per sec
+ clist_sort, #64, alm.srt:   2299916us  ---  2299.916us per call  ---        434 calls per sec
+
+    clist_sort, #128, rev:   4805164us  ---  4805.164us per call  ---        208 calls per sec
+   clist_sort, #128, prng:   5463648us  ---  5463.648us per call  ---        183 calls per sec
+   clist_sort, #128, sort:   4805108us  ---  4805.108us per call  ---        208 calls per sec
+clist_sort, #128, alm.srt:   5168452us  ---  5168.452us per call  ---        193 calls per sec
+
+Timeout in expect script at "child.expect(BENCHMARK_REGEXP.format(func=f"clist_sort, #{len}, rev", timeout=TIMEOUT))" (tests/bench/runtime_coreapis/tests/01-run.py:34)
+
+make: *** [/home/maribu/Repos/software/RIOT/2025.10-branch/makefiles/tests/tests.inc.mk:32: test] Error 1
+
+Return value: 2

@@ -1,0 +1,27 @@
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" -ln "/tmp/pyterm-maribu" -rn "2025-11-15_17.07.55-tests_evtimer_msg-same54-xpro" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Testing generic evtimer
+This should list 2 items
+ev #1 offset=999
+ev #2 offset=501
+This should list 4 items
+ev #1 offset=659
+ev #2 offset=341
+ev #3 offset=500
+ev #4 offset=2454
+Are the reception times of all 4 msgs close to the supposed values?
+At   3767 ms received msg 0: "#2 supposed to be 3766"
+.At   4108 ms received msg 1: "#0 supposed to be 4107"
+.At   4608 ms received msg 2: "#1 supposed to be 4607"
+.At   7062 ms received msg 3: "#3 supposed to be 7061"
+.
+All tests successful
+

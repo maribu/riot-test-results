@@ -1,0 +1,19 @@
+
+
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" -ln "/tmp/pyterm-maribu" -rn "2025-11-15_22.31.23-tests_rust_libs-nrf52840dk" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+> start_test
+start_test
+[TEST_START]
+> help_json
+help_json
+{"cmds": [{"cmd": "bufsize", "desc": "Get the shell's buffer size"}, {"cmd": "start_test", "desc": "starts a test"}, {"cmd": "end_test", "desc": "ends a test"}, {"cmd": "echo", "desc": "prints the input command"}, {"cmd": "empty", "desc": "print nothing on command"}, {"cmd": "periodic", "desc": "periodically print command"}, {"cmd": "hello_world", "desc": "Print a greeting"}, {"cmd": "xfa_test1", "desc": "xfa test command 1"}, {"cmd": "xfa_test2", "desc": "xfa test command 2"}]}
+> end_test
+end_test
+[TEST_END]
+

@@ -1,0 +1,35 @@
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" -ln "/tmp/pyterm-maribu" -rn "2025-11-16_01.12.24-tests_thread_float-arduino-mega2560" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+: Press s to start test, r to print it is ready
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+THREADS CREATED
+
+Context switch every 3125 µs
+{ "threads": [{ "name": "idle", "stack_size": 192, "stack_used": 98 }]}
+{ "threads": [{ "name": "main", "stack_size": 644, "stack_used": 230 }]}
+THREAD t1 start
+THREAD t2 start
+THREAD t3 start
+t1: 141.443770
+t3: 141.466810
+t1: 141.443770
+t3: 141.466810
+t1: 141.443770
+t3: 141.466810
+t1: 141.443770
+t3: 141.466810
+t1: 141.443770
+t3: 141.466810
+t1: 141.443770
+t3: 141.466810
+t1: 141.443770
+

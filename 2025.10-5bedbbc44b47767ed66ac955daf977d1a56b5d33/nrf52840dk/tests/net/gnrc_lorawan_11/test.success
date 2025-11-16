@@ -1,0 +1,20 @@
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" -ln "/tmp/pyterm-maribu" -rn "2025-11-15_21.27.59-tests_gnrc_lorawan_11-nrf52840dk" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+- gnrc_lorawan_tests
+1) OK test_gnrc_lorawan__validate_mic
+2) OK test_gnrc_lorawan__wrong_mic
+3) OK test_gnrc_lorawan__build_hdr
+4) OK test_gnrc_lorawan_fopts__mlme_link_check_req
+5) OK test_gnrc_lorawan_fopts__perform
+6) OK test_gnrc_lorawan_fopts__perform_wrong
+
+OK (6 tests)
+

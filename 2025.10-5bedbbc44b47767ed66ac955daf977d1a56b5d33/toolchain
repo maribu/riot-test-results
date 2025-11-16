@@ -1,0 +1,64 @@
+
+RIOT version information
+----------------------------
+              RIOT branch: unknown (not a git repository)
+         RIOT commit hash: unknown (not a git repository)
+         RIOT commit date: unknown (not a git repository)
+
+Operating System Environment
+----------------------------
+         Operating System: "Alpine Linux" 
+                   Kernel: Linux 6.12.57-0-lts x86_64 unknown
+             System shell: /usr/bin/busybox (probably dash)
+             make's shell: /usr/bin/busybox (probably dash)
+
+Installed compiler toolchains
+-----------------------------
+               native gcc: gcc (Alpine 15.2.0) 15.2.0
+        arm-none-eabi-gcc: arm-none-eabi-gcc (Alpine Linux) 15.2.0
+                  avr-gcc: avr-gcc (Alpine Linux) 15.2.0
+           msp430-elf-gcc: msp430-elf-gcc (Alpine Linux) 15.2.0
+       riscv-none-elf-gcc: riscv-none-elf-gcc (Alpine Linux) 15.2.0
+  riscv64-unknown-elf-gcc: missing
+      riscv32-esp-elf-gcc: missing
+  riscv32-unknown-elf-gcc: missing
+     xtensa-esp32-elf-gcc: missing
+   xtensa-esp32s2-elf-gcc: missing
+   xtensa-esp32s3-elf-gcc: missing
+   xtensa-esp8266-elf-gcc: missing
+                    clang: Alpine clang version 21.1.2
+
+Installed compiler libs
+-----------------------
+     arm-none-eabi-newlib: "4.5.0"
+        msp430-elf-newlib: "4.5.0"
+    riscv-none-elf-newlib: "4.5.0"
+riscv64-unknown-elf-newlib: missing
+   riscv32-esp-elf-newlib: missing
+riscv32-unknown-elf-newlib: missing
+  xtensa-esp32-elf-newlib: missing
+xtensa-esp32s2-elf-newlib: missing
+xtensa-esp32s3-elf-newlib: missing
+xtensa-esp8266-elf-newlib: missing
+                 avr-libc: "2.2.1" ("20240718")
+
+Installed development tools
+---------------------------
+                   ccache: missing
+                    cmake: cmake version 4.1.2
+                 cppcheck: missing
+                  doxygen: 1.13.2
+                      git: git version 2.51.2
+                     make: GNU Make 4.4.1
+                  openocd: Open On-Chip Debugger 0.12.0
+                   python: Python 3.12.12
+                  python2: missing
+                  python3: Python 3.12.12
+                   rustup: rustup 1.28.2 (2025-06-26)
+                    cargo: cargo 1.91.0 (ea2d97820 2025-10-10)
+                    rustc: rustc 1.91.0 (f8297e351 2025-10-28)
+                   c2rust: C2Rust 0.21.0
+                     node: missing
+                      npm: missing
+                   flake8: 7.3.0 (mccabe: 0.7.0, pycodestyle: 2.14.0, pyflakes: 3.4.0) CPython 3.12.12 on
+               coccinelle: spatch version 1.1.1 compiled with OCaml version 4.14.2

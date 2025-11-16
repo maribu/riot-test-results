@@ -1,0 +1,20 @@
+Failures during compilation:
+- [tests/bench/msg_pingpong](tests/bench/msg_pingpong/compilation.failed)
+- [tests/periph/selftest_shield](tests/periph/selftest_shield/compilation.failed)
+- [tests/pkg/arduino_sdi_12](tests/pkg/arduino_sdi_12/compilation.failed)
+- [tests/pkg/micro-ecc](tests/pkg/micro-ecc/compilation.failed)
+
+Failures during test:
+- [tests/bench/runtime_coreapis](tests/bench/runtime_coreapis/test.failed)
+- [tests/core/msg_queue_print](tests/core/msg_queue_print/test.failed)
+- [tests/core/thread_flags_group](tests/core/thread_flags_group/test.failed)
+- [tests/pkg/littlefs2](tests/pkg/littlefs2/test.failed)
+- [tests/pkg/mbedtls](tests/pkg/mbedtls/test.failed)
+- [tests/pkg/minmea](tests/pkg/minmea/test.failed)
+- [tests/sys/congure_quic](tests/sys/congure_quic/test.failed)
+- [tests/sys/congure_test](tests/sys/congure_test/test.failed)
+- [tests/sys/malloc_monitor](tests/sys/malloc_monitor/test.failed)
+- [tests/sys/pbkdf2](tests/sys/pbkdf2/test.failed)
+- [tests/sys/phydat_unix](tests/sys/phydat_unix/test.failed)
+- [tests/sys/shell](tests/sys/shell/test.failed)
+- [tests/sys/ztimer_overhead](tests/sys/ztimer_overhead/test.failed)

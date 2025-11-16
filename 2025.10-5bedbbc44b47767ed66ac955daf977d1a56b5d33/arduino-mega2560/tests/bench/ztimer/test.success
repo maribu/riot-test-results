@@ -1,0 +1,29 @@
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" -ln "/tmp/pyterm-maribu" -rn "2025-11-16_01.07.03-tests_ztimer-arduino-mega2560" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+ztimer benchmark application.
+
+                     set() one   168012 / 1000 = 168
+                  remove() one     7172 / 1000 = 7
+          set() + remove() one   311428 / 1000 = 311
+  set() many increasing target    25160 / 100 = 251
+               re-set()  first   170588 / 1000 = 170
+               re-set() middle   170668 / 1000 = 170
+               re-set()   last   170688 / 1000 = 170
+       remove() + set()  first   317876 / 1000 = 317
+       remove() + set() middle   317816 / 1000 = 317
+       remove() + set()   last   317716 / 1000 = 317
+      remove() many decreasing    20480 / 100 = 204
+                  ztimer_now()    47380 / 1000 = 47
+              sizeof(ztimer_t)     1000 / 100 = 10
+done.
+

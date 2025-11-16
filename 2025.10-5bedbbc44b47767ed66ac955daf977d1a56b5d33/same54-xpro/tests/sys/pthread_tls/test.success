@@ -1,0 +1,99 @@
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" -ln "/tmp/pyterm-maribu" -rn "2025-11-15_17.14.27-tests_pthread_tls-same54-xpro" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+START
+
+-= TEST 1 - create 20 tls with sequential values 0...19 =-
+now rise sequential by one values 1...20
+pick deliberate storage (key[3]:536876448) and change the value
+show tls values:
+key[0]: 536876352, val: 1
+key[1]: 536876384, val: 2
+key[2]: 536876416, val: 3
+key[3]: 536876448, val: 42
+key[4]: 536876480, val: 5
+key[5]: 536876512, val: 6
+key[6]: 536876544, val: 7
+key[7]: 536876576, val: 8
+key[8]: 536876608, val: 9
+key[9]: 536876640, val: 10
+key[10]: 536876672, val: 11
+key[11]: 536876704, val: 12
+key[12]: 536876736, val: 13
+key[13]: 536876768, val: 14
+key[14]: 536876800, val: 15
+key[15]: 536876832, val: 16
+key[16]: 536876864, val: 17
+key[17]: 536876896, val: 18
+key[18]: 536876928, val: 19
+key[19]: 536876960, val: 20
+
+ -= TEST 2 - delete deliberate key (key[5]:536876512) =-
+show tls values:
+key[0]: 536876352, val: 1
+key[1]: 536876384, val: 2
+key[2]: 536876416, val: 3
+key[3]: 536876448, val: 42
+key[4]: 536876480, val: 5
+key[6]: 536876544, val: 7
+key[7]: 536876576, val: 8
+key[8]: 536876608, val: 9
+key[9]: 536876640, val: 10
+key[10]: 536876672, val: 11
+key[11]: 536876704, val: 12
+key[12]: 536876736, val: 13
+key[13]: 536876768, val: 14
+key[14]: 536876800, val: 15
+key[15]: 536876832, val: 16
+key[16]: 536876864, val: 17
+key[17]: 536876896, val: 18
+key[18]: 536876928, val: 19
+key[19]: 536876960, val: 20
+
+-= TEST 3 - create new tls =-
+added new tls, key: 536876992, val: 99
+show tls values:
+key[0]: 536876352, val: 1
+key[1]: 536876384, val: 2
+key[2]: 536876416, val: 3
+key[3]: 536876448, val: 42
+key[4]: 536876480, val: 5
+key[6]: 536876544, val: 7
+key[7]: 536876576, val: 8
+key[8]: 536876608, val: 9
+key[9]: 536876640, val: 10
+key[10]: 536876672, val: 11
+key[11]: 536876704, val: 12
+key[12]: 536876736, val: 13
+key[13]: 536876768, val: 14
+key[14]: 536876800, val: 15
+key[15]: 536876832, val: 16
+key[16]: 536876864, val: 17
+key[17]: 536876896, val: 18
+key[18]: 536876928, val: 19
+key[19]: 536876960, val: 20
+
+-= TEST 4 - delete all keys =-
+show tls values:
+
+-= TEST 5 - try delete non-existing key =-
+try to delete returns: 0
+
+-= TEST 6 - add key and delete without a tls =-
+created key: 536877024
+try to delete returns: 0
+
+-= TEST 7 - add key without tls =-
+created key: 536877040
+test_7_val: (nil)
+{ "threads": [{ "name": "pthread", "stack_size": 1024, "stack_used": 616 }]}
+tls tests finished.
+SUCCESS
+

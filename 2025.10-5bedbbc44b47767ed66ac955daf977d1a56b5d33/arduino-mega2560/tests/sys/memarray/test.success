@@ -1,0 +1,74 @@
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" -ln "/tmp/pyterm-maribu" -rn "2025-11-16_01.52.03-tests_memarray-arduino-mega2560" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+
+Welcome to pyterm!
+Type '/exit' to exit.
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+MAX_NUMBER_BLOCKS: 10
+NUMBER_OF_LOOPS: 1
+NUMBER_OF_TESTS: 1
+Starting (10, 8)
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     
+	  1 | idle                 | pending  Q |  15 |    128 (   98) (   30) |      0x492 |      0x4b2 
+	  2 | main                 | running  Q |   7 |    644 (  158) (  486) |      0x512 |      0x724 
+	    | SUM                  |            |     |    772 (  256) (  516)
+LOOP #1:
+TEST #1:
+	(0, @@@@@@@) Allocated 12 Bytes at 0x410, total 0
+	(1, @@@@@@@) Allocated 12 Bytes at 0x404, total 12
+	(2, @@@@@@@) Allocated 12 Bytes at 0x3f8, total 24
+	(3, @@@@@@@) Allocated 12 Bytes at 0x3ec, total 36
+	(4, @@@@@@@) Allocated 12 Bytes at 0x3e0, total 48
+	(5, @@@@@@@) Allocated 12 Bytes at 0x3d4, total 60
+	(6, @@@@@@@) Allocated 12 Bytes at 0x3c8, total 72
+	(7, @@@@@@@) Allocated 12 Bytes at 0x3bc, total 84
+	(8, @@@@@@@) Allocated 12 Bytes at 0x3b0, total 96
+	(9, @@@@@@@) Allocated 12 Bytes at 0x3a4, total 108
+	Free (0) 12 Bytes at 0x410, total 108
+	Free (1) 12 Bytes at 0x404, total 96
+	Free (2) 12 Bytes at 0x3f8, total 84
+	Free (3) 12 Bytes at 0x3ec, total 72
+	Free (4) 12 Bytes at 0x3e0, total 60
+	Free (5) 12 Bytes at 0x3d4, total 48
+	Free (6) 12 Bytes at 0x3c8, total 36
+	Free (7) 12 Bytes at 0x3bc, total 24
+	Free (8) 12 Bytes at 0x3b0, total 12
+	Free (9) 12 Bytes at 0x3a4, total 0
+LOOP #2:
+TEST #1:
+	(0, @@@@@@@) Allocated 12 Bytes at 0x410, total 0
+	(1, @@@@@@@) Allocated 12 Bytes at 0x404, total 12
+	(2, @@@@@@@) Allocated 12 Bytes at 0x3f8, total 24
+	(3, @@@@@@@) Allocated 12 Bytes at 0x3ec, total 36
+	(4, @@@@@@@) Allocated 12 Bytes at 0x3e0, total 48
+	(5, @@@@@@@) Allocated 12 Bytes at 0x3d4, total 60
+	(6, @@@@@@@) Allocated 12 Bytes at 0x3c8, total 72
+	(7, @@@@@@@) Allocated 12 Bytes at 0x3bc, total 84
+	(8, @@@@@@@) Allocated 12 Bytes at 0x3b0, total 96
+	(9, @@@@@@@) Allocated 12 Bytes at 0x3a4, total 108
+	Free (0) 12 Bytes at 0x410, total 108
+	Free (1) 12 Bytes at 0x404, total 96
+	Free (2) 12 Bytes at 0x3f8, total 84
+	Free (3) 12 Bytes at 0x3ec, total 72
+	Free (4) 12 Bytes at 0x3e0, total 60
+	Free (5) 12 Bytes at 0x3d4, total 48
+	Free (6) 12 Bytes at 0x3c8, total 36
+	Free (7) 12 Bytes at 0x3bc, total 24
+	Free (8) 12 Bytes at 0x3b0, total 12
+	Free (9) 12 Bytes at 0x3a4, total 0
+Extend and reduce tests
+Memarray available: 10
+Memarray available: 20
+Memarray reduction: 0 available: 10
+Memarray reduction: -1 available: 10
+Memarray reduction: 0 available: 0
+Memarray available: 9
+Memarray reduction: -1 available: 9
+Finishing
+

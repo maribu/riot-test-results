@@ -1,0 +1,27 @@
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" -ln "/tmp/pyterm-maribu" -rn "2025-11-15_16.05.46-tests_ztimer-same54-xpro" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+ztimer benchmark application.
+
+                     set() one    91448 / 1000 = 91
+                  remove() one      433 / 1000 = 0
+          set() + remove() one   183004 / 1000 = 183
+  set() many increasing target   130826 / 1000 = 130
+               re-set()  first    91472 / 1000 = 91
+               re-set() middle    91508 / 1000 = 91
+               re-set()   last    91536 / 1000 = 91
+       remove() + set()  first   182998 / 1000 = 182
+       remove() + set() middle   183002 / 1000 = 183
+       remove() + set()   last   183002 / 1000 = 183
+      remove() many decreasing   118490 / 1000 = 118
+                  ztimer_now()     1044 / 1000 = 1
+              sizeof(ztimer_t)    16000 / 1000 = 16
+done.
+

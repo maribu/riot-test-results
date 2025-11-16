@@ -1,0 +1,37 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/core/msg_queue_print test
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" -ln "/tmp/pyterm-maribu" -rn "2025-11-16_01.09.20-tests_msg_queue_print-arduino-mega2560" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+No messages or no message queue
+No messages or no message queue
+Message queue of thread 2
+    size: 8 (avail: 8)
+    * 0: sender: 2, type: 0x0000, content: 9175040 (0)
+    * 1: sender: 2, type: 0x0001, content: 9175041 (0x1)
+
+Traceback (most recent call last):
+  File "/home/maribu/Repos/software/RIOT/2025.10-branch/tests/core/msg_queue_print/tests/01-run.py", line 62, in <module>
+    sys.exit(run(testfunc))
+             ^^^^^^^^^^^^^
+  File "/home/maribu/Repos/software/RIOT/2025.10-branch/dist/pythonlibs/testrunner/__init__.py", line 30, in run
+    testfunc(child)
+  File "/home/maribu/Repos/software/RIOT/2025.10-branch/tests/core/msg_queue_print/tests/01-run.py", line 55, in testfunc
+    expect_some(child, 8, 8, 0)
+  File "/home/maribu/Repos/software/RIOT/2025.10-branch/tests/core/msg_queue_print/tests/01-run.py", line 36, in expect_some
+    expect_content(child, counter)
+  File "/home/maribu/Repos/software/RIOT/2025.10-branch/tests/core/msg_queue_print/tests/01-run.py", line 48, in expect_content
+    assert int(child.match.group(2)) == counter, f"Expected {counter} as content, got child.match.group(2)"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected 1 as content, got child.match.group(2)
+make: *** [/home/maribu/Repos/software/RIOT/2025.10-branch/makefiles/tests/tests.inc.mk:32: test] Error 1
+
+Return value: 2

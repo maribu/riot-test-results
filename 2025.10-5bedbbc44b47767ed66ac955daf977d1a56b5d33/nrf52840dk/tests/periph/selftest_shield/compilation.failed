@@ -1,0 +1,14 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/periph/selftest_shield clean all --jobs 16
+Building application "tests_selftest_shield" for "nrf52840dk" with CPU "nrf52".
+
+rm -rf /home/maribu/Repos/software/RIOT/2025.10-branch/tests/periph/selftest_shield/bin/nrf52840dk/pkg-build/cmsis
+rm -rf /home/maribu/Repos/software/RIOT/2025.10-branch/tests/periph/selftest_shield/bin/nrf52840dk/pkg-build/mpaland-printf
+/home/maribu/Repos/software/RIOT/2025.10-branch/tests/periph/selftest_shield/main.c:175:33: error: initializer-string for array of 'char' truncates NUL terminator but destination lacks 'nonstring' attribute (9 chars into 8 available) [-Werror=unterminated-string-initialization]
+  175 | static const char testdata[8] = "Selftest";
+      |                                 ^~~~~~~~~~
+cc1: all warnings being treated as errors
+make[1]: *** [/home/maribu/Repos/software/RIOT/2025.10-branch/Makefile.base:157: /home/maribu/Repos/software/RIOT/2025.10-branch/tests/periph/selftest_shield/bin/nrf52840dk/application_tests_selftest_shield/main.o] Error 1
+make[1]: *** Waiting for unfinished jobs....
+make: *** [/home/maribu/Repos/software/RIOT/2025.10-branch/tests/periph/selftest_shield/../../../Makefile.include:743: application_tests_selftest_shield.module] Error 2
+
+Return value: 2

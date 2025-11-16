@@ -1,0 +1,42 @@
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" -ln "/tmp/pyterm-maribu" -rn "2025-11-16_01.56.20-tests_ps_schedstatistics-arduino-mega2560" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+n(): This is RIOT! (Version: buildtest)
+Help: Press s to start test, r to print it is ready
+
+main(): This is RIOT! (Version: buildtest)
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+Creating thread #0, next=1
+Creating thread #1, next=2
+Creating thread #2, next=3
+Creating thread #3, next=4
+Creating thread #4, next=0
+
+> help
+
+> 
+> help
+Command              Description
+---------------------------------------
+pm                   interact with layered PM subsystem
+ps                   Prints information about running threads.
+version              Prints current RIOT_VERSION
+reboot               Reboot the node
+ps
+> ps
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     | runtime  | switches  | runtime_usec 
+	  1 | idle                 | pending  Q |  15 |    512 (  142) (  370) |      0xf76 |     0x1116  | 61.336% |        15  |    2783340 
+	  2 | main                 | running  Q |   7 |    644 (  474) (  170) |     0x1176 |     0x124f  |  7.559% |       296  |     343040 
+	  3 | thread               | bl rx    _ |   6 |    512 (  170) (  342) |      0x4fc |      0x696  |  6.965% |       147  |     316084 
+	  4 | thread               | bl rx    _ |   6 |    512 (  170) (  342) |      0x6fc |      0x896  | 11.709% |       175  |     531336 
+	  5 | thread               | bl rx    _ |   6 |    512 (  178) (  334) |      0x8fc |      0xa96  | 17.413% |       201  |     790168 
+	  6 | thread               | bl mutex _ |   6 |    512 (  170) (  342) |      0xafc |      0xc80  | 24.380% |       228  |    1106336 
+	  7 | thread               | bl rx    _ |   6 |    512 (  170) (  342) |      0xcfc |      0xe96  |  6.523% |       255  |     296016 
+	    | SUM                  |            |     |   3716 ( 1474) ( 2242)
+> 

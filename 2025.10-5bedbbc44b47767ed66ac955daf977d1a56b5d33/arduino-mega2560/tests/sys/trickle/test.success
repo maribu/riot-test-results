@@ -1,0 +1,28 @@
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" -ln "/tmp/pyterm-maribu" -rn "2025-11-16_02.01.41-tests_trickle-arduino-mega2560" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+
+Welcome to pyterm!
+Type '/exit' to exit.
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+[START]
+now = 2107, t = 29
+now = 2260, t = 106
+now = 2436, t = 147
+now = 2809, t = 269
+now = 3825, t = 801
+[TRICKLE_RESET]
+now = 3860, t = 14
+now = 3913, t = 31
+now = 3966, t = 33
+now = 4102, t = 87
+now = 4384, t = 223
+now = 4741, t = 305
+now = 5729, t = 761
+[SUCCESS]
+

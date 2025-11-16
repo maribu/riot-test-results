@@ -1,0 +1,35 @@
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" -ln "/tmp/pyterm-maribu" -rn "2025-11-15_22.43.34-tests_events-nrf52840dk" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+[START] event test application.
+
+initializing detached event queues 0x20000d30
+running thread that will claim event queues 0x20000d30
+posting 0x2000022c to delayed queue at index 1
+posting 0x20000224 to delayed queue at index 1
+posting 0x2000021c to delayed queue at index 0
+claiming event queues 0x20000d30
+launching event queue for queues 0x20000d30
+triggered delayed event 0x2000021c
+triggered delayed event 0x2000022c
+triggered delayed event 0x20000224
+synced with 0x2000021c
+posting 0x2000023c
+posting 0x20000234
+canceling 0x20000234
+posting custom event
+posting timed callback with timeout 1sec
+posting timed callback with timeout 0.5sec and canceling it again
+launching event queue
+triggered 0x2000023c
+triggered custom event with text: "CUSTOM CALLBACK"
+triggered timed callback with arg 0x12345678 after 1000034us
+[SUCCESS]
+

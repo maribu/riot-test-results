@@ -1,0 +1,31 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/core/thread_flags_group test
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" -ln "/tmp/pyterm-maribu" -rn "2025-11-16_01.11.53-tests_thread_flags_group-arduino-mega2560" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+START
+waiting forever-waiter
+waiting waiter
+waiting waiter
+waking up!
+woken up waiter
+woken up waiter
+tests/core/thread_flags_group/main.c:73 => failed condition
+*** RIOT kernel panic:
+CONDITION FAILED.
+
+*** halted.
+
+Timeout in expect script at "child.expect("SUCCESS")" (tests/core/thread_flags_group/tests/01-run.py:9)
+
+make: *** [/home/maribu/Repos/software/RIOT/2025.10-branch/makefiles/tests/tests.inc.mk:32: test] Error 1
+
+Return value: 2

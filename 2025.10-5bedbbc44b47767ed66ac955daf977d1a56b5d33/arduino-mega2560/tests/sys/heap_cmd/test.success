@@ -1,0 +1,33 @@
+
+
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" -ln "/tmp/pyterm-maribu" -rn "2025-11-16_01.50.40-tests_heap_cmd-arduino-mega2560" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+mation on how to use it.
+>  buildtest)
+Shell-based test application for heap functions.
+Use the 'help' command to get more information on how to use it.
+> 
+main(): This is RIOT! (Version: buildtest)
+Shell-based test application for heap functions.
+Use the 'help' command to get more information on how to use it.
+> heap
+
+> 
+> heap
+heap: 6393 (used 0, free 6393) [bytes]
+> malloc 100
+malloc 100
+allocated 0x8e2
+> heap
+heap
+heap: 6393 (used 102, free 6291) [bytes]
+> free 0x8e2
+free 0x8e2
+freeing 0x8e2
+> heap
+heap
+heap: 6393 (used 0, free 6393) [bytes]
+> 

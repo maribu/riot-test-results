@@ -1,0 +1,10 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/bench/msg_pingpong clean all --jobs 16
+Building application "tests_msg_pingpong" for "arduino-mega2560" with CPU "atmega2560".
+
+/usr/lib/gcc/avr/15.2.0/../../../../avr/bin/ld: /home/maribu/Repos/software/RIOT/2025.10-branch/tests/bench/msg_pingpong/bin/arduino-mega2560/application_tests_msg_pingpong/main.o: in function `main':
+/home/maribu/Repos/software/RIOT/2025.10-branch/tests/bench/msg_pingpong/main.c:75:(.text.startup.main+0x68): undefined reference to `__atomic_test_and_set'
+/usr/lib/gcc/avr/15.2.0/../../../../avr/bin/ld: /home/maribu/Repos/software/RIOT/2025.10-branch/tests/bench/msg_pingpong/main.c:78:(.text.startup.main+0x8e): undefined reference to `__atomic_test_and_set'
+collect2: error: ld returned 1 exit status
+make: *** [/home/maribu/Repos/software/RIOT/2025.10-branch/tests/bench/msg_pingpong/../../../Makefile.include:734: /home/maribu/Repos/software/RIOT/2025.10-branch/tests/bench/msg_pingpong/bin/arduino-mega2560/tests_msg_pingpong.elf] Error 1
+
+Return value: 2

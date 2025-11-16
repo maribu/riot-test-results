@@ -1,0 +1,30 @@
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600" -ln "/tmp/pyterm-maribu" -rn "2025-11-16_01.09.57-tests_mutex_order-arduino-mega2560" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Mutex order test
+Please refer to the README.md for more information
+
+T3 (prio 6): trying to lock mutex now
+T4 (prio 4): trying to lock mutex now
+T5 (prio 0): trying to lock mutex now
+T6 (prio 2): trying to lock mutex now
+T7 (prio 1): trying to lock mutex now
+T5 (prio 0): locked mutex now
+{ "threads": [{ "name": "t", "stack_size": 644, "stack_used": 108 }]}
+T7 (prio 1): locked mutex now
+{ "threads": [{ "name": "t", "stack_size": 644, "stack_used": 108 }]}
+T6 (prio 2): locked mutex now
+{ "threads": [{ "name": "t", "stack_size": 644, "stack_used": 108 }]}
+T4 (prio 4): locked mutex now
+{ "threads": [{ "name": "t", "stack_size": 644, "stack_used": 108 }]}
+T3 (prio 6): locked mutex now
+

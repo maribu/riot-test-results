@@ -1,0 +1,65 @@
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" -ln "/tmp/pyterm-maribu" -rn "2025-11-15_16.03.57-tests_runtime_coreapis-same54-xpro" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Runtime of Selected Core API functions
+
+                 nop loop:     33335us  ---   0.033us per call  ---   29998500 calls per sec
+
+             mutex_init():         2us  ---   0.000us per call  ---  1783793664 calls per sec
+        mutex lock/unlock:    541668us  ---   0.541us per call  ---    1846149 calls per sec
+
+       thread_flags_set():    275002us  ---   0.275us per call  ---    3636337 calls per sec
+     thread_flags_clear():    266668us  ---   0.266us per call  ---    3749981 calls per sec
+thread flags set/wait any:    841669us  ---   0.841us per call  ---    1188115 calls per sec
+thread flags set/wait all:    708336us  ---   0.708us per call  ---    1411759 calls per sec
+thread flags set/wait one:    833336us  ---   0.833us per call  ---    1199996 calls per sec
+
+        msg_try_receive():    458335us  ---   0.458us per call  ---    2181810 calls per sec
+              msg_avail():    250002us  ---   0.250us per call  ---    3999968 calls per sec
+
+{'BENCH_CLIST_SORT_TEST_NODES': 256}
+      clist_sort, #4, rev:      4660us  ---   4.660us per call  ---     214592 calls per sec
+     clist_sort, #4, prng:      4894us  ---   4.894us per call  ---     204331 calls per sec
+     clist_sort, #4, sort:      4669us  ---   4.669us per call  ---     214178 calls per sec
+  clist_sort, #4, alm.srt:      4919us  ---   4.919us per call  ---     203293 calls per sec
+
+      clist_sort, #8, rev:     10935us  ---  10.935us per call  ---      91449 calls per sec
+     clist_sort, #8, prng:     11936us  ---  11.936us per call  ---      83780 calls per sec
+     clist_sort, #8, sort:     10944us  ---  10.944us per call  ---      91374 calls per sec
+  clist_sort, #8, alm.srt:     11927us  ---  11.927us per call  ---      83843 calls per sec
+
+     clist_sort, #16, rev:     25810us  ---  25.810us per call  ---      38744 calls per sec
+    clist_sort, #16, prng:     28311us  ---  28.311us per call  ---      35321 calls per sec
+    clist_sort, #16, sort:     25819us  ---  25.819us per call  ---      38731 calls per sec
+ clist_sort, #16, alm.srt:     28453us  ---  28.453us per call  ---      35145 calls per sec
+
+     clist_sort, #32, rev:     60386us  ---  60.386us per call  ---      16560 calls per sec
+    clist_sort, #32, prng:     68069us  ---  68.069us per call  ---      14690 calls per sec
+    clist_sort, #32, sort:     60394us  ---  60.394us per call  ---      16557 calls per sec
+ clist_sort, #32, alm.srt:     66510us  ---  66.510us per call  ---      15035 calls per sec
+
+     clist_sort, #64, rev:    139360us  ---  139.360us per call  ---       7175 calls per sec
+    clist_sort, #64, prng:    160511us  ---  160.511us per call  ---       6230 calls per sec
+    clist_sort, #64, sort:    139369us  ---  139.369us per call  ---       7175 calls per sec
+ clist_sort, #64, alm.srt:    152636us  ---  152.636us per call  ---       6551 calls per sec
+
+    clist_sort, #128, rev:    317136us  ---  317.136us per call  ---       3153 calls per sec
+   clist_sort, #128, prng:    371752us  ---  371.752us per call  ---       2689 calls per sec
+   clist_sort, #128, sort:    317144us  ---  317.144us per call  ---       3153 calls per sec
+clist_sort, #128, alm.srt:    344894us  ---  344.894us per call  ---       2899 calls per sec
+
+    clist_sort, #256, rev:    712511us  ---  712.511us per call  ---       1403 calls per sec
+   clist_sort, #256, prng:    841911us  ---  841.911us per call  ---       1187 calls per sec
+   clist_sort, #256, sort:    712519us  ---  712.519us per call  ---       1403 calls per sec
+clist_sort, #256, alm.srt:    769419us  ---  769.419us per call  ---       1299 calls per sec
+
+
+[SUCCESS]
+

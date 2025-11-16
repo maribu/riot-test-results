@@ -1,0 +1,39 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/periph/rtt test
+r
+/home/maribu/Repos/software/RIOT/2025.10-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" -ln "/tmp/pyterm-maribu" -rn "2025-11-15_16.37.46-tests_rtt-same54-xpro" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+
+RIOT RTT low-level driver test
+RTT configuration:
+RTT_MAX_VALUE: 0xffffffff
+RTT_FREQUENCY: 32768
+
+Testing the tick conversion (with rounding if RTT_FREQUENCY is not power of 2)
+Trying to convert 1 to seconds and back
+Trying to convert 256 to seconds and back
+Trying to convert 65536 to seconds and back
+Trying to convert 16777216 to seconds and back
+Trying to convert 2147483648 to seconds and back
+All ok
+
+Initializing the RTT driver
+RTC mem OK
+This test will now display 'Hello' every 5 seconds
+
+RTT now: 201
+Setting RTT timer to 1337
+RTT now: 317
+ERROR: rtt_set_counter() failed (off by more than 1 ms)
+{ "threads": [{ "name": "main", "stack_size": 1536, "stack_used": 452 }]}
+Timeout in expect script at "child.expect(r'Setting initial alarm to now \+ {} s \(\d+\)'" (tests/periph/rtt/tests/01-run.py:26)
+
+make: *** [/home/maribu/Repos/software/RIOT/2025.10-branch/makefiles/tests/tests.inc.mk:32: test] Error 1
+
+Return value: 2
